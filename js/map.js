@@ -18,7 +18,8 @@ var onSuccess = function(position) {
     var mapOptions = {
         center: new google.maps.LatLng(myLat, myLong),
         zoom: 7,
-        mapTypeId: google.maps.MapTypeId.SATELLITE
+        mapTypeId: google.maps.MapTypeId.TERRAIN,
+        disableDefaultUI: true
     };
 
     var map = new google.maps.Map(document.getElementById("map_canvas"),
@@ -27,7 +28,6 @@ var onSuccess = function(position) {
 };
 
 // onError Callback receives a PositionError object
-//
 function onError(error) {
     alert('code: '    + error.code    + '\n' +
           'message: ' + error.message + '\n');

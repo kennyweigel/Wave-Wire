@@ -11,14 +11,55 @@
 		<script type='text/javascript' src='cordova-2.3.0.js'></script>
 	</head> 
 	<body onload='onLoad()'> 
-		<div data-role='page' id='main'>
+		
+		<div data-role='page' id='home'>
 			<div data-role='header' data-position='fixed'>
-				<h1>My Title</h1>
+				<h1>Home</h1>
 			</div><!-- /header -->
 			<div data-role='content'>	
-				<p>Hello world</p>
-				<div id='map_canvas' style='width:280px; height:400px'></div>
+				<p>Hello world</p>	
 			</div><!-- /content -->
+			<div data-role='footer' data-position='fixed'>		
+				<div data-role='navbar'>
+					<ul>
+						<li><a href='#home'>Home</a></li>
+						<li><a href='#map'>Map</a></li>
+						<li><a href='#settings'>Settings</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
 		</div><!-- /page -->
+		
+		<div data-role='page' id='map'>
+			<div data-role='header' data-position='fixed'>
+				<h1>Map</h1>
+			</div><!-- /header -->
+			<div id='map_canvas' style='width:320px; height:300px'></div>
+			<div data-role='footer' data-position='fixed'>		
+				<div data-role='navbar'>
+					<ul>
+						<li><a href='#home'>Home</a></li>
+						<li><a href='#map'>Map</a></li>
+						<li><a href='#settings'>Settings</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+		</div><!-- /page -->
+
+		<div data-role='page' id='settings'>
+			<div data-role='header' data-position='fixed'>
+				<h1>Settings</h1>
+			</div><!-- /header -->
+			<div data-role='footer' data-position='fixed'>		
+				<div data-role='navbar'>
+					<ul>
+						<li><a href='#home'>Home</a></li>
+						<li><a href='#map'>Map</a></li>
+						<li><a href='#settings'>Settings</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+		</div><!-- /page -->
+			 
 	</body>
 </html>
