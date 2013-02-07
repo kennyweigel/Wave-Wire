@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.kennyweigel.phonegap buoys"
+        id        = "com.kennyweigel.phonegap-buoys"
         version   = "0.0.1">
-    <name>Phonegap Buots</name>
+    <name>Phonegap Buoys</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Application to gather buoy data.
     </description>
 
-    <author href="http://phonegap.com" email="support@phonegap.com">
-        PhoneGap Team
+    <author email="kennyweigel@gmail.com">
+        Kenny Weigel
     </author>
 
     <feature name="http://api.phonegap.com/1.0/device" />
