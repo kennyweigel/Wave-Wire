@@ -3,66 +3,49 @@
 	<head> 
 		<title>My Page</title> 
 		<meta name='viewport' content='width=device-width, initial-scale=1'> 
-		<link type='text/css' rel='stylesheet' href='css/jquery.mobile-1.2.0.min.css'/>
+
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+		<link type='text/css' rel='stylesheet' href='css/jquery.mobile.structure-1.2.0.min.css'/>		
+		<!-- change this file by using the theme roller tool -->
+		<link type='text/css' rel='stylesheet' href='css/test.min.css'/>	
+
 		<script type='text/javascript' src='js/jquery-1.8.2.min.js'></script>
 		<script type='text/javascript' src='js/jquery.mobile-1.2.0.min.js'></script>
+		
+
 		<script type='text/javascript' src='js/map.js'></script>
+		
 		<!-- use this line if building with phonegap build -->
 		<script src="phonegap.js"></script>
 		<!-- use this line if building locally -->
 		<!-- <script type='text/javascript' src='cordova-2.3.0.js'></script> -->
 	</head> 
 	<body> 
-		<div data-role='page' id='home'>
+		<div data-role='page' id='main'>
 			<div data-role='header'>
+				<a href='#settings' data-icon='gear' data-iconpos='notext' data-transition='fade'></a> 
 				<h1>Home</h1>
+				<a href='#map' data-icon='search' data-iconpos='notext' data-transition='fade'></a>
 			</div><!-- /header -->
-			<div id='map_canvas' style='width:320px; height:300px'></div>
-			<div data-role='content'>	
-				<p>Hello world</p>	
-			</div><!-- /content -->
-			<div data-role='footer' data-position='fixed'>		
-				<div data-role='navbar'>
-					<ul>
-						<li><a href='#home'>Home</a></li>
-						<li><a href='#map'>Map</a></li>
-						<li><a href='#settings'>Settings</a></li>
-					</ul>
-				</div><!-- /navbar -->
-			</div><!-- /footer -->
-		</div><!-- /page -->
-		
-		<div data-role='page' id='map'>
-			<div data-role='header' data-position='fixed'>
-				<h1>Map</h1>
-			</div><!-- /header -->
-			
-			<div data-role='footer' data-position='fixed'>		
-				<div data-role='navbar'>
-					<ul>
-						<li><a href='#home'>Home</a></li>
-						<li><a href='#map'>Map</a></li>
-						<li><a href='#settings'>Settings</a></li>
-					</ul>
-				</div><!-- /navbar -->
-			</div><!-- /footer -->
+			Hello World
 		</div><!-- /page -->
 
+		<div data-role='page' id='map'>
+			<div data-role='header'>
+				<h1>Map</h1>
+				<a href='#main' data-icon='home' data-iconpos='notext' data-transition='fade' class='ui-btn-right'></a>
+			</div><!-- /header -->
+			<div id='map_canvas' style='width:320px; height:300px'></div>
+		</div><!-- /page -->
+		
 		<div data-role='page' id='settings'>
-			<div data-role='header' data-position='fixed'>
+			<div data-role='header'>
+				<a href='#main' data-icon='home' data-iconpos='notext' data-transition='fade'></a>
 				<h1>Settings</h1>
 			</div><!-- /header -->
-			<div data-role='footer' data-position='fixed'>		
-				<div data-role='navbar'>
-					<ul>
-						<li><a href='#home'>Home</a></li>
-						<li><a href='#map'>Map</a></li>
-						<li><a href='#settings'>Settings</a></li>
-					</ul>
-				</div><!-- /navbar -->
-			</div><!-- /footer -->
+			<p>Hello Settings
 		</div><!-- /page -->
-			 
+
 	</body>
 </html>
