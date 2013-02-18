@@ -1,4 +1,4 @@
-function onLoad() {
+function buoyMap() {
     document.addEventListener("deviceready", onDeviceReady, false);
 }
 
@@ -8,22 +8,26 @@ function onDeviceReady() {
 
 //GEOLOCATION
 var onSuccess = function(position) {
-    //alert('Latitude: '  + position.coords.latitude   + '\n' +
-    //      'Longitude: ' + position.coords.longitude  + '\n');
-
+    
     var myLat = position.coords.latitude;
-    var myLong = position.coords.longitude;
-
+    var myLng = position.coords.longitude;
+    var myLatLng = new google.maps.LatLng(myLat,myLng)
+    
     //MAP
     var mapOptions = {
-        center: new google.maps.LatLng(myLat, myLong),
+        center: myLatLng,
         zoom: 7,
         mapTypeId: google.maps.MapTypeId.TERRAIN,
         disableDefaultUI: true
     };
 
-    var map = new google.maps.Map(document.getElementById("map_canvas"),
-                                  mapOptions);
+    var map = new google.maps.Map(document.getElementById("mapCanvas"),mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Me'
+      });
 
 };
 
