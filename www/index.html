@@ -20,6 +20,19 @@
 		<script src="phonegap.js"></script>
 		<!-- use this line if building locally -->
 		<!-- <script type='text/javascript' src='cordova-2.3.0.js'></script> -->
+		
+		<script>
+			$(document).bind('pageinit', function() {
+				$('#btn').on('click', function() {
+					var viewport = {
+						width : $(window).width(),
+						height : $(window).height()
+					}
+					alert('width: '+viewport.width+' height: '+viewport.height);
+				});
+			});
+		</script>
+
 	</head> 
 	<body> 
 		<div data-role='page' id='main'>
@@ -28,7 +41,9 @@
 				<h1>Home</h1>
 				<a href='#map' data-icon='search' data-iconpos='notext' data-transition='fade'></a>
 			</div><!-- /header -->
-			Hello World
+			<p id='test-window'>Hello World</p>
+			<button id='btn'>Viewport</button>
+
 		</div><!-- /page -->
 
 		<div data-role='page' id='map'>
