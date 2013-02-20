@@ -3,38 +3,22 @@
 	<head> 
 		<title>My Page</title> 
 		<meta name='viewport' content='width=device-width, initial-scale=1'> 
-
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
 		<link type='text/css' rel='stylesheet' href='css/jquery.mobile.structure-1.2.0.min.css'/>		
 		<!-- change this file by using the theme roller tool -->
 		<link type='text/css' rel='stylesheet' href='css/test.min.css'/>
 		<link type='text/css' rel='stylesheet' href='/css/custom.css'/>	
-
 		<script type='text/javascript' src='js/jquery-1.8.2.min.js'></script>
 		<script type='text/javascript' src='js/jquery.mobile-1.2.0.min.js'></script>
-		
-
+		<!-- swipejs script, might need to move to bottom -->
+		<script type='text/javascript' scr='js/swipe2.js'></script>
 		<script type='text/javascript' src='js/map.js'></script>
-		
 		<!-- use this line if building with phonegap build -->
 		<script src="phonegap.js"></script>
 		<!-- use this line if building locally -->
 		<!-- <script type='text/javascript' src='cordova-2.3.0.js'></script> -->
-		
 		<script>
-			/*$(document).bind('pageinit', function() {
-				$('#btn').on('click', function() {
-					var viewport = {
-						width : $(window).width(),
-						height : $(window).height()
-					}
-					var headers = $('#testheader').height();
-					alert('width: '+viewport.width+' height: '+viewport.height+' header: '+headers);
-				});
-			});*/
-			
-			$(document).one('pageinit',function() {
+		/*	$(document).one('pageinit',function() {
 				$('#map').one('pageshow', function() {
 					var mapSize = {
 						width: $(window).width(),
@@ -46,24 +30,28 @@
 					//alert(mapSize.width + "  " + mapSize.height);
 					$('#mapHeader').after("<div id='mapCanvas' style='width:"+mapSize.width+"px;height:"+mapSize.height+"px'></div>");
 					buoyMap();
-				});
-			});
-			
-
-			
+				});				
+			});*/
 		</script>
-
 	</head> 
 	<body> 
-		<div data-role='page' id='main'>
+		<div data-role='page' id='main' style='background:#fff'>
 			<div data-role='header' id='testheader'>
 				<a href='#settings' data-icon='gear' data-iconpos='notext' data-transition='fade'></a> 
 				<h1>Home</h1>
 				<a href='#map' data-icon='search' data-iconpos='notext' data-transition='fade'></a>
 			</div><!-- /header -->
-			<p>Hello World</p>
-			<button id='btn'>Viewport</button>
-
+			<div data-role='content' style='padding:0'>
+				<div id='slider' class='swipe'>
+					<div class='swipe-wrap'>
+						<div><span>1</span></div>
+						<div><span>2</span></div>
+						<div><span>3</span></div>
+						<div><span>4</span></div>
+						<div><span>5</span></div>
+					</div>
+				</div> <!-- /slider -->
+			</div><!-- /content -->
 		</div><!-- /page -->
 
 		<div data-role='page' id='map'>
@@ -80,6 +68,10 @@
 			</div><!-- /header -->
 			<p>Hello Settings
 		</div><!-- /page -->
-
+		<script>
+			$('#main').live('pageshow',function(){
+				window.slider = new Swipe(document.getElementById('slider'));
+			});
+		</script>
 	</body>
 </html>

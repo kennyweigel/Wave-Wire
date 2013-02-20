@@ -1,3 +1,38 @@
-/* this line is supposed to stop the flickering that happens during transitions
-it should only be used with iOS*/
+/* this line is supposed to stop the flickering that happens during */
+/* transitions it should only be used with iOS */
 .ui-page { -webkit-backface-visibility: hidden; }
+
+
+/* Swipe 2 required styles */
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+/* END required styles */
+
+#slider {
+  background:#414141;
+}
+.swipe-wrap > div > span {
+  display:block;
+  background:#1db1ff;
+  font-weight:bold;
+  color:#fff;
+  font-size:20px;
+  text-align:center;
+  margin:15px 14px 16px;
+  padding:100px 10px;
+  border-radius:3px;
+  text-shadow:none;
+}
