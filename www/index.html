@@ -7,7 +7,7 @@
 		<link type='text/css' rel='stylesheet' href='css/jquery.mobile.structure-1.2.0.min.css'/>		
 		<!-- change this file by using the theme roller tool -->
 		<link type='text/css' rel='stylesheet' href='css/test.min.css'/>
-		<link type='text/css' rel='stylesheet' href='/css/custom.css'/>	
+		<link type='text/css' rel='stylesheet' href='css/custom.css'/>	
 		<script type='text/javascript' src='js/jquery-1.8.2.min.js'></script>
 		<script type='text/javascript' src='js/jquery.mobile-1.2.0.min.js'></script>
 		<!-- swipejs script, might need to move to bottom -->
@@ -18,7 +18,7 @@
 		<!-- use this line if building locally -->
 		<!-- <script type='text/javascript' src='cordova-2.3.0.js'></script> -->
 		<script>
-		/*	$(document).one('pageinit',function() {
+			$(document).on('pageinit',function() {
 				$('#map').one('pageshow', function() {
 					var mapSize = {
 						width: $(window).width(),
@@ -31,18 +31,19 @@
 					$('#mapHeader').after("<div id='mapCanvas' style='width:"+mapSize.width+"px;height:"+mapSize.height+"px'></div>");
 					buoyMap();
 				});				
-			});*/
+			});
 		</script>
 	</head> 
 	<body> 
-		<div data-role='page' id='main' style='background:#fff'>
+		<div data-role='page' id='main' style='background-color:green'>
 			<div data-role='header' id='testheader'>
 				<a href='#settings' data-icon='gear' data-iconpos='notext' data-transition='fade'></a> 
 				<h1>Home</h1>
 				<a href='#map' data-icon='search' data-iconpos='notext' data-transition='fade'></a>
 			</div><!-- /header -->
 			<div data-role='content' style='padding:0'>
-				<div id='slider' class='swipe'>
+				<p style='color:white'>hello</p>
+				<div id='slider' class='swipe' style='width:250px;margin:0 auto'>
 					<div class='swipe-wrap'>
 						<div><span>1</span></div>
 						<div><span>2</span></div>
@@ -51,6 +52,12 @@
 						<div><span>5</span></div>
 					</div>
 				</div> <!-- /slider -->
+				<div style='text-align:center;padding-top:20px;'>
+  
+					<button onclick='slider.prev()'>prev</button> 
+					<button onclick='slider.next()'>next</button>
+
+			</div>
 			</div><!-- /content -->
 		</div><!-- /page -->
 
@@ -69,9 +76,13 @@
 			<p>Hello Settings
 		</div><!-- /page -->
 		<script>
-			$('#main').live('pageshow',function(){
-				window.slider = new Swipe(document.getElementById('slider'));
-			});
+			//using jquery 1.7.2
+			//$('#main').on('pageshow',function(){
+			//	window.slider = new Swipe(document.getElementById('slider'));
+			//});
+			// pure JS
+			var elem = document.getElementById('mySwipe'); // $('#mySwipe')[0] in jQuery
+			window.mySwipe = new Swipe(elem);
 		</script>
 	</body>
 </html>

@@ -1,6 +1,6 @@
 /* this line is supposed to stop the flickering that happens during */
 /* transitions it should only be used with iOS */
-.ui-page { -webkit-backface-visibility: hidden; }
+/*.ui-page { -webkit-backface-visibility: hidden; }*/
 
 
 /* Swipe 2 required styles */
@@ -28,7 +28,7 @@
   display:block;
   background:#1db1ff;
   font-weight:bold;
-  color:#fff;
+  color:red;
   font-size:20px;
   text-align:center;
   margin:15px 14px 16px;
