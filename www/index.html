@@ -1,49 +1,47 @@
 <!DOCTYPE html> 
-<html> 
-	<head> 
-		<title>My Page</title> 
-		<meta name='viewport' content='width=device-width, initial-scale=1'> 
-		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-		<link type='text/css' rel='stylesheet' href='css/jquery.mobile.structure-1.2.0.min.css'/>		
-		<!-- change this file by using the theme roller tool -->
-		<link type='text/css' rel='stylesheet' href='css/test.min.css'/>
-		<link type='text/css' rel='stylesheet' href='css/custom.css'/>	
+<html>
+	<head>
+		<title>My Page</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>		
+		<!-- styles -->
+		<link type='text/css' rel='stylesheet' href='css/jquery.mobile.structure-1.2.0.min.css'/>
+		<link type='text/css' rel='stylesheet' href='css/jquery.mobile.theme-1.2.0.min.css'/>
+		<link rel='stylesheet' href='css/custom.css' />
+		<!-- scripts -->
+		<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?sensor=false'></script>
 		<script type='text/javascript' src='js/jquery-1.8.2.min.js'></script>
 		<script type='text/javascript' src='js/jquery.mobile-1.2.0.min.js'></script>
-		<!-- swipejs script, might need to move to bottom -->
-		<script type='text/javascript' scr='js/swipe2.js'></script>
+		<script type='text/javascript' src='js/swipe2js.min.js'></script>
 		<script type='text/javascript' src='js/map.js'></script>
-		<!-- use this line if building with phonegap build -->
-		<script src="phonegap.js"></script>
-		<!-- use this line if building locally -->
-		<!-- <script type='text/javascript' src='cordova-2.3.0.js'></script> -->
 		<script>
-			$(document).on('pageinit',function() {
-				$('#map').one('pageshow', function() {
-					var mapSize = {
-						width: $(window).width(),
-						height: $(window).height()
-					};
-					var headerHeight = $('#mapHeader').height();
-					//alert(headerHeight);
-					mapSize.height -= headerHeight;
-					//alert(mapSize.width + "  " + mapSize.height);
-					$('#mapHeader').after("<div id='mapCanvas' style='width:"+mapSize.width+"px;height:"+mapSize.height+"px'></div>");
-					buoyMap();
-				});				
+			$('#main').live('pageshow',function(){
+				window.slider = new Swipe(document.getElementById('slider'));
+			});
+			$('#map').live('pageshow', function() {
+				var mapSize = {
+					width: $(window).width(),
+					height: $(window).height()
+				};
+				var headerHeight = $('#mapHeader').height();
+				mapSize.height -= headerHeight;
+				$('#mapHeader').after("<div id='mapCanvas' style='width:"+mapSize.width+"px;height:"+mapSize.height+"px'></div>");
+				buoyMap();
 			});
 		</script>
+		<!-- use this line if building with phonegap build -->
+		<script src='phonegap.js'></script>
+		<!-- use this line if building locally -->
+		<!-- <script type='text/javascript' src='cordova-2.3.0.js'></script> -->
 	</head> 
 	<body> 
-		<div data-role='page' id='main' style='background-color:green'>
+		<div data-role='page' id='main' style='background:#fff'>
 			<div data-role='header' id='testheader'>
-				<a href='#settings' data-icon='gear' data-iconpos='notext' data-transition='fade'></a> 
+				<a href='#settings' data-icon='gear' data-iconpos='notext' data-transition='none'></a> 
 				<h1>Home</h1>
-				<a href='#map' data-icon='search' data-iconpos='notext' data-transition='fade'></a>
+				<a href='#map' data-icon='search' data-iconpos='notext' data-transition='none'></a>
 			</div><!-- /header -->
 			<div data-role='content' style='padding:0'>
-				<p style='color:white'>hello</p>
-				<div id='slider' class='swipe' style='width:250px;margin:0 auto'>
+				<div id='slider' class='swipe'>
 					<div class='swipe-wrap'>
 						<div><span>1</span></div>
 						<div><span>2</span></div>
@@ -52,37 +50,21 @@
 						<div><span>5</span></div>
 					</div>
 				</div> <!-- /slider -->
-				<div style='text-align:center;padding-top:20px;'>
-  
-					<button onclick='slider.prev()'>prev</button> 
-					<button onclick='slider.next()'>next</button>
-
-			</div>
 			</div><!-- /content -->
 		</div><!-- /page -->
 
 		<div data-role='page' id='map'>
 			<div data-role='header' id='mapHeader'>
 				<h1>Map</h1>
-				<a href='#main' data-icon='home' data-iconpos='notext' data-transition='fade' class='ui-btn-right'></a>
+				<a href='#main' data-icon='home' data-iconpos='notext' data-transition='none' class='ui-btn-right'></a>
 			</div><!-- /header -->
 		</div><!-- /page -->
 		
 		<div data-role='page' id='settings'>
 			<div data-role='header'>
-				<a href='#main' data-icon='home' data-iconpos='notext' data-transition='fade'></a>
+				<a href='#main' data-icon='home' data-iconpos='notext' data-transition='none'></a>
 				<h1>Settings</h1>
 			</div><!-- /header -->
-			<p>Hello Settings
 		</div><!-- /page -->
-		<script>
-			//using jquery 1.7.2
-			//$('#main').on('pageshow',function(){
-			//	window.slider = new Swipe(document.getElementById('slider'));
-			//});
-			// pure JS
-			var elem = document.getElementById('mySwipe'); // $('#mySwipe')[0] in jQuery
-			window.mySwipe = new Swipe(elem);
-		</script>
 	</body>
 </html>
