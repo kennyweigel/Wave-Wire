@@ -14,6 +14,7 @@
 		<script type='text/javascript' src='js/swipe2js.min.js'></script>
 		<script type='text/javascript' src='js/map.js'></script>
 		<script>
+			var contentSize = 
 			$(document).bind('pageshow','#main',function(){
 				window.slider = new Swipe(document.getElementById('slider'));
 			});
@@ -36,9 +37,9 @@
 	<body> 
 		<div data-role='page' id='main' style='background:#fff'>
 			<div data-role='header' id='testheader'>
-				<a href='#settings' data-icon='gear' data-iconpos='notext' data-transition='slidedown'></a> 
+				<a href='#settings' data-icon='gear' data-iconpos='notext' data-transition='none'></a> 
 				<h1>Home</h1>
-				<a href='#map' data-icon='search' data-iconpos='notext' data-transition='slidedown'></a>
+				<a href='#map' data-icon='search' data-iconpos='notext' data-transition='none'></a>
 			</div><!-- /header -->
 			<div data-role='content' style='padding:0'>
 				<div id='slider' class='swipe'>
@@ -56,13 +57,13 @@
 		<div data-role='page' id='map'>
 			<div data-role='header' id='mapHeader'>
 				<h1>Map</h1>
-				<a href='#main' data-icon='home' data-iconpos='notext' data-transition='slideup' class='ui-btn-right'></a>
+				<a href='#main' data-icon='home' data-iconpos='notext' data-transition='none' class='ui-btn-right'></a>
 			</div><!-- /header -->
 		</div><!-- /page -->
 		
 		<div data-role='page' id='settings'>
 			<div data-role='header'>
-				<a href='#main' data-icon='home' data-iconpos='notext' data-transition='slideup'></a>
+				<a href='#main' data-icon='home' data-iconpos='notext' data-transition='none'></a>
 				<h1>Settings</h1>
 			</div><!-- /header -->
 		</div><!-- /page -->
