@@ -14,10 +14,10 @@
 		<script type='text/javascript' src='js/swipe2js.min.js'></script>
 		<script type='text/javascript' src='js/map.js'></script>
 		<script>
-			$('#main').live('pageshow',function(){
+			$(document).bind('pageshow','#main',function(){
 				window.slider = new Swipe(document.getElementById('slider'));
 			});
-			$('#map').live('pageshow', function() {
+			$(document).bind('pageshow','#map',function() {
 				var mapSize = {
 					width: $(window).width(),
 					height: $(window).height()
