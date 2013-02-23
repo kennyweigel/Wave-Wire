@@ -13,8 +13,8 @@
 		<script type='text/javascript' src='js/swipe2js.min.js'></script>
 		<script type='text/javascript' src='js/map.js'></script>
 		<script>
-			var contentSize = 
-			$(document).bind('pageshow','#main',function(){
+			var contentSize = $
+			$(document).one('pageshow','#main',function(){
 				window.slider = new Swipe(document.getElementById('slider'));
 			});
 			$(document).bind('pageshow','#map',function() {
@@ -34,7 +34,7 @@
 		<!-- <script type='text/javascript' src='cordova-2.3.0.js'></script> -->
 	</head> 
 	<body> 
-		<div data-role='page' id='main' style='background:#fff'>
+		<div data-role='page' id='main'>
 			<div data-role='header' id='testheader'>
 				<a href='#settings' data-icon='gear' data-iconpos='notext' data-transition='fade'></a> 
 				<h1>Home</h1>
@@ -49,7 +49,7 @@
 						<div><span>4</span></div>
 						<div><span>5</span></div>
 					</div>
-				</div> <!-- /slider -->
+				</div><!-- /slider -->
 			</div><!-- /content -->
 		</div><!-- /page -->
 
@@ -65,6 +65,9 @@
 				<a href='#main' data-icon='home' data-iconpos='notext' data-transition='fade'></a>
 				<h1>Settings</h1>
 			</div><!-- /header -->
+			<div data-role='content'>
+				<p>Hello Settings</p>
+			</div><!-- /content -->
 		</div><!-- /page -->
 	</body>
 </html>
