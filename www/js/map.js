@@ -7,7 +7,7 @@ function onDeviceReady() {
 }
 
 //GEOLOCATION
-var onSuccess = function(position) {
+function onSuccess(position) {
     
     var myLat = position.coords.latitude;
     var myLng = position.coords.longitude;
