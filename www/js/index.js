@@ -18,9 +18,9 @@ $(document).on('tap','#mapHome',function() {
     $('#mapCanvas').remove();
 })
 //attempt to add a swipe element
-$(document).on('tap','#addSwipe',function() {
-    $('.swipe-wrap').append('<p>Hello</p>')
-})
+//$(document).on('tap','#addSwipe',function() {
+//    $('.swipe-wrap').append('<p>Hello</p>')
+//})
 
 
 //function buoyMap() {
