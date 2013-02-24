@@ -1,7 +1,7 @@
 //adds slider when showing main the first time
-$(document).one('pageshow','#main',function(){
-    window.slider = new Swipe(document.getElementById('slider'));
-});
+//$(document).one('pageshow','#main',function(){
+//    window.slider = new Swipe(document.getElementById('slider'));
+//});
 //when map is reached add map canvas and use geolocation
 $(document).on('pageshow','#map',function() {
     var mapSize = {
