@@ -8,30 +8,35 @@ var app = {
     route: function() {
         var self = this;
         var hash = window.location.hash;
-        if (!hash) {
+        if (hash.match(this.homeURL)) {
             if (this.homePage) {
                 this.slidePage(this.homePage);
-            } else {
+            }
+            else {
                 this.homePage = new HomeView().render();
                 this.slidePage(this.homePage);
             }
             return;
         }
+        
         var match = hash.match(this.mapURL);
         if (match) {
             if (this.mapPage) {
                 this.slidePage(this.mapPage);
-            } else {
+            } 
+            else {
                 this.mapPage = new MapView().render();
                 this.slidePage(this.mapPage);
-            }
+            } 
             return;
         }
     },
 
     initialize: function() {
         var self = this;
+        this.homeURL = '#home';
         this.mapURL = '#map';
+        window.location.hash = this.homeURL;
         this.registerEvents();
         this.store = new LocalStorageStore(function() {
             self.route();
@@ -83,7 +88,6 @@ var app = {
             $(page.el).attr('class', 'page stage-center transition');
             self.currentPage = page;
         });
-     
     },
 };
 

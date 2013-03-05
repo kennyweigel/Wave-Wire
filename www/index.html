@@ -1,20 +1,31 @@
+<!DOCTYPE html>
 <html>
     <head>
-
-        <link href="css/styles.css" rel="stylesheet">
-    </head>
-
+      <title>surf-check</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/styles.css" rel="stylesheet">
+      <link href='css/bootstrap.min.css' rel="stylesheet" media="screen">
+      </head>
     <body>
         <script id="home-tpl" type="text/x-handlebars-template">
-            <div class='header'><h1><a href='#map'>Home</a></h1></div>
-            <p>Test</p>
+            <div class='navbar navbar-inverse'>
+              <div class='navbar-inner' style='padding: 0px 10px'>
+                <a class='brand'>Surf Check</a>
+                <a class='btn btn-inverse pull-right' href='#map'><i class='icon-globe icon-white'></i></a>
+              </div>
+            </div>
         </script>
         <script id="map-tpl" type="text/x-handlebars-template">
-            <div class='header'><h1><a href='#'>Map</a></h1></div>
-            <p>Test Map</p>
+            <div class='navbar navbar-inverse'>
+              <div class='navbar-inner' style='padding: 0px 10px'>
+                <a class='brand'>Map</a>
+                <a class='btn btn-inverse pull-right' href='#home'><i class='icon-home icon-white'></i></a>
+              </div>
+            </div>
         </script>
         <script src='phonegap.js'></script>
         <script src='lib/jquery-1.9.1.min.js'></script>
+        <script src='lib/bootstrap.min.js'></script>
         <script src='js/storage/ls-store.js'></script>
         <script src='lib/handlebars.js'></script>
         <script src='js/HomeView.js'></script>
