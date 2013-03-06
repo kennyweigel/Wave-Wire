@@ -19,8 +19,7 @@ var app = {
             return;
         }
         
-        var match = hash.match(this.mapURL);
-        if (match) {
+        if (hash.match(this.mapURL)) {
             if (this.mapPage) {
                 this.slidePage(this.mapPage);
             } 
