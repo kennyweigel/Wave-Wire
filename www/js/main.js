@@ -10,22 +10,26 @@ var app = {
         var hash = window.location.hash;
         if (hash.match(this.homeURL)) {
             if (this.homePage) {
-                this.slidePage(this.homePage);
+                $('body').html(this.homePage.el);
+                //this.slidePage(this.homePage);
             }
             else {
                 this.homePage = new HomeView().render();
-                this.slidePage(this.homePage);
+                $('body').html(this.homePage.el);
+                //this.slidePage(this.homePage);
             }
             return;
         }
         
         if (hash.match(this.mapURL)) {
             if (this.mapPage) {
-                this.slidePage(this.mapPage);
+                $('body').html(this.mapPage.el);
+                //this.slidePage(this.mapPage);
             } 
             else {
                 this.mapPage = new MapView().render();
-                this.slidePage(this.mapPage);
+                $('body').html(this.mapPage.el);
+                //this.slidePage(this.mapPage);
             } 
             return;
         }

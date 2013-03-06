@@ -4,7 +4,7 @@ var MapView = function() {
 	
 	this.initialize = function() {
 		this.el = $('<div/>');
-		this.el.on('click','#map', this.buoyMap);
+		this.el.on('click','#mapBtn', this.buoyMap);
 		//this.el.on('click', '.add-location-btn', this.addLocation);
 		//this.el.on('click', '.add-contact-btn', this.addToContacts);
 		//this.el.on('click', '.change-pic-btn', this.changePicture);
@@ -16,7 +16,6 @@ var MapView = function() {
 	};
 
 	this.buoyMap = function(event) {
-	    event.preventDefault();
 	    navigator.geolocation.getCurrentPosition(onSuccess, onError,{'enableHighAccuracy':true,'timeout':10000});
 	}
 
@@ -34,8 +33,11 @@ var MapView = function() {
 	        mapTypeId: google.maps.MapTypeId.TERRAIN,
 	        disableDefaultUI: true
 	    };
-
-	    var map = new google.maps.Map(document.getElementById("mapCanvas"),mapOptions);
+      
+      var mapHeight = $(window).height()-$('.navbar').height();
+      $('#mapCanvas').css({ height: mapHeight });	    
+      
+      var map = new google.maps.Map(document.getElementById("mapCanvas"),mapOptions);
 
 	    var marker = new google.maps.Marker({
 	        position: myLatLng,

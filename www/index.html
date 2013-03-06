@@ -2,37 +2,36 @@
 <html>
     <head>
       <title>surf-check</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="css/styles.css" rel="stylesheet">
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <link href='css/styles.css' rel='stylesheet'>
       <link href='css/bootstrap.min.css' rel="stylesheet" media="screen">
       </head>
-    <body>
-        <script id="home-tpl" type="text/x-handlebars-template">
-            <div class='navbar navbar-inverse'>
-              <div class='navbar-inner' style='padding: 0px 10px'>
-                <a class='brand'>Surf Check</a>
-                <a class='btn btn-inverse pull-right' href='#map'><i class='icon-globe icon-white'></i></a>
-              </div>
-            </div>
-        </script>
-        <script id="map-tpl" type="text/x-handlebars-template">
-            <div class='navbar navbar-inverse'>
-              <div class='navbar-inner' style='padding: 0px 10px'>
-                <a class='brand'>Map</a>
-                <a class='btn btn-inverse pull-right' href='#home'><i class='icon-home icon-white'></i></a>
-              </div>
-            </div>
-            <button id='map'>Map</button>
-            <div id='mapCanvas' style='height:300px'></div>
-        </script>
-        <script src='phonegap.js'></script>
-        <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?sensor=false'></script>
-        <script src='lib/jquery-1.9.1.min.js'></script>
-        <script src='lib/bootstrap.min.js'></script>
-        <script src='js/storage/ls-store.js'></script>
-        <script src='lib/handlebars.js'></script>
-        <script src='js/HomeView.js'></script>
-        <script src='js/MapView.js'></script>
-        <script src='js/main.js'></script>
+    <body style='padding-top: 40px'>
+      <script id='home-tpl' type='text/x-handlebars-template'>
+        <div class='navbar navbar-inverse navbar-fixed-top'>
+          <div class='navbar-inner' style='padding: 0px 10px'>
+            <a class='brand'>Surf Check</a>
+            <a class='btn btn-inverse pull-right' href='#map'><i class='icon-globe icon-white'></i></a>
+          </div>
+        </div>
+      </script>
+      <script id='map-tpl' type='text/x-handlebars-template'>
+        <div class='navbar navbar-inverse navbar-fixed-top'>
+          <div class='navbar-inner' style='padding: 0px 10px'>
+            <a class='brand' id='mapBtn'>Map</a>
+            <a class='btn btn-inverse pull-right' href='#home'><i class='icon-home icon-white'></i></a>
+          </div>
+        </div>
+        <div id='mapCanvas'></div>
+      </script>
+      <script src='phonegap.js'></script>
+      <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?sensor=false'></script>
+      <script src='lib/jquery-1.9.1.min.js'></script>
+      <script src='lib/bootstrap.min.js'></script>
+      <script src='js/storage/ls-store.js'></script>
+      <script src='lib/handlebars.js'></script>
+      <script src='js/HomeView.js'></script>
+      <script src='js/MapView.js'></script>
+      <script src='js/main.js'></script>
     </body>
 </html>
