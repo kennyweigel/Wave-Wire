@@ -8,21 +8,21 @@
       </head>
     <body>
       <script id='home-tpl' type='text/x-handlebars-template'>
-        <div class='navbar navbar-inverse' style='border-radius:0px'>
-          <div class='navbar-inner'>
+        <div class='navbar navbar-inverse navbar-fixed-top'>
+          <div class='navbar-inner' style='padding: 0px 10px'>
             <a class='brand'>Surf Check</a>
             <a class='btn btn-inverse pull-right' href='#map'><i class='icon-globe icon-white'></i></a>
           </div>
         </div>
       </script>
       <script id='map-tpl' type='text/x-handlebars-template'>
-        <div class='navbar navbar-inverse' style='border-radius:0px'>
-          <div class='navbar-inner'>
+        <div class='navbar navbar-inverse navbar-fixed-top'>
+          <div class='navbar-inner' style='padding: 0px 10px'>
             <a class='brand' id='mapBtn'>Map</a>
             <a class='btn btn-inverse pull-right' href='#home'><i class='icon-home icon-white'></i></a>
           </div>
         </div>
-        <div id='mapCanvas'></div>
+        <div id='mapCanvas' style='height:100%; width:100%; position:absolute'></div>
       </script>
       <script src='phonegap.js'></script>
       <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?sensor=false'></script>

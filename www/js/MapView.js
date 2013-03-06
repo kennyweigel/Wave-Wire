@@ -34,8 +34,8 @@ var MapView = function() {
 	        disableDefaultUI: true
 	    };
       
-      var mapHeight = $(window).height()-$('.navbar').height();
-      $('#mapCanvas').css({ height: mapHeight });	    
+      var navHeight = $('.navbar').height();
+      $('#mapCanvas').css({ top: navHeight });	    
       
       var map = new google.maps.Map(document.getElementById("mapCanvas"),mapOptions);
 
