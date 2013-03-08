@@ -1,41 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>surf-check</title>
-      <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-      <!--<link href='css/styles.css' rel='stylesheet'>-->
-      <link href='css/bootstrap.min.css' rel="stylesheet" media="screen">
-      <style>
+  <head>
+    <title>surf-check</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link href='css/bootstrap.min.css' rel="stylesheet" media="screen">
+    <style>
       body {-webkit-tap-highlight-color:rgba(0,0,0,0);}
-      </style>
-      </head>
-    <body>
-      <script id='home-tpl' type='text/x-handlebars-template'>
-        <div class='navbar navbar-inverse navbar-fixed-top'>
-          <div class='navbar-inner' style='padding: 0px 10px'>
-            <a class='brand'>Surf Check</a>
-            <a class='btn btn-inverse pull-right' href='#map'><i class='icon-globe icon-white'></i></a>
+    </style>
+    </head>
+  <body>
+    <script id='home-tpl' type='text/x-handlebars-template'>
+      <div class='navbar navbar-inverse navbar-fixed-top'>
+        <div class='navbar-inner' style='padding: 0px 10px'>
+          <a class='brand'>Surf Check</a>
+          <a class='btn btn-inverse pull-right' href='#map'><i class='icon-globe icon-white'></i></a>
+        </div>
+      </div>
+      <div class="accordion" id="accordion2" style='padding-top:45px'>
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+              Collapsible Group Item #1
+            </a>
+          </div>
+          <div id="collapseOne" class="accordion-body collapse in">
+            <div class="accordion-inner">
+              Anim pariatur cliche...
+            </div>
           </div>
         </div>
-      </script>
-      <script id='map-tpl' type='text/x-handlebars-template'>
-        <div class='navbar navbar-inverse navbar-fixed-top'>
-          <div class='navbar-inner' style='padding: 0px 10px'>
-            <a id='mapRefresh' class='btn btn-inverse pull-left'><i class='icon-refresh icon-white'></i></a>
-            <a class='brand'>Map</a>
-            <a class='btn btn-inverse pull-right' href='#home'><i class='icon-home icon-white'></i></a>
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+              Collapsible Group Item #2
+            </a>
+          </div>
+          <div id="collapseTwo" class="accordion-body collapse">
+            <div class="accordion-inner">
+              Anim pariatur cliche...
+            </div>
           </div>
         </div>
-        <div id='mapCanvas' style='height:100%; width:100%; position:absolute'></div>
-      </script>
-      <script src='phonegap.js'></script>
-      <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?sensor=false'></script>
-      <script src='lib/jquery-1.9.1.min.js'></script>
-      <script src='lib/bootstrap.min.js'></script>
-      <script src='js/storage/ls-store.js'></script>
-      <script src='lib/handlebars.js'></script>
-      <script src='js/HomeView.js'></script>
-      <script src='js/MapView.js'></script>
-      <script src='js/main.js'></script>
-    </body>
+      </div>
+    </script>
+    <script id='map-tpl' type='text/x-handlebars-template'>
+      <div class='navbar navbar-inverse navbar-fixed-top'>
+        <div class='navbar-inner' style='padding: 0px 10px'>
+          <a id='mapRefresh' class='btn btn-inverse pull-left'><i class='icon-refresh icon-white'></i></a>
+          <a class='brand'>Map</a>
+          <a class='btn btn-inverse pull-right' href='#home'><i class='icon-home icon-white'></i></a>
+        </div>
+      </div>
+      <div id='mapCanvas' style='height:100%; width:100%; position:absolute'></div>
+    </script>
+    <script src='phonegap.js'></script>
+    <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?sensor=false'></script>
+    <script src='lib/jquery-1.9.1.min.js'></script>
+    <script src='lib/bootstrap.min.js'></script>
+    <script src='js/storage/ls-store.js'></script>
+    <script src='lib/handlebars.js'></script>
+    <script src='js/HomeView.js'></script>
+    <script src='js/MapView.js'></script>
+    <script src='js/main.js'></script>
+  </body>
 </html>
