@@ -2,6 +2,20 @@ body {
   /*removes ios link highlighting*/
   -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
+
+.navbar-search {
+  position:absolute;
+  right:60px;
+  left:60px
+}
+
+.search-query {
+  width:96%;
+  padding-left:2%;
+  padding-right:2%
+}
+
+
 /*
 .search-query {
   box-sizing:border-box;
