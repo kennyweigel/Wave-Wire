@@ -6,13 +6,13 @@ body {
 .navbar-search {
   position:absolute;
   right:60px;
-  left:60px
+  left:60px;
 }
 
-.search-query {
+.navbar-search .search-query {
   width:96%;
   padding-left:2%;
-  padding-right:2%
+  padding-right:2%;
 }
 
 
