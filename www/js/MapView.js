@@ -1,7 +1,17 @@
 
 
 var MapView = function() {
-  
+  function set() {
+    for (var i=0; i<buoys.length; i++) {
+      var buoy = buoys[i];
+      var buoyLatLng = new google.maps.LatLng(buoy.lat,buoy.lng);
+      var buoyMarker = new google.maps.Marker({
+        position: buoyLatLng,
+        map: map
+        //icon: http://labs.google.com/ridefinder/images/mm_20_yellow.png
+      });
+    }
+  }  
   this.initialize = function() {
     this.el = $('<div/>');
       this.registerEvents();
@@ -27,7 +37,7 @@ var MapView = function() {
     var myLat = position.coords.latitude;
     var myLng = position.coords.longitude;
     var myLatLng = new google.maps.LatLng(myLat,myLng)
-    
+
     //MAP
     var mapOptions = {
         center: myLatLng,
@@ -44,13 +54,23 @@ var MapView = function() {
         map: map,
         title: 'Me'
     });
+    
+    for (var i=0; i<buoys.length; i++) {
+      var buoy = buoys[i];
+      var buoyLatLng = new google.maps.LatLng(buoy.lat,buoy.lng);
+      var buoyMarker = new google.maps.Marker({
+        position: buoyLatLng,
+        map: map,
+        title: buoy.num
+      });
+    }
   };
   //onError Callback receives a PositionError object
   var onError = function(error) {
       alert('code: '    + error.code    + '\n' +
           'message: ' + error.message + '\n');
   }
-  
+
   this.initialize();
 }
 

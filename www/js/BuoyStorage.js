@@ -19,7 +19,7 @@ var buoys = [
   {"id":"44041","name":"Jamestown, VA","lat":37.204,"lng":- 76.777},
   {"id":"44042","name":"Potomac, MD","lat":38.033,"lng":- 76.336},
   {"id":"44043","name":"Patapsco, MD","lat":39.152,"lng":- 76.391},
-  {"id":"44056","name":"Duck FRF, NC","lat":36.200,"lng":- 75.714},
+  {"id":"44056","name":"Duck FRF, NC","lat":36.200,"lng":-75.714},
   {"id":"44058","name":"Stingray Point, VA","lat":37.552,"lng":- 76.251},
   {"id":"44059","name":"Norfolk, VA","lat":36.846,"lng":- 76.298},
   {"id":"44060","name":"Eastern Long Island Sound","lat":41.263,"lng":- 72.067},
