@@ -35,9 +35,7 @@ var MapView = function() {
         mapTypeId: google.maps.MapTypeId.TERRAIN,
         disableDefaultUI: true
     };
-    
-    //var navHeight = $('.navbar').height();
-    //$('#mapCanvas').css({ top: navHeight });      
+          
     
     var map = new google.maps.Map(document.getElementById("mapCanvas"),mapOptions);
 
