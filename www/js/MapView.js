@@ -1,21 +1,10 @@
 
 
 var MapView = function() {
-  function set() {
-    for (var i=0; i<buoys.length; i++) {
-      var buoy = buoys[i];
-      var buoyLatLng = new google.maps.LatLng(buoy.lat,buoy.lng);
-      var buoyMarker = new google.maps.Marker({
-        position: buoyLatLng,
-        map: map
-        //icon: http://labs.google.com/ridefinder/images/mm_20_yellow.png
-      });
-    }
-  }  
+  
   this.initialize = function() {
     this.el = $('<div/>');
-      this.registerEvents();
-
+    this.registerEvents();
   };
 
   this.registerEvents = function() {
