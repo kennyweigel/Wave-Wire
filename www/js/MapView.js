@@ -61,7 +61,8 @@ var MapView = function() {
       var buoyMarker = new google.maps.Marker({
         position: buoyLatLng,
         map: map,
-        title: buoy.num
+        title: buoy.num,
+        icon: 'img/shipwreck.png'
       });
     }
   };
