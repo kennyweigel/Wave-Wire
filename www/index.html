@@ -11,7 +11,7 @@
       <div class='navbar navbar-inverse navbar-fixed-top'>
         <div class='navbar-inner' style='padding: 0px 10px'>
           <a class='btn btn-inverse pull-left'><i class='icon-question-sign icon-white'></i></a>
-          <form class='navbar-search'>
+          <form class='navbar-search' action="javascript:addFormBuoy($('#mainSearch'));">
             <input type='text' class='search-query' id='mainSearch' placeholder='Search For Buoys...'>
           </form>
           <a class='btn btn-inverse pull-right' href='#map'><i class='icon-globe icon-white'></i></a>
@@ -66,5 +66,16 @@
     <script src='js/HomeView.js'></script>
     <script src='js/MapView.js'></script>
     <script src='js/main.js'></script>
+    <script>
+      function addFormBuoy($buoy) {
+          //$('#collapsible').trigger('create');
+
+          $("<div data-role='collapsible'><h3>"+$buoy.val()+"</h3><p>test test</p></div>").appendTo('#accordion2');
+          //$('div[data-role=collapsible]').collapsible();    
+          //$('<div [data-role=collapsible-list]').collapsible('refresh');
+          //$('#buoyList').collapsibleset('refresh');
+          $buoy.val('');
+      }
+    </script>
   </body>
 </html>
