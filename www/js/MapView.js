@@ -5,18 +5,18 @@ var MapView = function() {
   this.initialize = function() {
     this.el = $('<div/>');
     this.registerEvents();
-  };
+  }
 
   this.registerEvents = function() {
-    this.el.on('click','#mapRefresh',this.buoyMap);
+    this.el.on('click','#mapRefresh',buoyMap);
   }
 
   this.render = function() {
       this.el.html(MapView.template());
       return this;
-  };
+  }
 
-  this.buoyMap = function(event) {
+  function buoyMap() {
       navigator.geolocation.getCurrentPosition(onSuccess, onError,{'enableHighAccuracy':true,'timeout':10000});
   }
 
@@ -33,17 +33,24 @@ var MapView = function() {
         zoom: 7,
         mapTypeId: google.maps.MapTypeId.TERRAIN,
         disableDefaultUI: true
-    };
-          
+    }      
     
     var map = new google.maps.Map(document.getElementById("mapCanvas"),mapOptions);
 
     var marker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        title: 'Me'
-    });
-    
+      position: myLatLng,
+      map: map,
+      title: 'Me'
+    });    
+    markBuoys();
+  }
+  //onError Callback receives a PositionError object
+  var onError = function(error) {
+      alert('code: ' + error.code + '\n' +
+        'message: ' + error.message + '\n');
+  }
+
+  function markBuoys() {
     for (var i=0; i<buoys.length; i++) {
       var buoy = buoys[i];
       var buoyLatLng = new google.maps.LatLng(buoy.lat,buoy.lng);
@@ -53,12 +60,7 @@ var MapView = function() {
         title: buoy.num,
         icon: 'img/shipwreck.png'
       });
-    }
-  };
-  //onError Callback receives a PositionError object
-  var onError = function(error) {
-      alert('code: '    + error.code    + '\n' +
-          'message: ' + error.message + '\n');
+    }    
   }
 
   this.initialize();

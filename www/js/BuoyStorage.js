@@ -118,3 +118,7 @@ var buoys = [
   {"id":"YKTV2","name":"Yorktown, VA","lat":37.227,"lng":- 76.478},
   {"id":"YRSV2","name":"Chesapeake Bay,VA","lat":37.414,"lng":- 76.713}
 ];
+
+var favorites = [
+  '44007','44030'
+];
