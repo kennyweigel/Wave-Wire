@@ -21,7 +21,7 @@ var MapView = function() {
   }
 
   //onSuccess callback receives a Position object
-  var onSuccess = function(position) {
+  function onSuccess(position) {
     
     var myLat = position.coords.latitude;
     var myLng = position.coords.longitude;
@@ -42,10 +42,11 @@ var MapView = function() {
       map: map,
       title: 'Me'
     });    
+    
     markBuoys();
   }
   //onError Callback receives a PositionError object
-  var onError = function(error) {
+  function onError(error) {
       alert('code: ' + error.code + '\n' +
         'message: ' + error.message + '\n');
   }
