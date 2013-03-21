@@ -8,7 +8,7 @@ var MapView = function() {
   }
 
   this.registerEvents = function() {
-    this.el.on('click','#mapRefresh',buoyMap);
+    this.el.on('click','#mapRefresh',this.buoyMap);
   }
 
   this.render = function() {
@@ -16,7 +16,7 @@ var MapView = function() {
       return this;
   }
 
-  function buoyMap() {
+  this.buoyMap = function() {
       navigator.geolocation.getCurrentPosition(onSuccess, onError,{'enableHighAccuracy':true,'timeout':10000});
   }
 
@@ -43,7 +43,7 @@ var MapView = function() {
       title: 'Me'
     });    
     
-    markBuoys();
+    markBuoys(map);
   }
   //onError Callback receives a PositionError object
   function onError(error) {
@@ -51,7 +51,7 @@ var MapView = function() {
         'message: ' + error.message + '\n');
   }
 
-  function markBuoys() {
+  function markBuoys(map) {
     for (var i=0; i<buoys.length; i++) {
       var buoy = buoys[i];
       var buoyLatLng = new google.maps.LatLng(buoy.lat,buoy.lng);

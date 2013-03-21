@@ -18,28 +18,35 @@ var HomeView = function() {
   function validateBuoy() {
     //form input value
     var input = $('#mainSearch');
-    var inputVal = input.val();
-    //checks if input matches an buoy ids
-    //if (inputVal != )
-    for (var i = 0; i<buoys.length; i++) {
-      if (buoys[i].id == inputVal) {
-        addFormBuoy();
-        break;
+    var inputVal = input.val().toUpperCase();
+    //checks if buoy is already a favorite
+    if (jQuery.inArray(inputVal, favorites) != -1) {
+      alert(inputVal + ' is already a favorite');
+    }
+    else {
+      //checks if buoy matches any buoy ids
+      var idExists = 0;
+      for (var i = 0; i<buoys.length; i++) {
+        if (buoys[i].id == inputVal) {
+          addFormBuoy(inputVal);
+          idExists = 1;
+          break;
+        }
+      }
+      if (!idExists) {
+        alert(inputVal + 'does not exist');
       }
     }
   }
 
-  function addFormBuoy() {
-    //form input value
-    var input = $('#mainSearch');
-    var inputVal = input.val();  
+  function addFormBuoy(inputVal) {
     //gets number of direct children aka num favBuoys
     var n = $('#favBuoys > div').size();
     //appends a new accordion widget to list
     $("<div class='accordion-group'> \
       <div class='accordion-heading'> \
         <a class='accordion-toggle' data-toggle='collapse' data-parent='#favBuoys' href='#"+n+"'>" +
-          input.val() +
+          inputVal +
         "</a> \
       </div> \
       <div id='"+n+"' class='accordion-body collapse'> \
