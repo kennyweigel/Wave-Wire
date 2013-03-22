@@ -21,7 +21,7 @@ var HomeView = function() {
     var inputVal = input.val().toUpperCase();
     //checks if buoy is already a favorite
     if (jQuery.inArray(inputVal, favorites) != -1) {
-      alert(inputVal + ' is already a favorite');
+      app.showAlert(inputVal + ' is already a favorite','TITLE');
     }
     else {
       //checks if buoy matches any buoy ids
@@ -34,7 +34,7 @@ var HomeView = function() {
         }
       }
       if (!idExists) {
-        alert(inputVal + 'does not exist');
+        app.showAlert(inputVal + ' does not exist','TITLE DNE');
       }
     }
   }
