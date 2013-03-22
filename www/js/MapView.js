@@ -40,7 +40,8 @@ var MapView = function() {
     var marker = new google.maps.Marker({
       position: myLatLng,
       map: map,
-      title: 'Me'
+      title: 'Me',
+      icon: 'img/measle_blue.png'
     });    
     
     markBuoys(map);
@@ -59,7 +60,7 @@ var MapView = function() {
         position: buoyLatLng,
         map: map,
         title: buoy.num,
-        icon: 'img/shipwreck.png'
+        icon: 'img/shipwreck_16x18.5.png'
       });
     }    
   }
