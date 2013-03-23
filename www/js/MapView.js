@@ -1,5 +1,3 @@
-
-
 var MapView = function() {
   
   this.initialize = function() {
@@ -12,8 +10,8 @@ var MapView = function() {
   }
 
   this.render = function() {
-      this.el.html(MapView.template());
-      return this;
+    this.el.html(MapView.template());
+    return this;
   }
 
   this.buoyMap = function() {
