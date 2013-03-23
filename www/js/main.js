@@ -37,9 +37,10 @@ var app = {
     this.mapURL = '#map';
     window.location.hash = this.homeURL;
     this.registerEvents();
-    this.store = new LocalStorageStore(function() {
-        self.route();
-    });
+    this.route();
+    //this.store = new LocalStorageStore(function() {
+    //    self.route();
+    //});
 },
 
   showAlert: function (message, title) {

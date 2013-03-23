@@ -60,7 +60,7 @@ var MapView = function() {
         position: buoyLatLng,
         map: map,
         title: buoy.num,
-        icon: 'img/shipwreck_16x18.5.png'
+        icon: 'img/shipwreck_75.png'
       });
     }    
   }

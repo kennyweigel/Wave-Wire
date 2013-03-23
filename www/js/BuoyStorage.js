@@ -120,5 +120,13 @@ var buoys = [
 ];
 
 var favorites = [
-  '44007','44030'
+//  '44007','44030'
 ];
+
+//function addFavorite(newFavorite) {
+//  asdf
+//}
+
+
+
+
