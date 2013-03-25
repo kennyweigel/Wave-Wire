@@ -16,7 +16,7 @@ var app = {
       }
       else {
         console.log('hash change new homeview');
-        this.homePage = new HomeView().render();
+        this.homePage = new HomeView(this.store).render();
         $('body').html(this.homePage.el);
       }
       return;
@@ -43,10 +43,11 @@ var app = {
     this.mapURL = '#map';
     window.location.hash = this.homeURL;
     this.registerEvents();
-    this.route();
-    //this.store = new LocalStorageStore(function() {
-    //    self.route();
-    //});
+    this.store = new LocalStorageStore(function() {
+      self.route();
+    });
+    //this.store = new LocalStorageStore();
+    //self.route();
   },
 
   showAlert: function (message, title) {
@@ -63,6 +64,7 @@ var app = {
     var input = $('#mainSearch');
     var inputVal = input.val().toUpperCase();
     //checks if buoy is already a favorite
+    
     if ($.inArray(inputVal, favorites) != -1) {
       app.showAlert(inputVal + ' is already a favorite','TITLE');
       input.val('');
@@ -87,7 +89,6 @@ var app = {
   addFavBuoy: function(input,inputVal) {
     //gets number of direct children aka num favBuoys
     var n = $('#favBuoys > div').size();
-    console.log('size '+n);
     //appends a new accordion widget to list
     $("<div class='accordion-group'> \
       <div class='accordion-heading'> \

@@ -1,4 +1,4 @@
-var HomeView = function() {
+var HomeView = function(store) {
 
   this.initialize = function() {
     this.el = $('<div/>');
@@ -11,10 +11,18 @@ var HomeView = function() {
 
   this.render = function() {
     this.el.html(HomeView.template());
+    this.getFavs();
     return this;
   }
-    
+
+  this.getFavs = function() {
+    store.getFavs(function(favorites) {
+      $('#favBuoys').html(HomeView.favsTemplate(favorites));
+    });
+  }
+
   this.initialize();
 }
 
 HomeView.template = Handlebars.compile($("#home-tpl").html());
+HomeView.favsTemplate = Handlebars.compile($("#favs-tpl").html());
