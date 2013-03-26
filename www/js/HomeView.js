@@ -11,12 +11,12 @@ var HomeView = function(store) {
 
   this.render = function() {
     this.el.html(HomeView.template());
-    this.getFavs();
+    this.renderFavorites();
     return this;
   }
 
-  this.getFavs = function() {
-    store.getFavs(function(favorites) {
+  this.renderFavorites = function() {
+    store.getFavorites(function(favorites) {
       $('#favBuoys').html(HomeView.favsTemplate(favorites));
     });
   }

@@ -43,11 +43,11 @@ var app = {
     this.mapURL = '#map';
     window.location.hash = this.homeURL;
     this.registerEvents();
-    this.store = new LocalStorageStore(function() {
-      self.route();
-    });
-    //this.store = new LocalStorageStore();
-    //self.route();
+    this.store = new LocalStorageStore();
+    this.route();
+    //this.store = new LocalStorageStore(function() {
+    //  self.route();
+    //});
   },
 
   showAlert: function (message, title) {

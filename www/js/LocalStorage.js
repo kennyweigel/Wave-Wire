@@ -1,8 +1,8 @@
 var LocalStorageStore = function(successCallback, errorCallback) {
 
-  this.getFavs = function(callback) {
-    var favss = JSON.parse(window.localStorage.getItem("favorites"));
-    callLater(callback, favss);
+  this.getFavorites = function(callback) {
+    var getFavs = JSON.parse(window.localStorage.getItem("favorites"));
+    callLater(callback, getFavs);
   }
 
   // Used to simulate async calls. This is done to provide a consistent interface with stores (like WebSqlStore)
