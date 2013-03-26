@@ -63,8 +63,8 @@ var app = {
     //form input value
     var input = $('#mainSearch');
     var inputVal = input.val().toUpperCase();
-    //checks if buoy is already a favorite
     
+    //checks if buoy is already a favorite
     if ($.inArray(inputVal, favorites) != -1) {
       app.showAlert(inputVal + ' is already a favorite','TITLE');
       input.val('');
