@@ -18,23 +18,23 @@
         </div>
       </div>
       <div class='accordion' id='favBuoys' style='padding-top:45px'>
+        {{#.}}
+          <div class='accordion-group'>
+            <div class='accordion-heading'>
+              <a class='accordion-toggle' data-toggle='collapse' data-parent='#favBuoys' href='#{{this.id}}'>
+                {{this.id}}
+              </a>
+            </div>
+            <div id='{{this.id}}' class='accordion-body collapse'>
+              <div class='accordion-inner'>
+                Anim pariatur cliche...
+              </div>
+            </div>
+          </div>
+        {{/.}}
       </div>
     </script>
     <script id='favs-tpl' type='text/x-handlebars-template'>
-      {{#.}}
-        <div class='accordion-group'>
-          <div class='accordion-heading'>
-            <a class='accordion-toggle' data-toggle='collapse' data-parent='#favBuoys' href='#{{this.id}}'>
-              {{this.id}}
-            </a>
-          </div>
-          <div id='{{this.id}}' class='accordion-body collapse'>
-            <div class='accordion-inner'>
-              Anim pariatur cliche...
-            </div>
-          </div>
-        </div>
-      {{/.}}
     </script>
     <script id='map-tpl' type='text/x-handlebars-template'>
       <div class='navbar navbar-inverse navbar-fixed-top'>
@@ -52,9 +52,9 @@
     <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?sensor=false'></script>
     <script src='lib/jquery-1.9.1.min.js'></script>
     <script src='lib/bootstrap.min.js'></script>
+    <script src='lib/handlebars.js'></script>
     <script src='js/LocalStorage.js'></script>
     <script src='js/BuoyList.js'></script>
-    <script src='lib/handlebars.js'></script>
     <script src='js/HomeView.js'></script>
     <script src='js/MapView.js'></script>
     <script src='js/main.js'></script>
