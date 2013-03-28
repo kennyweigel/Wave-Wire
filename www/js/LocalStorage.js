@@ -1,33 +1,12 @@
-var LocalStorageStore = function(successCallback, errorCallback) {
+var LocalStorageStore = function() {
 
   this.getFavorites = function() {
     var favss = JSON.parse(window.localStorage.getItem('favorites'));
     return favss;
   }
 
-  //this.getFavorites = function(callback) {
-  //  var getFavs = JSON.parse(window.localStorage.getItem("favorites"));
-  //  callLater(callback, getFavs);
-  //}
-
-  // Used to simulate async calls. This is done to provide a consistent interface with stores (like WebSqlStore)
-  // that use async data access APIs
-  var callLater = function(callback, data) {
-   if (callback) {
-      setTimeout(function() {
-        callback(data);
-      });
-    }
+  this.setFavorites = function(favss) {
+    window.localStorage.setItem('favorites', JSON.stringify(favss));
   }
 
-  callLater(successCallback);
 }
-
-  //window.localStorage.setItem("favorites", JSON.stringify(favorites));
-
-
-
-
-
-
-

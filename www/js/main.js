@@ -16,8 +16,10 @@ var app = {
       }
       else {
         console.log('hash change new homeview');
+        console.log(this.store);
         this.homePage = new HomeView(this.store).render();
         $('body').html(this.homePage.el);
+        this.homePage.renderFavorites();
       }
       return;
     }
@@ -45,9 +47,6 @@ var app = {
     this.registerEvents();
     this.store = new LocalStorageStore();
     this.route();
-    //this.store = new LocalStorageStore(function() {
-    //  self.route();
-    //});
   },
 
   showAlert: function (message, title) {
@@ -64,8 +63,18 @@ var app = {
     var input = $('#mainSearch');
     var inputVal = input.val().toUpperCase();
     
+    //new
+    console.log(app.store);
+    var currentFavs = app.store.getFavorites();
+    var inFavs = 0;
+    for (var i = 0; i < currentFavs.length; i++) {
+      if (inputVal == currentFavs[i].id) {
+        inFavs = 1;
+      }
+    }
+
     //checks if buoy is already a favorite
-    if ($.inArray(inputVal, favorites) != -1) {
+    if (inFavs) {
       app.showAlert(inputVal + ' is already a favorite','TITLE');
       input.val('');
     }
@@ -74,7 +83,7 @@ var app = {
       var idExists = 0;
       for (var i = 0; i<buoys.length; i++) {
         if (buoys[i].id == inputVal) {
-          app.addFavBuoy(input,inputVal);
+          app.addFavBuoy(input,inputVal,currentFavs);
           idExists = 1;
           break;
         }
@@ -86,22 +95,11 @@ var app = {
     }
   },
 
-  addFavBuoy: function(input,inputVal) {
-    //gets number of direct children aka num favBuoys
-    var n = $('#favBuoys > div').size();
-    //appends a new accordion widget to list
-    $("<div class='accordion-group'> \
-      <div class='accordion-heading'> \
-        <a class='accordion-toggle' data-toggle='collapse' data-parent='#favBuoys' href='#"+n+"'>" +
-          inputVal +
-        "</a> \
-      </div> \
-      <div id='"+n+"' class='accordion-body collapse'> \
-        <div class='accordion-inner'> \
-          Anim pariatur cliche... \
-        </div> \
-      </div> \
-    </div>").appendTo('#favBuoys');
+  addFavBuoy: function(input,inputVal,currentFavs) {
+    currentFavs.push({id:inputVal});
+    console.log(currentFavs);
+    this.store.setFavorites(currentFavs);
+    this.homePage.renderFavorites();
     //sets input field back to blank
     input.val('');
   },
