@@ -5,10 +5,10 @@
         versionCode = '10'
         version     = '1.0.0'>
  
-    <name>Surf Check</name>
+    <name>Wave Wire</name>
  
     <description>
-        A simple employee directory application
+        Gathers realtime data from NOAA ocean buoys.
     </description>
  
     <author>
