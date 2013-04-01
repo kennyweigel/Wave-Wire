@@ -10,6 +10,7 @@ var HomeView = function(store) {
     //this is added for testing on a non touch device
     this.el.on('dblclick','.accordion-toggle',app.removeFavorite);
     this.el.on('swipe','.accordion-toggle',app.removeFavorite);
+    this.el.on('click','#testBtn',this.getTest);
   }
 
   this.render = function() {
@@ -20,6 +21,12 @@ var HomeView = function(store) {
   this.renderFavorites = function() {
     console.log('render favs');
     $('#favBuoys').html(HomeView.favsTemplate(store.getFavorites()));
+  }
+  
+  this.getTest = function() {
+    $.get('http://www.ndbc.noaa.gov/mobile/station.php?station=44007.html',function(data) {
+      alert(data);
+    });
   }
 
   this.initialize();

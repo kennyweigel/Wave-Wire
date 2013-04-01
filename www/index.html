@@ -20,17 +20,18 @@
       </div>
       <div class='accordion' id='favBuoys' style='padding-top:45px'>
       </div>
+      <button id='testBtn'>test</button>
     </script>
     
     <script id='favs-tpl' type='text/x-handlebars-template'>
       {{#.}}
         <div class='accordion-group'>
           <div class='accordion-heading'>
-            <a class='accordion-toggle' data-toggle='collapse' data-parent='#favBuoys' href='#{{this.id}}'>
+            <a class='accordion-toggle' id='{{this.id}}' data-toggle='collapse' data-parent='#favBuoys' href='#collapsible-{{this.id}}'>
               {{this.id}}
             </a>
           </div>
-          <div id='{{this.id}}' class='accordion-body collapse'>
+          <div id='collapsible-{{this.id}}' class='accordion-body collapse'>
             <div class='accordion-inner'>
               Anim pariatur cliche...
             </div>

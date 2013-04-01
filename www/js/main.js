@@ -104,11 +104,7 @@ var app = {
   },
 
   isFavorite: function(inputVal,currentFavs) {
-    for (var i = 0; i < currentFavs.length; i++) {
-      if (inputVal == currentFavs[i].id) {
-        return 1;
-      }
-    }
+
     return 0;
   },
 
@@ -121,7 +117,17 @@ var app = {
 
   removeFavorite: function() {
     //alert('right click');
-    $(this).html('<p>test</p>');
+    var currentID = $(this).attr('id');
+    //console.log(currentID);
+    var currentFavs = app.store.getFavorites();
+    for (var i = 0; i < currentFavs.length; i++) {
+      if (currentID == currentFavs[i].id) {
+        var newFavs = currentFavs.splice(i,1);
+        break;
+      }
+    }
+    app.store.setFavorites(currentFavs);
+    app.homePage.renderFavorites();
   },
 
 };
