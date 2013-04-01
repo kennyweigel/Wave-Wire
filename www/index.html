@@ -7,6 +7,7 @@
     <link href='css/style.css' rel='stylesheet'>
   </head>
   <body>
+    
     <script id='home-tpl' type='text/x-handlebars-template'>
       <div class='navbar navbar-inverse navbar-fixed-top'>
         <div class='navbar-inner' style='padding: 0px 10px'>
@@ -20,6 +21,7 @@
       <div class='accordion' id='favBuoys' style='padding-top:45px'>
       </div>
     </script>
+    
     <script id='favs-tpl' type='text/x-handlebars-template'>
       {{#.}}
         <div class='accordion-group'>
@@ -36,6 +38,7 @@
         </div>
       {{/.}}
     </script>
+    
     <script id='map-tpl' type='text/x-handlebars-template'>
       <div class='navbar navbar-inverse navbar-fixed-top'>
         <div class='navbar-inner' style='padding: 0px 10px'>
@@ -48,9 +51,11 @@
       </div>
       <div id='mapCanvas' style='height:100%; width:100%; position:absolute'></div>
     </script>
+    
     <script src='phonegap.js'></script>
     <script src='https://maps.googleapis.com/maps/api/js?sensor=false'></script>
     <script src='lib/jquery-1.9.1.min.js'></script>
+    <script src='lib/jquery.mobile.custom.js'></script>
     <script src='lib/bootstrap.min.js'></script>
     <script src='lib/handlebars.js'></script>
     <script src='js/LocalStorage.js'></script>

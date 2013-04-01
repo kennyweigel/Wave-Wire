@@ -7,6 +7,9 @@ var HomeView = function(store) {
 
   this.registerEvents = function() {
     this.el.on('submit','#test',app.validateBuoy);
+    //this is added for testing on a non touch device
+    this.el.on('dblclick','.accordion-toggle',app.removeFavorite);
+    this.el.on('swipe','.accordion-toggle',app.removeFavorite);
   }
 
   this.render = function() {

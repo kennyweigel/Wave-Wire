@@ -9,4 +9,8 @@ var LocalStorageStore = function() {
     window.localStorage.setItem('favorites', JSON.stringify(favss));
   }
 
+  if (!this.getFavorites()) {
+  	this.setFavorites([]);
+  }
+
 }

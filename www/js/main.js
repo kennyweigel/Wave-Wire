@@ -62,46 +62,66 @@ var app = {
     //form input value
     var input = $('#mainSearch');
     var inputVal = input.val().toUpperCase();
-    
-    //new
-    console.log(app.store);
     var currentFavs = app.store.getFavorites();
-    var inFavs = 0;
-    for (var i = 0; i < currentFavs.length; i++) {
-      if (inputVal == currentFavs[i].id) {
-        inFavs = 1;
-      }
-    }
 
-    //checks if buoy is already a favorite
-    if (inFavs) {
-      app.showAlert(inputVal + ' is already a favorite','TITLE');
-      input.val('');
-    }
-    else {
-      //checks if buoy matches any buoy ids
-      var idExists = 0;
-      for (var i = 0; i<buoys.length; i++) {
-        if (buoys[i].id == inputVal) {
-          app.addFavBuoy(input,inputVal,currentFavs);
-          idExists = 1;
-          break;
-        }
+    if (!currentFavs.length) {
+      if (app.isValidID(inputVal)) {
+        app.addFavBuoy(input,inputVal,currentFavs);
       }
-      if (!idExists) {
+      else {
         app.showAlert(inputVal + ' does not exist','TITLE DNE');
         input.val('');
       }
     }
+    else {
+      //checks if buoy is already a favorite
+      if (app.isFavorite(inputVal,currentFavs)) {
+        app.showAlert(inputVal + ' is already a favorite','TITLE');
+        input.val('');
+      }
+      else {
+        //checks if buoy matches any buoy ids
+        if (app.isValidID(inputVal)) {
+          if (app.isValidID(inputVal)) {
+            app.addFavBuoy(input,inputVal,currentFavs);
+          }
+        }
+        else {
+          app.showAlert(inputVal + ' does not exist','TITLE DNE');
+          input.val('');
+        }
+      }
+    }
+  },
+
+  isValidID: function(inputVal) {
+    for (var i = 0; i<buoys.length; i++) {
+      if (buoys[i].id == inputVal) {
+        return 1;
+      }
+    }
+    return 0;
+  },
+
+  isFavorite: function(inputVal,currentFavs) {
+    for (var i = 0; i < currentFavs.length; i++) {
+      if (inputVal == currentFavs[i].id) {
+        return 1;
+      }
+    }
+    return 0;
   },
 
   addFavBuoy: function(input,inputVal,currentFavs) {
     currentFavs.push({id:inputVal});
-    console.log(currentFavs);
-    this.store.setFavorites(currentFavs);
-    this.homePage.renderFavorites();
-    //sets input field back to blank
+    app.store.setFavorites(currentFavs);
+    app.homePage.renderFavorites();
     input.val('');
+  },
+
+  removeFavorite: function() {
+    //alert('right click');
+    $(this).html('<p>test</p>');
   },
 
 };
