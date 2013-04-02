@@ -24,14 +24,15 @@ var HomeView = function(store) {
   }
   
   this.getTest = function() {
-    var currentIDs = app.store.getFavorites();
+    var currentIDs = store.getFavorites();
     for (var i = 0; i < currentIDs.length; i++) {
       $.get('http://www.ndbc.noaa.gov/mobile/station.php?station='+currentIDs[i].id,function(data) {
         currentIDs[i].data = data;
       });      
     }
-    app.store.setFavorites(currentIDs);
+    store.setFavorites(currentIDs);
     this.renderFavorites();
+    app.showAlert('done');
   }
 
   this.initialize();
