@@ -104,12 +104,16 @@ var app = {
   },
 
   isFavorite: function(inputVal,currentFavs) {
-
+    for (var i = 0; i < currentFavs.length; i++) {
+      if (inputVal == currentFavs[i].id) {
+        return 1;
+      }
+    }
     return 0;
   },
 
   addFavBuoy: function(input,inputVal,currentFavs) {
-    currentFavs.push({id:inputVal});
+    currentFavs.push({id:inputVal,data:'No Updates'});
     app.store.setFavorites(currentFavs);
     app.homePage.renderFavorites();
     input.val('');
