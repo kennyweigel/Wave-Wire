@@ -24,7 +24,7 @@ var HomeView = function(store) {
   }
   
   this.getTest = function() {
-    $.get('http://www.ndbc.noaa.gov/mobile/station.php?station=44007.html',function(data) {
+    $.get('http://www.ndbc.noaa.gov/mobile/station.php?station=44007',function(data) {
       alert(data);
     });
   }
