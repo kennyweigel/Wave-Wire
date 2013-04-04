@@ -30,6 +30,7 @@ var HomeView = function(store) {
     for (var i = 0; i < currentIDs.length; i++) {
       alert(i);
       $.get('http://www.ndbc.noaa.gov/mobile/station.php?station='+currentIDs[i].id,function(data) {
+        alert('in get');
         currentIDs[i].data = data;
         alert(i+' '+data);
       });      
