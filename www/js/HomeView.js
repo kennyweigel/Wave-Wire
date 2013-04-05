@@ -41,17 +41,23 @@ var HomeView = function(store) {
     
     function update (html, status, EXTRA) {
       alert('in update');
+      alert(html);
+      alert(status);
       if(status != 'success') {
         alert('DNE success');
         return;
       }
       
       locals = store.getFavorites();
+      alert(locals);
       for (var j=0; j < locals.length; j++) {
         if (locals[j].id == EXTRA) {
+          alert('local == id');
           locals[j].data = html;
+          alert('locals new 'locals[j].data);
           store.setFavorites(locals);
           this.renderFavorites();
+          alert('rendered');
           break;
         }
       }
