@@ -29,25 +29,31 @@ var HomeView = function(store) {
     alert('curentIDs:'+currentIDs);
     for (var i = 0; i < currentIDs.length; i++) {
       alert(i);
-      $.get('http://www.ndbc.noaa.gov/mobile/station.php?station='+currentIDs[i].id,update(data,currentIDs[i].id));
+      updateInit('http://www.ndbc.noaa.gov/mobile/station.php?station='+currentIDs[i].id, currentIDs[i].id);
     }
-    //alert('newIDs:'+currentIDs);
-    //store.setFavorites(currentIDs);
-    //this.renderFavorites();
-    //alert('done');
-  }
-  
-  var update = function(data,current) {
-    alert('in get');
-    locals = store.getFavorites();
-    for (var j=0; j < locals.length; j++) {
-      if (locals[j].id == current) {
-        locals[j].data = data;
-        store.setFavorites(locals);
-        this.renderFavorites();
-        break;
+
+    function updateInit(url,EXTRA) {
+      $.get(url,function(html,status){
+        update(html, status, EXTRA)
+      });
+    }
+    
+    function update (html, status, EXTRA) {
+      
+      if(status != 'success') {
+        return;
       }
-    }    
+      
+      locals = store.getFavorites();
+      for (var j=0; j < locals.length; j++) {
+        if (locals[j].id == EXTRA) {
+          locals[j].data = data;
+          store.setFavorites(locals);
+          this.renderFavorites();
+          break;
+        }
+      }
+    }
   }
 
   this.initialize();
