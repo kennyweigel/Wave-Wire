@@ -22,7 +22,7 @@ var HomeView = function(store) {
     console.log('render favs');
     $('#favBuoys').html(HomeView.favsTemplate(store.getFavorites()));
   }
-  /*
+  
   this.getTest = function() {
     alert('getTest');
     var currentIDs = store.getFavorites();
@@ -54,7 +54,7 @@ var HomeView = function(store) {
         if (locals[j].id == EXTRA) {
           alert('local == id');
           locals[j].data = html;
-          alert('locals new 'locals[j].data);
+          alert('locals new '+locals[j].data);
           store.setFavorites(locals);
           this.renderFavorites();
           alert('rendered');
@@ -63,7 +63,7 @@ var HomeView = function(store) {
       }
     }
   }
-  */
+  
 
   this.initialize();
 }
