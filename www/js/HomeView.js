@@ -22,20 +22,20 @@ var HomeView = function(store) {
     console.log('render favs');
     $('#favBuoys').html(HomeView.favsTemplate(store.getFavorites()));
   }
-  
+  /*
   this.getTest = function() {
     alert('getTest');
     var currentIDs = store.getFavorites();
     alert('curentIDs:'+currentIDs);
     for (var i = 0; i < currentIDs.length; i++) {
       alert(i);
-      updateInit('http://www.ndbc.noaa.gov/mobile/station.php?station='+currentIDs[i].id, currentIDs[i].id);
+      updateInit('http://www.ndbc.noaa.gov/mobile/station.php?station='+currentIDs[i].id,currentIDs[i].id);
     }
 
     function updateInit(url,EXTRA) {
-      alert('in updateInit')
+      alert('in updateInit');
       $.get(url,function(html,status){
-        update(html, status, EXTRA)
+        update(html, status, EXTRA);
       });
     }
     
@@ -63,6 +63,7 @@ var HomeView = function(store) {
       }
     }
   }
+  */
 
   this.initialize();
 }
