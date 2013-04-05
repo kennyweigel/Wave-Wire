@@ -33,21 +33,23 @@ var HomeView = function(store) {
     }
 
     function updateInit(url,EXTRA) {
+      alert('in updateInit')
       $.get(url,function(html,status){
         update(html, status, EXTRA)
       });
     }
     
     function update (html, status, EXTRA) {
-      
+      alert('in update');
       if(status != 'success') {
+        alert('DNE success');
         return;
       }
       
       locals = store.getFavorites();
       for (var j=0; j < locals.length; j++) {
         if (locals[j].id == EXTRA) {
-          locals[j].data = data;
+          locals[j].data = html;
           store.setFavorites(locals);
           this.renderFavorites();
           break;
