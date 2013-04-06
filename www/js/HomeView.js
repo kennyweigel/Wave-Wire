@@ -25,6 +25,7 @@ var HomeView = function(store) {
   }
   
   this.getTest = function() {
+    alert('getTest');
     var currentIDs = store.getFavorites();
     
     for (var i = 0; i < currentIDs.length; i++) {
