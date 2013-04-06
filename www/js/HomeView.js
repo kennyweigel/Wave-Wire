@@ -33,12 +33,15 @@ var HomeView = function(store) {
   }
 
   this.updateInit = function (url,EXTRA) {
-      $.get(url,function(html,status){
-        this.update(html, status, EXTRA);
-      });
-    }
+    alert('updateInit');  
+    $.get(url,function(html,status){
+      this.update(html, status, EXTRA);
+    });
+  }
     
   this.update =function(html, status, EXTRA) {
+    alert('update');
+    
     if(status != 'success') {
       alert('GET was unsuccessful');
       return;
@@ -48,6 +51,7 @@ var HomeView = function(store) {
     for (var j=0; j < locals.length; j++) {
       if (locals[j].id == EXTRA) {
         locals[j].data = html;
+        alert(html);
         this.renderFavorites(locals);
         alert('rendered');
         store.setFavorites(locals);
