@@ -32,7 +32,6 @@ var HomeView = function(store) {
     }
 
     function updateInit(url,EXTRA) {
-      alert('in updateInit');
       $.get(url,function(html,status){
         update(html, status, EXTRA);
       });
@@ -49,6 +48,7 @@ var HomeView = function(store) {
         if (locals[j].id == EXTRA) {
           locals[j].data = html;
           store.setFavorites(locals);
+          alert('set favs');
           this.renderFavorites();
           alert('rendered');
           break;
