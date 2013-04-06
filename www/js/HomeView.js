@@ -48,6 +48,7 @@ var HomeView = function(store) {
         if (locals[j].id == EXTRA) {
           locals[j].data = html;
           store.setFavorites(locals);
+          //while (locals != store.getFavorites()) {}
           alert('set favs');
           this.renderFavorites();
           alert('rendered');

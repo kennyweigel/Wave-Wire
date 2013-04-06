@@ -7,6 +7,7 @@ var LocalStorageStore = function() {
 
   this.setFavorites = function(favss) {
     window.localStorage.setItem('favorites', JSON.stringify(favss));
+    return;
   }
 
   if (!this.getFavorites()) {
