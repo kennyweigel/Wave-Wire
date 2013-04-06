@@ -53,7 +53,7 @@ var HomeView = function(store) {
       if (locals[j].id == EXTRA) {
         locals[j].data = html;
         alert(html);
-        this.renderFavorites(locals);
+        renderFavorites(locals);
         alert('rendered');
         store.setFavorites(locals);
         alert('set favs');
