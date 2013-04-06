@@ -29,18 +29,18 @@ var HomeView = function(store) {
     var currentIDs = store.getFavorites();
     
     for (var i = 0; i < currentIDs.length; i++) {
-      this.updateInit('http://www.ndbc.noaa.gov/mobile/station.php?station='+currentIDs[i].id,currentIDs[i].id);
+      updateInit('http://www.ndbc.noaa.gov/mobile/station.php?station='+currentIDs[i].id,currentIDs[i].id);
     }
   }
 
-  this.updateInit = function (url,EXTRA) {
+  function updateInit(url,EXTRA) {
     alert('updateInit');  
     $.get(url,function(html,status){
-      this.update(html, status, EXTRA);
+      update(html, status, EXTRA);
     });
   }
     
-  this.update =function(html, status, EXTRA) {
+  function update(html, status, EXTRA) {
     alert('update');
     
     if(status != 'success') {
