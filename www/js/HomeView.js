@@ -28,16 +28,16 @@ var HomeView = function(store) {
     var currentIDs = store.getFavorites();
     
     for (var i = 0; i < currentIDs.length; i++) {
-      updateInit('http://www.ndbc.noaa.gov/mobile/station.php?station='+currentIDs[i].id,currentIDs[i].id);
+      this.updateInit('http://www.ndbc.noaa.gov/mobile/station.php?station='+currentIDs[i].id,currentIDs[i].id);
     }
 
-    function updateInit(url,EXTRA) {
+  this.updateInit = function (url,EXTRA) {
       $.get(url,function(html,status){
-        update(html, status, EXTRA);
+        this.update(html, status, EXTRA);
       });
     }
     
-    function update (html, status, EXTRA) {
+    this.update =function(html, status, EXTRA) {
       if(status != 'success') {
         alert('GET was unsuccessful');
         return;
