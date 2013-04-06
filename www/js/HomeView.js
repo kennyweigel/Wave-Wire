@@ -35,8 +35,15 @@ var HomeView = function(store) {
 
   this.updateInit = function(url,EXTRA) {
     alert('updateInit');  
-    $.get(url,function(html,status){
-      $.proxy(this.update(html, status, EXTRA), this);
+    $.ajax({
+      async: true,
+      url: url,
+      cache: false,
+      type: 'GET'
+      context: this,
+      success: function(html,status){
+        this.update(html, status, EXTRA);
+      }
     });
   }
     
