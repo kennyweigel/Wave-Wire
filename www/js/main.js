@@ -19,7 +19,7 @@ var app = {
         console.log(this.store);
         this.homePage = new HomeView(this.store).render();
         $('body').html(this.homePage.el);
-        this.homePage.renderFavorites();
+        this.homePage.renderFavorites(this.store.getFavorites());
       }
       return;
     }
@@ -115,7 +115,7 @@ var app = {
   addFavBuoy: function(input,inputVal,currentFavs) {
     currentFavs.push({id:inputVal,data:'No Updates'});
     app.store.setFavorites(currentFavs);
-    app.homePage.renderFavorites();
+    app.homePage.renderFavorites(app.store.getFavorites());
     input.val('');
   },
 
@@ -131,7 +131,7 @@ var app = {
       }
     }
     app.store.setFavorites(currentFavs);
-    app.homePage.renderFavorites();
+    app.homePage.renderFavorites(app.store.getFavorites());
   },
 
 };

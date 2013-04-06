@@ -18,10 +18,10 @@ var HomeView = function(store) {
     return this;
   }
 
-  this.renderFavorites = function() {
+  this.renderFavorites = function(testFavs) {
     console.log('render favs');
     alert('render favs');
-    $('#favBuoys').html(HomeView.favsTemplate(store.getFavorites()));
+    $('#favBuoys').html(HomeView.favsTemplate(testFavs));
   }
   
   this.getTest = function() {
@@ -48,11 +48,10 @@ var HomeView = function(store) {
     for (var j=0; j < locals.length; j++) {
       if (locals[j].id == EXTRA) {
         locals[j].data = html;
-        store.setFavorites(locals);
-        while (locals != store.getFavorites()) {}
-        alert('set favs');
-        this.renderFavorites();
+        this.renderFavorites(locals);
         alert('rendered');
+        store.setFavorites(locals);
+        alert('set favs');
         break;
       }
     }
