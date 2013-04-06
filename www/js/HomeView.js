@@ -30,6 +30,7 @@ var HomeView = function(store) {
     for (var i = 0; i < currentIDs.length; i++) {
       this.updateInit('http://www.ndbc.noaa.gov/mobile/station.php?station='+currentIDs[i].id,currentIDs[i].id);
     }
+  }
 
   this.updateInit = function (url,EXTRA) {
       $.get(url,function(html,status){
@@ -37,26 +38,26 @@ var HomeView = function(store) {
       });
     }
     
-    this.update =function(html, status, EXTRA) {
-      if(status != 'success') {
-        alert('GET was unsuccessful');
-        return;
-      }
-      
-      locals = store.getFavorites();
-      for (var j=0; j < locals.length; j++) {
-        if (locals[j].id == EXTRA) {
-          locals[j].data = html;
-          store.setFavorites(locals);
-          //while (locals != store.getFavorites()) {}
-          alert('set favs');
-          this.renderFavorites();
-          alert('rendered');
-          break;
-        }
+  this.update =function(html, status, EXTRA) {
+    if(status != 'success') {
+      alert('GET was unsuccessful');
+      return;
+    }
+    
+    locals = store.getFavorites();
+    for (var j=0; j < locals.length; j++) {
+      if (locals[j].id == EXTRA) {
+        locals[j].data = html;
+        store.setFavorites(locals);
+        while (locals != store.getFavorites()) {}
+        alert('set favs');
+        this.renderFavorites();
+        alert('rendered');
+        break;
       }
     }
   }
+  
   
 
   this.initialize();
