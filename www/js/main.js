@@ -120,9 +120,7 @@ var app = {
   },
 
   removeFavorite: function() {
-    //alert('right click');
     var currentID = $(this).attr('id');
-    //console.log(currentID);
     var currentFavs = app.store.getFavorites();
     for (var i = 0; i < currentFavs.length; i++) {
       if (currentID == currentFavs[i].id) {
@@ -134,6 +132,12 @@ var app = {
     app.homePage.renderFavorites(app.store.getFavorites());
   },
 
+  processBuoyData: function(html) {
+    return html.substring(html.indexOf('<h2>Weather Conditions</h2>'),html.indexOf('</p>',indStart)+4);
+  },
+
 };
+
+//app.processBuoyData(testHTML);
 
 app.initialize();
