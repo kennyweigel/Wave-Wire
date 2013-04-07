@@ -133,11 +133,11 @@ var app = {
   },
 
   processBuoyData: function(html) {
-    return html.substring(html.indexOf('<h2>Weather Conditions</h2>'),html.indexOf('</p>',indStart)+4);
+    var indStart = html.indexOf('<h2>Weather Conditions</h2>');
+    var indEnd = html.indexOf('</p>',indStart)+4;
+    return html.substring(indStart,indEnd);
   },
 
 };
-
-//app.processBuoyData(testHTML);
 
 app.initialize();
