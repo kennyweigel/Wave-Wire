@@ -42,10 +42,10 @@ var HomeView = function(store) {
   }
     
   var update = function(html, status, EXTRA) {
-    alert('update');
+    //alert('update');
     
     if(status != 'success') {
-      //alert('GET was unsuccessful');
+      alert('GET was unsuccessful');
       return;
     }
     
