@@ -35,15 +35,14 @@ var HomeView = function(store) {
 
   this.updateInit = function(url,EXTRA) {
     alert('updateInit');  
-    /*$.ajax({
+    $.ajax({
       url: url,
       cache: false,
-      type: 'GET'
       context: this,
       success: function(html,status){
         this.update(html, status, EXTRA);
       }
-    });*/
+    });
   }
     
   this.update = function(html, status, EXTRA) {
