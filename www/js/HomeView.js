@@ -41,8 +41,7 @@ var HomeView = function(store) {
 
   }
     
-   this.update = function(html, status, EXTRA) {
-
+  var update = function(html, status, EXTRA) {
     if(status != 'success') {
       alert('GET was unsuccessful');
       return;
@@ -76,7 +75,7 @@ var testHTML =
 <h1><img src="noaa_logo.gif" width="40" height="40" alt="NOAA Logo" class="logo" /> NDBC/44007</h1><p>43.531N 70.144W</p>\
 <h2>Weather Conditions</h2>\
 <p>7:50 am EDT<br />\
-1150 GMT 04/07/13<br />\
+1160 GMT 04/07/13<br />\
 Seas: 2.3 ft<br />\
 Peak Period: 12 sec<br />\
 Pres: 30.31 rising<br />\
