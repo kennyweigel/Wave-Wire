@@ -19,7 +19,7 @@ var app = {
         console.log(this.store);
         this.homePage = new HomeView(this.store).render();
         $('body').html(this.homePage.el);
-        this.homePage.renderFavorites(this.store.getFavorites());
+        this.homePage.renderFavorites($(this.store.getFavorites()));
       }
       return;
     }
@@ -133,11 +133,17 @@ var app = {
   },
 
   processBuoyData: function(html) {
-    var indStart = html.indexOf('<h2>Weather Conditions</h2>');
+    var condStart = html.indexOf('<h2>Weather Conditions</h2>');
+    var indStart = html.indexOf('<p>',condStart);
     var indEnd = html.indexOf('</p>',indStart)+4;
-    return html.substring(indStart,indEnd);
+    var parsedHTML = html.substring(indStart,indEnd);
+    return parsedHTML;
   },
 
 };
 
 app.initialize();
+
+// for testing on PC browsers ----------------------
+//app.homePage.update(testHTML,'success','44007');
+
