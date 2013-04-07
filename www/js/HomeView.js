@@ -52,7 +52,7 @@ var HomeView = function(store) {
     locals = store.getFavorites();
     for (var j=0; j < locals.length; j++) {
       if (locals[j].id == EXTRA) {
-        locals[j].data = html;
+        locals[j].data = app.processBuoyData(html);
         //alert(html);
         app.homePage.renderFavorites(locals);
         //alert('rendered');
