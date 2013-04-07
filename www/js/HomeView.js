@@ -36,7 +36,6 @@ var HomeView = function(store) {
   this.updateInit = function(url,EXTRA) {
     alert('updateInit');  
     $.ajax({
-      async: true,
       url: url,
       cache: false,
       type: 'GET'
