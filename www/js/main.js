@@ -19,7 +19,7 @@ var app = {
         console.log(this.store);
         this.homePage = new HomeView(this.store).render();
         $('body').html(this.homePage.el);
-        this.homePage.renderFavorites($(this.store.getFavorites()));
+        this.homePage.renderFavorites(this.store.getFavorites());
       }
       return;
     }
