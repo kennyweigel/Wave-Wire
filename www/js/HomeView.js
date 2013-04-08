@@ -7,10 +7,9 @@ var HomeView = function(store) {
 
   this.registerEvents = function() {
     this.el.on('submit','#test',app.validateBuoy);
-    //this is added for testing on a non touch device
-    this.el.on('dblclick','.accordion-toggle',app.removeFavorite);
-    this.el.on('swipe','.accordion-toggle',app.removeFavorite);
     this.el.on('click','#testBtn',this.getTest);
+    //this.el.on('click','#prev', mySwipe.prev());
+    //this.el.on('click','#next', mySwipe.next());
   }
 
   this.render = function() {
@@ -20,9 +19,20 @@ var HomeView = function(store) {
 
   this.renderFavorites = function(testFavs) {
     console.log('render favs');
-    $('#favBuoys').html(HomeView.favsTemplate(testFavs));
+    $('#swipeWrap').empty();
+    $('#swipeWrap').html(HomeView.favsTemplate(testFavs));
+    var elem = document.getElementById('mySwipe');
+    window.mySwipe = Swipe(elem, {
+      // startSlide: 4,
+      // auto: 3000,
+       continuous: false,
+      // disableScroll: true,
+      // stopPropagation: true,
+      // callback: function(index, element) {},
+      // transitionEnd: function(index, element) {}
+    });
     for (var i = 0; i < testFavs.length; i++) {
-      $('#collapsible-'+testFavs[i].id).html("<div class='accordion-inner'>"+testFavs[i].data+"</div>");
+      $('#'+testFavs[i].id+'-data').html(testFavs[i].data);
     }
   }
   
@@ -41,6 +51,7 @@ var HomeView = function(store) {
 
   }
     
+  //change back to var when deploying to phone  
   var update = function(html, status, EXTRA) {
     if(status != 'success') {
       alert('GET was unsuccessful');

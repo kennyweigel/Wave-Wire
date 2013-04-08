@@ -5,37 +5,69 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <link href='css/bootstrap.min.css' rel='stylesheet' media='screen'>
     <link href='css/style.css' rel='stylesheet'>
+    <style>
+    /* Swipe 2 required styles */
+      .swipe {
+        overflow: hidden;
+        visibility: hidden;
+        position: relative;
+      }
+      .swipe-wrap {
+        overflow: hidden;
+        position: relative;
+      }
+      .swipe-wrap > div {
+        float:left;
+        width:100%;
+        position: relative;
+      }
+
+      /* END required styles */
+      /*#mySwipe div b {
+        display:block;
+        font-weight:bold;
+        color:#14ADE5;
+        font-size:20px;
+        text-align:center;
+        margin:10px;
+        padding:100px 10px;
+        box-shadow: 0 1px #EBEBEB;
+        background: #fff;
+        border-radius: 3px;
+        border: 1px solid;
+        border-color: #E5E5E5 #D3D3D3 #B9C1C6;*/
+      }
+    </style>
   </head>
   <body>
     
     <script id='home-tpl' type='text/x-handlebars-template'>
       <div class='navbar navbar-inverse navbar-fixed-top'>
         <div class='navbar-inner' style='padding: 0px 10px'>
-          <a class='btn btn-inverse pull-left'><i class='icon-question-sign icon-white'></i></a>
+          <a class='btn btn-inverse pull-left' href='#menu'>&#9776</a>
           <form class='navbar-search' id='test' action='javascript:function(){}'>
             <input type='text' class='search-query' id='mainSearch' placeholder='Search For Buoys...'>
           </form>
           <a class='btn btn-inverse pull-right' href='#map'><i class='icon-globe icon-white'></i></a>
         </div>
       </div>
-      <div class='accordion' id='favBuoys' style='padding-top:45px'>
+      <div id='mySwipe' style='max-width:500px;margin:0 auto;padding: 50px 10px 0px 10px' class='swipe'>
+        <div class='swipe-wrap' id='swipeWrap'>
+        </div>
       </div>
-      <button id='testBtn'>test</button>
+      <div style='text-align:center;padding-top:20px;'>
+        <button id='testBtn'>test</button>
+        <button onclick='mySwipe.prev()'>prev</button> 
+        <button onclick='mySwipe.next()'>next</button>
+      </div>
     </script>
     
     <script id='favs-tpl' type='text/x-handlebars-template'>
       {{#.}}
-        <div class='accordion-group'>
-          <div class='accordion-heading'>
-            <a class='accordion-toggle' id='{{this.id}}' data-toggle='collapse' data-parent='#favBuoys' href='#collapsible-{{this.id}}'>
-              {{this.id}}
-            </a>
-          </div>
-          <div id='collapsible-{{this.id}}' class='accordion-body collapse'>
-            <div class='accordion-inner'>
-            </div>
-          </div>
-        </div>
+      <div>
+        <h1>{{this.id}}</h1>
+        <div id='{{this.id}}-data'>{{this.data}}</div>
+      </div>
       {{/.}}
     </script>
     
@@ -51,11 +83,29 @@
       </div>
       <div id='mapCanvas' style='height:100%; width:100%; position:absolute'></div>
     </script>
-    
+
+    <script id='menu-tpl' type='text/x-handlebars-template'>
+      <div class='navbar navbar-inverse navbar-fixed-top'>
+        <div class='navbar-inner' style='padding: 0px 10px'>
+          <a class='btn btn-inverse pull-left'><i class='icon-question-sign icon-white'></i></a>
+          <form class='navbar-search' id='test' action='javascript:function(){}'>
+            <input type='text' class='search-query' id='mainSearch' placeholder='Search For Buoys...'>
+          </form>
+          <a class='btn btn-inverse pull-right' href='#home'><i class='icon-home icon-white'></i></a>
+        </div>
+      </div>
+      <ul class='nav nav-tabs nav-stacked' style='padding: 50px 10px 0px 10px' id='buoy-ul'>
+        {{#.}}
+          <li id='{{this.id}}'><a>{{this.id}}</a></li>
+        {{/.}}
+      </ul>
+    </script>
+
     <script src='phonegap.js'></script>
     <script src='http://debug.phonegap.com/target/target-script-min.js#cbaa7d0e-9813-11e2-895e-12313d1744da'></script>
     <script src='https://maps.googleapis.com/maps/api/js?sensor=false'></script>
     <script src='lib/jquery-1.9.1.min.js'></script>
+    <script src='lib/swipe.js'></script>
     <script src='lib/jquery.mobile.custom.js'></script>
     <script src='lib/bootstrap.min.js'></script>
     <script src='lib/handlebars.js'></script>
@@ -63,6 +113,7 @@
     <script src='js/BuoyList.js'></script>
     <script src='js/HomeView.js'></script>
     <script src='js/MapView.js'></script>
+    <script src='js/MenuView.js'></script>
     <script src='js/main.js'></script>
   </body>
 </html>

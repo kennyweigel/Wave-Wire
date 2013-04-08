@@ -37,12 +37,27 @@ var app = {
       } 
       return;
     }
+
+    if (hash.match(this.menuURL)) {
+      if (this.menuPage) {
+        console.log('hash change menuView');
+        $('body').html(this.menuPage.el);
+        this.menuPage.registerEvents();
+      } 
+      else {
+        console.log('hash change new menuview');
+        this.menuPage = new MenuView(this.store).render();
+        $('body').html(this.menuPage.el);
+      } 
+      return;
+    }
   },
 
   initialize: function() {
     var self = this;
     this.homeURL = '#home';
     this.mapURL = '#map';
+    this.menuURL = '#menu';
     window.location.hash = this.homeURL;
     this.registerEvents();
     this.store = new LocalStorageStore();
@@ -114,8 +129,11 @@ var app = {
 
   addFavBuoy: function(input,inputVal,currentFavs) {
     currentFavs.push({id:inputVal,data:'No Updates'});
+    
     app.store.setFavorites(currentFavs);
-    app.homePage.renderFavorites(app.store.getFavorites());
+    app.homePage.renderFavorites(currentFavs);
+    app.menuPage.render();
+  
     input.val('');
   },
 
@@ -124,12 +142,13 @@ var app = {
     var currentFavs = app.store.getFavorites();
     for (var i = 0; i < currentFavs.length; i++) {
       if (currentID == currentFavs[i].id) {
-        var newFavs = currentFavs.splice(i,1);
+        currentFavs.splice(i,1);
         break;
       }
     }
     app.store.setFavorites(currentFavs);
-    app.homePage.renderFavorites(app.store.getFavorites());
+    app.homePage.renderFavorites(currentFavs);
+    app.menuPage.render();
   },
 
   processBuoyData: function(html) {
