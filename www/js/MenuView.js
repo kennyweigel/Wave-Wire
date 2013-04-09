@@ -15,6 +15,8 @@ var MenuView = function(store) {
     this.el.html(MenuView.template(store.getFavorites()));
     return this;
   }
+  //add this later
+  //<button id='{{this.id}}-delete' class='btn btn-danger btn-mini pull-right'>Delete</button>
 
   this.initialize();
 }
