@@ -8,8 +8,6 @@ var HomeView = function(store) {
   this.registerEvents = function() {
     this.el.on('submit','#test',app.validateBuoy);
     this.el.on('click','#testBtn',this.getTest);
-    //this.el.on('click','#prev', mySwipe.prev());
-    //this.el.on('click','#next', mySwipe.next());
   }
 
   this.render = function() {
@@ -19,7 +17,6 @@ var HomeView = function(store) {
 
   this.renderFavorites = function(testFavs) {
     console.log('render favs');
-    $('#swipeWrap').empty();
     $('#swipeWrap').html(HomeView.favsTemplate(testFavs));
     var elem = document.getElementById('mySwipe');
     window.mySwipe = Swipe(elem, {
@@ -63,7 +60,6 @@ var HomeView = function(store) {
       if (locals[j].id == EXTRA) {
         locals[j].data = app.processBuoyData(html);
         app.homePage.renderFavorites(locals);
-        store.setFavorites(locals);
         break;
       }
     }

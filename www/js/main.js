@@ -12,6 +12,7 @@ var app = {
       if (this.homePage) {
         console.log('hash change homeview');
         $('body').html(this.homePage.el);
+        this.homePage.renderFavorites(this.store.getFavorites());
         this.homePage.registerEvents();
       }
       else {
@@ -80,7 +81,7 @@ var app = {
     var currentFavs = app.store.getFavorites();
 
     if (!currentFavs.length) {
-      if (app.isValidID(inputVal)) {
+      if (isValidID(inputVal)) {
         app.addFavBuoy(input,inputVal,currentFavs);
       }
       else {
@@ -90,14 +91,14 @@ var app = {
     }
     else {
       //checks if buoy is already a favorite
-      if (app.isFavorite(inputVal,currentFavs)) {
+      if (isFavorite(inputVal,currentFavs)) {
         app.showAlert(inputVal + ' is already a favorite','TITLE');
         input.val('');
       }
       else {
         //checks if buoy matches any buoy ids
-        if (app.isValidID(inputVal)) {
-          if (app.isValidID(inputVal)) {
+        if (isValidID(inputVal)) {
+          if (isValidID(inputVal)) {
             app.addFavBuoy(input,inputVal,currentFavs);
           }
         }
@@ -107,25 +108,27 @@ var app = {
         }
       }
     }
+    
+    function isValidID(inputVal) {
+      for (var i = 0; i<buoys.length; i++) {
+        if (buoys[i].id == inputVal) {
+          return 1;
+        }
+      }
+      return 0;
+    }
+
+    function isFavorite(inputVal,currentFavs) {
+      for (var i = 0; i < currentFavs.length; i++) {
+        if (inputVal == currentFavs[i].id) {
+          return 1;
+        }
+      }
+      return 0;
+    }
   },
 
-  isValidID: function(inputVal) {
-    for (var i = 0; i<buoys.length; i++) {
-      if (buoys[i].id == inputVal) {
-        return 1;
-      }
-    }
-    return 0;
-  },
-
-  isFavorite: function(inputVal,currentFavs) {
-    for (var i = 0; i < currentFavs.length; i++) {
-      if (inputVal == currentFavs[i].id) {
-        return 1;
-      }
-    }
-    return 0;
-  },
+  
 
   addFavBuoy: function(input,inputVal,currentFavs) {
     currentFavs.push({id:inputVal,data:'No Updates'});
