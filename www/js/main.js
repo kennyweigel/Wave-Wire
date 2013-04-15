@@ -134,10 +134,17 @@ var app = {
     currentFavs.push({id:inputVal,data:'No Updates'});
     
     app.store.setFavorites(currentFavs);
+    if (app.homePage.mySwipe) {
+      app.homePage.killSwipe();
+    }
     app.homePage.renderFavorites(currentFavs);
-    app.menuPage.render();
+    if (app.menuPage) {
+      app.menuPage.render();
+    }
   
     input.val('');
+
+    this.showAlert(inputVal,'has been added to Favorites');
   },
 
   removeFavorite: function() {
@@ -150,6 +157,9 @@ var app = {
       }
     }
     app.store.setFavorites(currentFavs);
+    if (app.homePage.mySwipe) {
+      app.homePage.killSwipe();
+    }
     app.homePage.renderFavorites(currentFavs);
     app.menuPage.render();
   },

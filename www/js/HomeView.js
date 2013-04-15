@@ -19,7 +19,7 @@ var HomeView = function(store) {
     console.log('render favs');
     $('#swipeWrap').html(HomeView.favsTemplate(testFavs));
     var elem = document.getElementById('mySwipe');
-    window.mySwipe = Swipe(elem, {
+    this.mySwipe = Swipe(elem, {
       // startSlide: 4,
       // auto: 3000,
        continuous: false,
@@ -33,6 +33,12 @@ var HomeView = function(store) {
     }
   }
   
+  this.killSwipe = function() {
+    this.mySwipe.kill();
+    this.mySwipe = null;
+    $('#swipeWrap').html('');
+  }
+
   this.getTest = function() {
     var currentIDs = store.getFavorites();
     
@@ -57,6 +63,9 @@ var HomeView = function(store) {
         if (locals[j].id == EXTRA) {
           locals[j].data = app.processBuoyData(html);
           store.setFavorites(locals);
+          if (app.homePage.mySwipe) {
+            app.homePage.killSwipe();
+          }
           app.homePage.renderFavorites(locals);
           break;
         }
