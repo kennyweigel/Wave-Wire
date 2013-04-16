@@ -41,8 +41,11 @@ var HomeView = function(store) {
 
   this.getTest = function() {
     var currentIDs = store.getFavorites();
-    
+    var activeAJAX = 0;
+
     for (var i = 0; i < currentIDs.length; i++) {
+      //increments the number of active AJAX requests
+      activeAJAX++;
       updateInit('http://www.ndbc.noaa.gov/mobile/station.php?station='+currentIDs[i].id,currentIDs[i].id);
     }
     
@@ -53,20 +56,23 @@ var HomeView = function(store) {
     }
     
     function update(html,status,EXTRA) {
+      activeAJAX--;
       if(status != 'success') {
         alert('GET was unsuccessful');
         return;
       }
       
-      locals = store.getFavorites();
-      for (var j=0; j < locals.length; j++) {
-        if (locals[j].id == EXTRA) {
-          locals[j].data = app.processBuoyData(html);
-          store.setFavorites(locals);
-          if (app.homePage.mySwipe) {
-            app.homePage.killSwipe();
+      for (var j=0; j < currentIDs.length; j++) {
+        if (currentIDs[j].id == EXTRA) {
+          currentIDs[j].data = app.processBuoyData(html);
+          store.setFavorites(currentIDs);
+          if (!activeAJAX) {
+            if (app.homePage.mySwipe) {
+              app.homePage.killSwipe();
+            }
+            app.homePage.renderFavorites(currentIDs);
+            break;
           }
-          app.homePage.renderFavorites(locals);
           break;
         }
       }
