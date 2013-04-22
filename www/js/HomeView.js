@@ -21,9 +21,8 @@ var HomeView = function(store) {
     $("#indicator").html(HomeView.navTemplate(testFavs));
     //sets width of scroller to appropriate width
     $("#scroller").width(testFavs.length * $(window).width());
-    //sets 
+    //sets first li bullet active
     $("#indicator>:first-child").addClass("active");
-
 
     var myScroll;
     $("#scroller li").width($(window).width());
@@ -66,9 +65,6 @@ var HomeView = function(store) {
           currentIDs[j].data = app.processBuoyData(html);
           store.setFavorites(currentIDs);
           if (!activeAJAX) {
-            if (app.homePage.mySwipe) {
-              app.homePage.killSwipe();
-            }
             app.homePage.renderFavorites(currentIDs);
             break;
           }

@@ -131,12 +131,10 @@ var app = {
   
 
   addFavBuoy: function(input,inputVal,currentFavs) {
-    currentFavs.push({id:inputVal,data:'No Updates'});
+    currentFavs.push({id:inputVal,data:'<p>No Updates</p>'});
     
     app.store.setFavorites(currentFavs);
-    if (app.homePage.mySwipe) {
-      app.homePage.killSwipe();
-    }
+
     app.homePage.renderFavorites(currentFavs);
     if (app.menuPage) {
       app.menuPage.render();
@@ -157,9 +155,7 @@ var app = {
       }
     }
     app.store.setFavorites(currentFavs);
-    if (app.homePage.mySwipe) {
-      app.homePage.killSwipe();
-    }
+
     app.homePage.renderFavorites(currentFavs);
     app.menuPage.render();
   },
