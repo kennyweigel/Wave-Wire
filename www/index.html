@@ -5,26 +5,6 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <link href='css/bootstrap.min.css' rel='stylesheet' media='screen'>
     <link href='css/style.css' rel='stylesheet'>
-    <style>
-    /* Swipe 2 required styles */
-      .swipe {
-        overflow: hidden;
-        visibility: hidden;
-        position: relative;
-      }
-      .swipe-wrap {
-        overflow: hidden;
-        position: relative;
-      }
-      .swipe-wrap > div {
-        float:left;
-        width:100%;
-        position: relative;
-      }
-
-      /* END required styles */
-      }
-    </style>
   </head>
   <body>
     
@@ -38,23 +18,33 @@
           <a class='btn btn-inverse pull-right' href='#map'><i class='icon-globe icon-white'></i></a>
         </div>
       </div>
-      <div id='mySwipe' style='max-width:500px;margin:0 auto;padding: 50px 10px 0px 10px' class='swipe'>
-        <div class='swipe-wrap' id='swipeWrap'>
+      <div id="wrapper">
+        <div id='scroller'>
+          <ul id="theList">
+          </ul>
         </div>
+      </div>
+      <div id="nav">
+        <ul id="indicator">
+        </ul>
       </div>
       <div style='text-align:center;padding-top:20px;'>
         <button id='testBtn'>test</button>
-        <button onclick='app.homePage.mySwipe.prev()'>prev</button> 
-        <button onclick='app.homePage.mySwipe.next()'>next</button>
       </div>
     </script>
     
     <script id='favs-tpl' type='text/x-handlebars-template'>
       {{#.}}
-      <div>
-        <h1>{{this.id}}</h1>
-        <div id='{{this.id}}-data'>{{this.data}}</div>
-      </div>
+        <li>
+          <h1>{{this.id}}</h1>
+          <div id='{{this.id}}-data'>{{this.data}}</div>
+        </li>
+      {{/.}}
+    </script>
+
+    <script id='nav-tpl' type='text/x-handlebars-template'>
+      {{#.}}
+        <li></li>
       {{/.}}
     </script>
     
@@ -92,10 +82,10 @@
     <script src='http://debug.phonegap.com/target/target-script-min.js#cbaa7d0e-9813-11e2-895e-12313d1744da'></script>
     <script src='https://maps.googleapis.com/maps/api/js?sensor=false'></script>
     <script src='lib/jquery-1.9.1.min.js'></script>
-    <script src='lib/swipe.js'></script>
     <script src='lib/jquery.mobile.custom.js'></script>
     <script src='lib/bootstrap.min.js'></script>
     <script src='lib/handlebars.js'></script>
+    <script src="lib/iscroll.js"></script>
     <script src='js/LocalStorage.js'></script>
     <script src='js/BuoyList.js'></script>
     <script src='js/HomeView.js'></script>

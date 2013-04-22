@@ -1,9 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<widget xmlns       = 'http://www.w3.org/ns/widgets'
-        xmlns:gap   = 'http://phonegap.com/ns/1.0'
-        id          = 'org.kennyweigel.wavewire'
-        versionCode = '10'
-        version     = '1.0.0'>
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "org.kennyweigel.wavewire"
+        versionCode = "10"
+        version     = "1.0.0">
  
     <name>Wave Wire</name>
  
@@ -15,12 +15,10 @@
         Kenny Weigel
     </author>
 
-    <feature name='http://api.phonegap.com/1.0/camera'/>
-    <feature name='http://api.phonegap.com/1.0/contacts'/>
-    <feature name='http://api.phonegap.com/1.0/file'/>
-    <feature name='http://api.phonegap.com/1.0/geolocation'/>
-    <feature name='http://api.phonegap.com/1.0/media'/>
-    <feature name='http://api.phonegap.com/1.0/network'/>
-    <feature name='http://api.phonegap.com/1.0/notification'/>
+    <preference name="orientation" value="portrait"/>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <!-- this is not implemented yet -->
+    <feature name="http://api.phonegap.com/1.0/network"/>
+
  
 </widget>

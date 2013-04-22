@@ -1,13 +1,13 @@
 var HomeView = function(store) {
 
   this.initialize = function() {
-    this.el = $('<div/>');
+    this.el = $("<div/>");
     this.registerEvents();
   }
 
   this.registerEvents = function() {
-    this.el.on('submit','#test',app.validateBuoy);
-    this.el.on('click','#testBtn',this.getTest);
+    this.el.on("submit","#test",app.validateBuoy);
+    this.el.on("click","#testBtn",this.getTest);
   }
 
   this.render = function() {
@@ -16,27 +16,26 @@ var HomeView = function(store) {
   }
 
   this.renderFavorites = function(testFavs) {
-    console.log('render favs');
-    $('#swipeWrap').html(HomeView.favsTemplate(testFavs));
-    var elem = document.getElementById('mySwipe');
-    this.mySwipe = Swipe(elem, {
-      // startSlide: 4,
-      // auto: 3000,
-       continuous: false,
-      // disableScroll: true,
-      // stopPropagation: true,
-      // callback: function(index, element) {},
-      // transitionEnd: function(index, element) {}
+    console.log("render favs");
+    $("#theList").html(HomeView.favsTemplate(testFavs));
+    $("#indicator").html(HomeView.navTemplate(testFavs));
+    //sets width of scroller to appropriate width
+    $("#scroller").width(testFavs.length * $(window).width());
+    //sets 
+    $("#indicator>:first-child").addClass("active");
+
+
+    var myScroll;
+    $("#scroller li").width($(window).width());
+    myScroll = new iScroll("wrapper", {
+      snap: true,
+      momentum: false,
+      hScrollbar: false,
+      onScrollEnd: function () {
+        document.querySelector("#indicator > li.active").className = "";
+        document.querySelector('#indicator > li:nth-child(' + (this.currPageX+1) + ')').className = 'active';
+      }
     });
-    for (var i = 0; i < testFavs.length; i++) {
-      $('#'+testFavs[i].id+'-data').html(testFavs[i].data);
-    }
-  }
-  
-  this.killSwipe = function() {
-    this.mySwipe.kill();
-    this.mySwipe = null;
-    $('#swipeWrap').html('');
   }
 
   this.getTest = function() {
@@ -84,3 +83,4 @@ var HomeView = function(store) {
 
 HomeView.template = Handlebars.compile($('#home-tpl').html());
 HomeView.favsTemplate = Handlebars.compile($('#favs-tpl').html());
+HomeView.navTemplate = Handlebars.compile($("#nav-tpl").html());
