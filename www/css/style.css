@@ -20,7 +20,7 @@ body {
 }
 
 #wrapper {
-  padding-top:50px; /* so top nav isnt hidden */
+  padding-top:40px; /* so top nav isnt hidden */
   width:100%;
   height:160px;
   position:relative;  /* On older OS versions "position" and "z-index" must be defined, */
@@ -74,3 +74,14 @@ body {
 }
 
 /* favorites styles */
+#theList h2 {
+  text-align:center;
+}
+
+.slide {
+  background-color:gray;
+  padding:10px;
+  margin:10px;
+  border-radius:10px;
+  height: 120px
+}

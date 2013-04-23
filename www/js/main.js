@@ -62,6 +62,8 @@ var app = {
     window.location.hash = this.homeURL;
     this.registerEvents();
     this.store = new LocalStorageStore();
+    this.screenHeight = $(window).height();
+    this.screenWidth = $(window).width();
     this.route();
   },
 

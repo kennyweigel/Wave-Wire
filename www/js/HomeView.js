@@ -20,9 +20,12 @@ var HomeView = function(store) {
     $("#theList").html(HomeView.favsTemplate(testFavs));
     $("#indicator").html(HomeView.navTemplate(testFavs));
     //sets width of scroller to appropriate width
-    $("#scroller").width(testFavs.length * $(window).width());
+    $("#scroller").width(testFavs.length * app.screenWidth);
     //sets first li bullet active
     $("#indicator>:first-child").addClass("active");
+    //sets width of scroller to appropriate height
+    $("#wrapper").height(app.screenHeight - 70);
+    $(".slide").height(app.screenHeight - 110);
 
     var myScroll;
     $("#scroller li").width($(window).width());
