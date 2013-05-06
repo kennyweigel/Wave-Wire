@@ -21,6 +21,7 @@ var app = {
         this.homePage = new HomeView(this.store).render();
         $('body').html(this.homePage.el);
         this.homePage.renderFavorites(this.store.getFavorites());
+        this.homePage.getTest();
       }
       return;
     }
