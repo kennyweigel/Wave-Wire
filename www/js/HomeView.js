@@ -17,27 +17,41 @@ var HomeView = function(store) {
 
   this.renderFavorites = function(testFavs) {
     console.log("render favs");
+    //populates the favs slider
     $("#theList").html(HomeView.favsTemplate(testFavs));
+    //populates the favs nav
     $("#indicator").html(HomeView.navTemplate(testFavs));
     //sets width of scroller to appropriate width
     $("#scroller").width(testFavs.length * app.screenWidth);
     //sets first li bullet active
     $("#indicator>:first-child").addClass("active");
-    //sets width of scroller to appropriate height
+    //sets height of scroller to appropriate height
     $("#wrapper").height(app.screenHeight - 70);
     $(".slide").height(app.screenHeight - 110);
-
-    var myScroll;
+    //sets width of scroller to appropriate width
     $("#scroller li").width($(window).width());
-    myScroll = new iScroll("wrapper", {
-      snap: true,
-      momentum: false,
-      hScrollbar: false,
-      onScrollEnd: function () {
-        document.querySelector("#indicator > li.active").className = "";
-        document.querySelector('#indicator > li:nth-child(' + (this.currPageX+1) + ')').className = 'active';
-      }
-    });
+    
+    //if the iscroll object doesn't exist create it
+    if (!this.myScroll) {
+      this.myScroll = new iScroll("wrapper", {
+        snap: true,
+        momentum: false,
+        hScrollbar: false,
+        onScrollEnd: function () {
+          document.querySelector("#indicator > li.active").className = "";
+          document.querySelector('#indicator > li:nth-child(' + (this.currPageX+1) + ')').className = 'active';
+        }
+      });
+    }
+    //if the iscroll object does exist just refresh it
+    else {
+      this.myScroll.refresh();
+    }
+  }
+
+  this.refreshFavorites = function(testFavs) {
+    //populates the favs slider
+    $("#theList").html(HomeView.favsTemplate(testFavs));
   }
 
   this.getTest = function() {
@@ -68,7 +82,7 @@ var HomeView = function(store) {
           currentIDs[j].data = app.processBuoyData(html);
           store.setFavorites(currentIDs);
           if (!activeAJAX) {
-            app.homePage.renderFavorites(currentIDs);
+            app.homePage.refreshFavorites(currentIDs);
             break;
           }
           break;
