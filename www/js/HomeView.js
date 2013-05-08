@@ -23,14 +23,14 @@ var HomeView = function(store) {
     $("#indicator").html(HomeView.navTemplate(testFavs));
     //sets width of scroller to appropriate width
     $("#scroller").width(testFavs.length * app.screenWidth);
-    //sets first li bullet active
-    $("#indicator>:first-child").addClass("active");
+    //sets width of scroller pages to appropriate width
+    $("#scroller li").width(app.screenWidth);
     //sets height of scroller to appropriate height
     $("#wrapper").height(app.screenHeight - 70);
     $(".slide").height(app.screenHeight - 110);
-    //sets width of scroller to appropriate width
-    $("#scroller li").width($(window).width());
-    
+    //sets first li bullet active
+    $("#indicator>:first-child").addClass("active");
+
     //if the iscroll object doesn't exist create it
     if (!this.myScroll) {
       this.myScroll = new iScroll("wrapper", {
@@ -52,6 +52,9 @@ var HomeView = function(store) {
   this.refreshFavorites = function(testFavs) {
     //populates the favs slider
     $("#theList").html(HomeView.favsTemplate(testFavs));
+    //sets height of scroller to appropriate height
+    $("#wrapper").height(app.screenHeight - 70);
+    $(".slide").height(app.screenHeight - 110);
   }
 
   this.getTest = function() {
