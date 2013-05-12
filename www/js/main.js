@@ -144,7 +144,6 @@ var app = {
 
   removeFavorite: function() {
     var currentID = $(this).attr('id').substring(0,5);
-    alert(currentID);
     var currentFavs = app.store.getFavorites();
     for (var i = 0; i < currentFavs.length; i++) {
       if (currentID == currentFavs[i].id) {
