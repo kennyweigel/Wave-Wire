@@ -58,13 +58,13 @@ var HomeView = function(store) {
   }
 
   this.getTest = function() {
-    var currentIDs = store.getFavorites();
+    var currentIds = store.getFavorites();
     var activeAJAX = 0;
 
-    for (var i = 0; i < currentIDs.length; i++) {
+    for (var i = 0; i < currentIds.length; i++) {
       //increments the number of active AJAX requests
       activeAJAX++;
-      updateInit('http://www.ndbc.noaa.gov/mobile/station.php?station='+currentIDs[i].id,currentIDs[i].id);
+      updateInit('http://www.ndbc.noaa.gov/mobile/station.php?station='+currentIds[i].id,currentIds[i].id);
     }
     
     function updateInit(url,EXTRA) {
@@ -80,12 +80,12 @@ var HomeView = function(store) {
         return;
       }
       
-      for (var j=0; j < currentIDs.length; j++) {
-        if (currentIDs[j].id == EXTRA) {
-          currentIDs[j].data = app.processBuoyData(html);
-          store.setFavorites(currentIDs);
+      for (var j=0; j < currentIds.length; j++) {
+        if (currentIds[j].id == EXTRA) {
+          currentIds[j].data = app.processBuoyData(html);
+          store.setFavorites(currentIds);
           if (!activeAJAX) {
-            app.homePage.refreshFavorites(currentIDs);
+            app.homePage.refreshFavorites(currentIds);
             break;
           }
           break;

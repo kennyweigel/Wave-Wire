@@ -131,25 +131,20 @@ var app = {
     }
   },
 
-  
-
   addFavBuoy: function(input,inputVal,currentFavs) {
     currentFavs.push({id:inputVal,data:'<p>No Updates</p>'});
-    
     app.store.setFavorites(currentFavs);
-
     app.homePage.renderFavorites(currentFavs);
     if (app.menuPage) {
       app.menuPage.render();
     }
-  
     input.val('');
-
     this.showAlert(inputVal,'has been added to Favorites');
   },
 
   removeFavorite: function() {
-    var currentID = $(this).attr('id');
+    var currentID = $(this).attr('id').substring(0,5);
+    alert(currentID);
     var currentFavs = app.store.getFavorites();
     for (var i = 0; i < currentFavs.length; i++) {
       if (currentID == currentFavs[i].id) {
@@ -158,7 +153,6 @@ var app = {
       }
     }
     app.store.setFavorites(currentFavs);
-
     app.homePage.renderFavorites(currentFavs);
     app.menuPage.render();
   },
