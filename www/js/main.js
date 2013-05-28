@@ -1,55 +1,72 @@
 var app = {
   
   registerEvents: function() {
-    $(window).on('hashchange', $.proxy(this.route, this));
+    $(window).on("hashchange", $.proxy(this.route, this));
   },
 
   route: function() {
-    console.log('app route');
+    console.log("app route");
     var self = this;
     var hash = window.location.hash;
-    if (hash.match(this.homeURL)) {
+    if (hash.match("home")) {
       if (this.homePage) {
-        console.log('hash change homeview');
-        $('body').html(this.homePage.el);
+        console.log("hash change homeview");
+        $("body").html(this.homePage.el);
         this.homePage.renderFavorites(this.store.getFavorites());
         this.homePage.registerEvents();
       }
       else {
-        console.log('hash change new homeview');
-        console.log(this.store);
+        console.log("hash change new homeview");
         this.homePage = new HomeView(this.store).render();
-        $('body').html(this.homePage.el);
+        $("body").html(this.homePage.el);
         this.homePage.renderFavorites(this.store.getFavorites());
         this.homePage.getTest();
       }
       return;
     }
     
-    if (hash.match(this.mapURL)) {
+    if (hash.match("map")) {
       if (this.mapPage) {
-        console.log('hash change mapView');
-        $('body').html(this.mapPage.el);
+        console.log("hash change mapView");
+        $("body").html(this.mapPage.el);
         this.mapPage.registerEvents();
       } 
       else {
-        console.log('hash change new mapview');
+        console.log("hash change new mapview");
         this.mapPage = new MapView().render();
-        $('body').html(this.mapPage.el);
+        $("body").html(this.mapPage.el);
       } 
       return;
     }
 
-    if (hash.match(this.menuURL)) {
+    if (hash.match("menu")) {
       if (this.menuPage) {
-        console.log('hash change menuView');
-        $('body').html(this.menuPage.el);
+        console.log("hash change menuView");
+        $("body").html(this.menuPage.el);
+        this.menuPage.resizeElements();
         this.menuPage.registerEvents();
       } 
       else {
-        console.log('hash change new menuview');
+        console.log("hash change new menuview");
         this.menuPage = new MenuView(this.store).render();
-        $('body').html(this.menuPage.el);
+        $("body").html(this.menuPage.el);
+        this.menuPage.resizeElements();
+      } 
+      return;
+    }
+    
+    if (hash.match("search")) {
+      if (this.searchPage) {
+        console.log("hash change searchView");
+        $("body").html(this.searchPage.el);
+        this.searchPage.resizeElements();
+        this.searchPage.registerEvents();
+      } 
+      else {
+        console.log("hash change new searchview");
+        this.searchPage = new SearchView(this.store).render();
+        $("body").html(this.searchPage.el);
+        this.searchPage.resizeElements();
       } 
       return;
     }
@@ -57,10 +74,7 @@ var app = {
 
   initialize: function() {
     var self = this;
-    this.homeURL = '#home';
-    this.mapURL = '#map';
-    this.menuURL = '#menu';
-    window.location.hash = this.homeURL;
+    window.location.hash = "home";
     this.registerEvents();
     this.store = new LocalStorageStore();
     this.screenHeight = $(window).height();
@@ -70,7 +84,7 @@ var app = {
 
   showAlert: function (message, title) {
     if (navigator.notification) {
-      navigator.notification.alert(message, null, title, 'OK');
+      navigator.notification.alert(message, null, title, "OK");
     } 
     else {
       alert(title ? (title + ": " + message) : message);
@@ -79,7 +93,7 @@ var app = {
 
   validateBuoy: function () {
     //form input value
-    var input = $('#mainSearch');
+    var input = $("#mainSearch");
     var inputVal = input.val().toUpperCase();
     var currentFavs = app.store.getFavorites();
 
@@ -88,15 +102,15 @@ var app = {
         app.addFavBuoy(input,inputVal,currentFavs);
       }
       else {
-        app.showAlert(inputVal + ' does not exist','TITLE DNE');
-        input.val('');
+        app.showAlert(inputVal + " does not exist","TITLE DNE");
+        input.val("");
       }
     }
     else {
       //checks if buoy is already a favorite
       if (isFavorite(inputVal,currentFavs)) {
-        app.showAlert(inputVal + ' is already a favorite','TITLE');
-        input.val('');
+        app.showAlert(inputVal + " is already a favorite","TITLE");
+        input.val("");
       }
       else {
         //checks if buoy matches any buoy ids
@@ -106,8 +120,8 @@ var app = {
           }
         }
         else {
-          app.showAlert(inputVal + ' does not exist','TITLE DNE');
-          input.val('');
+          app.showAlert(inputVal + " does not exist","TITLE DNE");
+          input.val("");
         }
       }
     }
@@ -132,18 +146,18 @@ var app = {
   },
 
   addFavBuoy: function(input,inputVal,currentFavs) {
-    currentFavs.push({id:inputVal,data:'<p>No Updates</p>'});
+    currentFavs.push({id:inputVal,data:"<p>No Updates</p>"});
     app.store.setFavorites(currentFavs);
     app.homePage.renderFavorites(currentFavs);
     if (app.menuPage) {
       app.menuPage.render();
     }
-    input.val('');
-    this.showAlert(inputVal,'has been added to Favorites');
+    input.val("");
+    this.showAlert(inputVal,"has been added to Favorites");
   },
 
   removeFavorite: function() {
-    var currentID = $(this).attr('id').substring(0,5);
+    var currentID = $(this).attr("id").substring(0,5);
     var currentFavs = app.store.getFavorites();
     for (var i = 0; i < currentFavs.length; i++) {
       if (currentID == currentFavs[i].id) {
@@ -157,9 +171,9 @@ var app = {
   },
 
   processBuoyData: function(html) {
-    var condStart = html.indexOf('<h2>Weather Conditions</h2>');
-    var indStart = html.indexOf('<p>',condStart);
-    var indEnd = html.indexOf('</p>',indStart)+4;
+    var condStart = html.indexOf("<h2>Weather Conditions</h2>");
+    var indStart = html.indexOf("<p>",condStart);
+    var indEnd = html.indexOf("</p>",indStart)+4;
     var parsedHTML = html.substring(indStart,indEnd);
     return parsedHTML;
   },

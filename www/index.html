@@ -9,15 +9,15 @@
   <body>
     
     <script id="home-tpl" type="text/x-handlebars-template">
+
       <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner" style="padding: 0px 10px">
           <a class="btn btn-inverse pull-left" href="#menu">&#9776</a>
-          <form class="navbar-search" id="test" action="javascript:function(){}">
-            <input type="text" class="search-query" id="mainSearch" placeholder="Search For Buoys...">
-          </form>
+          <a class="brand">Favorites</a>
           <a class="btn btn-inverse pull-right" id="testBtn"><i class="icon-refresh icon-white"></i></a>
         </div>
       </div>
+      
       <div id="wrapper">
         <div id="scroller">
           <ul id="theList">
@@ -51,9 +51,7 @@
       <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner" style="padding: 0px 10px">
           <a id="mapRefresh" class="btn btn-inverse pull-left"><i class="icon-refresh icon-white"></i></a>
-          <form class="navbar-search pull-center">
-            <input type="text" class="search-query" id="mapSearch" placeholder="Search For Buoys...">
-          </form>
+          <a class="brand">Map</a>
           <a class="btn btn-inverse pull-right" href="#home"><i class="icon-home icon-white"></i></a>
         </div>
       </div>
@@ -64,18 +62,77 @@
       <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner" style="padding: 0px 10px">
           <a class="btn btn-inverse pull-left" href="#home"><i class="icon-home icon-white"></i></a>
-          <form class="navbar-search" id="test" action="javascript:function(){}">
-            <input type="text" class="search-query" id="mainSearch" placeholder="Search For Buoys...">
-          </form>
+          <a class="brand">Menu</a>
           <a class="btn btn-inverse pull-right" href="#map"><i class="icon-globe icon-white"></i></a>
         </div>
       </div>
-      <ul class="nav nav-tabs nav-stacked" style="padding: 50px 10px 0px 10px" id="buoy-ul">
+      <table class="table table-bordered" id="buoyTable">
         {{#.}}
-          <li id="{{this.id}}-li"><a>{{this.id}}</a></li>
+          <tr>
+            <td id="{{this.id}}-li" class="menuBuoy">{{this.id}}</td>
+          </tr>
         {{/.}}
-      </ul>
+        <tr>
+          <td id="menuAddBuoy">Add New Buoy</td>
+        </tr>
+      </table>
     </script>
+
+    <script id="search-tpl" type="text/x-handlebars-template">
+      
+      <div class="navbar navbar-static-top navbar-inverse">
+        <div class="navbar-inner">
+          <a class="brand">search</a>
+        </div>
+      </div>
+      
+      <form class="form-search searchInput" id="test">
+        <input type="text" class="search-query searchInput" id="mainSearch" placeholder="Search For Buoys...">
+        <div class="icon-search"></div>
+        <a id="searchMapLink" class="btn btn-inverse pull-right" href="#map"><i class="icon-globe icon-white"></i></a>
+      </form>
+      
+      <div id="collapseGroup">
+        
+        <button type="button" class="btn btn-danger collapseBtn" id="listAlaskaBtn">
+          Alaska
+        </button>
+        <div id="listAlaskaDiv" class="collapse collapseDiv">
+        </div>
+
+        <button type="button" class="btn btn-danger collapseBtn" id="listCaribbeanBtn">
+          Caribbean
+        </button>
+        <div id="listCaribbeanDiv" class="collapse collapseDiv">
+        </div>
+      
+      </div>
+
+    </script>
+
+    <script id="listAlaska-tpl" type="text/x-handlebars-template">
+      <table class="table table-bordered table-condensed">  
+        {{#.}}
+          <tr>
+            <td>
+              {{this.id}}
+            </td>
+          </tr>
+        {{/.}}
+      </table>
+    </script>
+
+    <script id="listCaribbean-tpl" type="text/x-handlebars-template">
+      <table class="table table-bordered table-condensed">  
+        {{#.}}
+          <tr>
+            <td>
+              {{this.id}}
+            </td>
+          </tr>
+        {{/.}}
+      </table>
+    </script>    
 
     <script src="phonegap.js"></script>
     <script src="http://debug.phonegap.com/target/target-script-min.js#cbaa7d0e-9813-11e2-895e-12313d1744da"></script>
@@ -86,10 +143,12 @@
     <script src="lib/handlebars.js"></script>
     <script src="lib/iscroll.js"></script>
     <script src="js/LocalStorage.js"></script>
+    <script src="js/all-regions.js"></script>
     <script src="js/BuoyList.js"></script>
     <script src="js/HomeView.js"></script>
     <script src="js/MapView.js"></script>
     <script src="js/MenuView.js"></script>
+    <script src="js/SearchView.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

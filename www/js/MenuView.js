@@ -6,11 +6,12 @@ var MenuView = function(store) {
   }
 
   this.registerEvents = function() {
-    this.el.on("swipe","li",this.favListSwipe);
+    this.el.on("swipe",".menuBuoy",this.favListSwipe);
     this.el.on("click",".deleteBtn",app.removeFavorite);
+    this.el.on("click","#menuAddBuoy",this.hashChangeSearch);
 
     //DEBUG
-    this.el.on("dblclick","li",this.favListSwipe);
+    this.el.on("dblclick",".menuBuoy",this.favListSwipe);
   }
 
   this.render = function() {
@@ -24,8 +25,12 @@ var MenuView = function(store) {
       $(".deleteBtn").remove();
     }
     else {
-      $("#"+currentId+"-li>a").append("<button id='"+currentId+"-delete' class='deleteBtn btn btn-danger btn-mini pull-right'>Delete</button>");
+      $("#"+currentId+"-li").append("<button id='"+currentId+"-delete' class='deleteBtn btn btn-danger pull-right'>Delete</button>");
     }
+  }
+
+  this.resizeElements = function() {
+    $("#buoyTable").width(app.screenWidth - 20);
   }
 
   var _deleteBtnExists = function() {
@@ -35,6 +40,10 @@ var MenuView = function(store) {
     else {
       return 0;
     }
+  }
+
+  this.hashChangeSearch = function() {
+    window.location.hash = "search";
   }
 
   this.initialize();

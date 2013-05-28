@@ -6,7 +6,6 @@ var HomeView = function(store) {
   }
 
   this.registerEvents = function() {
-    this.el.on("submit","#test",app.validateBuoy);
     this.el.on("click","#testBtn",this.getTest);
   }
 

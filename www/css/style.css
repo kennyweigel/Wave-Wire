@@ -1,19 +1,9 @@
 body {
   /*removes ios link highlighting*/
   -webkit-tap-highlight-color:rgba(0,0,0,0);
-}
-/* searchbar styles */
-.navbar-search {
-  position:absolute;
-  right:60px;
-  left:60px;
+  background-color:#1E90FF;
 }
 
-#mainSearch, #mapSearch {
-  width:96%;
-  padding-left:2%;
-  padding-right:2%;
-}
 /* iscroll styles */
 body {
   margin:0;
@@ -70,8 +60,9 @@ body {
 }
 
 #indicator > li:last-child {
-  margin:0;w
+  margin:0;
 }
+/* end iscroll styles */
 
 /* favorites styles */
 #theList h2 {
@@ -79,17 +70,43 @@ body {
 }
 
 .slide {
-  background-color:#1E90FF;
+  background-color: white;
   padding:10px;
   margin:10px;
   border-radius:10px;
   height: 120px
 }
+/* end favorites styles */
 
-p {
-  color: white;
+/* menu styles */
+#buoyTable {
+  margin: 50px 10px 0px 10px;
+  background-color: white;
+  border-radius:10px;
+  border-width: 2px;
+  border-color:rgb(221, 221, 221);
+  border-style: solid;
+  font-size: 18px;
 }
 
-h2 {
-  color: white;
+#buoyTable td {
+  line-height:30px;
 }
+/* end menu styles */
+
+/* search page */
+.form-search {
+  position: relative;
+  margin: 10px;
+}
+  
+.form-search .search-query {
+  padding-left: 30px;
+}
+
+.form-search .icon-search {
+  position: absolute;
+  top: 7px;
+  left: 11px;
+}
+/* end search page */
