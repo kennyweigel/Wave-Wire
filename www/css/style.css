@@ -76,6 +76,10 @@ body {
   border-radius:10px;
   height: 120px
 }
+
+#addBuoySlide {
+  text-align: center;
+}
 /* end favorites styles */
 
 /* menu styles */

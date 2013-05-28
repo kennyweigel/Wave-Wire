@@ -21,7 +21,7 @@ var HomeView = function(store) {
     //populates the favs nav
     $("#indicator").html(HomeView.navTemplate(testFavs));
     //sets width of scroller to appropriate width
-    $("#scroller").width(testFavs.length * app.screenWidth);
+    $("#scroller").width((testFavs.length + 1) * app.screenWidth);
     //sets width of scroller pages to appropriate width
     $("#scroller li").width(app.screenWidth);
     //sets height of scroller to appropriate height
