@@ -79,6 +79,8 @@ body {
 
 #addBuoySlide {
   text-align: center;
+  position: relative;
+  top: 30%;
 }
 /* end favorites styles */
 

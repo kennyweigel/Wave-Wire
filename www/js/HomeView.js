@@ -7,6 +7,7 @@ var HomeView = function(store) {
 
   this.registerEvents = function() {
     this.el.on("click","#testBtn",this.getTest);
+    this.el.on("click","#addBuoySlide",this.hashChangeSearch);
   }
 
   this.render = function() {
@@ -91,6 +92,10 @@ var HomeView = function(store) {
         }
       }
     }
+  }
+  
+  this.hashChangeSearch = function() {
+    window.location.hash = "search";
   }
 
   this.initialize();
