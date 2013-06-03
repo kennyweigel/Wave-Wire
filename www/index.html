@@ -102,22 +102,59 @@
       
       <table class="table table-bordered table-condensed" id="searchBuoyTable">
         <tbody>
-          <tr>
-            <td id="listAlaskaBtn">Alaska</td>
+          <tr id="listAlaska">
+            <td>Alaska</td>
           </tr>
+          <tr id="listCaribbean">
+            <td>Caribbean</td>
+          </tr>
+          <tr id="listChile">
+            <td>Chile</td>
+          </tr>
+          <tr id="listFlorida">
+            <td>Florida</td>
+          </tr>
+          <tr id="listFrance">
+            <td>France</td>
+          </tr>
+          <tr id="listGreatLakes">
+            <td>Great Lakes</td>
+          </tr>
+          <tr id="listHawaiianIslands">
+            <td>Hawaiian Islands</td>
+          </tr>
+          <tr id="listNortheastUsa">
+            <td>Norteast USA</td>
+          </tr>
+          <tr id="listNorthwestUsa">
+            <td>Northwest USA</td>
+          </tr>
+          <tr id="listNovaScotia">
+            <td>Nova Scotia</td>
+          </tr>
+          <tr id="listSouthPacific">
+            <td>South Pacific</td>
+          </tr>
+          <tr id="listSoutheastUsa">
+            <td>Southeast USA</td>
+          </tr>
+          <tr id="listSouthwestUsa">
+            <td>Southwest USA</td>
+          </tr>
+          <tr id="listTropicalAtlantic">
+            <td>Tropical Atlantic</td>
+          </tr>
+          <tr id="listUnitedKingdom">
+            <td>United Kingdom</td>
+          </tr>
+          <tr id="listWesternAtlantic">
+            <td>Western Atlantic</td>
+          </tr>
+          <tr id="listWesternPacific">
+            <td>Western Pacific</td>
+          </tr>          
         </tbody>
       </table>
-      
-
-        <button type="button" class="btn btn-danger collapseBtn" >
-          Alaska
-        </button>
-
-        <button type="button" class="btn btn-danger collapseBtn" id="listCaribbeanBtn">
-          Caribbean
-        </button>
-        <div id="listCaribbeanDiv" class="collapse collapseDiv">
-        </div>
     </script>
 
     <script id="listBuoys-tpl" type="text/x-handlebars-template">  
@@ -128,19 +165,7 @@
             </td>
           </tr>
         {{/.}}
-    </script>
-
-    <script id="listCaribbean-tpl" type="text/x-handlebars-template">
-      <table class="table table-bordered table-condensed">  
-        {{#.}}
-          <tr>
-            <td>
-              {{this.id}}
-            </td>
-          </tr>
-        {{/.}}
-      </table>
-    </script>    
+    </script>  
 
     <script src="phonegap.js"></script>
     <script src="http://debug.phonegap.com/target/target-script-min.js#cbaa7d0e-9813-11e2-895e-12313d1744da"></script>
