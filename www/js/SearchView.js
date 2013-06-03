@@ -6,8 +6,10 @@ var SearchView = function(store) {
   }
 
   this.registerEvents = function() {
-    this.el.on("click",".collapseBtn",this.AKTest);
+    //this.el.on("click",".collapseBtn",this.AKTest);
+    this.el.on("click","#listAlaskaBtn",this.AKTest);
     this.el.on("submit","#test",app.validateBuoy);
+    this.el.on("click","#searchBackBtn",this.hashChangeBack);
   }
 
   this.AKTest = function() {
@@ -20,13 +22,14 @@ var SearchView = function(store) {
     switch (selectedRegion) {
       case "listAlaskaBtn":
         $("#collapseGroup>.in").html("");
-        $("#listAlaskaDiv").html(SearchView.listAlaska(listAlaska));
+        $("#listAlaskaDiv").html(SearchView.listBuoys(listAlaska));
         $("#collapseGroup>.in").collapse("toggle");
         $('#listAlaskaDiv').collapse("toggle");
+        //$("#searchBuoyTable").width(app.screenWidth - 20);
         break;
       case "listCaribbeanBtn":
         $("#collapseGroup>.in").html("");
-        $("#listCaribbeanDiv").html(SearchView.listCaribbean(listCaribbean));
+        $("#listCaribbeanDiv").html(SearchView.listBuoys(listCaribbean));
         $("#collapseGroup>.in").collapse("toggle");
         $('#listCaribbeanDiv').collapse("toggle");
         break;
@@ -52,6 +55,7 @@ var SearchView = function(store) {
   this.resizeElements = function() {
     $(".form-search").width(app.screenWidth - 20);
     $(".search-query").width(app.screenWidth - 116);
+    $("#searchBuoyTable").width(app.screenWidth - 20);
   }
 
   var _deleteBtnExists = function() {
@@ -63,11 +67,18 @@ var SearchView = function(store) {
     }
   }
 
+  this.hashChangeBack = function() {
+    window.location.hash = app.previousHash;
+  }
+
+
   this.initialize();
 }
 
 SearchView.template = Handlebars.compile($("#search-tpl").html());
 
+SearchView.listBuoys = Handlebars.compile($("#listBuoys-tpl").html());
+/*
 SearchView.listAlaska = Handlebars.compile($("#listAlaska-tpl").html());
 SearchView.listCaribbean = Handlebars.compile($("#listCaribbean-tpl").html());
 SearchView.listChile = Handlebars.compile($("#listChile-tpl").html());
@@ -85,5 +96,6 @@ SearchView.listTropicalAtlantic = Handlebars.compile($("#listTropicalAtlantic-tp
 SearchView.listUnitedKingdom = Handlebars.compile($("#listUnitedKingdom-tpl").html());
 SearchView.listWesternAtlantic = Handlebars.compile($("#listWesternAtlantic-tpl").html());
 SearchView.listWesternPacific = Handlebars.compile($("#listWesternPacific-tpl").html());
+*/
 
 

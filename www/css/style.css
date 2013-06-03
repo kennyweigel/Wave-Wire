@@ -50,13 +50,13 @@ body {
   -moz-border-radius:4px;
   -o-border-radius:4px;
   border-radius:4px;
-  background:#ddd;
+  background:gray;
   overflow:hidden;
   margin-right:4px;
 }
 
 #indicator > li.active {
-  background:#888;
+  background:white;
 }
 
 #indicator > li:last-child {
@@ -118,4 +118,14 @@ body {
   top: 7px;
   left: 11px;
 }
+
+#searchBuoyTable {
+  margin: 10px;
+  background-color: white;
+  border-radius:10px;
+  border-width: 2px;
+  border-color:rgb(221, 221, 221);
+  border-style: solid;
+}
+
 /* end search page */

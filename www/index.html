@@ -90,6 +90,7 @@
       <div class="navbar navbar-static-top navbar-inverse">
         <div class="navbar-inner">
           <a class="brand">search</a>
+          <a class="btn btn-inverse pull-right" id="searchBackBtn"><i class="icon-arrow-left icon-white"></i></a>
         </div>
       </div>
       
@@ -99,26 +100,27 @@
         <a id="searchMapLink" class="btn btn-inverse pull-right" href="#map"><i class="icon-globe icon-white"></i></a>
       </form>
       
-      <div id="collapseGroup">
-        
-        <button type="button" class="btn btn-danger collapseBtn" id="listAlaskaBtn">
+      <table class="table table-bordered table-condensed" id="searchBuoyTable">
+        <tbody>
+          <tr>
+            <td id="listAlaskaBtn">Alaska</td>
+          </tr>
+        </tbody>
+      </table>
+      
+
+        <button type="button" class="btn btn-danger collapseBtn" >
           Alaska
         </button>
-        <div id="listAlaskaDiv" class="collapse collapseDiv">
-        </div>
 
         <button type="button" class="btn btn-danger collapseBtn" id="listCaribbeanBtn">
           Caribbean
         </button>
         <div id="listCaribbeanDiv" class="collapse collapseDiv">
         </div>
-      
-      </div>
-
     </script>
 
-    <script id="listAlaska-tpl" type="text/x-handlebars-template">
-      <table class="table table-bordered table-condensed">  
+    <script id="listBuoys-tpl" type="text/x-handlebars-template">  
         {{#.}}
           <tr>
             <td>
@@ -126,7 +128,6 @@
             </td>
           </tr>
         {{/.}}
-      </table>
     </script>
 
     <script id="listCaribbean-tpl" type="text/x-handlebars-template">

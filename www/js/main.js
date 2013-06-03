@@ -7,8 +7,13 @@ var app = {
   route: function() {
     console.log("app route");
     var self = this;
-    var hash = window.location.hash;
-    if (hash.match("home")) {
+    
+    this.previousHash = this.hash;
+    this.hash = window.location.hash;
+    
+     
+
+    if (this.hash.match("home")) {
       if (this.homePage) {
         console.log("hash change homeview");
         $("body").html(this.homePage.el);
@@ -25,7 +30,7 @@ var app = {
       return;
     }
     
-    if (hash.match("map")) {
+    if (this.hash.match("map")) {
       if (this.mapPage) {
         console.log("hash change mapView");
         $("body").html(this.mapPage.el);
@@ -39,7 +44,7 @@ var app = {
       return;
     }
 
-    if (hash.match("menu")) {
+    if (this.hash.match("menu")) {
       if (this.menuPage) {
         console.log("hash change menuView");
         $("body").html(this.menuPage.el);
@@ -55,7 +60,7 @@ var app = {
       return;
     }
     
-    if (hash.match("search")) {
+    if (this.hash.match("search")) {
       if (this.searchPage) {
         console.log("hash change searchView");
         $("body").html(this.searchPage.el);
@@ -75,6 +80,7 @@ var app = {
   initialize: function() {
     var self = this;
     window.location.hash = "home";
+    this.hash = "home";
     this.registerEvents();
     this.store = new LocalStorageStore();
     this.screenHeight = $(window).height();
