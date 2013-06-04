@@ -63,14 +63,16 @@ var app = {
     if (this.hash.match("search")) {
       if (this.searchPage) {
         console.log("hash change searchView");
-        $("body").html(this.searchPage.el);
+        //$("body").html(this.searchPage.el);
+        this.searchPage.render();
         this.searchPage.resizeElements();
         this.searchPage.registerEvents();
       } 
       else {
         console.log("hash change new searchview");
-        this.searchPage = new SearchView(this.store).render();
-        $("body").html(this.searchPage.el);
+        this.searchPage = new SearchView(this.store);
+        //$("body").html(this.searchPage.el);
+        this.searchPage.render();
         this.searchPage.resizeElements();
       } 
       return;

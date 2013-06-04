@@ -99,7 +99,29 @@
         <div class="icon-search"></div>
         <a id="searchMapLink" class="btn btn-inverse pull-right" href="#map"><i class="icon-globe icon-white"></i></a>
       </form>
+
+      <div id="searchTableContainer">
+      </div>
+
+    </script>
+    
+    <script id="searchTable-tpl" type="text/x-handlebars-template">
       
+      <table class="table table-bordered table-condensed" id="searchBuoyTable">
+        <tbody>
+          {{#.}}
+            <tr id="{{this.id}}">
+              <td>{{{this.name}}}</td>
+            </tr>
+          {{/.}}
+        </tbody>
+      </table>
+
+    </script>
+
+
+    <script id="searchTable2-tpl" type="text/x-handlebars-template">
+
       <table class="table table-bordered table-condensed" id="searchBuoyTable">
         <tbody>
           <tr id="listAlaska">
@@ -157,7 +179,7 @@
       </table>
     </script>
 
-    <script id="listBuoys-tpl" type="text/x-handlebars-template">  
+    <script id="tableBuoys-tpl" type="text/x-handlebars-template">  
         {{#.}}
           <tr>
             <td>

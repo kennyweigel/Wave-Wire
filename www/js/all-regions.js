@@ -17,6 +17,27 @@ listUnitedKingdom
 listWesternAtlantic
 listWesternPacific
 */
+
+var regions = [
+  {"id":"listAlaska", "name":"Alaska"},
+  {"id":"listCaribbean", "name":"Caribbean"},
+  {"id":"listChile", "name":"Chile"},
+  {"id":"listFlorida", "name":"Florida"},
+  {"id":"listFrance", "name":"France"},
+  {"id":"listGreatLakes", "name":"Great Lakes"},
+  {"id":"listHawaiianIslands", "name":"Hawaiian Islands"},
+  {"id":"listNortheastUsa", "name":"Northeast USA"},
+  {"id":"listNorthwestUsa", "name":"Northwest USA"},
+  {"id":"listNovaScotia", "name":"Nova Scotia"},
+  {"id":"listSouthPacific", "name":"South Pacific"},
+  {"id":"listSoutheastUsa", "name":"Southeast USA"},
+  {"id":"listSouthwestUsa", "name":"Southwest USA"},
+  {"id":"listTropicalAtlantic", "name":"Tropical Atlantic"},
+  {"id":"listUnitedKingdom", "name":"United Kingdom"},
+  {"id":"listWesternAtlantic", "name":"Western Atlantic"},
+  {"id":"listWesternPacific", "name":"Western Pacific"}
+];
+
 //-- ALASKA --//
 var listAlaska = [
   {"id":"46001","name":"WESTERN GULF OF ALASKA - 175NM SE of Kodiak, AK","lat":56.304,"lng":-147.920},

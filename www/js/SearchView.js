@@ -12,12 +12,22 @@ var SearchView = function(store) {
     this.el.on("click","#searchBackBtn",this.hashChangeBack);
   }
 
+/*
   this.AKTest = function() {
     console.log("AKTest");
     
     var selectedRegion = $(this).attr('id');
     //$(".collapseDiv").remove(".table");
     //$(".collapseDiv").html("");
+
+    if ($(this).hasClass("expandedRegion")) {
+      $(this).removeClass("expandedRegion");
+
+    }
+
+    else {
+
+    }
 
     switch (selectedRegion) {
       case "listAlaskaBtn":
@@ -35,11 +45,14 @@ var SearchView = function(store) {
         break;
     }
   }
+*/
 
   this.render = function() {
     this.el.html(SearchView.template());
-
-    return this;
+    $("body").html(this.el);
+    
+    console.log(SearchView.searchTable(regions));
+    $("#searchTableContainer").html(SearchView.searchTable(regions));
   }
 
   this.favListSwipe = function() {
@@ -76,26 +89,5 @@ var SearchView = function(store) {
 }
 
 SearchView.template = Handlebars.compile($("#search-tpl").html());
-
-SearchView.listBuoys = Handlebars.compile($("#listBuoys-tpl").html());
-/*
-SearchView.listAlaska = Handlebars.compile($("#listAlaska-tpl").html());
-SearchView.listCaribbean = Handlebars.compile($("#listCaribbean-tpl").html());
-SearchView.listChile = Handlebars.compile($("#listChile-tpl").html());
-SearchView.listFlorida = Handlebars.compile($("#listFlorida-tpl").html());
-SearchView.listFrance = Handlebars.compile($("#listFrance-tpl").html());
-SearchView.listGreatLakes = Handlebars.compile($("#listGreatLakes-tpl").html());
-SearchView.listHawaiianIslands = Handlebars.compile($("#listHawaiianIslands-tpl").html());
-SearchView.listNortheastUsa = Handlebars.compile($("#listNortheastUsa-tpl").html());
-SearchView.listNorthwestUsa = Handlebars.compile($("#listNorthwestUsa-tpl").html());
-SearchView.listNovaScotia = Handlebars.compile($("#listNovaScotia-tpl").html());
-SearchView.listSouthPacific = Handlebars.compile($("#listSouthPacific-tpl").html());
-SearchView.listSoutheastUsa = Handlebars.compile($("#listSoutheastUsa-tpl").html());
-SearchView.listSouthwestUsa = Handlebars.compile($("#listSouthwestUsa-tpl").html());
-SearchView.listTropicalAtlantic = Handlebars.compile($("#listTropicalAtlantic-tpl").html());
-SearchView.listUnitedKingdom = Handlebars.compile($("#listUnitedKingdom-tpl").html());
-SearchView.listWesternAtlantic = Handlebars.compile($("#listWesternAtlantic-tpl").html());
-SearchView.listWesternPacific = Handlebars.compile($("#listWesternPacific-tpl").html());
-*/
-
-
+SearchView.searchTable = Handlebars.compile($("#searchTable-tpl").html());
+SearchView.tableBuoys = Handlebars.compile($("#tableBuoys-tpl").html());
