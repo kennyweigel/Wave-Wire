@@ -12,6 +12,26 @@ var SearchView = function(store) {
     this.el.on("click","#searchBackBtn",this.hashChangeBack);
   }
 
+  this.regionCollapsible = function() {
+
+    var newTableHtml;
+
+    //if region is already expanded reset the table to default
+    if ($(this).hasClass("regionExpanded")) {
+      $("#searchTableContainer").html(SearchView.searchTable(regions));
+    }
+
+    //
+    else {
+      //if any other regions are expanded
+      if ($("tr").hasClass("regionExpanded")) {
+
+      }
+    }
+
+
+  }
+
 /*
   this.AKTest = function() {
     console.log("AKTest");
