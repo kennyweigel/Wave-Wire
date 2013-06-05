@@ -7,29 +7,33 @@ var SearchView = function(store) {
 
   this.registerEvents = function() {
     //this.el.on("click",".collapseBtn",this.AKTest);
-    this.el.on("click","#listAlaskaBtn",this.AKTest);
+    this.el.on("click",".searchRegion",this.regionCollapsible);
     this.el.on("submit","#test",app.validateBuoy);
     this.el.on("click","#searchBackBtn",this.hashChangeBack);
   }
 
   this.regionCollapsible = function() {
-
     var newTableHtml;
-
     //if region is already expanded reset the table to default
     if ($(this).hasClass("regionExpanded")) {
-      $("#searchTableContainer").html(SearchView.searchTable(regions));
+      newTableHtml = SearchView.searchTable(regions);
+      $("#searchTableContainer").html(newTableHtml);
     }
 
-    //
     else {
       //if any other regions are expanded
       if ($("tr").hasClass("regionExpanded")) {
-
+        newTableHtml = SearchView.searchTable(regions);
+        $("#searchTableContainer").html(newTableHtml);
       }
+      
+      var testing;
+      testing = $(this).attr('id');
+      newTableHtml = SearchView.tableBuoys(window[testing]);
+      //console.log($(this).attr('id'));
+      console.log(newTableHtml);
+      $(this).after(SearchView.tableBuoys(newTableHtml);
     }
-
-
   }
 
 /*
@@ -70,8 +74,6 @@ var SearchView = function(store) {
   this.render = function() {
     this.el.html(SearchView.template());
     $("body").html(this.el);
-    
-    console.log(SearchView.searchTable(regions));
     $("#searchTableContainer").html(SearchView.searchTable(regions));
   }
 
@@ -103,7 +105,6 @@ var SearchView = function(store) {
   this.hashChangeBack = function() {
     window.location.hash = app.previousHash;
   }
-
 
   this.initialize();
 }
