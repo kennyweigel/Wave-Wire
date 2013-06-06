@@ -24,6 +24,13 @@ var SearchView = function(store) {
     //if selected region is already expanded reset the table to default
     if ($(this).hasClass("regionExpanded")) {
       $("#searchBuoyTable").html(SearchView.searchTable(regions));
+      if (self.iscroll) {
+        console.log('Refresh iScroll');
+        self.iscroll.refresh();
+      } else {
+        console.log('New iScroll');
+        self.iscroll = new iScroll($('#searchContent', self.el)[0], {hScrollbar: false, vScrollbar: false });
+      }
     }
 
     else {
@@ -43,11 +50,25 @@ var SearchView = function(store) {
         var html3 = newTableHtml.substring(indexCloseTr);
 
         $("#searchBuoyTable").html(html1 + " regionExpanded" + html2 + SearchView.tableBuoys(window[$(this).attr('id')]) + html3);
+        if (self.iscroll) {
+          console.log('Refresh iScroll');
+          self.iscroll.refresh();
+        } else {
+          console.log('New iScroll');
+          self.iscroll = new iScroll($('#searchContent', self.el)[0], {hScrollbar: false, vScrollbar: false });
+        }
       }
       
       else {
         $(this).after(SearchView.tableBuoys(window[$(this).attr('id')]));
         $(this).addClass("regionExpanded");
+        if (self.iscroll) {
+          console.log('Refresh iScroll');
+          self.iscroll.refresh();
+        } else {
+          console.log('New iScroll');
+          self.iscroll = new iScroll($('#searchContent', self.el)[0], {hScrollbar: false, vScrollbar: false });
+        }
       }
     }
   }
@@ -89,6 +110,7 @@ var SearchView = function(store) {
 
   this.initialize();
 }
+
 
 SearchView.template = Handlebars.compile($("#search-tpl").html());
 SearchView.searchTable = Handlebars.compile($("#searchTable-tpl").html());

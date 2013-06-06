@@ -94,31 +94,32 @@
         </div>
       </div>
       
-      <form class="form-search searchInput" id="test">
-        <input type="text" class="search-query searchInput" id="mainSearch" placeholder="Search For Buoys...">
-        <div class="icon-search"></div>
-        <a id="searchMapLink" class="btn btn-inverse pull-right" href="#map"><i class="icon-globe icon-white"></i></a>
-      </form>
+      <div id="searchContent">
 
-      <table class="table table-bordered table-condensed" id="searchBuoyTable">
-        <tbody>
-        </tbody>
-      </table>
-
+        <form class="form-search searchInput" id="test">
+          <input type="text" class="search-query searchInput" id="mainSearch" placeholder="Search For Buoys...">
+          <div class="icon-search"></div>
+          <a id="searchMapLink" class="btn btn-inverse pull-right" href="#map"><i class="icon-globe icon-white"></i></a>
+        </form>
+      
+      
+        <table class="table table-bordered table-condensed" id="searchBuoyTable">
+          <tbody>
+          </tbody>
+        </table>
+      </div>
 
     </script>
     
     <script id="searchTable-tpl" type="text/x-handlebars-template">
           {{#.}}
-            <tr id="{{this.id}}" class="searchRegion">
-              <td><i class="icon-plus-sign"></i> {{this.name}}</td>
-            </tr>
+          <tr id="{{this.id}}" class="searchRegion"><td><i class="icon-plus-sign"></i> {{this.name}}</td></tr>
           {{/.}}
     </script>
 
     <script id="tableBuoys-tpl" type="text/x-handlebars-template">  
         {{#.}}
-          <tr class="searchId"><td>{{{this.id}}}</td></tr>
+        <tr class="searchId"><td>{{{this.id}}}</td></tr>
         {{/.}}
     </script>  
 
