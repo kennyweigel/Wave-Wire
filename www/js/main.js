@@ -92,13 +92,24 @@ var app = {
 
   showAlert: function (message, title) {
     if (navigator.notification) {
-      navigator.notification.alert(message, null, title, "OK");
+      navigator.notification.alert(
+        message,  //
+        null,     //
+        title,    //
+        "OK"      //
+      );
     } 
     else {
       alert(title ? (title + ": " + message) : message);
     }
   },
-
+/*
+  showConfirm: function (message, title, btnLabels) {
+    if (navigator.confirm) {
+      navigator.confirm
+    }
+  }
+*/
   validateBuoy: function () {
     //form input value
     var input = $("#mainSearch");

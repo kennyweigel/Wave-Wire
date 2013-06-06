@@ -10,71 +10,52 @@ var SearchView = function(store) {
     this.el.on("click",".searchRegion",this.regionCollapsible);
     this.el.on("submit","#test",app.validateBuoy);
     this.el.on("click","#searchBackBtn",this.hashChangeBack);
+    this.el.on("click",".searchId",this.selectId);
+    //$(".searchRegion").on("click",".searchRegion",this.regionCollapsible);
+  }
+
+  this.selectId = function() {
+    console.log('hi');
+    console.log($(this).text().length);
   }
 
   this.regionCollapsible = function() {
     var newTableHtml;
-    //if region is already expanded reset the table to default
+    //if selected region is already expanded reset the table to default
     if ($(this).hasClass("regionExpanded")) {
-      newTableHtml = SearchView.searchTable(regions);
-      $("#searchTableContainer").html(newTableHtml);
+      $("#searchBuoyTable").html(SearchView.searchTable(regions));
     }
 
     else {
       //if any other regions are expanded
       if ($("tr").hasClass("regionExpanded")) {
-        newTableHtml = SearchView.searchTable(regions);
-        $("#searchTableContainer").html(newTableHtml);
+        //default
+        var newTableHtml = SearchView.searchTable(regions);
+        //index of selected region
+        var indexRegion = newTableHtml.indexOf($(this).attr("id"));
+        //index of end of class attribute for selected region
+        var indexClass = newTableHtml.indexOf("searchRegion") + 12;
+        //index of end of </tr> for selected region
+        var indexCloseTr = newTableHtml.indexOf("</tr>",indexRegion) + 4;//19
+      
+        var html1 = newTableHtml.substring(0,indexClass);
+        var html2 = newTableHtml.substring(indexClass,indexCloseTr);
+        var html3 = newTableHtml.substring(indexCloseTr);
+
+        $("#searchBuoyTable").html(html1 + " regionExpanded" + html2 + SearchView.tableBuoys(window[$(this).attr('id')]) + html3);
       }
       
-      var testing;
-      testing = $(this).attr('id');
-      newTableHtml = SearchView.tableBuoys(window[testing]);
-      //console.log($(this).attr('id'));
-      console.log(newTableHtml);
-      $(this).after(SearchView.tableBuoys(newTableHtml);
+      else {
+        $(this).after(SearchView.tableBuoys(window[$(this).attr('id')]));
+        $(this).addClass("regionExpanded");
+      }
     }
   }
-
-/*
-  this.AKTest = function() {
-    console.log("AKTest");
-    
-    var selectedRegion = $(this).attr('id');
-    //$(".collapseDiv").remove(".table");
-    //$(".collapseDiv").html("");
-
-    if ($(this).hasClass("expandedRegion")) {
-      $(this).removeClass("expandedRegion");
-
-    }
-
-    else {
-
-    }
-
-    switch (selectedRegion) {
-      case "listAlaskaBtn":
-        $("#collapseGroup>.in").html("");
-        $("#listAlaskaDiv").html(SearchView.listBuoys(listAlaska));
-        $("#collapseGroup>.in").collapse("toggle");
-        $('#listAlaskaDiv').collapse("toggle");
-        //$("#searchBuoyTable").width(app.screenWidth - 20);
-        break;
-      case "listCaribbeanBtn":
-        $("#collapseGroup>.in").html("");
-        $("#listCaribbeanDiv").html(SearchView.listBuoys(listCaribbean));
-        $("#collapseGroup>.in").collapse("toggle");
-        $('#listCaribbeanDiv').collapse("toggle");
-        break;
-    }
-  }
-*/
 
   this.render = function() {
     this.el.html(SearchView.template());
     $("body").html(this.el);
-    $("#searchTableContainer").html(SearchView.searchTable(regions));
+    $("#searchBuoyTable").html(SearchView.searchTable(regions));
   }
 
   this.favListSwipe = function() {

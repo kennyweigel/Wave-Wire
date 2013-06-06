@@ -100,92 +100,25 @@
         <a id="searchMapLink" class="btn btn-inverse pull-right" href="#map"><i class="icon-globe icon-white"></i></a>
       </form>
 
-      <div id="searchTableContainer">
-      </div>
+      <table class="table table-bordered table-condensed" id="searchBuoyTable">
+        <tbody>
+        </tbody>
+      </table>
+
 
     </script>
     
     <script id="searchTable-tpl" type="text/x-handlebars-template">
-      
-      <table class="table table-bordered table-condensed" id="searchBuoyTable">
-        <tbody>
           {{#.}}
             <tr id="{{this.id}}" class="searchRegion">
-              <td>{{{this.name}}}</td>
+              <td><i class="icon-plus-sign"></i> {{this.name}}</td>
             </tr>
           {{/.}}
-        </tbody>
-      </table>
-
-    </script>
-
-
-    <script id="searchTable2-tpl" type="text/x-handlebars-template">
-
-      <table class="table table-bordered table-condensed" id="searchBuoyTable">
-        <tbody>
-          <tr id="listAlaska">
-            <td>Alaska</td>
-          </tr>
-          <tr id="listCaribbean">
-            <td>Caribbean</td>
-          </tr>
-          <tr id="listChile">
-            <td>Chile</td>
-          </tr>
-          <tr id="listFlorida">
-            <td>Florida</td>
-          </tr>
-          <tr id="listFrance">
-            <td>France</td>
-          </tr>
-          <tr id="listGreatLakes">
-            <td>Great Lakes</td>
-          </tr>
-          <tr id="listHawaiianIslands">
-            <td>Hawaiian Islands</td>
-          </tr>
-          <tr id="listNortheastUsa">
-            <td>Norteast USA</td>
-          </tr>
-          <tr id="listNorthwestUsa">
-            <td>Northwest USA</td>
-          </tr>
-          <tr id="listNovaScotia">
-            <td>Nova Scotia</td>
-          </tr>
-          <tr id="listSouthPacific">
-            <td>South Pacific</td>
-          </tr>
-          <tr id="listSoutheastUsa">
-            <td>Southeast USA</td>
-          </tr>
-          <tr id="listSouthwestUsa">
-            <td>Southwest USA</td>
-          </tr>
-          <tr id="listTropicalAtlantic">
-            <td>Tropical Atlantic</td>
-          </tr>
-          <tr id="listUnitedKingdom">
-            <td>United Kingdom</td>
-          </tr>
-          <tr id="listWesternAtlantic">
-            <td>Western Atlantic</td>
-          </tr>
-          <tr id="listWesternPacific">
-            <td>Western Pacific</td>
-          </tr>          
-        </tbody>
-      </table>
     </script>
 
     <script id="tableBuoys-tpl" type="text/x-handlebars-template">  
         {{#.}}
-          <tr>
-            <td>
-              {{this.id}}
-            </td>
-          </tr>
+          <tr class="searchId"><td>{{{this.id}}}</td></tr>
         {{/.}}
     </script>  
 
