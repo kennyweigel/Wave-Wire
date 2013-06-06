@@ -3,6 +3,7 @@ var SearchView = function(store) {
   this.initialize = function() {
     this.el = $("<div/>");
     this.registerEvents();
+    var self = this;
   }
 
   this.registerEvents = function() {
