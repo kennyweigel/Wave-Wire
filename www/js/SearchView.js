@@ -3,12 +3,15 @@ var SearchView = function(store) {
   this.initialize = function() {
     this.el = $("<div/>");
     this.registerEvents();
-    var self = this;
+    //var self = this;
+    //var that = this;
+    //console.log(self);
+    //console.log(this);
   }
 
   this.registerEvents = function() {
     //this.el.on("click",".collapseBtn",this.AKTest);
-    this.el.on("click",".searchRegion",this.regionCollapsible);
+    this.el.on("click",".searchRegion", {data: this}, this.regionCollapsible);
     this.el.on("submit","#test",app.validateBuoy);
     this.el.on("click","#searchBackBtn",this.hashChangeBack);
     this.el.on("click",".searchId",this.selectId);
@@ -22,13 +25,18 @@ var SearchView = function(store) {
 
   this.regionCollapsible = function() {
     var newTableHtml;
+    //console.log(that);
+    //console.log(self);
+    //console.log(this);
+    console.log(event.data);
     //if selected region is already expanded reset the table to default
     if ($(this).hasClass("regionExpanded")) {
       $("#searchBuoyTable").html(SearchView.searchTable(regions));
       if (self.iscroll) {
         console.log('Refresh iScroll');
         self.iscroll.refresh();
-      } else {
+      } 
+      else {
         console.log('New iScroll');
         self.iscroll = new iScroll($('#searchContent', self.el)[0], {hScrollbar: false, vScrollbar: false });
       }
@@ -54,7 +62,8 @@ var SearchView = function(store) {
         if (self.iscroll) {
           console.log('Refresh iScroll');
           self.iscroll.refresh();
-        } else {
+        } 
+        else {
           console.log('New iScroll');
           self.iscroll = new iScroll($('#searchContent', self.el)[0], {hScrollbar: false, vScrollbar: false });
         }
@@ -66,7 +75,8 @@ var SearchView = function(store) {
         if (self.iscroll) {
           console.log('Refresh iScroll');
           self.iscroll.refresh();
-        } else {
+        } 
+        else {
           console.log('New iScroll');
           self.iscroll = new iScroll($('#searchContent', self.el)[0], {hScrollbar: false, vScrollbar: false });
         }
@@ -78,6 +88,14 @@ var SearchView = function(store) {
     this.el.html(SearchView.template());
     $("body").html(this.el);
     $("#searchBuoyTable").html(SearchView.searchTable(regions));
+    if (this.iscroll) {
+      console.log('Refresh iScroll');
+      this.iscroll.refresh();
+    } 
+    else {
+      console.log('New iScroll');
+      this.iscroll = new iScroll($('#searchContent', self.el)[0], {hScrollbar: false, vScrollbar: false });
+    }
   }
 
   this.favListSwipe = function() {
