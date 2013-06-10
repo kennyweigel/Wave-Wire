@@ -32,13 +32,13 @@ var SearchView = function(store) {
     var distance;
     for (var i = 0; i < listNortheastUsaLen; i++) {
       distance = getDistanceFromLatLonInKm(myLat,myLng,listNortheastUsa[i].lat,listNortheastUsa[i].lng);
-      this.arrayTest.push({"id":listNortheastUsa[i].id, "name":listNortheast[i].name, "distance":distance});
+      this.arrayTest.push({"id":listNortheastUsa[i].id, "name":listNortheastUsa[i].name, "distance":distance});
     }
 
     for (var i = 0; i < listNortheastUsaLen; i++) {
       this.arrayTest.sort(function(obj1, obj2) {
-      return obj1.distance - obj2.distance;
-      }
+        return obj1.distance - obj2.distance;
+      });
     }
 
 
