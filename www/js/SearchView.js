@@ -6,16 +6,67 @@ var SearchView = function(store) {
   }
 
   this.registerEvents = function() {
-    //this.el.on("click",".collapseBtn",this.AKTest);
     this.el.on("click",".searchRegion",this.regionCollapsible);
     this.el.on("submit","#test",app.validateBuoy);
     this.el.on("click","#searchBackBtn",this.hashChangeBack);
     this.el.on("click",".searchId",this.selectId);
-    //$(".searchRegion").on("click",".searchRegion",this.regionCollapsible);
+    this.el.on("click","#searchPosTest", this.getClosestBuoys);
   }
 
   this.selectId = function() {
   }
+
+//new
+  this.getClosestBuoys = function() {
+    navigator.geolocation.getCurrentPosition(onSuccess, onError,{'enableHighAccuracy':true,'timeout':10000});
+  }
+
+  var onSuccess = function(position) {
+    var myLat = position.coords.latitude;
+    var myLng = position.coords.longitude;
+    console.log(myLat + " " + myLng);
+    console.log(listNortheastUsa.length);
+    listNortheastUsaLen = listNortheastUsa.length;
+    // create array of listNortheast buoys objects and distances
+    this.arrayTest = [];
+    var distance;
+    for (var i = 0; i < listNortheastUsaLen; i++) {
+      distance = getDistanceFromLatLonInKm(myLat,myLng,listNortheastUsa[i].lat,listNortheastUsa[i].lng);
+      this.arrayTest.push({"id":listNortheastUsa[i].id, "name":listNortheast[i].name, "distance":distance});
+    }
+
+    for (var i = 0; i < listNortheastUsaLen; i++) {
+      this.arrayTest.sort(function(obj1, obj2) {
+      return obj1.distance - obj2.distance;
+      }
+    }
+
+
+    console.log(this.arrayTest.slice(0,10));
+  }
+
+  function onError(error) {
+    alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
+  }
+
+  function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
+    var R = 6371; // Radius of the earth in km
+    var dLat = deg2rad(lat2-lat1);  // deg2rad below
+    var dLon = deg2rad(lon2-lon1); 
+    var a = 
+      Math.sin(dLat/2) * Math.sin(dLat/2) +
+      Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * 
+      Math.sin(dLon/2) * Math.sin(dLon/2)
+      ; 
+    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+    var d = R * c; // Distance in km
+    return d;
+  }
+
+  function deg2rad(deg) {
+    return deg * (Math.PI/180)
+  }
+//end new
 
   this.regionCollapsible = function() {
     var newTableHtml;

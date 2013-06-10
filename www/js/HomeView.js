@@ -25,8 +25,7 @@ var HomeView = function(store) {
     $("#scroller").width((testFavs.length + 1) * app.screenWidth);
     //sets width of scroller pages to appropriate width
     $("#scroller li").width(app.screenWidth);
-    //sets height of scroller to appropriate height
-    $("#wrapper").height(app.screenHeight - 70);
+    //sets each slide to appropriate height
     $(".slide").height(app.screenHeight - 110);
     //sets first li bullet active
     $("#indicator>:first-child").addClass("active");
@@ -52,8 +51,7 @@ var HomeView = function(store) {
   this.refreshFavorites = function(testFavs) {
     //populates the favs slider
     $("#theList").html(HomeView.favsTemplate(testFavs));
-    //sets height of scroller to appropriate height
-    $("#wrapper").height(app.screenHeight - 70);
+    //sets each slide to appropriate height
     $(".slide").height(app.screenHeight - 110);
   }
 

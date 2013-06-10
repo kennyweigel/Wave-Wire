@@ -15,7 +15,7 @@ var MapView = function() {
   }
 
   this.buoyMap = function() {
-      navigator.geolocation.getCurrentPosition(onSuccess, onError,{'enableHighAccuracy':true,'timeout':10000});
+    navigator.geolocation.getCurrentPosition(onSuccess, onError,{'enableHighAccuracy':true,'timeout':10000});
   }
 
   //onSuccess callback receives a Position object
@@ -46,8 +46,7 @@ var MapView = function() {
   }
   //onError Callback receives a PositionError object
   function onError(error) {
-    alert('code: ' + error.code + '\n' +
-      'message: ' + error.message + '\n');
+    alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
   }
 
   function markBuoys(map) {
