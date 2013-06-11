@@ -24,25 +24,30 @@ var SearchView = function(store) {
   var onSuccess = function(position) {
     var myLat = position.coords.latitude;
     var myLng = position.coords.longitude;
-    console.log(myLat + " " + myLng);
-    console.log(listNortheastUsa.length);
-    listNortheastUsaLen = listNortheastUsa.length;
-    // create array of listNortheast buoys objects and distances
-    this.arrayTest = [];
+    var regionsLength = regions.length;
+    var regionSpecific;
+    var regionSpecificLength;
     var distance;
-    for (var i = 0; i < listNortheastUsaLen; i++) {
-      distance = getDistanceFromLatLonInKm(myLat,myLng,listNortheastUsa[i].lat,listNortheastUsa[i].lng);
-      this.arrayTest.push({"id":listNortheastUsa[i].id, "name":listNortheastUsa[i].name, "distance":distance});
+    this.allBuoys = [];
+    
+    for (var i = 0; i < regionsLength; i++) {
+      regionSpecific = window[regions[i].id];
+      regionSpecificLength = regionSpecific.length;
+      
+      for (var j = 0; j < regionSpecificLength; j++) {
+        distance = getDistanceFromLatLonInKm(myLat,myLng,regionSpecific.lat,regionSpecific.lng);
+        this.allBuoys.push({"id":regionSpecific.id, "name":regionSpecific.name, "distance":distance});
+      }
     }
 
-    for (var i = 0; i < listNortheastUsaLen; i++) {
-      this.arrayTest.sort(function(obj1, obj2) {
-        return obj1.distance - obj2.distance;
+    for (var i = 0; i < regionSpecific; i++) {
+      this.allBuoys.sort(function(buoy1, buoy2) {
+        return buoy1.distance - buoy2.distance;
       });
     }
 
 
-    console.log(this.arrayTest.slice(0,10));
+    console.log(this.allBuoys.slice(0,10));
   }
 
   function onError(error) {

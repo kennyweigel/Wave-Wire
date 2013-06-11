@@ -38,7 +38,6 @@ var regions = [
   {"id":"listWesternPacific", "name":"Western Pacific"}
 ];
 
-//-- ALASKA --//
 var listAlaska = [
   {"id":"46001","name":"WESTERN GULF OF ALASKA - 175NM SE of Kodiak, AK","lat":56.304,"lng":-147.920},
   {"id":"46004","name":"Middle Nomad","lat":50.930,"lng":-136.095},
@@ -122,7 +121,6 @@ var listAlaska = [
   {"id":"YATA2","name":"Yakutat, AK","lat":59.548,"lng":-139.733}
 ];
 
-//-- CARIBBEAN --//
 var listCaribbean = [
   {"id":"41040","name":"NORTH EQUATORIAL ONE- 470 NM East of Martinique","lat":14.516,"lng":-53.024},
   {"id":"41041","name":"NORTH EQUATORIAL TWO - 890 NM East of Martinique","lat":14.329,"lng":-46.082},
@@ -166,13 +164,11 @@ var listCaribbean = [
   {"id":"YABP4","name":"Yabucoa Harbor, PR","lat":18.055,"lng":-65.833}
 ];
 
-//-- CHILE --//
 var listChile = [
   {"id":"32012","name":"Woods Hole Stratus Wave Station","lat":-19.691,"lng":85.567},
   {"id":"32ST0","name":"Stratus","lat":-19.713,"lng":85.585}
 ];
 
-//-- FLORIDA --//
 var listFlorida = [
   {"id":"41008","name":"GRAYS REEF - 40 NM Southeast of Savannah, GA","lat":31.400,"lng":-80.868},
   {"id":"41009","name":"CANAVERAL 20 NM East of Cape Canaveral, FL","lat":28.523,"lng":-80.184},
@@ -275,7 +271,6 @@ var listFlorida = [
   {"id":"WWEF1","name":"White Water -West, FL","lat":25.230,"lng":-80.939}
 ];
 
-//-- FRANCE --//
 var listFrance = [
   {"id":"61001","name":"Nice Buoy","lat":43.400,"lng": 7.800},
   {"id":"61002","name":"Lion Buoy","lat":42.102,"lng": 4.703},
@@ -288,7 +283,6 @@ var listFrance = [
   {"id":"62305","name":"Greenwich Lightship","lat":50.400,"lng": 0.000}
 ];
 
-//-- GREAT LAKES --//
 var listGreatLakes = [
   {"id":"0Y2W3","name":"Sturgeon Bay CG Station, WS","lat":44.794,"lng":-87.313},
   {"id":"45001","name":"MID SUPERIOR 60NM North Northeast Hancock, MI","lat":48.064,"lng":-87.777},
@@ -399,7 +393,6 @@ var listGreatLakes = [
   {"id":"YGNN6","name":"Niagara Coast Guard Station, NY","lat":43.261,"lng":-79.064}
 ];
 
-//-- HAWAIIAN ISLANDS --//
 var listHawaiianIslands = [
   {"id":"51000","name":"NORTHERN HAWAII ONE - 245NM NE of Honolulu HI","lat":23.546,"lng":-154.056},
   {"id":"51003","name":"WESTERN HAWAII - 205 NM SW of Honolulu, HI","lat":19.018,"lng":-160.582},
@@ -423,7 +416,6 @@ var listHawaiianIslands = [
   {"id":"SNDP5","name":"Sand Island, Midway Islands","lat":28.212,"lng":-177.360}
 ];
 
-//- NORTHEAST USA --//
 var listNortheastUsa = [
   {"id":"44007","name":"PORTLAND 12 NM Southeast of Portland,ME","lat":43.531,"lng":-70.144},
   {"id":"44009","name":"DELAWARE BAY 26 NM Southeast of Cape May, NJ","lat":38.461,"lng":-74.703},
@@ -545,7 +537,6 @@ var listNortheastUsa = [
   {"id":"YRSV2","name":"Chesapeake Bay,VA","lat":37.414,"lng":-76.713}
 ];
 
-//-- NORTHWEST USA --//
 var listNorthwestUsa = [
   {"id":"46002","name":"WEST OREGON - 275NM West of Coos Bay, OR","lat":42.589,"lng":-130.474},
   {"id":"46011","name":"SANTA MARIA - 21NM NW of Point Arguello, CA","lat":35.000,"lng":-120.992},
@@ -634,7 +625,6 @@ var listNorthwestUsa = [
   {"id":"WPTW1","name":"Westport, WA","lat":46.904,"lng":-124.105}
 ];
 
-//-- NOVA SCOTIA --//
 var listNovaScotia = [
   {"id":"44137","name":"East Scotia Slope","lat":42.234,"lng":-62.018},
   {"id":"44139","name":"Banqureau Banks","lat":44.240,"lng":-57.103},
@@ -644,12 +634,10 @@ var listNovaScotia = [
   {"id":"44258","name":"Halifax Harbour","lat":44.502,"lng":-63.403}
 ];
 
-//-- SOUTH PACIFIC --//
 var listSouthPacific = [
   {"id":"NSTP6","name":"Pago Pago","lat":-14.280,"lng":-170.688}
 ];
 
-//-- SOUTHEAST USA --//
 var listSoutheastUsa = [
   {"id":"41002","name":"SOUTH HATTERAS - 225 South of Cape Hatteras","lat":31.862,"lng":-74.835},
   {"id":"41004","name":"EDISTO - 41 NM Southeast of Charleston, SC","lat":32.501,"lng":-79.099},
@@ -744,7 +732,6 @@ var listSoutheastUsa = [
   {"id":"YRSV2","name":"Chesapeake Bay,VA","lat":37.414,"lng":-76.713}
 ];
 
-//-- SOUTHWEST USA --//
 var listSouthwestUsa = [
   {"id":"46011","name":"SANTA MARIA - 21NM NW of Point Arguello, CA","lat":35.000,"lng":-120.992},
   {"id":"46025","name":"Santa Monica Basin - 33NM WSW of Santa Monica, CA","lat":33.749,"lng":-119.053},
@@ -779,7 +766,6 @@ var listSouthwestUsa = [
   {"id":"TIXC1","name":"Tijuana River Reserve, CA","lat":32.574,"lng":-117.127}
 ];
 
-//-- TROPICAL ATLANTIC --//
 var listTropicalAtlantic = [
   {"id":"13001","name":"NE Extension","lat":11.47,"lng":-22.98},
   {"id":"13008","name":"Reggae","lat":14.97,"lng":-38.02},
@@ -798,7 +784,6 @@ var listTropicalAtlantic = [
   {"id":"41026","name":"Forro","lat":11.49,"lng":-37.97}
 ];
 
-//-- UNITED KINGDOM --//
 var listUnitedKingdom = [
   {"id":"62095","name":"M6 - West Coast","lat":53.056,"lng":-15.924},
   {"id":"62103","name":"Channel Lightship","lat":49.900,"lng":-2.900},
@@ -829,7 +814,6 @@ var listUnitedKingdom = [
   {"id":"64046","name":"K7 Buoy","lat":60.701,"lng":-4.500}
 ];
 
-//-- WESTERN ATLANTIC --//
 var listWesternAtlantic = [
   {"id":"41002","name":"SOUTH HATTERAS - 225 South of Cape Hatteras","lat":31.862,"lng":-74.835},
   {"id":"41043","name":"NE PUERTO RICO - 170 NM NNE of San Juan, P R","lat":21.061,"lng":-64.966},
@@ -841,7 +825,6 @@ var listWesternAtlantic = [
   {"id":"BEPB6","name":"Bermuda Esso Pier","lat":32.373,"lng":-64.703}
 ];
 
-//-- WESTERN PACIFIC --//
 var listWesternPacific = [
   {"id":"22101","name":"","lat":37.24,"lng": 126.02},
   {"id":"22103","name":"","lat":34.00,"lng": 127.50},
