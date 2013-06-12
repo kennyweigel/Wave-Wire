@@ -19,13 +19,24 @@ var MenuView = function(store) {
     return this;
   }
 
+  
+  //STILL WORKING ON THIS FUNCTION
+  
   this.favListSwipe = function() {
     var currentId = $(this).attr('id').substring(0,5);
     if (_deleteBtnExists()) {
       $(".deleteBtn").remove();
     }
     else {
+      //adds delete button to tr
       $("#"+currentId+"-li").append("<button id='"+currentId+"-delete' class='deleteBtn btn btn-danger pull-right'>Delete</button>");
+      //attaches event handler to 
+      app.menuPage.el.on("touchstart click swipe",function() { 
+        if (!$(this).hasClass("deleteBtn")) {
+          $(this).remove();
+        }
+        
+      });
     }
   }
 
