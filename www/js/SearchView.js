@@ -50,11 +50,11 @@ var SearchView = function(store) {
     console.log(this.allBuoys.slice(0,10));
   }
 
-  function onError(error) {
+  var onError = function(error) {
     alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
   }
 
-  function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
+  var getDistanceFromLatLonInKm = function(lat1,lon1,lat2,lon2) {
     var R = 6371; // Radius of the earth in km
     var dLat = deg2rad(lat2-lat1);  // deg2rad below
     var dLon = deg2rad(lon2-lon1); 
@@ -68,7 +68,7 @@ var SearchView = function(store) {
     return d;
   }
 
-  function deg2rad(deg) {
+  var deg2rad = function(deg) {
     return deg * (Math.PI/180)
   }
 //end new
