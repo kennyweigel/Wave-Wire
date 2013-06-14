@@ -1,7 +1,7 @@
 var MenuView = function(store) {
 
   this.initialize = function() {
-    this.el = $("<div/>");
+    this.el = $("<div id='testingDiv'/>");
     this.registerEvents();
   }
 
@@ -24,20 +24,32 @@ var MenuView = function(store) {
   
   this.favListSwipe = function() {
     var currentId = $(this).attr('id').substring(0,5);
-    if (_deleteBtnExists()) {
-      $(".deleteBtn").remove();
-    }
-    else {
-      //adds delete button to tr
-      $("#"+currentId+"-li").append("<button id='"+currentId+"-delete' class='deleteBtn btn btn-danger pull-right'>Delete</button>");
-      //attaches event handler to 
-      app.menuPage.el.on("touchstart click swipe",function() { 
-        if (!$(this).hasClass("deleteBtn")) {
-          $(this).remove();
-        }
-        
-      });
-    }
+    
+    //adds delete button to swiped tr
+    $("#"+currentId+"-li").append("<button id='"+currentId+"-delete' class='deleteBtn btn btn-danger pull-right'>Delete</button>");
+    
+    console.log(app.menuPage.el);
+    console.log($("#testingDiv"));
+    //remove all event handlers
+    $("#testingDiv").off();
+      
+    //adds handler specific to delete button  
+    $("#testingDiv").on("touchstart click", function() { 
+      //if element that 
+      console.log("add new event handler");
+      if ($(this).hasClass("deleteBtn")) {
+        $(".deleteBtn").remove();
+        app.removeFavorite();
+        $("#testingDiv").off();
+        app.menuPage.registerEvents();
+      }
+      else {
+        $("#testingDiv").off();
+        app.menuPage.registerEvents();
+      }   
+    });
+    
+    
   }
 
   this.resizeElements = function() {
