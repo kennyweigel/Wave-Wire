@@ -65,23 +65,28 @@
     </script>
 
     <script id="menu-tpl" type="text/x-handlebars-template">
-      <div class="navbar navbar-inverse navbar-fixed-top">
+      
+      <div class="navbar navbar-inverse navbar-fixed-top menuPageEl">
         <div class="navbar-inner">
           <a class="btn btn-inverse pull-left" href="#home"><i class="icon-home icon-white"></i></a>
-          <h3>Menu</h3>
+          <h3 >Menu</h3>
           <a class="btn btn-inverse pull-right" href="#map"><i class="icon-globe icon-white"></i></a>
         </div>
       </div>
-      <table class="table table-bordered" id="buoyTable">
-        {{#.}}
-          <tr>
-            <td id="{{this.id}}-li" class="menuBuoy">{{this.id}}</td>
+      
+      <div class="pageContent menuPageEl">
+        <table class="table table-bordered" id="buoyTable">
+          {{#.}}
+          <tr class="menuPageEl">
+            <td id="{{this.id}}-li" class="menuBuoy">{{this.id}}<a class="btn btn-danger pull-right deleteBtn"><i class="icon-minus-sign"></i></a></td>
           </tr>
-        {{/.}}
-        <tr>
-          <td id="menuAddBuoy">Add New Buoy</td>
-        </tr>
-      </table>
+          {{/.}}
+          <tr class="menuPageEl">
+            <td id="menuAddBuoy">Add New Buoy</td>
+          </tr>
+        </table>
+      </div>
+
     </script>
 
     <script id="search-tpl" type="text/x-handlebars-template">

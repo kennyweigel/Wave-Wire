@@ -178,20 +178,6 @@ var app = {
     this.showAlert(inputVal,"has been added to Favorites");
   },
 
-  removeFavorite: function() {
-    var currentID = $(this).attr("id").substring(0,5);
-    var currentFavs = app.store.getFavorites();
-    for (var i = 0; i < currentFavs.length; i++) {
-      if (currentID == currentFavs[i].id) {
-        currentFavs.splice(i,1);
-        break;
-      }
-    }
-    app.store.setFavorites(currentFavs);
-    app.homePage.renderFavorites(currentFavs);
-    app.menuPage.render();
-  },
-
   processBuoyData: function(html) {
     var condStart = html.indexOf("<h2>Weather Conditions</h2>");
     var indStart = html.indexOf("<p>",condStart);

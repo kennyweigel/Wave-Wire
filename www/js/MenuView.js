@@ -1,17 +1,15 @@
 var MenuView = function(store) {
 
   this.initialize = function() {
-    this.el = $("<div id='testingDiv'/>");
+    this.el = $("<div/>");
     this.registerEvents();
   }
 
   this.registerEvents = function() {
+    console.log("register menu events");
     this.el.on("swipe",".menuBuoy",this.favListSwipe);
-    this.el.on("click",".deleteBtn",app.removeFavorite);
+    this.el.on("click",".deleteBtn",this.removeFavorite);
     this.el.on("click","#menuAddBuoy",this.hashChangeSearch);
-
-    //DEBUG
-    this.el.on("dblclick",".menuBuoy",this.favListSwipe);
   }
 
   this.render = function() {
@@ -19,37 +17,18 @@ var MenuView = function(store) {
     return this;
   }
 
-  
-  //STILL WORKING ON THIS FUNCTION
-  
-  this.favListSwipe = function() {
-    var currentId = $(this).attr('id').substring(0,5);
-    
-    //adds delete button to swiped tr
-    $("#"+currentId+"-li").append("<button id='"+currentId+"-delete' class='deleteBtn btn btn-danger pull-right'>Delete</button>");
-    
-    console.log(app.menuPage.el);
-    console.log($("#testingDiv"));
-    //remove all event handlers
-    $("#testingDiv").off();
-      
-    //adds handler specific to delete button  
-    $("#testingDiv").on("touchstart click", function() { 
-      //if element that 
-      console.log("add new event handler");
-      if ($(this).hasClass("deleteBtn")) {
-        $(".deleteBtn").remove();
-        app.removeFavorite();
-        $("#testingDiv").off();
-        app.menuPage.registerEvents();
+  this.removeFavorite = function() {
+    var currentId = $(this).parent().attr('id').substring(0,5);
+    var currentFavs = app.store.getFavorites();
+    for (var i = 0; i < currentFavs.length; i++) {
+      if (currentId == currentFavs[i].id) {
+        currentFavs.splice(i,1);
+        break;
       }
-      else {
-        $("#testingDiv").off();
-        app.menuPage.registerEvents();
-      }   
-    });
-    
-    
+    }
+    app.store.setFavorites(currentFavs);
+    app.homePage.renderFavorites(currentFavs);
+    app.menuPage.render();
   }
 
   this.resizeElements = function() {

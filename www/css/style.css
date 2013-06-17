@@ -20,6 +20,17 @@ body {
   color:white;
   text-align:center;
 }
+
+.pageContent {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  position: absolute;
+  top: 41px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
 /* end universal styles */
 
 /* home page styles */
@@ -121,7 +132,7 @@ body {
 
 /* menu styles */
 #buoyTable {
-  margin: 50px 10px 0px 10px;
+  margin: 10px;
   background-color: white;
   border-radius:10px;
   border-width: 2px;
