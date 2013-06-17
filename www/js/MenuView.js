@@ -7,7 +7,6 @@ var MenuView = function(store) {
 
   this.registerEvents = function() {
     console.log("register menu events");
-    this.el.on("swipe",".menuBuoy",this.favListSwipe);
     this.el.on("click",".deleteBtn",this.removeFavorite);
     this.el.on("click","#menuAddBuoy",this.hashChangeSearch);
   }
@@ -33,15 +32,6 @@ var MenuView = function(store) {
 
   this.resizeElements = function() {
     $("#buoyTable").width(app.screenWidth - 20);
-  }
-
-  var _deleteBtnExists = function() {
-    if ($(".deleteBtn").length) {
-      return 1;
-    }
-    else {
-      return 0;
-    }
   }
 
   this.hashChangeSearch = function() {

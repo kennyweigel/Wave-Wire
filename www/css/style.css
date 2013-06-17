@@ -2,7 +2,7 @@
 body {
   /*removes ios link highlighting*/
   -webkit-tap-highlight-color:rgba(0,0,0,0);
-  background-color:#1E90FF;
+  /*background-color:#1E90FF;*/
   margin:0;
 }
 
@@ -30,13 +30,12 @@ body {
   left: 0px;
   right: 0px;
 }
-
 /* end universal styles */
 
 /* home page styles */
 #wrapper {
   position:absolute;  /* On older OS versions "position" and "z-index" must be defined, */
-  top:40px;
+  top:41px;
   bottom:20px;
   left:0;
   right:0;  
@@ -74,8 +73,9 @@ body {
   margin:0;
   padding:0;
 }
-
 .slide {
+  margin:20px;
+  /*
   background-color: white;
   padding:10px;
   margin:10px;
@@ -86,7 +86,8 @@ body {
   border-width: 2px;
   border-color:rgb(221, 221, 221);
   border-style: solid;
-}
+  */
+ }
 
 #indicator {
   position:absolute;
@@ -95,18 +96,18 @@ body {
   right:0;
   margin:0;
   padding:0;
-  text-align: center;
+  text-align:center;
 }
 
 #indicator > li {
-  display: inline-block;
+  display:inline-block;
   width:10px;
   height:10px;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
   -o-border-radius:5px;
   border-radius:5px;
-  background:gray;
+  background:lightgray;
   overflow:hidden;
   margin-right:5px;
 }
@@ -116,7 +117,7 @@ body {
 }
 
 #indicator > li.active {
-  background:white;
+  background:gray;
 }
 
 #theList h2 {
@@ -132,12 +133,12 @@ body {
 
 /* menu styles */
 #buoyTable {
-  margin: 10px;
-  background-color: white;
+  margin:10px;
+  /*background-color: white;
   border-radius:10px;
   border-width: 2px;
   border-color:rgb(221, 221, 221);
-  border-style: solid;
+  border-style: solid;*/
   font-size: 18px;
 }
 
