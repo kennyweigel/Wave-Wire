@@ -64,7 +64,7 @@ var HomeView = function(store) {
       //increments the number of active AJAX requests
       activeAJAX++;
       updateInit('http://www.ndbc.noaa.gov/mobile/station.php?station='+currentIds[i].id,currentIds[i].id);
-      console.log(currentIds[i]);
+      alert(currentIds[i]);
     }
     
     function updateInit(url,EXTRA) {
