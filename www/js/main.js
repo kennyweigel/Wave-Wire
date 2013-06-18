@@ -51,14 +51,14 @@ var app = {
       if (this.menuPage) {
         console.log("hash change menuView");
         $("body").html(this.menuPage.el);
-        this.menuPage.resizeElements();
+        //this.menuPage.resizeElements();
         this.menuPage.registerEvents();
       } 
       else {
         console.log("hash change new menuview");
         this.menuPage = new MenuView(this.store).render();
         $("body").html(this.menuPage.el);
-        this.menuPage.resizeElements();
+        //this.menuPage.resizeElements();
       } 
       return;
     }

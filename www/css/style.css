@@ -30,6 +30,10 @@ body {
   left: 0px;
   right: 0px;
 }
+
+.table {
+  margin:10px;
+}
 /* end universal styles */
 
 /* home page styles */
