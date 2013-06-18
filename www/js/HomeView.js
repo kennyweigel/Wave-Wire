@@ -67,16 +67,13 @@ var HomeView = function(store) {
     }
     
     function updateInit(url,EXTRA) {
-      alert(url);
       $.get(url,function(html,status) {
-        alert(url);
         update(html,status,EXTRA);
       });
     }
     
     function update(html,status,EXTRA) {
       activeAJAX--;
-      alert(html);
       if(status != 'success') {
         alert('GET was unsuccessful');
         return;
