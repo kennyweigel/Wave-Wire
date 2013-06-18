@@ -6,7 +6,7 @@ var HomeView = function(store) {
   }
 
   this.registerEvents = function() {
-    this.el.on("click","#testBtn",this.getTest);
+    this.el.on("click","#homePageRefresh",this.homePageRefresh);
     this.el.on("click","#addBuoySlide",this.hashChangeSearch);
   }
 
@@ -55,7 +55,7 @@ var HomeView = function(store) {
     $(".slide").height(app.screenHeight - 110);
   }
 
-  this.getTest = function() {
+  this.homePageRefresh = function() {
     var currentIds = store.getFavorites();
     var activeAJAX = 0;
 
