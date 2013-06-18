@@ -53,7 +53,7 @@ var HomeView = function(store) {
     $("#theList").html(HomeView.favsTemplate(testFavs));
     //sets each slide to appropriate size
     $(".slide").height(app.screenHeight - 110);
-    $(".slide").width(app.screenWidth);
+    $(".slide").width(app.screenWidth - 40);
   }
 
   this.homePageRefresh = function() {
