@@ -51,8 +51,9 @@ var HomeView = function(store) {
   this.refreshFavorites = function(testFavs) {
     //populates the favs slider
     $("#theList").html(HomeView.favsTemplate(testFavs));
-    //sets each slide to appropriate height
+    //sets each slide to appropriate size
     $(".slide").height(app.screenHeight - 110);
+    $(".slide").width(app.screenWidth);
   }
 
   this.homePageRefresh = function() {
