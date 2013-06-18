@@ -67,6 +67,7 @@ var HomeView = function(store) {
     }
     
     function updateInit(url,EXTRA) {
+      alert(url);
       $.get(url,function(html,status){
         update(html,status,EXTRA);
       });
