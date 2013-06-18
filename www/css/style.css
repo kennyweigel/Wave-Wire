@@ -79,6 +79,7 @@ body {
 }
 .slide {
   margin:20px;
+  position:absolute;
   /*
   background-color: white;
   padding:10px;
