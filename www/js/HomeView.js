@@ -49,7 +49,6 @@ var HomeView = function(store) {
   }
 
   this.refreshFavorites = function(testFavs) {
-    alert(testFavs);
     //populates the favs slider
     $("#theList").html(HomeView.favsTemplate(testFavs));
     //sets each slide to appropriate height
@@ -79,6 +78,9 @@ var HomeView = function(store) {
       activeAJAX--;
       if(status != 'success') {
         alert('GET was unsuccessful');
+        
+        $("#homePageRefresh > i").removeClass("icon-spin");
+        
         return;
       }
       
