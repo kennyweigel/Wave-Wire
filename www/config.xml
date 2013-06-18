@@ -19,6 +19,6 @@
     <feature name="http://api.phonegap.com/1.0/geolocation"/>
     <!-- this is not implemented yet -->
     <feature name="http://api.phonegap.com/1.0/network"/>
-
+    <access origin="*"/>
  
 </widget>
