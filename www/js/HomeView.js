@@ -60,6 +60,9 @@ var HomeView = function(store) {
     var currentIds = store.getFavorites();
     var activeAJAX = 0;
     var currentIdsLength = currentIds.length;
+    
+    $("#homePageRefresh > i").addClass("icon-spin");
+    
     for (var i = 0; i < currentIdsLength; i++) {
       //increments the number of active AJAX requests
       activeAJAX++;
@@ -85,6 +88,9 @@ var HomeView = function(store) {
           store.setFavorites(currentIds);
           if (!activeAJAX) {
             app.homePage.refreshFavorites(currentIds);
+            
+            $("#homePageRefresh > i").removeClass("icon-spin");
+            
             break;
           }
           break;
