@@ -10,7 +10,6 @@
   <body>
     
     <script id="home-tpl" type="text/x-handlebars-template">
-
       <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
           <a class="btn btn-inverse pull-left" href="#menu"><i class="icon-cog icon-white"></i></a>
@@ -18,7 +17,6 @@
           <a class="btn btn-inverse pull-right" id="homePageRefresh"><i class="icon-refresh icon-white"></i></a>
         </div>
       </div>
-      
       <div id="wrapper">
         <div id="scroller">
           <ul id="theList">
@@ -31,26 +29,26 @@
     
     <script id="favs-tpl" type="text/x-handlebars-template">
       {{#.}}
-        <li>
-          <div class="slide">
-            <h2>{{this.id}}</h2>
-            <div id="{{this.id}}-data">{{{this.data}}}</div>
-          </div>
-        </li>
+      <li>
+        <div class="slide">
+          <h2>{{this.id}}</h2>
+          <div id="{{this.id}}-data">{{{this.data}}}</div>
+        </div>
+      </li>
       {{/.}}
-        <li>
-          <div class="slide">
-            <h2>Add Buoy</h2>
-            <p id="addBuoySlide">Tap Here To Add A New Buoy</p>
-          </div>
-        </li>
+      <li>
+        <div class="slide">
+          <h2>Add Buoy</h2>
+          <p id="addBuoySlide">Tap Here To Add A New Buoy</p>
+        </div>
+      </li>
     </script>
 
     <script id="nav-tpl" type="text/x-handlebars-template">
       {{#.}}
-        <li></li>
+      <li></li>
       {{/.}}
-        <li></li>
+      <li></li>
     </script>
     
     <script id="map-tpl" type="text/x-handlebars-template">
@@ -64,8 +62,7 @@
       <div id="mapCanvas" style="height:100%; width:100%; position:absolute"></div>
     </script>
 
-    <script id="menu-tpl" type="text/x-handlebars-template">
-      
+    <script id="menu-tpl" type="text/x-handlebars-template">    
       <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
           <a class="btn btn-inverse pull-left" href="#home"><i class="icon-home icon-white"></i></a>
@@ -73,7 +70,6 @@
           <a class="btn btn-inverse pull-right" href="#map"><i class="icon-globe icon-white"></i></a>
         </div>
       </div>
-      
       <div class="pageContent">
         <table class="table table-bordered" id="buoyTable">
           {{#.}}
@@ -86,50 +82,41 @@
           </tr>
         </table>
       </div>
-
     </script>
 
     <script id="search-tpl" type="text/x-handlebars-template">
-      
       <div class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-inner">
           <h3>Add Buoys</h3>
           <a class="btn btn-inverse pull-right" id="searchBackBtn"><i class="icon-arrow-left icon-white"></i></a>
         </div>
       </div>
-      
       <div id="searchContent">
-
         <form class="form-search searchInput" id="test">
           <input type="text" class="search-query searchInput" id="mainSearch" placeholder="Search For Buoys...">
           <div class="icon-search"></div>
           <a id="searchMapLink" class="btn btn-inverse pull-right" href="#map"><i class="icon-location-arrow icon-white"></i></a>
         </form>
-      
-        <button id="searchPosTest">Testing</button>
-
         <table class="table table-bordered table-condensed" id="searchBuoyTable">
           <tbody>
           </tbody>
         </table>
       </div>
-
     </script>
     
     <script id="searchTable-tpl" type="text/x-handlebars-template">
       {{#.}}
-        <tr id="{{this.id}}" class="searchRegion"><td><i class="icon-plus-sign"></i> {{this.name}}</td></tr>
+      <tr id="{{this.id}}" class="searchRegion"><td><i class="icon-plus-sign"></i> {{this.name}}</td></tr>
       {{/.}}
     </script>
 
     <script id="tableBuoys-tpl" type="text/x-handlebars-template">  
       {{#.}}
-        <tr class="searchId"><td>{{{this.id}}}</td></tr>
+      <tr class="searchId"><td>{{{this.id}}}</td></tr>
       {{/.}}
     </script>  
 
     <script src="phonegap.js"></script>
-    <script src="http://debug.phonegap.com/target/target-script-min.js#cbaa7d0e-9813-11e2-895e-12313d1744da"></script>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="lib/jquery-1.9.1.min.js"></script>
     <script src="lib/jquery.mobile.custom.js"></script>
