@@ -30,10 +30,6 @@ var MenuView = function(store) {
     app.menuPage.render();
   }
 
-  this.resizeElements = function() {
-    $("#buoyTable").width(app.screenWidth - 20);
-  }
-
   this.hashChangeSearch = function() {
     window.location.hash = "search";
   }
