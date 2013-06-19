@@ -104,12 +104,26 @@ var app = {
       alert(title ? (title + ": " + message) : message);
     }
   },
-/*
-  showPrompt: function(a,b,c)
+
+  showConfirm: function(message,onConfirm,title,buttonLabels) {
     if (navigator.nofication) {
-      navigator.notification.prompt(message, promptCallback, [title], [buttonLabels])
-    } 
-     */ 
+      navigator.notification.confirm(
+        message,            // message
+        onConfirm,          // callback to invoke with index of button pressed
+        title,              //title
+        buttonLabels      //[buttonLabels]
+      );
+    }
+    else {
+      var clickedOk = confirm(message);
+      if (clickedOk) {
+        
+      }
+      else {
+      
+      }
+    }
+  },
 
   validateBuoy: function () {
     //form input value
