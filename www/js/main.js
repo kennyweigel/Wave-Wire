@@ -105,12 +105,12 @@ var app = {
     }
   },
 /*
-  showConfirm: function (message, title, btnLabels) {
-    if (navigator.confirm) {
-      navigator.confirm
-    }
-  }
-*/
+  showPrompt: function(a,b,c)
+    if (navigator.nofication) {
+      navigator.notification.prompt(message, promptCallback, [title], [buttonLabels])
+    } 
+     */ 
+
   validateBuoy: function () {
     //form input value
     var input = $("#mainSearch");

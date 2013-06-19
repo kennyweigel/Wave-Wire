@@ -5,20 +5,20 @@
         versionCode = "10"
         version     = "1.0.0">
  
-    <name>Wave Wire</name>
- 
-    <description>
-        Gathers realtime data from NOAA ocean buoys.
-    </description>
- 
-    <author>
-        Kenny Weigel
-    </author>
+  <name>Wave Wire</name>
 
-    <preference name="orientation" value="portrait"/>
-    <feature name="http://api.phonegap.com/1.0/geolocation"/>
-    <!-- this is not implemented yet -->
-    <feature name="http://api.phonegap.com/1.0/network"/>
-    <access origin="*"/>
- 
+  <description>
+      Gathers realtime data from NOAA ocean buoys.
+  </description>
+
+  <author>
+      Kenny Weigel
+  </author>
+
+  <preference name="phonegap-version" value="2.7.0"/>
+  <preference name="orientation" value="portrait"/>
+  <feature name="http://api.phonegap.com/1.0/geolocation"/>
+  <!-- this is not implemented yet -->
+  <feature name="http://api.phonegap.com/1.0/network"/>
+  <access origin="*"/>
 </widget>
