@@ -107,7 +107,6 @@ var app = {
 
   showConfirm: function(message, onConfirm, title, buttonLabels) {
     if (navigator.notification) {
-      alert("native confirm");
       navigator.notification.confirm(
         message,      // message
         onConfirm,    // callback to invoke with index of button pressed
@@ -116,10 +115,9 @@ var app = {
       );
     }
     else {
-      alert("web confirm");
       var clickedOk = confirm(message);
       if (clickedOk) {
-        onConfirm();
+        onConfirm(1);
       }
     }
   },

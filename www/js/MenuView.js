@@ -26,17 +26,19 @@ var MenuView = function() {
     );
   }
 
-  this.removeFavorite = function() {
-    var currentFavs = app.store.getFavorites();
-    for (var i = 0; i < currentFavs.length; i++) {
-      if (app.menuPage.currentId == currentFavs[i].id) {
-        currentFavs.splice(i,1);
-        break;
+  this.removeFavorite = function(buttonIndex) {
+    if (buttonIndex == 1) {
+      var currentFavs = app.store.getFavorites();
+      for (var i = 0; i < currentFavs.length; i++) {
+        if (app.menuPage.currentId == currentFavs[i].id) {
+          currentFavs.splice(i,1);
+          break;
+        }
       }
+      app.store.setFavorites(currentFavs);
+      app.homePage.renderFavorites(currentFavs);
+      app.menuPage.render();
     }
-    app.store.setFavorites(currentFavs);
-    app.homePage.renderFavorites(currentFavs);
-    app.menuPage.render();
   }
 
   this.hashChangeSearch = function() {
