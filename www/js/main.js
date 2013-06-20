@@ -55,7 +55,7 @@ var app = {
       } 
       else {
         console.log("hash change new menuview");
-        this.menuPage = new MenuView(this.store).render();
+        this.menuPage = new MenuView().render();
         $("body").html(this.menuPage.el);
       } 
       return;
@@ -108,19 +108,16 @@ var app = {
   showConfirm: function(message,onConfirm,title,buttonLabels) {
     if (navigator.nofication) {
       navigator.notification.confirm(
-        message,            // message
-        onConfirm,          // callback to invoke with index of button pressed
-        title,              //title
-        buttonLabels      //[buttonLabels]
+        message,      // message
+        onConfirm,    // callback to invoke with index of button pressed
+        title,        //title
+        buttonLabels  //[buttonLabels]
       );
     }
     else {
       var clickedOk = confirm(message);
       if (clickedOk) {
-        
-      }
-      else {
-      
+        onConfirm();
       }
     }
   },

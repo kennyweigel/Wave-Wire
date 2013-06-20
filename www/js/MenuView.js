@@ -1,4 +1,4 @@
-var MenuView = function(store) {
+var MenuView = function() {
 
   this.initialize = function() {
     this.el = $("<div/>");
@@ -7,20 +7,30 @@ var MenuView = function(store) {
 
   this.registerEvents = function() {
     console.log("register menu events");
-    this.el.on("click",".deleteBtn",this.removeFavorite);
+    this.el.on("click",".deleteBtn",this.confirmRemove);
     this.el.on("click","#menuAddBuoy",this.hashChangeSearch);
   }
 
   this.render = function() {
-    this.el.html(MenuView.template(store.getFavorites()));
+    this.el.html(MenuView.template(app.store.getFavorites()));
     return this;
   }
 
+  this.confirmRemove = function() {
+    app.menuPage.currentId = $(this).parent().attr('id').substring(0,5);
+    app.showConfirm(
+      "Are you sure you want to remove buoy: " + app.menuPage.currentId + "?",
+      app.menuPage.removeFavorite,
+      null,
+      ["Yes", "Cancel"]
+    );
+  }
+
   this.removeFavorite = function() {
-    var currentId = $(this).parent().attr('id').substring(0,5);
+    //var currentId = $(this).parent().attr('id').substring(0,5);
     var currentFavs = app.store.getFavorites();
     for (var i = 0; i < currentFavs.length; i++) {
-      if (currentId == currentFavs[i].id) {
+      if (app.menuPage.currentId == currentFavs[i].id) {
         currentFavs.splice(i,1);
         break;
       }
