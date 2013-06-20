@@ -106,7 +106,7 @@ var app = {
   },
 
   showConfirm: function(message, onConfirm, title, buttonLabels) {
-    if (navigator.nofication) {
+    if (navigator.notification) {
       alert("native confirm");
       navigator.notification.confirm(
         message,      // message
