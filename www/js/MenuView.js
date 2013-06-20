@@ -27,7 +27,6 @@ var MenuView = function() {
   }
 
   this.removeFavorite = function() {
-    //var currentId = $(this).parent().attr('id').substring(0,5);
     var currentFavs = app.store.getFavorites();
     for (var i = 0; i < currentFavs.length; i++) {
       if (app.menuPage.currentId == currentFavs[i].id) {
