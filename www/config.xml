@@ -20,5 +20,6 @@
   <feature name="http://api.phonegap.com/1.0/geolocation"/>
   <!-- this is not implemented yet -->
   <feature name="http://api.phonegap.com/1.0/network"/>
+  <plugin name="Notification" value="CDVNotification" />
   <access origin="*"/>
 </widget>
