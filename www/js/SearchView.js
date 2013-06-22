@@ -12,6 +12,11 @@ var SearchView = function(store) {
     this.el.on("click","#searchGeolocation", this.getClosestBuoys);
   }
 
+  this.render = function() {
+    this.el.html(SearchView.template());
+    return this;
+  }
+
   this.selectId = function() {
   }
 
@@ -47,6 +52,7 @@ var SearchView = function(store) {
   }
 
   var onGeolocationError = function(error) {
+    console.log(error);
     $("#closestBuoysTable").html("<tbody><tr><td>Geolocation failed, check your network connection and privacy settings.</td></tr></tbody>");
   }
 
@@ -120,12 +126,6 @@ var SearchView = function(store) {
       }
       return 0;
     }
-  }
-
-  this.render = function() {
-    this.el.html(SearchView.template());
-    $("body").html(this.el);
-    $("#searchBuoyTable").html(SearchView.searchTable(regions));
   }
 
   this.hashChangeBack = function() {

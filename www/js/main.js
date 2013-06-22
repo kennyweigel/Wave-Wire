@@ -8,7 +8,6 @@ var app = {
   },
 
   route: function() {
-    console.log("app route");
     var self = this;
 
     this.previousHash = this.hash;
@@ -16,13 +15,11 @@ var app = {
 
     if (this.hash.match("home")) {
       if (this.homePage) {
-        console.log("hash change homeview");
         $("body").html(this.homePage.el);
         this.homePage.renderFavorites(this.store.getFavorites());
         this.homePage.registerEvents();
       }
       else {
-        console.log("hash change new homeview");
         this.homePage = new HomeView(this.store).render();
         $("body").html(this.homePage.el);
         this.homePage.renderFavorites(this.store.getFavorites());
@@ -33,12 +30,10 @@ var app = {
     
     if (this.hash.match("map")) {
       if (this.mapPage) {
-        console.log("hash change mapView");
         $("body").html(this.mapPage.el);
         this.mapPage.registerEvents();
       } 
       else {
-        console.log("hash change new mapview");
         this.mapPage = new MapView().render();
         $("body").html(this.mapPage.el);
         this.mapPage.buoyMap();
@@ -48,12 +43,10 @@ var app = {
 
     if (this.hash.match("menu")) {
       if (this.menuPage) {
-        console.log("hash change menuView");
         $("body").html(this.menuPage.el);
         this.menuPage.registerEvents();
       } 
       else {
-        console.log("hash change new menuview");
         this.menuPage = new MenuView().render();
         $("body").html(this.menuPage.el);
       } 
@@ -62,17 +55,13 @@ var app = {
     
     if (this.hash.match("search")) {
       if (this.searchPage) {
-        console.log("hash change searchView");
-        //$("body").html(this.searchPage.el);
-        this.searchPage.render();
+        $("body").html(this.searchPage.el);
         this.searchPage.registerEvents();
         this.searchPage.getClosestBuoys();
       } 
       else {
-        console.log("hash change new searchview");
-        this.searchPage = new SearchView(this.store);
-        //$("body").html(this.searchPage.el);
-        this.searchPage.render();
+        this.searchPage = new SearchView(this.store).render();
+        $("body").html(this.searchPage.el);
         this.searchPage.getClosestBuoys();
       } 
       return;
@@ -126,10 +115,10 @@ var app = {
     app.store.setFavorites(currentFavs);
     app.homePage.renderFavorites(currentFavs);
     if (app.menuPage) {
-      app.menuPage.render();
+      //app.menuPage.render();
     }
     input.val("");
-    this.showAlert(inputVal,"has been added to Favorites");
+    this.showAlert("Buoy with ID: " + inputVal + " has been added.",null);
   },
 
   processBuoyData: function(html) {

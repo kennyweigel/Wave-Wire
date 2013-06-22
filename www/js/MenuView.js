@@ -6,7 +6,6 @@ var MenuView = function() {
   }
 
   this.registerEvents = function() {
-    console.log("register menu events");
     this.el.on("click",".deleteBtn",this.confirmRemove);
     this.el.on("click","#menuAddBuoy",this.hashChangeSearch);
   }
