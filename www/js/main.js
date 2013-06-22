@@ -10,11 +10,9 @@ var app = {
   route: function() {
     console.log("app route");
     var self = this;
-    
+
     this.previousHash = this.hash;
     this.hash = window.location.hash;
-    
-     
 
     if (this.hash.match("home")) {
       if (this.homePage) {
@@ -43,6 +41,7 @@ var app = {
         console.log("hash change new mapview");
         this.mapPage = new MapView().render();
         $("body").html(this.mapPage.el);
+        this.mapPage.buoyMap();
       } 
       return;
     }
@@ -66,15 +65,15 @@ var app = {
         console.log("hash change searchView");
         //$("body").html(this.searchPage.el);
         this.searchPage.render();
-        this.searchPage.resizeElements();
         this.searchPage.registerEvents();
+        this.searchPage.getClosestBuoys();
       } 
       else {
         console.log("hash change new searchview");
         this.searchPage = new SearchView(this.store);
         //$("body").html(this.searchPage.el);
         this.searchPage.render();
-        this.searchPage.resizeElements();
+        this.searchPage.getClosestBuoys();
       } 
       return;
     }
@@ -119,60 +118,6 @@ var app = {
       if (clickedOk) {
         onConfirm(1);
       }
-    }
-  },
-
-  validateBuoy: function () {
-    //form input value
-    var input = $("#mainSearch");
-    var inputVal = input.val().toUpperCase();
-    var currentFavs = app.store.getFavorites();
-
-    if (!currentFavs.length) {
-      if (isValidID(inputVal)) {
-        app.addFavBuoy(input,inputVal,currentFavs);
-      }
-      else {
-        app.showAlert(inputVal + " does not exist","TITLE DNE");
-        input.val("");
-      }
-    }
-    else {
-      //checks if buoy is already a favorite
-      if (isFavorite(inputVal,currentFavs)) {
-        app.showAlert(inputVal + " is already a favorite","TITLE");
-        input.val("");
-      }
-      else {
-        //checks if buoy matches any buoy ids
-        if (isValidID(inputVal)) {
-          if (isValidID(inputVal)) {
-            app.addFavBuoy(input,inputVal,currentFavs);
-          }
-        }
-        else {
-          app.showAlert(inputVal + " does not exist","TITLE DNE");
-          input.val("");
-        }
-      }
-    }
-    
-    function isValidID(inputVal) {
-      for (var i = 0; i<buoys.length; i++) {
-        if (buoys[i].id == inputVal) {
-          return 1;
-        }
-      }
-      return 0;
-    }
-
-    function isFavorite(inputVal,currentFavs) {
-      for (var i = 0; i < currentFavs.length; i++) {
-        if (inputVal == currentFavs[i].id) {
-          return 1;
-        }
-      }
-      return 0;
     }
   },
 

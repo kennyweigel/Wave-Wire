@@ -6,52 +6,48 @@ var SearchView = function(store) {
   }
 
   this.registerEvents = function() {
-    this.el.on("click",".searchRegion",this.regionCollapsible);
-    this.el.on("submit","#test",app.validateBuoy);
+    this.el.on("submit","#searchInput",this.validateBuoy);
     this.el.on("click","#searchBackBtn",this.hashChangeBack);
     this.el.on("click",".searchId",this.selectId);
-    this.el.on("click","#searchPosTest", this.getClosestBuoys);
+    this.el.on("click","#searchGeolocation", this.getClosestBuoys);
   }
 
   this.selectId = function() {
   }
 
-//new
   this.getClosestBuoys = function() {
-    navigator.geolocation.getCurrentPosition(onSuccess, onError,{'enableHighAccuracy':true,'timeout':10000});
+    navigator.geolocation.getCurrentPosition(onGeolocationSuccess, onGeolocationError,{'enableHighAccuracy':true,'timeout':10000});
   }
 
-  var onSuccess = function(position) {
+  var onGeolocationSuccess = function(position) {
     var myLat = position.coords.latitude;
     var myLng = position.coords.longitude;
-    var regionsLength = regions.length;
     var regionSpecific;
     var regionSpecificLength;
     var distance;
-    this.allBuoys = [];
-    
+    var allBuoys = new Array();
+    var regionsLength = regions.length;    
     for (var i = 0; i < regionsLength; i++) {
       regionSpecific = window[regions[i].id];
       regionSpecificLength = regionSpecific.length;
       
       for (var j = 0; j < regionSpecificLength; j++) {
-        distance = getDistanceFromLatLonInKm(myLat,myLng,regionSpecific.lat,regionSpecific.lng);
-        this.allBuoys.push({"id":regionSpecific.id, "name":regionSpecific.name, "distance":distance});
+        distance = getDistanceFromLatLonInKm(myLat,myLng,regionSpecific[j].lat,regionSpecific[j].lng);
+        allBuoys.push({"id":regionSpecific[j].id, "name":regionSpecific[j].name, "distance":distance});
       }
     }
-
-    for (var i = 0; i < regionSpecific; i++) {
-      this.allBuoys.sort(function(buoy1, buoy2) {
+    allBuoysLength = allBuoys.length;
+    for (var i = 0; i < allBuoysLength; i++) {
+      allBuoys.sort(function(buoy1, buoy2) {
         return buoy1.distance - buoy2.distance;
       });
     }
-
-
-    console.log(this.allBuoys.slice(0,10));
+    allBuoys = allBuoys.slice(0,10);
+    $("#closestBuoysTable").html(SearchView.closestBuoysTable(allBuoys));
   }
 
-  var onError = function(error) {
-    alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
+  var onGeolocationError = function(error) {
+    $("#closestBuoysTable").html("<tbody><tr><td>Geolocation failed, check your network connection and privacy settings.</td></tr></tbody>");
   }
 
   var getDistanceFromLatLonInKm = function(lat1,lon1,lat2,lon2) {
@@ -71,39 +67,58 @@ var SearchView = function(store) {
   var deg2rad = function(deg) {
     return deg * (Math.PI/180)
   }
-//end new
 
-  this.regionCollapsible = function() {
-    var newTableHtml;
+  this.validateBuoy = function () {
+    //form input value
+    var input = $("#mainSearch");
+    var inputVal = input.val().toUpperCase();
+    var currentFavs = app.store.getFavorites();
 
-    //if selected region is already expanded reset the table to default
-    if ($(this).hasClass("regionExpanded")) {
-      $("#searchBuoyTable").html(SearchView.searchTable(regions));
+    if (!currentFavs.length) {
+      if (isValidID(inputVal)) {
+        app.addFavBuoy(input,inputVal,currentFavs);
+      }
+      else {
+        app.showAlert(inputVal + " does not exist","TITLE DNE");
+        input.val("");
+      }
+    }
+    else {
+      //checks if buoy is already a favorite
+      if (isFavorite(inputVal,currentFavs)) {
+        app.showAlert(inputVal + " is already a favorite","TITLE");
+        input.val("");
+      }
+      else {
+        //checks if buoy matches any buoy ids
+        if (isValidID(inputVal)) {
+          if (isValidID(inputVal)) {
+            app.addFavBuoy(input,inputVal,currentFavs);
+          }
+        }
+        else {
+          app.showAlert(inputVal + " does not exist","TITLE DNE");
+          input.val("");
+        }
+      }
+    }
+    
+    function isValidID(inputVal) {
+      for (var i = 0; i<buoys.length; i++) {
+        if (buoys[i].id == inputVal) {
+          return 1;
+        }
+      }
+      return 0;
     }
 
-    else {
-      //if any other regions are expanded
-      if ($("tr").hasClass("regionExpanded")) {
-        //default
-        var newTableHtml = SearchView.searchTable(regions);
-        //index of selected region
-        var indexRegion = newTableHtml.indexOf($(this).attr("id"));
-        //index of end of class attribute for selected region
-        var indexClass = newTableHtml.indexOf("searchRegion") + 12;
-        //index of end of </tr> for selected region
-        var indexCloseTr = newTableHtml.indexOf("</tr>",indexRegion) + 4;//19
-      
-        var html1 = newTableHtml.substring(0,indexClass);
-        var html2 = newTableHtml.substring(indexClass,indexCloseTr);
-        var html3 = newTableHtml.substring(indexCloseTr);
-
-        $("#searchBuoyTable").html(html1 + " regionExpanded" + html2 + SearchView.tableBuoys(window[$(this).attr('id')]) + html3);
+    function isFavorite(inputVal,currentFavs) {
+      for (var i = 0; i < currentFavs.length; i++) {
+        if (inputVal == currentFavs[i].id) {
+          return 1;
+        }
       }
-      
-      else {
-        $(this).after(SearchView.tableBuoys(window[$(this).attr('id')]));
-        $(this).addClass("regionExpanded");
-      }
+      return 0;
     }
   }
 
@@ -113,31 +128,6 @@ var SearchView = function(store) {
     $("#searchBuoyTable").html(SearchView.searchTable(regions));
   }
 
-  this.favListSwipe = function() {
-    var currentId = $(this).attr('id').substring(0,5);
-    if (_deleteBtnExists()) {
-      $(".deleteBtn").remove();
-    }
-    else {
-      $("#"+currentId+"-li>h3").append("<button id='"+currentId+"-delete' class='deleteBtn btn btn-danger pull-right'>Delete</button>");
-    }
-  }
-
-  this.resizeElements = function() {
-    $(".form-search").width(app.screenWidth - 20);
-    $(".search-query").width(app.screenWidth - 116);
-    $("#searchBuoyTable").width(app.screenWidth - 20);
-  }
-
-  var _deleteBtnExists = function() {
-    if ($(".deleteBtn").length) {
-      return 1;
-    }
-    else {
-      return 0;
-    }
-  }
-
   this.hashChangeBack = function() {
     window.location.hash = app.previousHash;
   }
@@ -145,7 +135,5 @@ var SearchView = function(store) {
   this.initialize();
 }
 
-
 SearchView.template = Handlebars.compile($("#search-tpl").html());
-SearchView.searchTable = Handlebars.compile($("#searchTable-tpl").html());
-SearchView.tableBuoys = Handlebars.compile($("#tableBuoys-tpl").html());
+SearchView.closestBuoysTable = Handlebars.compile($("#closestBuoysTable-tpl").html());

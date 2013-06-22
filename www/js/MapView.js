@@ -15,12 +15,13 @@ var MapView = function() {
   }
 
   this.buoyMap = function() {
+    $("#mapRefresh > i").addClass("icon-spin");
     navigator.geolocation.getCurrentPosition(onSuccess, onError,{'enableHighAccuracy':true,'timeout':10000});
   }
 
   //onSuccess callback receives a Position object
   function onSuccess(position) {
-    
+
     var myLat = position.coords.latitude;
     var myLng = position.coords.longitude;
     var myLatLng = new google.maps.LatLng(myLat,myLng)
@@ -43,9 +44,11 @@ var MapView = function() {
     });    
     
     markBuoys(map);
+    $("#mapRefresh > i").removeClass("icon-spin");
   }
   //onError Callback receives a PositionError object
   function onError(error) {
+    $("#mapRefresh > i").removeClass("icon-spin");
     alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
   }
 

@@ -91,30 +91,29 @@
           <a class="btn btn-inverse pull-right" id="searchBackBtn"><i class="icon-arrow-left icon-white"></i></a>
         </div>
       </div>
-      <div id="searchContent">
-        <form class="form-search searchInput" id="test">
+      <div class="pageContent" id="searchContent">
+        <form class="form-search" id="searchInput">
           <input type="search" class="search-query searchInput" id="mainSearch" placeholder="Search For Buoys...">
           <div class="icon-search"></div>
-          <a id="searchMapLink" class="btn btn-inverse pull-right" href="#map"><i class="icon-location-arrow icon-white"></i></a>
+          <a id="searchGeolocation" class="btn btn-inverse pull-right"><i class="icon-location-arrow icon-white"></i></a>
         </form>
-        <table class="table table-bordered table-condensed" id="searchBuoyTable">
+        <table class="table table-bordered" id="closestBuoysTable">
           <tbody>
+            <tr>
+              <td>Getting Current Location...</td>
+            </tr>
           </tbody>
         </table>
       </div>
     </script>
     
-    <script id="searchTable-tpl" type="text/x-handlebars-template">
-      {{#.}}
-      <tr id="{{this.id}}" class="searchRegion"><td><i class="icon-plus-sign"></i> {{this.name}}</td></tr>
-      {{/.}}
+    <script id="closestBuoysTable-tpl" type="text/x-handlebars-template">
+      <tbody>
+        {{#.}}
+        <tr id="{{this.id}}" class="closestBuoys"><td>{{this.id}} - {{this.name}}</td></tr>
+        {{/.}}
+      </tbody>
     </script>
-
-    <script id="tableBuoys-tpl" type="text/x-handlebars-template">  
-      {{#.}}
-      <tr class="searchId"><td>{{{this.id}}}</td></tr>
-      {{/.}}
-    </script>  
 
     <script src="phonegap.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
