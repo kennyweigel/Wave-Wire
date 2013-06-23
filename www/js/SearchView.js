@@ -8,7 +8,6 @@ var SearchView = function(store) {
   this.registerEvents = function() {
     this.el.on("submit","#searchForm",this.validateBuoy);
     this.el.on("click","#searchBackBtn",this.hashChangeBack);
-    this.el.on("click",".searchId",this.selectId);
     this.el.on("click","#searchGeolocation", this.getClosestBuoys);
     if (document.documentElement.hasOwnProperty("ontouchstart")) {
       // ... if yes: register touch event listener to change the "selected" state of the item
@@ -17,14 +16,17 @@ var SearchView = function(store) {
       });
       this.el.on("touchend", ".closestBuoys", function(event) {
         $(event.target).removeClass("tappable-active");
+        app.searchPage.selectClosestBuoy($(this).attr("id").substring(0,5));
       });
-    } else {
+    } 
+    else {
       // ... if not: register mouse events instead
-      this.el.on("mousedown",".closestBuoys", function(event) {
-        $(event.target).addClass("tappable-active");
+      this.el.on("mousedown",".closestBuoys", function() {
+        $(this).addClass("tappable-active");
       });
-      this.el.on("mouseup",".closestBuoys", function(event) {
-        $(event.target).removeClass("tappable-active");
+      this.el.on("mouseup",".closestBuoys", function() {
+        $(this).removeClass("tappable-active");
+        app.searchPage.selectClosestBuoy($(this).attr("id").substring(0,5));
       });
     }
   }
@@ -34,7 +36,8 @@ var SearchView = function(store) {
     return this;
   }
 
-  this.selectId = function() {
+  this.selectClosestBuoy = function(selectedBuoy) {
+    app.addFavBuoy(null,selectedBuoy);
   }
 
   this.getClosestBuoys = function() {
@@ -96,54 +99,7 @@ var SearchView = function(store) {
     //form input value
     var input = $("#searchInput");
     var inputVal = input.val().toUpperCase();
-    var currentFavs = app.store.getFavorites();
-
-    if (!currentFavs.length) {
-      if (isValidID(inputVal)) {
-        app.addFavBuoy(input,inputVal,currentFavs);
-      }
-      else {
-        app.showAlert(inputVal + " does not exist","TITLE DNE");
-        input.val("");
-      }
-    }
-    else {
-      //checks if buoy is already a favorite
-      if (isFavorite(inputVal,currentFavs)) {
-        app.showAlert(inputVal + " is already a favorite","TITLE");
-        input.val("");
-      }
-      else {
-        //checks if buoy matches any buoy ids
-        if (isValidID(inputVal)) {
-          if (isValidID(inputVal)) {
-            app.addFavBuoy(input,inputVal,currentFavs);
-          }
-        }
-        else {
-          app.showAlert(inputVal + " does not exist","TITLE DNE");
-          input.val("");
-        }
-      }
-    }
-    
-    function isValidID(inputVal) {
-      for (var i = 0; i<buoys.length; i++) {
-        if (buoys[i].id == inputVal) {
-          return 1;
-        }
-      }
-      return 0;
-    }
-
-    function isFavorite(inputVal,currentFavs) {
-      for (var i = 0; i < currentFavs.length; i++) {
-        if (inputVal == currentFavs[i].id) {
-          return 1;
-        }
-      }
-      return 0;
-    }
+    app.addFavBuoy(input,inputVal);
   }
 
   this.hashChangeBack = function() {

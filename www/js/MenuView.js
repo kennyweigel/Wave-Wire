@@ -16,7 +16,7 @@ var MenuView = function() {
   }
 
   this.confirmRemove = function() {
-    app.menuPage.currentId = $(this).parent().attr('id').substring(0,5);
+    app.menuPage.currentId = $(this).parent().attr("id").substring(0,5);
     app.showConfirm(
       "Are you sure you want to remove buoy: " + app.menuPage.currentId + "?",
       app.menuPage.removeFavorite,

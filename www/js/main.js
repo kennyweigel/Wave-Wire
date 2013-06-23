@@ -113,15 +113,79 @@ var app = {
     }
   },
 
-  addFavBuoy: function(input,inputVal,currentFavs) {
-    currentFavs.push({id:inputVal,data:"<p>No Updates</p>"});
-    app.store.setFavorites(currentFavs);
-    app.homePage.renderFavorites(currentFavs);
-    if (app.menuPage) {
-      //app.menuPage.render();
+  addFavBuoy: function(input,inputVal) {
+    //new
+    var currentFavs = this.store.getFavorites();
+
+    if (!currentFavs.length) {
+      if (isValidId(inputVal)) {
+        addBuoy(inputVal);
+        if (input) {
+          input.val("");
+        }
+      }
+      else {
+        app.showAlert(inputVal + " does not exist","TITLE DNE");
+        if (input) {
+          input.val("");
+        }
+      }
     }
-    input.val("");
-    this.showAlert("Buoy with ID: " + inputVal + " has been added.","Buoy Added");
+    else {
+      //checks if buoy is already a favorite
+      if (isFavorite(inputVal,currentFavs)) {
+        app.showAlert(inputVal + " is already a favorite","TITLE");
+        if (input) {
+          input.val("");
+        }
+      }
+      else {
+        //checks if buoy matches any buoy ids
+        if (isValidId(inputVal)) {
+          if (isValidId(inputVal)) {
+            addBuoy(inputVal,currentFavs);
+            if (input) {
+              input.val("");
+            }
+          }
+        }
+        else {
+          app.showAlert(inputVal + " does not exist","TITLE DNE");
+          if (input) {
+            input.val("");
+          }
+        }
+      }
+    }
+
+    function addBuoy(inputVal) {
+      currentFavs.push({id:inputVal,data:"<p>No Updates</p>"});
+      app.store.setFavorites(currentFavs);
+      //app.homePage.renderFavorites(currentFavs);
+      if (app.menuPage) {
+        app.menuPage.render();
+      }
+      app.showAlert("Buoy with ID: " + inputVal + " has been added.","Buoy Added");
+    }
+
+    
+    function isValidId(inputVal) {
+      for (var i = 0; i<buoys.length; i++) {
+        if (buoys[i].id == inputVal) {
+          return 1;
+        }
+      }
+      return 0;
+    }
+
+    function isFavorite(inputVal) {
+      for (var i = 0; i < currentFavs.length; i++) {
+        if (inputVal == currentFavs[i].id) {
+          return 1;
+        }
+      }
+      return 0;
+    }
   },
 
   processBuoyData: function(html) {
