@@ -10,6 +10,23 @@ var SearchView = function(store) {
     this.el.on("click","#searchBackBtn",this.hashChangeBack);
     this.el.on("click",".searchId",this.selectId);
     this.el.on("click","#searchGeolocation", this.getClosestBuoys);
+    if (document.documentElement.hasOwnProperty("ontouchstart")) {
+      // ... if yes: register touch event listener to change the "selected" state of the item
+      this.el.on("touchstart", ".closestBuoys", function(event) {
+        $(event.target).addClass("tappable-active");
+      });
+      this.el.on("touchend", ".closestBuoys", function(event) {
+        $(event.target).removeClass("tappable-active");
+      });
+    } else {
+      // ... if not: register mouse events instead
+      this.el.on("mousedown",".closestBuoys", function(event) {
+        $(event.target).addClass("tappable-active");
+      });
+      this.el.on("mouseup",".closestBuoys", function(event) {
+        $(event.target).removeClass("tappable-active");
+      });
+    }
   }
 
   this.render = function() {

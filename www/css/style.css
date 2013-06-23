@@ -173,4 +173,9 @@ body {
   position:relative;
   top:10px;
 }
+
+.tappable-active {
+    color: #fff;
+    background-color: #4286f5;
+}
 /* end search page */
