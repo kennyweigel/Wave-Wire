@@ -6,7 +6,7 @@ var SearchView = function(store) {
   }
 
   this.registerEvents = function() {
-    this.el.on("submit","#searchInput",this.validateBuoy);
+    this.el.on("submit","#searchForm",this.validateBuoy);
     this.el.on("click","#searchBackBtn",this.hashChangeBack);
     this.el.on("click",".searchId",this.selectId);
     this.el.on("click","#searchGeolocation", this.getClosestBuoys);
@@ -21,6 +21,7 @@ var SearchView = function(store) {
   }
 
   this.getClosestBuoys = function() {
+    $("#closestBuoysTable").html("<tbody><tr><td>Getting Current Location...</td></tr></tbody>");
     navigator.geolocation.getCurrentPosition(onGeolocationSuccess, onGeolocationError,{'enableHighAccuracy':true,'timeout':10000});
   }
 
@@ -76,7 +77,7 @@ var SearchView = function(store) {
 
   this.validateBuoy = function () {
     //form input value
-    var input = $("#mainSearch");
+    var input = $("#searchInput");
     var inputVal = input.val().toUpperCase();
     var currentFavs = app.store.getFavorites();
 

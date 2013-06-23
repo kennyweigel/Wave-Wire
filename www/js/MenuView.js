@@ -20,7 +20,7 @@ var MenuView = function() {
     app.showConfirm(
       "Are you sure you want to remove buoy: " + app.menuPage.currentId + "?",
       app.menuPage.removeFavorite,
-      null,
+      "Remove Buoy",
       ["Yes", "Cancel"]
     );
   }

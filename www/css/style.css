@@ -125,7 +125,7 @@ body {
   text-align:center;
 }
 
-#addBuoySlide {
+#addBuoySlide > p {
   text-align: center;
   position: relative;
   top: 30%;

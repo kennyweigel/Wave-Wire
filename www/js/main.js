@@ -5,6 +5,9 @@ var app = {
     window.addEventListener('load', function() {
       FastClick.attach(document.body);
     }, false);
+    $(window).on("orientationchange", function(event) {
+      event.preventDefault();
+    });
   },
 
   route: function() {
@@ -82,10 +85,10 @@ var app = {
   showAlert: function (message, title) {
     if (navigator.notification) {
       navigator.notification.alert(
-        message,  //
-        null,     //
-        title,    //
-        "OK"      //
+        message,  //message
+        null,     //callback to invoke when button pressed
+        title,    //title
+        "OK"      //button label
       );
     } 
     else {
@@ -96,8 +99,8 @@ var app = {
   showConfirm: function(message, onConfirm, title, buttonLabels) {
     if (navigator.notification) {
       navigator.notification.confirm(
-        message,      // message
-        onConfirm,    // callback to invoke with index of button pressed
+        message,      //message
+        onConfirm,    //callback to invoke with index of button pressed
         title,        //title
         buttonLabels  //[buttonLabels]
       );
@@ -118,7 +121,7 @@ var app = {
       //app.menuPage.render();
     }
     input.val("");
-    this.showAlert("Buoy with ID: " + inputVal + " has been added.",null);
+    this.showAlert("Buoy with ID: " + inputVal + " has been added.","Buoy Added");
   },
 
   processBuoyData: function(html) {
