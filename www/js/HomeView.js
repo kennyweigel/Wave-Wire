@@ -68,7 +68,8 @@ var HomeView = function(store) {
             if (!activeAJAX) {
               $("#homePageRefresh > i").removeClass("icon-spin");
               app.homePage.render();
-              $("body").html(app.homePage.el)
+              $("body").html(app.homePage.el);
+              app.homePage.resize();
               break;
             }
             break;
