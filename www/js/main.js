@@ -18,15 +18,20 @@ var app = {
 
     if (this.hash.match("home")) {
       if (this.homePage) {
+        this.homePage.render();
         $("body").html(this.homePage.el);
-        this.homePage.renderFavorites(this.store.getFavorites());
+        this.homePage.resize();
+        //this.homePage.renderFavorites(this.store.getFavorites());
         this.homePage.registerEvents();
       }
       else {
-        this.homePage = new HomeView(this.store).render();
+        this.homePage = new HomeView(this.store);
+        this.homePage.render();
         $("body").html(this.homePage.el);
-        this.homePage.renderFavorites(this.store.getFavorites());
-        this.homePage.homePageRefresh();
+        this.homePage.resize();
+        this.homePage.registerEvents();
+        //this.homePage.renderFavorites(this.store.getFavorites());
+        //this.homePage.homePageRefresh();
       }
       return;
     }

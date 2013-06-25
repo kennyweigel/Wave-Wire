@@ -35,7 +35,7 @@ var MenuView = function() {
         }
       }
       app.store.setFavorites(currentFavs);
-      app.homePage.renderFavorites(currentFavs);
+      app.homePage.render();
       app.menuPage.render();
     }
   }

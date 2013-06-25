@@ -20,35 +20,29 @@
       <div id="wrapper">
         <div id="scroller">
           <ul id="theList">
+            {{#.}}
+            <li>
+              <div class="slide">
+                <h2>{{this.id}}</h2>
+                <div id="{{this.id}}-data">{{{this.data}}}</div>
+              </div>
+            </li>
+            {{/.}}
+            <li>
+              <div class="slide" id="addBuoySlide">
+                <h2>Add Buoy</h2>
+                <p>Tap Here To Add A New Buoy</p>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
       <ul id="indicator">
+        {{#.}}
+        <li></li>
+        {{/.}}
+        <li></li>
       </ul>
-    </script>
-    
-    <script id="favs-tpl" type="text/x-handlebars-template">
-      {{#.}}
-      <li>
-        <div class="slide">
-          <h2>{{this.id}}</h2>
-          <div id="{{this.id}}-data">{{{this.data}}}</div>
-        </div>
-      </li>
-      {{/.}}
-      <li>
-        <div class="slide" id="addBuoySlide">
-          <h2>Add Buoy</h2>
-          <p>Tap Here To Add A New Buoy</p>
-        </div>
-      </li>
-    </script>
-
-    <script id="nav-tpl" type="text/x-handlebars-template">
-      {{#.}}
-      <li></li>
-      {{/.}}
-      <li></li>
     </script>
     
     <script id="map-tpl" type="text/x-handlebars-template">

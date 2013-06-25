@@ -2,7 +2,6 @@ var HomeView = function(store) {
 
   this.initialize = function() {
     this.el = $("<div/>");
-    this.registerEvents();
   }
 
   this.registerEvents = function() {
@@ -11,17 +10,12 @@ var HomeView = function(store) {
   }
 
   this.render = function() {
-    this.el.html(HomeView.template());
+    this.el.html(HomeView.template(app.store.getFavorites()));
     return this;
   }
 
-  this.renderFavorites = function(testFavs) {
-    console.log("render favs");
-    //populates the favs slider
-    $("#theList").html(HomeView.favsTemplate(testFavs));
-    //populates the favs nav
-    $("#indicator").html(HomeView.navTemplate(testFavs));
-    //sets width of scroller to appropriate width
+  this.resize = function() {
+    var testFavs = app.store.getFavorites();
     $("#scroller").width((testFavs.length + 1) * app.screenWidth);
     //sets width of scroller pages to appropriate width
     $("#scroller li").width(app.screenWidth);
@@ -38,7 +32,7 @@ var HomeView = function(store) {
         hScrollbar: false,
         onScrollEnd: function () {
           document.querySelector("#indicator > li.active").className = "";
-          document.querySelector('#indicator > li:nth-child(' + (this.currPageX+1) + ')').className = 'active';
+          document.querySelector("#indicator > li:nth-child(" + (this.currPageX+1) + ")").className = "active";
         }
       });
     }
@@ -46,15 +40,11 @@ var HomeView = function(store) {
     else {
       this.myScroll.refresh();
     }
-  }
-
-  this.refreshFavorites = function(testFavs) {
-    //populates the favs slider
-    $("#theList").html(HomeView.favsTemplate(testFavs));
     //sets each slide to appropriate size
     $(".slide").height(app.screenHeight - 110);
     $(".slide").width(app.screenWidth - 40);
   }
+
 
   this.homePageRefresh = function() {
     var currentIds = store.getFavorites();
@@ -110,5 +100,5 @@ var HomeView = function(store) {
 }
 
 HomeView.template = Handlebars.compile($('#home-tpl').html());
-HomeView.favsTemplate = Handlebars.compile($('#favs-tpl').html());
-HomeView.navTemplate = Handlebars.compile($("#nav-tpl").html());
+//HomeView.favsTemplate = Handlebars.compile($('#favs-tpl').html());
+//HomeView.navTemplate = Handlebars.compile($("#nav-tpl").html());
