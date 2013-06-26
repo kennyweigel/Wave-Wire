@@ -15,7 +15,7 @@ var SearchView = function(store) {
       });
       this.el.on("touchend", ".closestBuoys", function(event) {
         $(event.target).removeClass("tappable-active");
-        app.searchPage.selectClosestBuoy($(this).attr("id").substring(0,5));
+        app.searchPage.confirmClosestBuoy($(this).attr("id").substring(0,5));
       });
     } 
     else {
@@ -25,7 +25,7 @@ var SearchView = function(store) {
       });
       this.el.on("mouseup",".closestBuoys", function() {
         $(this).removeClass("tappable-active");
-        app.searchPage.selectClosestBuoy($(this).attr("id").substring(0,5));
+        app.searchPage.confirmClosestBuoy($(this).attr("id").substring(0,5));
       });
     }
   }
@@ -35,8 +35,24 @@ var SearchView = function(store) {
     return this;
   }
 
-  this.selectClosestBuoy = function(selectedBuoy) {
-    app.addFavBuoy(null,selectedBuoy);
+  this.confirmClosestBuoy = function(currentId) {
+    app.searchPage.currentId = currentId;
+    app.showConfirm(
+      "Are you sure you want to add buoy: " + app.searchPage.currentId + "?",
+      app.searchPage.addClosestBuoy,
+      "Add Favorite",
+      ["Yes", "Cancel"]
+    );
+  }
+
+  this.addClosestBuoy = function(buttonIndex) {
+    if (buttonIndex == 1) {
+      app.addFavBuoy(null,app.searchPage.currentId);
+      return;
+    }
+    else {
+      return;
+    }
   }
 
   this.getClosestBuoys = function() {

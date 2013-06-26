@@ -5,7 +5,7 @@ var MenuView = function() {
   }
 
   this.registerEvents = function() {
-    this.el.on("click",".deleteBtn",this.confirmRemove);
+    this.el.on("click",".deleteBtn",this.confirmRemoveFavorite);
     this.el.on("click","#menuAddBuoy",this.hashChangeSearch);
   }
 
@@ -14,12 +14,12 @@ var MenuView = function() {
     return this;
   }
 
-  this.confirmRemove = function() {
+  this.confirmRemoveFavorite = function() {
     app.menuPage.currentId = $(this).parent().attr("id").substring(0,5);
     app.showConfirm(
       "Are you sure you want to remove buoy: " + app.menuPage.currentId + "?",
       app.menuPage.removeFavorite,
-      "Remove Buoy",
+      "Remove Favorite",
       ["Yes", "Cancel"]
     );
   }
