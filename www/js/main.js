@@ -120,10 +120,8 @@ var app = {
   },
 
   addFavBuoy: function(input,inputVal) {
-    //new
-    var currentFavs = this.store.getFavorites();
-
-    if (!currentFavs.length) {
+    var currentFavorites = this.store.getFavorites();
+    if (!currentFavorites.length) {
       if (isValidId(inputVal)) {
         addBuoy(inputVal);
         if (input) {
@@ -139,7 +137,7 @@ var app = {
     }
     else {
       //checks if buoy is already a favorite
-      if (isFavorite(inputVal,currentFavs)) {
+      if (isFavorite(inputVal,currentFavorites)) {
         app.showAlert(inputVal + " is already a favorite","TITLE");
         if (input) {
           input.val("");
@@ -149,7 +147,7 @@ var app = {
         //checks if buoy matches any buoy ids
         if (isValidId(inputVal)) {
           if (isValidId(inputVal)) {
-            addBuoy(inputVal,currentFavs);
+            addBuoy(inputVal,currentFavorites);
             if (input) {
               input.val("");
             }
@@ -165,16 +163,15 @@ var app = {
     }
 
     function addBuoy(inputVal) {
-      currentFavs.push({id:inputVal,data:"<p>No Updates</p>"});
-      app.store.setFavorites(currentFavs);
-      //app.homePage.renderFavorites(currentFavs);
+      currentFavorites.push({id:inputVal,data:"<p>No Updates</p>"});
+      app.store.setFavorites(currentFavorites);
+      //app.homePage.renderFavorites(currentFavorites);
       if (app.menuPage) {
         app.menuPage.render();
       }
       app.showAlert("Buoy with ID: " + inputVal + " has been added.","Buoy Added");
     }
 
-    
     function isValidId(inputVal) {
       for (var i = 0; i<buoys.length; i++) {
         if (buoys[i].id == inputVal) {
@@ -185,8 +182,8 @@ var app = {
     }
 
     function isFavorite(inputVal) {
-      for (var i = 0; i < currentFavs.length; i++) {
-        if (inputVal == currentFavs[i].id) {
+      for (var i = 0; i < currentFavorites.length; i++) {
+        if (inputVal == currentFavorites[i].id) {
           return 1;
         }
       }

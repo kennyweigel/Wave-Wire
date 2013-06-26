@@ -40,7 +40,12 @@ var MenuView = function() {
   }
 
   this.hashChangeSearch = function() {
-    window.location.hash = "search";
+    if (app.store.getFavorites().length < 10) {
+      window.location.hash = "search";
+    }
+    else {
+      app.showAlert("Only 10 buoys may be added to your Favorites","Favorites Limit Reached");
+    }
   }
 
   this.initialize();

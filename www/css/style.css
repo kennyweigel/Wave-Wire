@@ -169,9 +169,8 @@ body {
   left: 11px;
 }
 
-#closestBuoysTable {
-  position:relative;
-  top:10px;
+#searchContent > h4 {
+  margin-top:40px;
 }
 
 .tappable-active {
