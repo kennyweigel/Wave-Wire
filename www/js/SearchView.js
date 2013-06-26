@@ -40,7 +40,6 @@ var SearchView = function(store) {
   }
 
   this.confirmClosestBuoy = function(currentId) {
-    alert(app.searchPage.selectDownElement + " " + app.searchPage.selectUpElement);
     if (app.searchPage.selectDownElement == app.searchPage.selectUpElement) {
       app.searchPage.currentId = currentId;
       app.showConfirm(
