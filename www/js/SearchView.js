@@ -10,11 +10,13 @@ var SearchView = function(store) {
     this.el.on("click","#searchGeolocation", this.getClosestBuoys);
     if (document.documentElement.hasOwnProperty("ontouchstart")) {
       // ... if yes: register touch event listener to change the "selected" state of the item
-      this.el.on("touchstart", ".closestBuoys", function(event) {
-        $(event.target).addClass("tappable-active");
+      this.el.on("touchstart", ".closestBuoys", function() {
+        $(this).addClass("tappable-active");
+        app.searchPage.selectDownElement = $(this).attr("id");
       });
-      this.el.on("touchend", ".closestBuoys", function(event) {
-        $(event.target).removeClass("tappable-active");
+      this.el.on("touchend", ".closestBuoys", function() {
+        $(".closestBuoys").removeClass("tappable-active");
+        app.searchPage.selectUpElement = $(this).attr("id");
         app.searchPage.confirmClosestBuoy($(this).attr("id").substring(0,5));
       });
     } 
@@ -22,9 +24,11 @@ var SearchView = function(store) {
       // ... if not: register mouse events instead
       this.el.on("mousedown",".closestBuoys", function() {
         $(this).addClass("tappable-active");
+        app.searchPage.selectDownElement = $(this).attr("id");
       });
       this.el.on("mouseup",".closestBuoys", function() {
-        $(this).removeClass("tappable-active");
+        $(".closestBuoys").removeClass("tappable-active");
+        app.searchPage.selectUpElement = $(this).attr("id");
         app.searchPage.confirmClosestBuoy($(this).attr("id").substring(0,5));
       });
     }
@@ -36,13 +40,19 @@ var SearchView = function(store) {
   }
 
   this.confirmClosestBuoy = function(currentId) {
-    app.searchPage.currentId = currentId;
-    app.showConfirm(
-      "Are you sure you want to add buoy: " + app.searchPage.currentId + "?",
-      app.searchPage.addClosestBuoy,
-      "Add Favorite",
-      ["Yes", "Cancel"]
-    );
+    if (app.searchPage.selectDownElement == app.searchPage.selectUpElement) {
+      app.searchPage.currentId = currentId;
+      app.showConfirm(
+        "Are you sure you want to add buoy: " + app.searchPage.currentId + "?",
+        app.searchPage.addClosestBuoy,
+        "Add Favorite",
+        ["Yes", "Cancel"]
+      );
+      return;
+    }
+    else {
+      return;
+    }
   }
 
   this.addClosestBuoy = function(buttonIndex) {
@@ -58,6 +68,7 @@ var SearchView = function(store) {
   this.getClosestBuoys = function() {
     $("#closestBuoysTable").html("<tbody><tr><td>Getting Current Location...</td></tr></tbody>");
     navigator.geolocation.getCurrentPosition(onGeolocationSuccess, onGeolocationError,{'enableHighAccuracy':true,'timeout':10000});
+    return;
   }
 
   var onGeolocationSuccess = function(position) {
