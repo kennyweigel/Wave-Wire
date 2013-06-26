@@ -12,7 +12,6 @@ var app = {
 
   route: function() {
     var self = this;
-
     this.previousHash = this.hash;
     this.hash = window.location.hash;
 
@@ -21,7 +20,6 @@ var app = {
         this.homePage.render();
         $("body").html(this.homePage.el);
         this.homePage.resize();
-        //this.homePage.renderFavorites(this.store.getFavorites());
         this.homePage.registerEvents();
       }
       else {
@@ -30,8 +28,6 @@ var app = {
         $("body").html(this.homePage.el);
         this.homePage.resize();
         this.homePage.registerEvents();
-        //this.homePage.renderFavorites(this.store.getFavorites());
-        //this.homePage.homePageRefresh();
       }
       return;
     }
@@ -42,7 +38,8 @@ var app = {
         this.mapPage.registerEvents();
       } 
       else {
-        this.mapPage = new MapView().render();
+        this.mapPage = new MapView();
+        this.mapPage.render();
         $("body").html(this.mapPage.el);
         this.mapPage.buoyMap();
       } 
@@ -55,8 +52,10 @@ var app = {
         this.menuPage.registerEvents();
       } 
       else {
-        this.menuPage = new MenuView().render();
+        this.menuPage = new MenuView();
+        this.menuPage.render();
         $("body").html(this.menuPage.el);
+        this.menuPage.registerEvents();
       } 
       return;
     }
@@ -68,8 +67,10 @@ var app = {
         this.searchPage.getClosestBuoys();
       } 
       else {
-        this.searchPage = new SearchView(this.store).render();
+        this.searchPage = new SearchView(this.store);
+        this.searchPage.render();
         $("body").html(this.searchPage.el);
+        this.searchPage.registerEvents();
         this.searchPage.getClosestBuoys();
       } 
       return;
