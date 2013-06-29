@@ -17,10 +17,10 @@ var app = {
 
     if (this.hash.match("home")) {
       if (this.homePage) {
-        this.homePage.render();
         $("body").html(this.homePage.el);
         this.homePage.resize();
         this.homePage.registerEvents();
+        console.log('refresh home');
       }
       else {
         this.homePage = new HomeView(this.store);
@@ -28,6 +28,7 @@ var app = {
         $("body").html(this.homePage.el);
         this.homePage.resize();
         this.homePage.registerEvents();
+        console.log('new home');
       }
       return;
     }
@@ -36,6 +37,7 @@ var app = {
       if (this.mapPage) {
         $("body").html(this.mapPage.el);
         this.mapPage.registerEvents();
+
       } 
       else {
         this.mapPage = new MapView();
@@ -65,13 +67,15 @@ var app = {
         $("body").html(this.searchPage.el);
         this.searchPage.registerEvents();
         this.searchPage.getClosestBuoys();
+        console.log('refresh search');
       } 
       else {
-        this.searchPage = new SearchView(this.store);
+        this.searchPage = new SearchView();
         this.searchPage.render();
         $("body").html(this.searchPage.el);
         this.searchPage.registerEvents();
         this.searchPage.getClosestBuoys();
+        console.log('new search');
       } 
       return;
     }
@@ -116,6 +120,15 @@ var app = {
       if (clickedOk) {
         onConfirm(1);
       }
+    }
+  },
+
+  validateBuoy: function () {
+    //form input value
+    var input = $("#searchInput");
+    var inputVal = input.val().toUpperCase();
+    if (app.store.getFavorites().length < 10) {
+      app.addFavBuoy(input,inputVal);
     }
   },
 
@@ -167,9 +180,11 @@ var app = {
       app.store.setFavorites(currentFavorites);
       //app.homePage.renderFavorites(currentFavorites);
       if (app.menuPage) {
+        app.homePage.render();
         app.menuPage.render();
       }
       app.showAlert("Buoy with ID: " + inputVal + " has been added.","Buoy Added");
+      return;
     }
 
     function isValidId(inputVal) {
@@ -202,7 +217,3 @@ var app = {
 };
 
 app.initialize();
-
-// for testing on PC browsers ----------------------
-//app.homePage.update(testHTML,'success','44007');
-

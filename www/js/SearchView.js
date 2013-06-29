@@ -1,11 +1,10 @@
-var SearchView = function(store) {
+var SearchView = function() {
 
   this.initialize = function() {
     this.el = $("<div/>");
   }
 
   this.registerEvents = function() {
-    this.el.on("submit","#searchForm",this.validateBuoy);
     this.el.on("click","#searchBackBtn",this.hashChangeBack);
     this.el.on("click","#searchGeolocation", this.getClosestBuoys);
     if (document.documentElement.hasOwnProperty("ontouchstart")) {
@@ -40,15 +39,22 @@ var SearchView = function(store) {
   }
 
   this.confirmClosestBuoy = function(currentId) {
+    //this if only effects a desktop browser, by default the touchend event fires
+    //on the same element as the touchstart even if it is at a different location
     if (app.searchPage.selectDownElement == app.searchPage.selectUpElement) {
-      app.searchPage.currentId = currentId;
-      app.showConfirm(
-        "Are you sure you want to add buoy: " + app.searchPage.currentId + "?",
-        app.searchPage.addClosestBuoy,
-        "Add Favorite",
-        ["Yes", "Cancel"]
-      );
-      return;
+      if (app.store.getFavorites().length < 10) {
+        app.searchPage.currentId = currentId;
+        app.showConfirm(
+          "Are you sure you want to add buoy: " + app.searchPage.currentId + "?",
+          app.searchPage.addClosestBuoy,
+          "Add Favorite",
+          ["Yes", "Cancel"]
+        );
+        return;
+      }
+      else {
+        app.showAlert("Only 10 buoys may be added to your Favorites","Favorites Limit Reached");
+      }
     }
     else {
       return;
@@ -119,13 +125,6 @@ var SearchView = function(store) {
 
   var deg2rad = function(deg) {
     return deg * (Math.PI/180)
-  }
-
-  this.validateBuoy = function () {
-    //form input value
-    var input = $("#searchInput");
-    var inputVal = input.val().toUpperCase();
-    app.addFavBuoy(input,inputVal);
   }
 
   this.hashChangeBack = function() {
