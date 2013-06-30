@@ -19,23 +19,23 @@ listWesternPacific
 */
 
 var regions = [
-  {"id":"listAlaska", "name":"Alaska"},
-  {"id":"listCaribbean", "name":"Caribbean"},
-  {"id":"listChile", "name":"Chile"},
-  {"id":"listFlorida", "name":"Florida"},
-  {"id":"listFrance", "name":"France"},
-  {"id":"listGreatLakes", "name":"Great Lakes"},
-  {"id":"listHawaiianIslands", "name":"Hawaiian Islands"},
-  {"id":"listNortheastUsa", "name":"Northeast USA"},
-  {"id":"listNorthwestUsa", "name":"Northwest USA"},
-  {"id":"listNovaScotia", "name":"Nova Scotia"},
-  {"id":"listSouthPacific", "name":"South Pacific"},
-  {"id":"listSoutheastUsa", "name":"Southeast USA"},
-  {"id":"listSouthwestUsa", "name":"Southwest USA"},
-  {"id":"listTropicalAtlantic", "name":"Tropical Atlantic"},
-  {"id":"listUnitedKingdom", "name":"United Kingdom"},
-  {"id":"listWesternAtlantic", "name":"Western Atlantic"},
-  {"id":"listWesternPacific", "name":"Western Pacific"}
+  {"id":"listAlaska","name":"Alaska"},
+  {"id":"listCaribbean","name":"Caribbean"},
+  {"id":"listChile","name":"Chile"},
+  {"id":"listFlorida","name":"Florida"},
+  {"id":"listFrance","name":"France"},
+  {"id":"listGreatLakes","name":"Great Lakes"},
+  {"id":"listHawaiianIslands","name":"Hawaiian Islands"},
+  {"id":"listNortheastUsa","name":"Northeast USA"},
+  {"id":"listNorthwestUsa","name":"Northwest USA"},
+  {"id":"listNovaScotia","name":"Nova Scotia"},
+  {"id":"listSouthPacific","name":"South Pacific"},
+  {"id":"listSoutheastUsa","name":"Southeast USA"},
+  {"id":"listSouthwestUsa","name":"Southwest USA"},
+  {"id":"listTropicalAtlantic","name":"Tropical Atlantic"},
+  {"id":"listUnitedKingdom","name":"United Kingdom"},
+  {"id":"listWesternAtlantic","name":"Western Atlantic"},
+  {"id":"listWesternPacific","name":"Western Pacific"}
 ];
 
 var listAlaska = [
