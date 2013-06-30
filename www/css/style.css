@@ -76,19 +76,7 @@ body {
 }
 .slide {
   margin:20px;
-  /*
-  background-color: white;
-  padding:10px;
-  margin:10px;
-  -webkit-border-radius:10px;
-  -moz-border-radius:10px;
-  -o-border-radius:10px;
-  border-radius:10px;
-  border-width: 2px;
-  border-color:rgb(221, 221, 221);
-  border-style: solid;
-  */
- }
+}
 
 #indicator {
   position:absolute;
@@ -134,13 +122,6 @@ body {
 
 /* menu styles */
 #buoyTable {
-  /*
-  margin:10px;
-  background-color: white;
-  border-radius:10px;
-  border-width: 2px;
-  border-color:rgb(221, 221, 221);
-  border-style: solid;*/
   font-size: 18px;
 }
 
@@ -161,6 +142,7 @@ body {
   left:0;
   right:45px;
   margin-bottom:10px;
+  text-transform: uppercase;
 }
 
 .form-search .icon-search {
@@ -174,7 +156,7 @@ body {
 }
 
 .tappable-active {
-    color: #fff;
-    background-color: #4286f5;
+  color: #fff;
+  background-color: #4286f5;
 }
 /* end search page */

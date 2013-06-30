@@ -124,12 +124,21 @@ var app = {
   },
 
   validateBuoy: function () {
-    //form input value
+    var inputVal = $("#searchInput").val().toUpperCase();
+    if (app.store.getFavorites().length < 10) {
+      app.showConfirm(
+        "Are you sure you want to add buoy " + inputVal + "?",
+        app.formBuoy,
+        "Favorites",
+        ["Yes", "Cancel"]
+      );
+    }
+  },
+
+  formBuoy: function() {
     var input = $("#searchInput");
     var inputVal = input.val().toUpperCase();
-    if (app.store.getFavorites().length < 10) {
-      app.addFavBuoy(input,inputVal);
-    }
+    app.addFavBuoy(input,inputVal);
   },
 
   addFavBuoy: function(input,inputVal) {
@@ -142,7 +151,7 @@ var app = {
         }
       }
       else {
-        app.showAlert(inputVal + " does not exist","TITLE DNE");
+        app.showAlert("Buoy " + inputVal + " can't be found.","Search");
         if (input) {
           input.val("");
         }
@@ -151,7 +160,7 @@ var app = {
     else {
       //checks if buoy is already a favorite
       if (isFavorite(inputVal,currentFavorites)) {
-        app.showAlert(inputVal + " is already a favorite","TITLE");
+        app.showAlert("Buoy " + inputVal + " is already a favorite.","Favorites");
         if (input) {
           input.val("");
         }
@@ -167,7 +176,7 @@ var app = {
           }
         }
         else {
-          app.showAlert(inputVal + " does not exist","TITLE DNE");
+          app.showAlert("Buoy " + inputVal + " can't be found.","Search");
           if (input) {
             input.val("");
           }
@@ -178,12 +187,10 @@ var app = {
     function addBuoy(inputVal) {
       currentFavorites.push({id:inputVal,data:"<p>No Updates</p>"});
       app.store.setFavorites(currentFavorites);
-      //app.homePage.renderFavorites(currentFavorites);
       if (app.menuPage) {
         app.homePage.render();
         app.menuPage.render();
       }
-      app.showAlert("Buoy with ID: " + inputVal + " has been added.","Buoy Added");
       return;
     }
 

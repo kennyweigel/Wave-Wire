@@ -8,7 +8,7 @@ var SearchView = function() {
     this.el.on("click","#searchBackBtn",this.hashChangeBack);
     this.el.on("click","#searchGeolocation", this.getClosestBuoys);
     if (document.documentElement.hasOwnProperty("ontouchstart")) {
-      // ... if yes: register touch event listener to change the "selected" state of the item
+      //if yes: register touch event listener to change the "selected" state of the item
       this.el.on("touchstart", ".closestBuoys", function() {
         $(this).addClass("tappable-active");
         app.searchPage.selectDownElement = $(this).attr("id");
@@ -20,7 +20,7 @@ var SearchView = function() {
       });
     } 
     else {
-      // ... if not: register mouse events instead
+      //if not: register mouse events instead
       this.el.on("mousedown",".closestBuoys", function() {
         $(this).addClass("tappable-active");
         app.searchPage.selectDownElement = $(this).attr("id");
@@ -45,15 +45,15 @@ var SearchView = function() {
       if (app.store.getFavorites().length < 10) {
         app.searchPage.currentId = currentId;
         app.showConfirm(
-          "Are you sure you want to add buoy: " + app.searchPage.currentId + "?",
+          "Are you sure you want to add buoy " + app.searchPage.currentId + "?",
           app.searchPage.addClosestBuoy,
-          "Add Favorite",
+          "Favorite",
           ["Yes", "Cancel"]
         );
         return;
       }
       else {
-        app.showAlert("Only 10 buoys may be added to your Favorites","Favorites Limit Reached");
+        app.showAlert("Only 10 buoys may be added to your Favorites.","Favorites");
       }
     }
     else {
