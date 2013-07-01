@@ -53,16 +53,21 @@ var MapView = function() {
   }
 
   function markBuoys(map) {
-    for (var i=0; i<buoys.length; i++) {
-      var buoy = buoys[i];
-      var buoyLatLng = new google.maps.LatLng(buoy.lat,buoy.lng);
-      var buoyMarker = new google.maps.Marker({
-        position: buoyLatLng,
-        map: map,
-        title: buoy.num,
-        icon: 'img/shipwreck_75.png'
-      });
-    }    
+    var regionsLength = regions.length;
+    for (var i = 0; i < regionsLength; i++) {
+      var specificRegion = window[regions[i].id];
+      var specificRegionLength = specificRegion.length;
+      for (var j = 0; j < specificRegionLength; j++) {
+        var buoy = specificRegion[j];
+        var buoyLatLng = new google.maps.LatLng(buoy.lat,buoy.lng);
+        var buoyMarker = new google.maps.Marker({
+          position: buoyLatLng,
+          map: map,
+          title: buoy.id,
+          icon: 'img/shipwreck_75.png'
+        });
+      } 
+    }
   }
 
   this.initialize();
