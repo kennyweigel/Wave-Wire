@@ -195,10 +195,15 @@ var app = {
     }
 
     function isValidId(inputVal) {
-      for (var i = 0; i<buoys.length; i++) {
-        if (buoys[i].id == inputVal) {
-          return 1;
-        }
+      var regionsLength = regions.length;
+      for (var i = 0; i < regionsLength; i++) {
+        var specificRegion = window[regions[i].id];
+        var specificRegionLength = specificRegion.length;
+        for (var j = 0; j < specificRegionLength; j++) {
+          if (specificRegion[j].id == inputVal) {
+            return 1;
+          }
+        } 
       }
       return 0;
     }
