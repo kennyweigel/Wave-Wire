@@ -24,9 +24,7 @@ var MapView = function() {
 
     var myLat = position.coords.latitude;
     var myLng = position.coords.longitude;
-    var myLatLng = new google.maps.LatLng(myLat,myLng)
-
-    //MAP
+    var myLatLng = new google.maps.LatLng(myLat,myLng);
     var mapOptions = {
         center: myLatLng,
         zoom: 7,
@@ -36,23 +34,6 @@ var MapView = function() {
     
     var map = new google.maps.Map(document.getElementById("mapCanvas"),mapOptions);
 
-    var marker = new google.maps.Marker({
-      position: myLatLng,
-      map: map,
-      title: 'Me',
-      icon: 'img/measle_blue.png'
-    });    
-    
-    markBuoys(map);
-    $("#mapRefresh > i").removeClass("icon-spin");
-  }
-  //onError Callback receives a PositionError object
-  function onError(error) {
-    $("#mapRefresh > i").removeClass("icon-spin");
-    alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
-  }
-
-  function markBuoys(map) {
     var regionsLength = regions.length;
     for (var i = 0; i < regionsLength; i++) {
       var specificRegion = window[regions[i].id];
@@ -66,8 +47,20 @@ var MapView = function() {
           title: buoy.id,
           icon: 'img/shipwreck_75.png'
         });
+        google.maps.event.addListener(buoyMarker, "click", function() {
+          //THIS IS FOR DEBUG ONLY
+          alert(this.title);
+          //
+        });
       } 
     }
+    $("#mapRefresh > i").removeClass("icon-spin");
+  }
+  
+  //onError Callback receives a PositionError object
+  function onError(error) {
+    $("#mapRefresh > i").removeClass("icon-spin");
+    alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
   }
 
   this.initialize();
