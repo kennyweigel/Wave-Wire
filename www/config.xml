@@ -15,7 +15,7 @@
       Kenny Weigel
   </author>
 
-  <preference name="phonegap-version" value="2.7.0"/>
+  <preference name="phonegap-version" value="2.9.0"/>
   <preference name="orientation" value="portrait"/>
   <!-- ios specific -->
   <preference name="webviewbounce" value="false" />
