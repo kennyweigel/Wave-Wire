@@ -49,7 +49,8 @@ var MapView = function() {
         });
         google.maps.event.addListener(buoyMarker, "click", function() {
           //THIS IS FOR DEBUG ONLY
-          alert(this.title);
+          $("#myModal").modal();
+          //alert(this.title);
           //
         });
       } 
