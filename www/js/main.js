@@ -50,6 +50,7 @@ var app = {
 
     if (this.hash.match("menu")) {
       if (this.menuPage) {
+        console.log('refresh menu');
         $("body").html(this.menuPage.el);
         this.menuPage.registerEvents();
       } 

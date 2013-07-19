@@ -8,23 +8,24 @@ var SearchView = function() {
     this.el.on("click","#searchBackBtn",this.hashChangeBack);
     this.el.on("click","#searchGeolocation", this.getClosestBuoys); 
     //browser supports touch events
-    if (document.documentElement.hasOwnProperty('ontouchstart')) {
-      this.el.on('touchstart', '.closestBuoys', function(event) {
-        $(event.target).addClass('tappable-active');
+    if (document.documentElement.hasOwnProperty("ontouchstart")) {
+      this.el.on("touchstart", ".closestBuoys", function() {
+        $(this).addClass("tappable-active");
       });
-      this.el.on('touchend', '.closestBuoys', function(event) {
-        $(event.target).removeClass('tappable-active');
+      this.el.on("touchend", ".closestBuoys", function() {
         app.searchPage.confirmClosestBuoy($(this).attr("id").substring(0,5));
+        $(this).removeClass("tappable-active");
       });
     } 
     //browser only supports mouse events
     else {
-      this.el.on('mousedown', '.closestBuoys', function(event) {
-        $(event.target).addClass('tappable-active');
+      this.el.on("mousedown", ".closestBuoys", function() {
+        $(this).addClass("tappable-active");
+        app.searchPage.activeBuoy = $(this);
       });
-      this.el.on('mouseup', '.closestBuoys', function(event) {
-        $(event.target).removeClass('tappable-active');
-        app.searchPage.confirmClosestBuoy($(this).attr("id").substring(0,5));
+      this.el.on("mouseup", ".closestBuoys", function() {
+        app.searchPage.confirmClosestBuoy(app.searchPage.activeBuoy.attr("id").substring(0,5));
+        $(".closestBuoys").removeClass("tappable-active");
       });
     }
   }
@@ -35,25 +36,18 @@ var SearchView = function() {
   }
 
   this.confirmClosestBuoy = function(currentId) {
-    //this if only effects a desktop browser, by default the touchend event fires
-    //on the same element as the touchstart even if it is at a different location
-    if (app.searchPage.selectDownElement == app.searchPage.selectUpElement) {
-      if (app.store.getFavorites().length < 10) {
-        app.searchPage.currentId = currentId;
-        app.showConfirm(
-          "Are you sure you want to add buoy " + app.searchPage.currentId + "?",
-          app.searchPage.addClosestBuoy,
-          "Favorite",
-          ["Yes", "Cancel"]
-        );
-        return;
-      }
-      else {
-        app.showAlert("Only 10 buoys may be added to your Favorites.","Favorites");
-      }
+    if (app.store.getFavorites().length < 10) {
+      app.searchPage.currentId = currentId;
+      app.showConfirm(
+        "Are you sure you want to add buoy " + app.searchPage.currentId + "?",
+        app.searchPage.addClosestBuoy,
+        "Favorite",
+        ["Yes", "Cancel"]
+      );
+      return;
     }
     else {
-      return;
+      app.showAlert("Only 10 buoys may be added to your Favorites.","Favorites");
     }
   }
 
