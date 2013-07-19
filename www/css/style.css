@@ -2,6 +2,8 @@
 body {
   /*removes ios link highlighting*/
   -webkit-tap-highlight-color:rgba(0,0,0,0);
+  /*removes ios copy for table rows*/
+  -webkit-user-select:none;
   /*background-color:#1E90FF;*/
   margin:0;
 }
