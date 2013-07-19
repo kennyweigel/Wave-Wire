@@ -2,9 +2,9 @@ var app = {
   
   registerEvents: function() {
     $(window).on("hashchange", $.proxy(this.route, this));
-    window.addEventListener('load', function() {
-      FastClick.attach(document.body);
-    }, false);
+    //window.addEventListener('load', function() {
+    //  FastClick.attach(document.body);
+    //}, false);
     $(window).on("orientationchange", function(event) {
       event.preventDefault();
     });
