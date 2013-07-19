@@ -6,57 +6,27 @@ var SearchView = function() {
 
   this.registerEvents = function() {
     this.el.on("click","#searchBackBtn",this.hashChangeBack);
-    this.el.on("click","#searchGeolocation", this.getClosestBuoys);
-    
+    this.el.on("click","#searchGeolocation", this.getClosestBuoys); 
     //browser supports touch events
     if (document.documentElement.hasOwnProperty('ontouchstart')) {
       this.el.on('touchstart', '.closestBuoys', function(event) {
         $(event.target).addClass('tappable-active');
-        app.searchPage.selectDownElement = $(event.target).attr("id");
       });
       this.el.on('touchend', '.closestBuoys', function(event) {
         $(event.target).removeClass('tappable-active');
-        app.searchPage.confirmClosestBuoy($(event.target).attr("id").substring(0,5));
+        app.searchPage.confirmClosestBuoy($(this).attr("id").substring(0,5));
       });
     } 
     //browser only supports mouse events
     else {
       this.el.on('mousedown', '.closestBuoys', function(event) {
         $(event.target).addClass('tappable-active');
-        app.searchPage.selectDownElement = $(event.target).attr("id");
       });
       this.el.on('mouseup', '.closestBuoys', function(event) {
         $(event.target).removeClass('tappable-active');
-        app.searchPage.confirmClosestBuoy($(event.target).attr("id").substring(0,5));
-      });
-    }
-
-    /*
-    if (document.documentElement.hasOwnProperty("ontouchstart")) {
-      //if yes: register touch event listener to change the "selected" state of the item
-      this.el.on("touchstart", ".closestBuoys", function() {
-        $(this).addClass("tappable-active");
-        app.searchPage.selectDownElement = $(this).attr("id");
-      });
-      this.el.on("touchend", ".closestBuoys", function() {
-        $(".closestBuoys").removeClass("tappable-active");
-        app.searchPage.selectUpElement = $(this).attr("id");
-        app.searchPage.confirmClosestBuoy($(this).attr("id").substring(0,5));
-      });
-    } 
-    else {
-      //if not: register mouse events instead
-      this.el.on("mousedown",".closestBuoys", function() {
-        $(this).addClass("tappable-active");
-        app.searchPage.selectDownElement = $(this).attr("id");
-      });
-      this.el.on("mouseup",".closestBuoys", function() {
-        $(".closestBuoys").removeClass("tappable-active");
-        app.searchPage.selectUpElement = $(this).attr("id");
         app.searchPage.confirmClosestBuoy($(this).attr("id").substring(0,5));
       });
     }
-    */
   }
 
   this.render = function() {
