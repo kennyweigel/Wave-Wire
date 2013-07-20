@@ -5,7 +5,7 @@ var SearchView = function() {
   }
 
   this.registerEvents = function() {
-    this.el.on("click","#searchBackBtn",this.hashChangeBack);
+    this.el.on("click","#searchBack",app.hashChangeBack);
     this.el.on("click","#searchGeolocation", this.getClosestBuoys); 
     //browser supports touch events
     if (document.documentElement.hasOwnProperty("ontouchstart")) {
@@ -115,10 +115,6 @@ var SearchView = function() {
 
   var deg2rad = function(deg) {
     return deg * (Math.PI/180)
-  }
-
-  this.hashChangeBack = function() {
-    window.location.hash = app.previousHash;
   }
 
   this.initialize();

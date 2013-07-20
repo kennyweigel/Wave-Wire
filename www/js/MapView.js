@@ -6,7 +6,8 @@ var MapView = function() {
   }
 
   this.registerEvents = function() {
-    this.el.on('click','#mapRefresh',this.buoyMap);
+    this.el.on("click","#mapRefresh",this.buoyMap);
+    this.el.on("click","#mapHome",app.hashChangeHome);
   }
 
   this.render = function() {
@@ -15,7 +16,7 @@ var MapView = function() {
   }
 
   this.buoyMap = function() {
-    $("#mapRefresh > i").addClass("icon-spin");
+    $("#mapRefresh").addClass("icon-spin");
     navigator.geolocation.getCurrentPosition(onSuccess, onError,{'enableHighAccuracy':true,'timeout':10000});
   }
 
@@ -55,7 +56,7 @@ var MapView = function() {
         });
       } 
     }
-    $("#mapRefresh > i").removeClass("icon-spin");
+    $("#mapRefresh").removeClass("icon-spin");
   }
   
   //onError Callback receives a PositionError object

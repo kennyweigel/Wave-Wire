@@ -82,6 +82,31 @@ var app = {
     }
   },
 
+  hashChangeHome: function() {
+    window.location.hash = "home";
+  },
+
+  hashChangeMenu: function() {
+    window.location.hash = "menu";
+  },
+
+  hashChangeMap: function() {
+    window.location.hash = "map";
+  },
+
+  hashChangeSearch: function() {
+    if (app.store.getFavorites().length < 10) {
+      window.location.hash = "search";
+    }
+    else {
+      app.showAlert("Only 10 buoys may be added to your Favorites","Favorites Limit Reached");
+    }
+  },
+
+  hashChangeBack: function() {
+    window.location.hash = app.previousHash;
+  },
+
   initialize: function() {
     var self = this;
     window.location.hash = "home";

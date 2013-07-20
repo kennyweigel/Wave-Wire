@@ -6,7 +6,9 @@ var MenuView = function() {
 
   this.registerEvents = function() {
     this.el.on("click",".deleteBtn",this.confirmRemoveFavorite);
-    this.el.on("click","#menuAddBuoy",this.hashChangeSearch);
+    this.el.on("click","#menuAddBuoy",app.hashChangeSearch);
+    this.el.on("click","#menuMap",app.hashChangeMap);
+    this.el.on("click","#menuHome",app.hashChangeHome);
   }
 
   this.render = function() {
@@ -36,15 +38,6 @@ var MenuView = function() {
       app.store.setFavorites(currentFavs);
       app.homePage.render();
       app.menuPage.render();
-    }
-  }
-
-  this.hashChangeSearch = function() {
-    if (app.store.getFavorites().length < 10) {
-      window.location.hash = "search";
-    }
-    else {
-      app.showAlert("Only 10 buoys may be added to your Favorites","Favorites Limit Reached");
     }
   }
 

@@ -10,11 +10,11 @@
   <body>
     
     <script id="home-tpl" type="text/x-handlebars-template">
-      <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
-          <a class="btn btn-inverse pull-left" href="#menu"><i class="icon-cog icon-white"></i></a>
+          <i id="homeMenu" class="icon-nav-left icon-cog icon-white"></i>
           <h3>Buoys</h3>
-          <a class="btn btn-inverse pull-right" id="homePageRefresh"><i class="icon-refresh icon-white"></i></a>
+          <i id="homeRefresh" class="icon-nav-right icon-refresh"></i>
         </div>
       </div>
       <div id="wrapper">
@@ -46,11 +46,11 @@
     </script>
     
     <script id="map-tpl" type="text/x-handlebars-template">
-      <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
-          <a id="mapRefresh" class="btn btn-inverse pull-left"><i class="icon-refresh icon-white"></i></a>
+          <i id="mapRefresh" class="icon-nav-left icon-refresh"></i>
           <h3>Map</h3>
-          <a class="btn btn-inverse pull-right" href="#home"><i class="icon-home icon-white"></i></a>
+          <i id="mapHome" class="icon-nav-right icon-home"></i>
         </div>
       </div>
       <div id="mapCanvas" style="height:100%; width:100%; position:absolute"></div>
@@ -73,11 +73,11 @@
     </script>
 
     <script id="menu-tpl" type="text/x-handlebars-template">    
-      <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
-          <a class="btn btn-inverse pull-left" href="#home"><i class="icon-home icon-white"></i></a>
+          <i id="menuHome" class="icon-nav-left icon-home"></i>
           <h3 >Menu</h3>
-          <a class="btn btn-inverse pull-right" href="#map"><i class="icon-globe icon-white"></i></a>
+          <i id="menuMap" class="icon-nav-right icon-globe"></i>
         </div>
       </div>
       <div class="pageContent">
@@ -96,17 +96,17 @@
     </script>
 
     <script id="search-tpl" type="text/x-handlebars-template">
-      <div class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
           <h3>Add Buoys</h3>
-          <a class="btn btn-inverse pull-right" id="searchBackBtn"><i class="icon-arrow-left icon-white"></i></a>
+          <i id="searchBack" class="icon-nav-right icon-arrow-left"></i>
         </div>
       </div>
       <div class="pageContent" id="searchContent">
         <form class="form-search" id="searchForm" action="javascript:app.validateBuoy()">
           <input type="search" class="search-query searchInput" id="searchInput" placeholder="Search For Buoys...">
           <div class="icon-search"></div>
-          <a id="searchGeolocation" class="btn btn-inverse pull-right"><i class="icon-location-arrow icon-white"></i></a>
+          <i id="searchGeolocation" class="pull-right icon-location-arrow" style="font-size:2em; margin-left:5px"></i>
         </form>
         <h4>Closest Buoys</h4>
         <table class="table table-bordered" id="closestBuoysTable">
@@ -130,14 +130,12 @@
     <script src="phonegap.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="lib/jquery-1.9.1.min.js"></script>
-    <script src="lib/jquery.mobile.custom.js"></script>
     <script src="lib/bootstrap.min.js"></script>
     <script src="lib/handlebars.js"></script>
     <script src="lib/iscroll.js"></script>
     <script src="lib/fastclick.js"></script>
     <script src="js/LocalStorage.js"></script>
     <script src="js/all-regions.js"></script>
-    <script src="js/BuoyList.js"></script>
     <script src="js/HomeView.js"></script>
     <script src="js/MapView.js"></script>
     <script src="js/MenuView.js"></script>

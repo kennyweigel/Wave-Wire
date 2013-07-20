@@ -5,8 +5,9 @@ var HomeView = function(store) {
   }
 
   this.registerEvents = function() {
-    this.el.on("click","#homePageRefresh",this.homePageRefresh);
-    this.el.on("click","#addBuoySlide",this.hashChangeSearch);
+    this.el.on("click","#homeRefresh",this.homeRefresh);
+    this.el.on("click","#addBuoySlide",app.hashChangeSearch);
+    this.el.on("click","#homeMenu",app.hashChangeMenu);
   }
 
   this.render = function() {
@@ -35,10 +36,10 @@ var HomeView = function(store) {
     });
   }
 
-  this.homePageRefresh = function() {
+  this.homeRefresh = function() {
     var currentIds = app.store.getFavorites();
     var activeAJAX = 0;
-    $("#homePageRefresh > i").addClass("icon-spin");
+    $("#homeRefresh").addClass("icon-spin");
     var currentIdsLength = currentIds.length;
     for (var i = 0; i < currentIdsLength; i++) {
       //increments the number of active AJAX requests
@@ -57,7 +58,7 @@ var HomeView = function(store) {
       // NEED TO FIX //
       if(status != 'success') {
         alert('GET was unsuccessful');
-        $("#homePageRefresh > i").removeClass("icon-spin");
+        $("#homeRefresh").removeClass("icon-spin");
         return;
       }
       else {
@@ -66,7 +67,7 @@ var HomeView = function(store) {
             currentIds[j].data = app.processBuoyData(html);
             store.setFavorites(currentIds);
             if (!activeAJAX) {
-              $("#homePageRefresh > i").removeClass("icon-spin");
+              $("#homeRefresh").removeClass("icon-spin");
               app.homePage.render();
               $("body").html(app.homePage.el);
               app.homePage.resize();
@@ -76,15 +77,6 @@ var HomeView = function(store) {
           }
         }
       }
-    }
-  }
-  
-  this.hashChangeSearch = function() {
-    if (app.store.getFavorites().length < 10) {
-      window.location.hash = "search";
-    }
-    else {
-      app.showAlert("Only 10 buoys may be added to your Favorites","Favorites Limit Reached");
     }
   }
 
