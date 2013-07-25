@@ -1,17 +1,21 @@
-var LocalStorageStore = function() {
+/*global window */
+var LocalStorageStore = function () {
 
-  this.getFavorites = function() {
-    var favss = JSON.parse(window.localStorage.getItem("favorites"));
-    return favss;
-  }
+    "use strict";
+    
+    this.getFavorites = function () {
+        var currentFavs = JSON.parse(window.localStorage.getItem("favorites"));
+        return currentFavs;
+    };
 
-  this.setFavorites = function(favss) {
-    window.localStorage.setItem("favorites", JSON.stringify(favss));
-    return;
-  }
+    this.setFavorites = function (newFavs) {
+        window.localStorage.setItem("favorites", JSON.stringify(newFavs));
+        return;
+    };
 
-  if (!this.getFavorites()) {
-  	this.setFavorites([]);
-  }
+    
+    if (!this.getFavorites()) {
+        this.setFavorites([]);
+    }
 
-}
+};
