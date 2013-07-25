@@ -39,10 +39,9 @@ var HomeView = function(store) {
   this.homeRefresh = function() {
     var currentIds = app.store.getFavorites();
     var activeAJAX = 0;
-    //$("#homeRefresh").addClass("icon-spin");
+    $("#homeRefresh").addClass("icon-spin");
     var currentIdsLength = currentIds.length;
     for (var i = 0; i < currentIdsLength; i++) {
-      //increments the number of active AJAX requests
       activeAJAX++;
       updateInit("http://www.ndbc.noaa.gov/mobile/station.php?station="+currentIds[i].id, currentIds[i].id);
     }
