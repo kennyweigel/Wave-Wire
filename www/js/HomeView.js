@@ -58,7 +58,7 @@ var HomeView = function(store) {
       // NEED TO FIX //
       if(status != 'success') {
         alert('GET was unsuccessful');
-        //$("#homeRefresh").removeClass("icon-spin");
+        $("#homeRefresh").removeClass("icon-spin");
         return;
       }
       else {
@@ -67,10 +67,11 @@ var HomeView = function(store) {
             currentIds[j].data = app.processBuoyData(html);
             store.setFavorites(currentIds);
             if (!activeAJAX) {
-              //$("#homeRefresh").removeClass("icon-spin");
+              $("#homeRefresh").removeClass("icon-spin");
               app.homePage.render();
               $("body").html(app.homePage.el);
               app.homePage.resize();
+              app.homePage.registerEvents();
               break;
             }
             break;
@@ -84,5 +85,3 @@ var HomeView = function(store) {
 }
 
 HomeView.template = Handlebars.compile($('#home-tpl').html());
-//HomeView.favsTemplate = Handlebars.compile($('#favs-tpl').html());
-//HomeView.navTemplate = Handlebars.compile($("#nav-tpl").html());
