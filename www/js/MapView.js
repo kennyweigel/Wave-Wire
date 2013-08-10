@@ -16,7 +16,7 @@ var MapView = function() {
   }
 
   this.buoyMap = function() {
-    $("#mapRefresh").addClass("icon-spin");
+    $("#mapRefresh > i").addClass("icon-spin");
     navigator.geolocation.getCurrentPosition(onSuccess, onError,{'enableHighAccuracy':true,'timeout':10000});
   }
 
@@ -56,7 +56,7 @@ var MapView = function() {
         });
       } 
     }
-    $("#mapRefresh").removeClass("icon-spin");
+    $("#mapRefresh > i").removeClass("icon-spin");
   }
   
   //onError Callback receives a PositionError object

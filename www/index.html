@@ -12,9 +12,9 @@
     <script id="home-tpl" type="text/x-handlebars-template">
       <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
-          <i id="homeMenu" class="icon-nav-left icon-cog icon-white"></i>
+          <button type="button" id="homeMenu" class="btn navbar-btn pull-left"><i class="icon-reorder"></i></button>
           <h3>Buoys</h3>
-          <i id="homeRefresh" class="icon-nav-right icon-refresh"></i>
+          <button type="button" id="homeRefresh" class="btn navbar-btn pull-right" ><i class="icon-refresh"></i></button>
         </div>
       </div>
       <div id="wrapper">
@@ -48,36 +48,20 @@
     <script id="map-tpl" type="text/x-handlebars-template">
       <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
-          <i id="mapRefresh" class="icon-nav-left icon-refresh"></i>
+          <button type="button" id="mapRefresh" class="btn navbar-btn pull-left"><i class="icon-refresh"></i></button>
           <h3>Map</h3>
-          <i id="mapHome" class="icon-nav-right icon-home"></i>
+          <button type="button" id="mapHome" class="btn navbar-btn pull-right"><i class="icon-home"></i></button>
         </div>
       </div>
       <div id="mapCanvas" style="height:100%; width:100%; position:absolute"></div>
-
-      <!-- Modal -->
-      <div id="myModal" class="modal hide fade">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h3 id="myModalLabel">Modal header</h3>
-        </div>
-        <div class="modal-body">
-          <p>One fine body</p>
-        </div>
-        <div class="modal-footer">
-          <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-          <button class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-
     </script>
 
     <script id="menu-tpl" type="text/x-handlebars-template">    
       <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
-          <i id="menuHome" class="icon-nav-left icon-home"></i>
+          <button type="button" id="menuHome" class="btn navbar-btn pull-left"><i class="icon-home"></i></button>
           <h3 >Menu</h3>
-          <i id="menuMap" class="icon-nav-right icon-globe"></i>
+          <button type="button" id="menuMap" class="btn navbar-btn pull-right"><i class="icon-globe"></i></button>
         </div>
       </div>
       <div class="pageContent">
@@ -99,15 +83,15 @@
       <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
           <h3>Add Buoys</h3>
-          <i id="searchBack" class="icon-nav-right icon-arrow-left"></i>
+          <button type="button" id="searchBack" class="btn navbar-btn pull-right"><i class="icon-arrow-left"></i></button>
         </div>
       </div>
       <div class="pageContent" id="searchContent">
-        <form class="form-search" id="searchForm" action="javascript:app.validateBuoy()">
-          <input type="search" class="search-query searchInput" id="searchInput" placeholder="Search For Buoys...">
+        <form id="searchForm" action="javascript:app.validateBuoy()">
+          <input type="search" class="form-control" id="searchInput" placeholder="Search For Buoys...">
           <div class="icon-search"></div>
-          <i id="searchGeolocation" class="pull-right icon-location-arrow" style="font-size:2em; margin-left:5px"></i>
         </form>
+        <button type="button" id="searchGeolocation" class="btn pull-right"><i class="icon-location-arrow"></i></button>
         <h4>Closest Buoys</h4>
         <table class="table table-bordered" id="closestBuoysTable">
           <tbody>

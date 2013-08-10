@@ -39,7 +39,7 @@ var HomeView = function(store) {
   this.homeRefresh = function() {
     var currentIds = app.store.getFavorites();
     var activeAJAX = 0;
-    $("#homeRefresh").addClass("icon-spin");
+    $("#homeRefresh > i").addClass("icon-spin");
     var currentIdsLength = currentIds.length;
     for (var i = 0; i < currentIdsLength; i++) {
       activeAJAX++;
@@ -57,7 +57,7 @@ var HomeView = function(store) {
       // NEED TO FIX //
       if(status != 'success') {
         alert('GET was unsuccessful');
-        $("#homeRefresh").removeClass("icon-spin");
+        $("#homeRefresh > i").removeClass("icon-spin");
         return;
       }
       else {
