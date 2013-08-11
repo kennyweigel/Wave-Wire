@@ -7,7 +7,7 @@ var MapView = function() {
 
   this.registerEvents = function() {
     this.el.on("click","#mapRefresh",this.buoyMap);
-    this.el.on("click","#mapHome",app.hashChangeHome);
+    this.el.on("click","#mapMenu",app.hashChangeMenu);
   }
 
   this.render = function() {

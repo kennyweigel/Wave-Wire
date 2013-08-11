@@ -6,9 +6,12 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/pageslider.css" rel="stylesheet">
   </head>
   <body>
     
+    <div id="container"></div>
+
     <script id="home-tpl" type="text/x-handlebars-template">
       <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
@@ -48,9 +51,9 @@
     <script id="map-tpl" type="text/x-handlebars-template">
       <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
-          <button type="button" id="mapRefresh" class="btn navbar-btn pull-left"><i class="icon-refresh"></i></button>
+          <button type="button" id="mapMenu" class="btn navbar-btn pull-left"><i class="icon-reorder"></i></button>
           <h3>Map</h3>
-          <button type="button" id="mapHome" class="btn navbar-btn pull-right"><i class="icon-home"></i></button>
+          <button type="button" id="mapRefresh" class="btn navbar-btn pull-right"><i class="icon-refresh"></i></button>
         </div>
       </div>
       <div id="mapCanvas" style="height:100%; width:100%; position:absolute"></div>
@@ -114,6 +117,7 @@
     <script src="phonegap.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="lib/jquery-1.9.1.min.js"></script>
+    <script src="lib/pageslider.js"></script>
     <script src="lib/bootstrap.min.js"></script>
     <script src="lib/handlebars.js"></script>
     <script src="lib/iscroll.js"></script>

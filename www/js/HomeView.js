@@ -1,4 +1,4 @@
-var HomeView = function(store) {
+var HomeView = function() {
 
   this.initialize = function() {
     this.el = $("<div/>");
@@ -64,7 +64,7 @@ var HomeView = function(store) {
         for (var j = 0; j < currentIdsLength; j++) {
           if (currentIds[j].id == EXTRA) {
             currentIds[j].data = app.processBuoyData(html);
-            store.setFavorites(currentIds);
+            app.store.setFavorites(currentIds);
             if (!activeAJAX) {
               $("#homeRefresh").removeClass("icon-spin");
               app.homePage.render();

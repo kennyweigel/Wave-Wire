@@ -17,55 +17,60 @@ var app = {
 
     if (this.hash.match("home")) {
       if (this.homePage) {
-        $("body").html(this.homePage.el);
+        this.page = this.homePage.el;
+        this.slider.slidePage($(this.page));
         this.homePage.resize();
         this.homePage.registerEvents();
         console.log('refresh home');
       }
       else {
-        this.homePage = new HomeView(this.store);
+        this.homePage = new HomeView();
         this.homePage.render();
-        $("body").html(this.homePage.el);
+        $("#container").html(this.homePage.el);
+        this.page = this.homePage.el;
         this.homePage.resize();
+        this.slider.slidePage($(this.page));
         this.homePage.registerEvents();
         console.log('new home');
       }
-      return;
     }
     
     if (this.hash.match("map")) {
       if (this.mapPage) {
-        $("body").html(this.mapPage.el);
+        this.page = this.mapPage.el;
+        this.slider.slidePage($(this.page));
         this.mapPage.registerEvents();
-
       } 
       else {
         this.mapPage = new MapView();
         this.mapPage.render();
-        $("body").html(this.mapPage.el);
+        this.page = this.mapPage.el;
+        this.slider.slidePage($(this.page));
         this.mapPage.buoyMap();
       } 
-      return;
     }
 
     if (this.hash.match("menu")) {
       if (this.menuPage) {
         console.log('refresh menu');
-        $("body").html(this.menuPage.el);
+        this.page = this.menuPage.el;
+        this.slider.slidePage($(this.page));
         this.menuPage.registerEvents();
       } 
       else {
         this.menuPage = new MenuView();
         this.menuPage.render();
-        $("body").html(this.menuPage.el);
+        this.page = this.menuPage.el;
+        this.slider.slidePage($(this.page));
         this.menuPage.registerEvents();
       } 
-      return;
     }
     
     if (this.hash.match("search")) {
       if (this.searchPage) {
-        $("body").html(this.searchPage.el);
+        this.page = this.searchPage.el;
+        this.slider.slidePage($(this.page));
+
         this.searchPage.registerEvents();
         this.searchPage.getClosestBuoys();
         console.log('refresh search');
@@ -73,12 +78,12 @@ var app = {
       else {
         this.searchPage = new SearchView();
         this.searchPage.render();
-        $("body").html(this.searchPage.el);
+        this.page = this.searchPage.el;
+        this.slider.slidePage($(this.page));
         this.searchPage.registerEvents();
         this.searchPage.getClosestBuoys();
         console.log('new search');
       } 
-      return;
     }
   },
 
@@ -109,8 +114,10 @@ var app = {
 
   initialize: function() {
     var self = this;
+    this.slider = new PageSlider($("#container"));
     window.location.hash = "home";
     this.hash = "home";
+
     this.registerEvents();
     this.store = new LocalStorageStore();
     this.screenHeight = $(window).height();
