@@ -27,9 +27,7 @@ var app = {
         this.homePage = new HomeView();
         this.homePage.render();
         $("#container").html(this.homePage.el);
-        //this.page = this.homePage.el;
         this.homePage.resize();
-        //this.slider.slidePage($(this.page));
         this.homePage.registerEvents();
         console.log('new home');
       }

@@ -23,8 +23,6 @@ var HomeView = function() {
     //sets each slide to appropriate size
     $(".slide").height(app.screenHeight - 110);
     $(".slide").width(app.screenWidth - 40);
-    //sets first li bullet active
-    $("#indicator>:first-child").addClass("active");
     this.myScroll = new iScroll("wrapper", {
       snap: true,
       momentum: false,
@@ -34,6 +32,11 @@ var HomeView = function() {
         document.querySelector("#indicator > li:nth-child(" + (this.currPageX+1) + ")").className = "active";
       }
     });
+    //sets scroller to first page
+    this.myScroll.scrollToPage(0);
+    //sets first li bullet active
+    $("#indicator>li").removeClass("active");
+    $("#indicator>:first-child").addClass("active");
   }
 
   this.homeRefresh = function() {
