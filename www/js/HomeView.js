@@ -11,8 +11,13 @@ var HomeView = function() {
   }
 
   this.render = function() {
-    this.el.html(HomeView.template(app.store.getFavorites()));
+    this.el.html(HomeView.template());
     return this;
+  }
+
+  this.renderFavorites = function() {
+    $("#scroller").html(HomeView.scrollerTemplate(app.store.getFavorites()));
+    $("#indicator").html(HomeView.indicatorTemplate(app.store.getFavorites()));
   }
 
   this.resize = function() {
@@ -70,10 +75,11 @@ var HomeView = function() {
             app.store.setFavorites(currentIds);
             if (!activeAJAX) {
               $("#homeRefresh").removeClass("icon-spin");
-              app.homePage.render();
-              $("body").html(app.homePage.el);
-              app.homePage.resize();
-              app.homePage.registerEvents();
+              this.renderFavorites();
+              //app.homePage.render();
+              //$("body").html(app.homePage.el);
+              //app.homePage.resize();
+              //app.homePage.registerEvents();
               break;
             }
             break;
@@ -87,3 +93,5 @@ var HomeView = function() {
 }
 
 HomeView.template = Handlebars.compile($('#home-tpl').html());
+HomeView.scrollerTemplate = Handlebars.compile($('#home-scroller-tpl').html());
+HomeView.indicatorTemplate = Handlebars.compile($('#home-indicator-tpl').html());

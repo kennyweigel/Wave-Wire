@@ -19,6 +19,7 @@ var app = {
       if (this.homePage) {
         this.page = this.homePage.el;
         this.slider.slidePage($(this.page));
+        this.homePage.renderFavorites();
         this.homePage.resize();
         this.homePage.registerEvents();
         console.log('refresh home');
@@ -27,6 +28,7 @@ var app = {
         this.homePage = new HomeView();
         this.homePage.render();
         $("#container").html(this.homePage.el);
+        this.homePage.renderFavorites();
         this.homePage.resize();
         this.homePage.registerEvents();
         console.log('new home');
