@@ -1,4 +1,5 @@
-/*global window */
+/*jslint browser: true*/
+
 var LocalStorageStore = function () {
 
     "use strict";

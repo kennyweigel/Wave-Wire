@@ -8,6 +8,11 @@ body {
   margin:0;
 }
 
+.navbar-inner {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .navbar-inner > h3 {
   position:absolute;
   left:50px;

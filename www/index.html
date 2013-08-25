@@ -13,11 +13,11 @@
     <div id="container"></div>
 
     <script id="home-tpl" type="text/x-handlebars-template">
-      <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-inner">
-          <button type="button" id="homeMenu" class="btn navbar-btn pull-left"><i class="icon-reorder"></i></button>
+          <button type="button" id="homeMenu" class="btn navbar-btn btn-default pull-left"><i class="icon-reorder"></i></button>
           <h3>Buoys</h3>
-          <button type="button" id="homeRefresh" class="btn navbar-btn pull-right" ><i class="icon-refresh"></i></button>
+          <button type="button" id="homeRefresh" class="btn navbar-btn btn-default pull-right" ><i class="icon-refresh"></i></button>
         </div>
       </div>
       <div id="wrapper">
@@ -55,22 +55,22 @@
     </script>
     
     <script id="map-tpl" type="text/x-handlebars-template">
-      <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-inner">
-          <button type="button" id="mapMenu" class="btn navbar-btn pull-left"><i class="icon-reorder"></i></button>
+          <button type="button" id="mapMenu" class="btn navbar-btn btn-default pull-left"><i class="icon-reorder"></i></button>
           <h3>Map</h3>
-          <button type="button" id="mapRefresh" class="btn navbar-btn pull-right"><i class="icon-refresh"></i></button>
+          <button type="button" id="mapRefresh" class="btn navbar-btn btn-default pull-right"><i class="icon-refresh"></i></button>
         </div>
       </div>
       <div id="mapCanvas" style="height:100%; width:100%; position:absolute"></div>
     </script>
 
     <script id="menu-tpl" type="text/x-handlebars-template">    
-      <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-inner">
-          <button type="button" id="menuHome" class="btn navbar-btn pull-left"><i class="icon-home"></i></button>
+          <button type="button" id="menuHome" class="btn navbar-btn btn-default pull-left"><i class="icon-home"></i></button>
           <h3 >Menu</h3>
-          <button type="button" id="menuMap" class="btn navbar-btn pull-right"><i class="icon-globe"></i></button>
+          <button type="button" id="menuMap" class="btn navbar-btn btn-default pull-right"><i class="icon-globe"></i></button>
         </div>
       </div>
       <div class="pageContent">
@@ -89,10 +89,10 @@
     </script>
 
     <script id="search-tpl" type="text/x-handlebars-template">
-      <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-inner">
           <h3>Add Buoys</h3>
-          <button type="button" id="searchBack" class="btn navbar-btn pull-right"><i class="icon-arrow-left"></i></button>
+          <button type="button" id="searchBack" class="btn navbar-btn btn-default pull-right"><i class="icon-arrow-left"></i></button>
         </div>
       </div>
       <div class="pageContent" id="searchContent">
@@ -100,7 +100,7 @@
           <input type="search" class="form-control" id="searchInput" placeholder="Search For Buoys...">
           <div class="icon-search"></div>
         </form>
-        <button type="button" id="searchGeolocation" class="btn pull-right"><i class="icon-location-arrow"></i></button>
+        <button type="button" id="searchGeolocation" class="btn btn-default pull-right"><i class="icon-location-arrow"></i></button>
         <h4>Closest Buoys</h4>
         <table class="table table-bordered" id="closestBuoysTable">
           <tbody>
@@ -119,6 +119,18 @@
         {{/.}}
       </tbody>
     </script>
+      
+    <script id="buoy-tpl" type="text/x-handlebars-template">
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-inner">
+          <h3>{{title}}</h3>
+          <button type="button" id="buoyBack" class="btn navbar-btn btn-default pull-right"><i class="icon-arrow-left"></i></button>
+        </div>
+      </div>
+      <div class="pageContent" id="buoyContent">
+        <p>Getting Buoy Data ...</p>
+      </div>
+    </script>
 
     <script src="phonegap.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
@@ -134,6 +146,7 @@
     <script src="js/MapView.js"></script>
     <script src="js/MenuView.js"></script>
     <script src="js/SearchView.js"></script>
+    <script src="js/BuoyView.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
