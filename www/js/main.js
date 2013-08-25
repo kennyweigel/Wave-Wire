@@ -209,10 +209,12 @@ var app = {
             var regionsLength = regions.length,
                 i,
                 j,
-                specificRegion = window[regions[i].id],
-                specificRegionLength = specificRegion.length;
-            for (i = 0; i < regionsLength; i += 1) {
+                specificRegion,
+                specificRegionLength;
                 
+            for (i = 0; i < regionsLength; i += 1) {
+                specificRegion = window[regions[i].id];
+                specificRegionLength = specificRegion.length;
                 for (j = 0; j < specificRegionLength; j += 1) {
                     if (specificRegion[j].id === inputVal) {
                         return 1;
