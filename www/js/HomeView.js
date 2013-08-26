@@ -25,7 +25,9 @@ var HomeView = function () {
     };
 
     this.resize = function () {
-        var testFavs = app.store.getFavorites();
+        var testFavs;
+        
+        testFavs = app.store.getFavorites();
         $("#scroller").width((testFavs.length + 1) * app.screenWidth);
         //sets width of scroller pages to appropriate width
         $("#scroller li").width(app.screenWidth);
@@ -49,10 +51,10 @@ var HomeView = function () {
     };
 
     this.homeRefresh = function () {
-        var currentIds = app.store.getFavorites(),
-            activeAJAX = 0,
-            currentIdsLength = currentIds.length,
-            i = 0;
+        var currentIds,
+            activeAJAX,
+            currentIdsLength,
+            i;
         
         function update(html, status, EXTRA) {
             var j;
@@ -70,6 +72,7 @@ var HomeView = function () {
                         if (!activeAJAX) {
                             $("#homeRefresh > i").removeClass("icon-spin");
                             app.homePage.renderFavorites();
+                            app.homePage.resize();
                             break;
                         }
                         break;
@@ -85,6 +88,9 @@ var HomeView = function () {
         }
                
         $("#homeRefresh > i").addClass("icon-spin");
+        activeAJAX = 0;
+        currentIds = app.store.getFavorites();
+        currentIdsLength = currentIds.length;
         for (i = 0; i < currentIdsLength; i += 1) {
             activeAJAX += 1;
             updateInit("http://www.ndbc.noaa.gov/mobile/station.php?station=" + currentIds[i].id, currentIds[i].id);

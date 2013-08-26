@@ -17,6 +17,16 @@ var BuoyView = function () {
         return this;
     };
     
+    this.getSpecificBuoyData = function () {
+        var processedHtml,
+            url;
+        url = "http://www.ndbc.noaa.gov/mobile/station.php?station=" + app.selectedBuoy;
+        $.get(url, function (html, status) {
+            processedHtml = app.processBuoyData(html);
+            $("#buoyContent").html(processedHtml);
+        });
+    };
+    
     this.initialize();
 };
 

@@ -15,7 +15,6 @@ var app = {
 
     route: function () {
         "use strict";
-        var self = this;
         this.previousHash = this.hash;
         this.hash = window.location.hash;
 
@@ -138,7 +137,6 @@ var app = {
 
     initialize: function () {
         "use strict";
-        var self = this;
         this.slider = new PageSlider($("#container"));
         window.location.hash = "home";
         this.hash = "home";
