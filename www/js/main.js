@@ -91,12 +91,14 @@ var app = {
                 this.page = this.buoyPage.el;
                 this.slider.slidePage($(this.page));
                 this.buoyPage.registerEvents();
+                this.buoyPage.getSpecificBuoyData();
             } else {
                 this.buoyPage = new BuoyView();
                 this.buoyPage.render();
                 this.page = this.buoyPage.el;
                 this.slider.slidePage($(this.page));
                 this.buoyPage.registerEvents();
+                this.buoyPage.getSpecificBuoyData();
             }
         }
     },
