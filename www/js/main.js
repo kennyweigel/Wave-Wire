@@ -191,6 +191,8 @@ var app = {
                 "Favorites",
                 ["Yes", "Cancel"]
             );
+        } else {
+            app.showAlert("Only 10 buoys may be added to your Favorites.", "Favorites");
         }
     },
 
@@ -248,7 +250,7 @@ var app = {
             if (isValidId(inputVal)) {
                 addBuoy(inputVal);
                 if (input) {
-                    input.val("");
+                  input.val("");
                 }
             } else {
                 app.showAlert("Buoy " + inputVal + " can't be found.", "Search");
