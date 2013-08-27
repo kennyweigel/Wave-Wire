@@ -248,29 +248,39 @@ var app = {
 
         if (!currentFavorites.length) {
             if (isValidId(inputVal)) { 
-                input.val("");
-                $('input').blur();
+                if (input) {
+                    input.val("");
+                    $('input').blur();
+                }
                 addBuoy(inputVal);
             } else { 
-                input.val("");
-                $('input').blur();
+                if (input) {
+                    input.val("");
+                    $('input').blur();
+                }
                 app.showAlert("Buoy " + inputVal + " can't be found.", "Search");
             }
         } else {
             //checks if buoy is already a favorite
             if (isFavorite(inputVal, currentFavorites)) {
-                input.val("");
-                $('input').blur();
+                if (input) {
+                    input.val("");
+                    $('input').blur();
+                }
                 app.showAlert("Buoy " + inputVal + " is already a favorite.", "Favorites");
             } else {
                 //checks if buoy matches any buoy ids
                 if (isValidId(inputVal)) { 
-                    input.val("");
-                    $('input').blur();
+                    if (input) {
+                        input.val("");
+                        $('input').blur();
+                    }
                     addBuoy(inputVal);                    
                 } else {
-                    input.val("");
-                    $('input').blur();                    
+                    if (input) {
+                        input.val("");
+                        $('input').blur();
+                    }
                     app.showAlert("Buoy " + inputVal + " can't be found.", "Search");
                 }
             }
