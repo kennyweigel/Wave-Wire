@@ -230,7 +230,8 @@ var app = {
             currentFavorites.push({id: inputVal, data: "<p>No Updates</p>"});
             app.store.setFavorites(currentFavorites);
             if (app.menuPage) {
-                app.homePage.render();
+                app.homePage.renderFavorites();
+                app.homePage.resize();
                 app.menuPage.render();
             }
             return;
