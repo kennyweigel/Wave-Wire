@@ -250,12 +250,15 @@ var app = {
             if (isValidId(inputVal)) {
                 addBuoy(inputVal);
                 if (input) {
-                  input.val("");
+                    //deletes input value and removes focus
+                    input.val("");
+                    $('input').blur();
                 }
             } else {
                 app.showAlert("Buoy " + inputVal + " can't be found.", "Search");
                 if (input) {
                     input.val("");
+                    $('input').blur();
                 }
             }
         } else {
@@ -264,6 +267,7 @@ var app = {
                 app.showAlert("Buoy " + inputVal + " is already a favorite.", "Favorites");
                 if (input) {
                     input.val("");
+                    $('input').blur();
                 }
             } else {
                 //checks if buoy matches any buoy ids
@@ -272,12 +276,14 @@ var app = {
                         addBuoy(inputVal, currentFavorites);
                         if (input) {
                             input.val("");
+                            $('input').blur();
                         }
                     }
                 } else {
                     app.showAlert("Buoy " + inputVal + " can't be found.", "Search");
                     if (input) {
                         input.val("");
+                        $('input').blur();
                     }
                 }
             }
