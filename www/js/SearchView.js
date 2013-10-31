@@ -1,5 +1,5 @@
 /*jslint browser: true*/
-/*global $, app, regions, Handlebars, console */
+/*global $, app, allBuoys, Handlebars, console */
 var SearchView = function () {
     "use strict";
     this.initialize = function () {
@@ -89,27 +89,22 @@ var SearchView = function () {
         function onGeolocationSuccess(position) {
             var myLat = position.coords.latitude,
                 myLng = position.coords.longitude,
-                regionSpecific,
-                regionSpecificLength,
+                allBuoysLength,
                 distance,
-                allBuoys = [],
-                regionsLength = regions.length,
-                i,
+                buoys = [],
                 j;
-            for (i = 0; i < regionsLength; i += 1) {
-                regionSpecific = window[regions[i].id];
-                regionSpecificLength = regionSpecific.length;
-      
-                for (j = 0; j < regionSpecificLength; j += 1) {
-                    distance = getDistanceFromLatLonInKm(myLat, myLng, regionSpecific[j].lat, regionSpecific[j].lng);
-                    allBuoys.push({"id": regionSpecific[j].id, "name": regionSpecific[j].name, "distance": distance});
-                }
+            
+            allBuoysLength = allBuoys.length;
+            for (j = 0; j < allBuoysLength; j += 1) {
+                distance = getDistanceFromLatLonInKm(myLat, myLng, allBuoys[j].lat, allBuoys[j].lng);
+                buoys.push({"id": allBuoys[j].id, "name": allBuoys[j].name, "distance": distance});
             }
-            allBuoys.sort(function (buoy1, buoy2) {
+            
+            buoys.sort(function (buoy1, buoy2) {
                 return buoy1.distance - buoy2.distance;
             });
-            allBuoys = allBuoys.slice(0, 10);
-            $("#closestBuoysTable").html(SearchView.closestBuoysTable(allBuoys));
+            buoys = buoys.slice(0, 10);
+            $("#closestBuoysTable").html(SearchView.closestBuoysTable(buoys));
         }
         
         function onGeolocationError(error) {

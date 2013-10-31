@@ -1,5 +1,5 @@
 /*jslint browser: true*/
-/*global $, alert, confirm, console,  FastClick, HomeView, MapView, MenuView, SearchView, BuoyView, PageSlider, LocalStorageStore, regions*/
+/*global $, alert, confirm, console,  FastClick, HomeView, MapView, MenuView, SearchView, BuoyView, PageSlider, LocalStorageStore, allBuoys*/
 var app = {
     
     registerEvents: function () {
@@ -208,19 +208,17 @@ var app = {
         var currentFavorites = this.store.getFavorites();
         
         function isValidId(inputVal) {
-            var regionsLength = regions.length,
+            //var regionsLength = regions.length,
+            var allBuoysLength = allBuoys.length,
                 i,
                 j,
                 specificRegion,
                 specificRegionLength;
                 
-            for (i = 0; i < regionsLength; i += 1) {
-                specificRegion = window[regions[i].id];
-                specificRegionLength = specificRegion.length;
-                for (j = 0; j < specificRegionLength; j += 1) {
-                    if (specificRegion[j].id === inputVal) {
-                        return 1;
-                    }
+
+            for (j = 0; j < alBuoysLength; j += 1) {
+                if (allBuoysLength[j].id === inputVal) {
+                    return 1;
                 }
             }
             return 0;

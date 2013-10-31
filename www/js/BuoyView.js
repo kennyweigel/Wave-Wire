@@ -4,7 +4,7 @@ var BuoyView = function () {
     "use strict";
     
     this.initialize = function () {
-        this.el = $('<div/>');
+        this.el = $("<div/>");
         this.registerEvents();
     };
 
