@@ -216,7 +216,7 @@ var app = {
                 specificRegionLength;
                 
 
-            for (j = 0; j < alBuoysLength; j += 1) {
+            for (j = 0; j < allBuoysLength; j += 1) {
                 if (allBuoysLength[j].id === inputVal) {
                     return 1;
                 }
@@ -245,13 +245,13 @@ var app = {
         }
 
         if (!currentFavorites.length) {
-            if (isValidId(inputVal)) { 
+            if (isValidId(inputVal)) {
                 if (input) {
                     input.val("");
                     $('input').blur();
                 }
                 addBuoy(inputVal);
-            } else { 
+            } else {
                 if (input) {
                     input.val("");
                     $('input').blur();
@@ -268,12 +268,12 @@ var app = {
                 app.showAlert("Buoy " + inputVal + " is already a favorite.", "Favorites");
             } else {
                 //checks if buoy matches any buoy ids
-                if (isValidId(inputVal)) { 
+                if (isValidId(inputVal)) {
                     if (input) {
                         input.val("");
                         $('input').blur();
                     }
-                    addBuoy(inputVal);                    
+                    addBuoy(inputVal);
                 } else {
                     if (input) {
                         input.val("");
