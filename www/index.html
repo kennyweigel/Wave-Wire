@@ -1,154 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="Main">
   <head>
-    <title>surf-check</title>
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/pageslider.css" rel="stylesheet">
-  </head>
-  <body>
-    
-    <div id="container"></div>
+    <meta charset="utf-8">
+    <title>Ionic Seed</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <script id="home-tpl" type="text/x-handlebars-template">
-      <div class="navbar navbar-default navbar-fixed-top">
-        <div class="navbar-inner">
-          <button type="button" id="homeMenu" class="btn navbar-btn btn-default pull-left"><i class="icon-reorder"></i></button>
-          <h3>Buoys</h3>
-          <button type="button" id="homeRefresh" class="btn navbar-btn btn-default pull-right" ><i class="icon-refresh"></i></button>
-        </div>
-      </div>
-      <div id="wrapper">
-        <div id="scroller">
-        </div>
-      </div>
-      <ul id="indicator">
-      </ul>
-    </script>
+    <!-- ionic css -->
+    <link href="css/ionic.css" rel="stylesheet">
 
-    <script id="home-scroller-tpl" type="text/x-handlebars-template">
-      <ul id="theList">
-        {{#.}}
-        <li>
-          <div class="slide">
-            <h2>{{this.id}}</h2>
-            <div id="{{this.id}}-data">{{{this.data}}}</div>
-          </div>
-        </li>
-        {{/.}}
-        <li>
-          <div class="slide" id="addBuoySlide">
-            <h2>Add Buoy</h2>
-            <p>Tap Here To Add A New Buoy</p>
-          </div>
-        </li>
-      </ul>
-    </script>
+    <!-- your app's css -->
+    <link href="css/app.css" rel="stylesheet">
 
-    <script id="home-indicator-tpl" type="text/x-handlebars-template">
-      {{#.}}
-      <li></li>
-      {{/.}}
-      <li></li>
-    </script>
-    
-    <script id="map-tpl" type="text/x-handlebars-template">
-      <div class="navbar navbar-default navbar-fixed-top">
-        <div class="navbar-inner">
-          <button type="button" id="mapMenu" class="btn navbar-btn btn-default pull-left"><i class="icon-reorder"></i></button>
-          <h3>Map</h3>
-          <button type="button" id="mapRefresh" class="btn navbar-btn btn-default pull-right"><i class="icon-refresh"></i></button>
-        </div>
-      </div>
-      <div class="pageContent" id="mapContent">
-      </div>
-    </script>
+    <!-- ionic/angularjs scripts -->
+    <script src="js/ionic.js"></script>
+    <script src="js/angular/angular.js"></script>
+    <script src="js/angular/angular-animate.js"></script>
+    <script src="js/angular/angular-route.js"></script>
+    <script src="js/angular/angular-touch.js"></script>
+    <script src="js/angular/angular-sanitize.js"></script>
+    <script src="js/ionic-angular.js"></script>
 
-    <script id="menu-tpl" type="text/x-handlebars-template">    
-      <div class="navbar navbar-default navbar-fixed-top">
-        <div class="navbar-inner">
-          <button type="button" id="menuHome" class="btn navbar-btn btn-default pull-left"><i class="icon-home"></i></button>
-          <h3 >Menu</h3>
-          <button type="button" id="menuMap" class="btn navbar-btn btn-default pull-right"><i class="icon-globe"></i></button>
-        </div>
-      </div>
-      <div class="pageContent">
-        <h4>Favorites</h4>
-        <table class="table table-bordered" id="buoyTable">
-          {{#.}}
-            <tr>
-              <td id="{{this.id}}-li" class="menuBuoy">{{this.id}}<a class="btn btn-danger pull-right deleteBtn"><i class="icon-minus-sign"></i></a></td>
-            </tr>
-          {{/.}}
-          <tr>
-            <td id="menuAddBuoy">Add New Buoy</td>
-          </tr>
-        </table>
-      </div>
-    </script>
+    <!-- cordova script -->
+    <!--<script src="cordova.js"></script>-->
 
-    <script id="search-tpl" type="text/x-handlebars-template">
-      <div class="navbar navbar-default navbar-fixed-top">
-        <div class="navbar-inner">
-          <h3>Add Buoys</h3>
-          <button type="button" id="searchBack" class="btn navbar-btn btn-default pull-right"><i class="icon-arrow-left"></i></button>
-        </div>
-      </div>
-      <div class="pageContent" id="searchContent">
-        <form id="searchForm" action="javascript:app.validateBuoy()">
-          <input type="search" class="form-control" id="searchInput" placeholder="Search For Buoys...">
-          <div class="icon-search"></div>
-        </form>
-        <button type="button" id="searchGeolocation" class="btn btn-default pull-right"><i class="icon-location-arrow"></i></button>
-        <h4>Closest Buoys</h4>
-        <table class="table table-bordered" id="closestBuoysTable">
-          <tbody>
-            <tr>
-              <td>Getting Current Location...</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </script>
-    
-    <script id="closestBuoysTable-tpl" type="text/x-handlebars-template">
-      <tbody>
-        {{#.}}
-        <tr id="{{this.id}}-closestBuoy" class="closestBuoys needsclick"><td>{{this.id}} - {{this.name}}</td></tr>
-        {{/.}}
-      </tbody>
-    </script>
-      
-    <script id="buoy-tpl" type="text/x-handlebars-template">
-      <div class="navbar navbar-default navbar-fixed-top">
-        <div class="navbar-inner">
-          <h3>{{title}}</h3>
-          <button type="button" id="buoyBack" class="btn navbar-btn btn-default pull-right"><i class="icon-arrow-left"></i></button>
-        </div>
-      </div>
-      <div class="pageContent" id="buoyContent">
-        <p>Getting Buoy Data ...</p>
-      </div>
-    </script>
-
-    <script src="phonegap.js"></script>
+    <!-- google maps API -->
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="lib/jquery-1.9.1.min.js"></script>
-    <script src="lib/pageslider.js"></script>
-    <script src="lib/bootstrap.min.js"></script>
-    <script src="lib/handlebars.js"></script>
-    <script src="lib/iscroll.js"></script>
-    <script src="lib/fastclick.js"></script>
-    <script src="js/LocalStorage.js"></script>
-    <script src="js/AllBuoys.js"></script>
-    <script src="js/all-regions.js"></script>
-    <script src="js/HomeView.js"></script>
-    <script src="js/MapView.js"></script>
-    <script src="js/MenuView.js"></script>
-    <script src="js/SearchView.js"></script>
-    <script src="js/BuoyView.js"></script>
+    
+    <!-- your app's script -->
+    <!--<script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>-->
+
     <script src="js/main.js"></script>
+
+  </head>
+
+  <!-- 'starter' is the name of this angular module (js/app.js)-->
+  <body ng-controller="MainController">    
+    <header>
+      <div class="bar bar-header">
+        <button ng-click="showSettings()" class="button button-icon icon ion-navicon"></button>
+        <div class="h1 title">Header Buttons</div>
+        <button class="button button-clear button-positive">Edit</button>
+      </div>
+    </header>
+    <!-- content area -->
+    <content
+      has-header="true"
+      scroll="true"
+      on-refresh="onRefresh()"
+      >
+
+      <!-- for pull to refresh -->
+      <refresher></refresher>
+      
+      <slide-box>
+        <slide>
+          <div class="box blue"><h1>BLUE</h1></div>
+        </slide>
+        <slide>
+          <div class="box yellow"><h1>YELLOW</h1></div>
+        </slide>
+        <slide>
+          <div class="box pink"><h1>PINK</h1></div>
+        </slide>
+      </slide-box>
+
+      <!-- content -->
+    </content>
+
+    <script id="settings.html" type="text/ng-template">
+      <div id="settings-modal" class="modal" ng-controller="SettingsCtrl">
+        <header class="bar bar-header bar-dark">
+          <button ng-click="showMap()" class="button button-icon icon ion-navicon"></button>
+          <h1 class="title">Settings</h1>
+          <button class="button button-clear" ng-click="closeSettings()">Close</button>
+        </header>
+        <content has-header="true">
+          <div class="padding">
+            <div class="list">
+
+            </div>
+          </div>
+        </content>
+      </div>
+    </script>
+
+    <script id="map.html" type="text/ng-template">
+      <div id="map-modal" class="modal" ng-controller="MapCtrl">
+        <header class="bar bar-header bar-dark">
+          <button ng-click="loadMap()" class="button button-icon icon ion-navicon"></button>
+          <h1 class="title">Map</h1>
+          <button class="button button-clear" ng-click="closeMap()">Close</button>
+        </header>
+        <content has-header="true" scroll="false">
+          <div id="map"></div> 
+        </content>
+      </div>
+    </script>
+
   </body>
 </html>

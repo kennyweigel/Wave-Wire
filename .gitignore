@@ -1,2 +1,3 @@
-cordova-2.3.0.js
-.DS_Store
+*.keystore
+*.sw*
+platforms/^.*

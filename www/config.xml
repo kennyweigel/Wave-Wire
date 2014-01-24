@@ -1,29 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns       = "http://www.w3.org/ns/widgets"
-        xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "org.kennyweigel.wavewire"
-        versionCode = "10"
-        version     = "1.0.0">
- 
-  <name>Wave Wire</name>
-
-  <description>
-      Gathers realtime data from NOAA ocean buoys.
-  </description>
-
-  <author>
-      Kenny Weigel
-  </author>
-
-  <preference name="phonegap-version" value="3.0.0"/>
-  <preference name="orientation" value="portrait"/>
-  <!-- ios specific -->
-  <preference name="webviewbounce" value="false" />
-  
-  <feature name="http://api.phonegap.com/1.0/geolocation"/>
-  <!-- this is not implemented yet -->
-  <feature name="http://api.phonegap.com/1.0/network"/>
-  <plugin name="Notification" value="CDVNotification" />
-  <access origin="*"/>
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.ionicframework.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>StarterApp</name>
+    <description>
+        A sample Ionic Framework app using Cordova and AngularJS
+    </description>
+    <author email="max@drifty.com" href="http://ionicframework.com">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
 </widget>
-
