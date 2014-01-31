@@ -1,0 +1,23 @@
+<view title="Home">
+    <header-bar
+        title="headerTitle"
+        left-buttons="leftButtons"
+        type="bar-positive"
+        align-title="center">
+    </header-bar>
+    <content has-header="true" scroll="false" on-refresh="onRefresh()">
+        <refresher></refresher>
+
+        <slide-box>
+            <slide>
+                <div class="box blue"><h1>BLUE</h1></div>
+            </slide>
+            <slide>
+                <div class="box yellow"><h1>YELLOW</h1></div>
+            </slide>
+            <slide>
+                <div class="box pink"><h1>PINK</h1></div>
+            </slide>
+        </slide-box>
+    </content>
+</view>
