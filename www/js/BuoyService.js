@@ -712,8 +712,14 @@ angular.module("Main.BuoyService", [])
         },
 
         get: function(buoyId) {
-            return
+            var allBuoysLength = allBuoys.length;
+            var i = 0;
+            for (i = 0; i < allBuoysLength; i++) {
+                if (allBuoys[i].id == buoyId) {
+                    return allBuoys[i];
+                }
+            }
         }
-    }
+    };
     
 });

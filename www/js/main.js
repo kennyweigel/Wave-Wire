@@ -1,4 +1,4 @@
-angular.module("Main", ["ionic","Main.BuoyService","Main.LocalStorageService"])
+angular.module("Main", ["ionic","Main.BuoyService","Main.LocalStorageService","Main.BuoyDataService"])
 
 .config(function($stateProvider, $urlRouterProvider) {
 
@@ -9,10 +9,10 @@ angular.module("Main", ["ionic","Main.BuoyService","Main.LocalStorageService"])
   $stateProvider
 
     // setup an abstract state for the tabs directive
-    .state('home', {
+    .state("home", {
       url: "/home",
       templateUrl: "templates/home.html",
-      controller: "MainController"
+      controller: "HomeController"
     })
 
     // the pet tab has its own child nav-view and history
@@ -35,22 +35,23 @@ angular.module("Main", ["ionic","Main.BuoyService","Main.LocalStorageService"])
     });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.otherwise("/home");
 
 })
 
-.controller('MainController', function($scope, $location) {
+.controller("HomeController", function($scope, $location, LocalStorageService) {
     $scope.headerTitle = "Home";
     $scope.leftButtons = [{
-        type:"button-clear",
+        type: "button-clear",
         content: "<i class='icon ion-navicon'></i>",
         tap: function(e) {
             $location.path("/settings");
         }
     }];
+    $scope.favs = LocalStorageService.get();
 })
 
-.controller('SettingsController', function($scope, $location) {
+.controller("SettingsController", function($scope, $location, LocalStorageService) {
     $scope.headerTitle = "Settings";
     $scope.leftButtons = [{
         type:"button-clear",
@@ -66,9 +67,41 @@ angular.module("Main", ["ionic","Main.BuoyService","Main.LocalStorageService"])
             $location.path("/map");
         }
     }];
+    $scope.favs = LocalStorageService.get();
+    $scope.canDelete = true;
+    $scope.showDelete = true;
+    $scope.onDelete = function(item) {
+        console.log("onDelete");
+        console.log(item)
+    };
+    $scope.canReorder = true;
+    $scope.showReorder = true;
+    $scope.onReorder = function() {
+        console.log("onReorder");
+    };
+    $scope.canSwipe = true;
+    $scope.optionButtons = [
+        {
+            text: 'Delete',
+            type: 'button',
+            onTap: function(item) {
+                console.log("delete item");
+                console.log(item);
+                console.log(this);
+            }
+        },
+        {
+            text: "test",
+            type: 'button',
+            onTap: function(item) {
+                console.log('test item');
+                console.log(item);
+            }
+        }
+    ];
 })
 
-.controller('MapController', function($scope, $location, $ionicLoading, BuoyService) {
+.controller("MapController", function($scope, $location, $ionicLoading, BuoyService) {
     $scope.headerTitle = "Map";
     $scope.leftButtons = [{
         type:"button-clear",
@@ -161,11 +194,9 @@ angular.module("Main", ["ionic","Main.BuoyService","Main.LocalStorageService"])
             alert('Unable to get location: ' + error.message);
         });
     };
-
-
 })
 
-.controller('BuoyController', function($scope, $location, $stateParams, $http) {
+.controller('BuoyController', function($scope, $location, $stateParams, $http, BuoyService, LocalStorageService, BuoyDataService) {
     $scope.headerTitle = $stateParams.buoyId;
     $scope.leftButtons = [{
         type:"button-clear",
@@ -176,21 +207,19 @@ angular.module("Main", ["ionic","Main.BuoyService","Main.LocalStorageService"])
     }];
     $scope.buoyId = $stateParams.buoyId;
     console.log('http://www.ndbc.noaa.gov/data/5day2/'+$scope.buoyId+'_5day.txt');
-    $scope.buoyUrl = 'http://www.ndbc.noaa.gov/data/5day2/'+$scope.buoyId+'_5day.txt';
-    
-    $http({method: 'GET', url: $scope.buoyUrl})
-    .success(function(data, status, headers, config) {
-        // this callback will be called asynchronously
-        // when the response is available
-        console.log('success');
-    })
-    .error(function(data, status, headers, config) {
-        // called asynchronously if an error occurs
-        // or server returns response with an error status.
-        console.log('error');
-    });
+    //$scope.buoyUrl = 'http://www.ndbc.noaa.gov/data/5day2/'+$scope.buoyId+'_5day.txt';
+    //for testing
+    $scope.buoyUrl = 'http://localhost:4444/testData.txt';
 
+    $scope.addToFavorites = function() {
+        LocalStorageService.add($scope.buoyId);
+    };
+    $scope.buoyName = BuoyService.get($stateParams.buoyId).name;
 
-
-
+    $scope.update = function() {
+        console.log('update');
+        console.log($scope.buoyId);
+        var testData = BuoyDataService.get($scope.buoyId);
+        console.log(testData);
+    };
 });

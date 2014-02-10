@@ -8,9 +8,20 @@
     </header-bar>
     <content has-header="true">
         <div class="padding">
-            <div class="list">
-
-            </div>
+            <list
+                can-delete="true"
+                show-delete="true"
+                
+                can-reorder="true"
+                show-reorder="true"
+                on-reorder="onReorder()">
+                <item 
+                    ng-repeat="fav in favs" 
+                        on-delete="onDelete(fav)"
+                    >
+                    <h3 style="display: inline-block; width:80px;">{{fav.id}}</h3>
+                </item>
+            </list>
         </div>
     </content>
 </view>

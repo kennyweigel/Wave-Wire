@@ -9,14 +9,10 @@
         <refresher></refresher>
 
         <slide-box>
-            <slide>
-                <div class="box blue"><h1>BLUE</h1></div>
-            </slide>
-            <slide>
-                <div class="box yellow"><h1>YELLOW</h1></div>
-            </slide>
-            <slide>
-                <div class="box pink"><h1>PINK</h1></div>
+            <slide ng-repeat="fav in favs">
+                <div class="box blue">
+                    <h1>{{fav.id}}</h1>
+                </div>
             </slide>
         </slide-box>
     </content>
