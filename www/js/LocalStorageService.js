@@ -1,4 +1,4 @@
-angular.module("Main.LocalStorageService", [])
+angular.module("Main")
 
 .factory("LocalStorageService", function() {
 

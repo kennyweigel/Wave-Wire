@@ -1,4 +1,4 @@
-angular.module("Main.BuoyService", [])
+angular.module("Main")
 
 .factory("BuoyService", function() {
 

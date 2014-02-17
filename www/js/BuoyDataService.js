@@ -1,4 +1,4 @@
-angular.module("Main.BuoyDataService", [])
+angular.module("Main")
 
 .factory("BuoyDataService", function($http) {
 
