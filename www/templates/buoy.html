@@ -1,4 +1,3 @@
-
 <view>
 
     <header-bar
@@ -9,14 +8,35 @@
         align-title="center">
     </header-bar>
     <content has-header="true">
-    <button class="button button-block button-positive" ng-click="addToFavorites()">
-  		Add To Favorites
-	</button>
-    <button class="button button-block button-positive" ng-click="update()">
-        Update
-    </button>
-	<h1>{{buoyName}}</h1>
-    <h6>{{testData}}</h6>
-	</content>
+        <button class="button button-block button-positive" ng-click="addToFavorites()">
+            Add To Favorites
+        </button>
+        <button class="button button-block button-positive" ng-click="update()">
+            Update
+        </button>
+        <h1>{{buoyName}}</h1>
+        <ul class="list">
+            <li class="item">Year: {{buoyData.year}}</li>
+            <li class="item">Month: {{buoyData.month}}</li>
+            <li class="item">Day: {{buoyData.day}}</li>
+            <li class="item">Hour: {{buoyData.hour}}</li>
+            <li class="item">Minute: {{buoyData.minute}}</li>
+            <li class="item">Wind Direction: {{buoyData.windDirection}}</li>
+            <li class="item">Wind Speed: {{buoyData.windSpeed}}</li>
+            <li class="item">Wind Gust: {{buoyData.windGust}}</li>
+            <li class="item">Wave Height: {{buoyData.waveHeight}}</li>
+            <li class="item">Wave Dominant Period: {{buoyData.waveDominantPeriod}}</li>
+            <li class="item">Wave Average Period: {{buoyData.waveAveragePeriod}}</li>
+            <li class="item">Median Wave Direction: {{buoyData.medianWaveDirection}}</li>
+            <li class="item">Pressure: {{buoyData.pressure}}</li>
+            <li class="item">Air Temp: {{buoyData.airTemp}}</li>
+            <li class="item">Water Temp: {{buoyData.waterTemp}}</li>
+            <li class="item">Dew Point: {{buoyData.dewPoint}}</li>
+            <li class="item">Visibility: {{buoyData.visibilty}}</li>
+            <li class="item">PTDY: {{buoyData.ptdy}}</li>
+            <li class="item">Tide: {{buoyData.tide}}</li>
+        </ul>
+
+    </content>
 
 </view>

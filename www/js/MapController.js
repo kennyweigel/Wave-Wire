@@ -1,6 +1,58 @@
 angular.module("Main")
 
 .controller("MapController", function($scope, $location, $ionicLoading, BuoyService) {
+    var geoSuccess = function(position) {
+        var myLat = position.coords.latitude,
+            myLng = position.coords.longitude,
+            myLatLng = new google.maps.LatLng(myLat, myLng),
+            mapOptions = {
+                center: myLatLng,
+                zoom: 7,
+                mapTypeId: google.maps.MapTypeId.TERRAIN,
+                disableDefaultUI: true
+            },
+            allBuoys = BuoyService.all(),
+            allBuoysLength = allBuoys.length,
+            i = 0,
+            buoy = null,
+            buoyLatLng = null,
+            buoyMarker = null,
+            map = {};
+
+            map = new google.maps.Map(document.getElementById("map"), mapOptions),
+            $scope.loading.hide();
+
+            for (i = 0; i < allBuoysLength; i += 1) {
+                buoy = allBuoys[i];
+                buoyLatLng = new google.maps.LatLng(buoy.lat, buoy.lng);
+                buoyMarker = new google.maps.Marker({
+                    position: buoyLatLng,
+                    map: map,
+                    title: buoy.id
+                });
+                google.maps.event.addListener(buoyMarker, "click", function () {
+                    var buoyUrl = "/buoy/" + this.title;
+                    $scope.$apply(function() {
+                        $location.path(buoyUrl);
+                    });
+                });
+            }
+
+            // Stop the side bar from dragging when mousedown/tapdown on the map
+            google.maps.event.addDomListener(document.getElementById("map"), "mousedown", function(e) {
+                e.preventDefault();
+                return false;
+            });
+        },
+        geoError = function(error) {
+            $scope.loading.hide();
+            alert("code: " + error.code + "\n" + "message: " + error.message + "\n");
+        },
+        geoOptions = {
+            "enableHighAccuracy": true,
+            "timeout": 10000
+        };
+
     $scope.headerTitle = "Map";
     $scope.leftButtons = [{
         type:"button-clear",
@@ -13,84 +65,15 @@ angular.module("Main")
         type:"button-clear",
         content: "<i class='icon ion-navigate'></i>",
         tap: function(e) {
-            //centerOnMe();
-            $scope.initialize();
+            $scope.start();
         }
     }];
-
-
-    $scope.initialize = function() {
-        console.log('map initialize');
-        var mapOptions = {
-            center: new google.maps.LatLng(43.07493,-89.381388),
-            //center: myLatLng,
-            zoom: 7,
-            mapTypeId: google.maps.MapTypeId.TERRAIN,
-            disableDefaultUI: true
-        };
-        var allBuoys = BuoyService.all();
-        var allBuoysLength = allBuoys.length;
-        var j = 0;
-    
-        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
-        function showBuoyModal(id) {
-
-        }
-
-        console.log(allBuoysLength);
-        for (j = 0; j < allBuoysLength; j += 1) {
-            buoy = allBuoys[j];
-            buoyLatLng = new google.maps.LatLng(buoy.lat, buoy.lng);
-            buoyMarker = new google.maps.Marker({
-                position: buoyLatLng,
-                map: map,
-                title: buoy.id
-            });
-            //google.maps.event.addListener(buoyMarker, "click", app.showSpecificBuoy(buoyMarker.title));
-            google.maps.event.addListener(buoyMarker, "click", function () {
-                console.log(this.title);
-                console.log($location.url());
-                var buoyUrl = "/buoy/" + this.title;
-                console.log(buoyUrl);
-                $scope.$apply(function() {
-                    console.log(buoyUrl);
-                    $location.path(buoyUrl);
-                });
-            });
-        }
-
-        // Stop the side bar from dragging when mousedown/tapdown on the map
-        google.maps.event.addDomListener(document.getElementById('map'), 'mousedown', function(e) {
-            e.preventDefault();
-            return false;
-        });
-
-        $scope.map = map;
-    };
-
-    $scope.loadMap = function() {
-        console.log('loadMap');
-        initialize();
-    };
-
-    //google.maps.event.addDomListener(window, 'load', initialize);
-    $scope.centerOnMe = function() {
-        if(!$scope.map) {
-            console.log('no scope map');
-            return;
-        }
-
+    $scope.start = function() {
         $scope.loading = $ionicLoading.show({
             content: 'Getting current location...',
             showBackdrop: false
         });
-
-        navigator.geolocation.getCurrentPosition(function(pos) {
-            $scope.map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
-            $scope.loading.hide();
-        }, function(error) {
-            alert('Unable to get location: ' + error.message);
-        });
+        
+        navigator.geolocation.getCurrentPosition(geoSuccess, geoError, geoOptions);
     };
 });
