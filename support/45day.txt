@@ -1,0 +1,2196 @@
+[TXT] 0Y2W3.txt               29-Sep-2013 16:06   18K  Standard Meteorological Data
+[TXT] 32ST0.ocean             29-Sep-2013 16:26   87K  Oceanographic Data
+[TXT] 32ST0.srad              29-Sep-2013 16:26   41K  Solar Radiation Data
+[TXT] 32ST0.txt               29-Sep-2013 16:26  101K  Standard Meteorological Data
+[TXT] 41NT0.ocean             29-Sep-2013 16:26   87K  Oceanographic Data
+[TXT] 41NT0.srad              29-Sep-2013 16:26   41K  Solar Radiation Data
+[TXT] 41NT0.txt               29-Sep-2013 16:26  101K  Standard Meteorological Data
+[TXT] 42OTP.adcp              31-Dec-2003 09:28   56K  Acoustic Doppler Current Profiler Data
+[TXT] 42OTP.cwind             28-Aug-2005 14:22   61K  Continuous Winds Data
+[TXT] 42OTP.data_spec         28-Aug-2005 14:01  180K  Raw Spectral Wave Data
+[TXT] 42OTP.hkp               28-Aug-2005 14:01   18K  Housekeeping Data
+[TXT] 42OTP.ocean             03-Mar-2004 10:02   73K  Oceanographic Data
+[TXT] 42OTP.spec              30-Jun-2004 15:09  5.9K  Spectral Wave Summary Data
+[TXT] 42OTP.swdir             31-Dec-2003 09:26  698   Spectral Wave Data (alpha1)
+[TXT] 42OTP.swdir2            31-Dec-2003 09:27  695   Spectral Wave Data (alpha2)
+[TXT] 42OTP.swr1              31-Dec-2003 09:27  697   Spectral Wave Data (r1)
+[TXT] 42OTP.swr2              31-Dec-2003 09:28  697   Spectral Wave Data (r2)
+[TXT] 42OTP.txt               29-Apr-2009 12:54   24K  Standard Meteorological Data
+[TXT] 46S10.txt               15-Aug-2013 16:56   45K  Standard Meteorological Data
+[TXT] 51WH0.ocean             29-Sep-2013 16:26   87K  Oceanographic Data
+[TXT] 51WH0.srad              29-Sep-2013 16:26   41K  Solar Radiation Data
+[TXT] 51WH0.txt               29-Sep-2013 16:26  101K  Standard Meteorological Data
+[TXT] 13001.drift             29-Sep-2013 18:41   37K  Standard Meteorological Data for Drifting Buoys
+[TXT] 13002.drift             29-Sep-2013 18:41  1.1K  Standard Meteorological Data for Drifting Buoys
+[TXT] 13008.drift             29-Sep-2013 18:41   37K  Standard Meteorological Data for Drifting Buoys
+[TXT] 13009.drift             29-Sep-2013 18:41   41K  Standard Meteorological Data for Drifting Buoys
+[TXT] 13010.drift             29-Sep-2013 17:37   42K  Standard Meteorological Data for Drifting Buoys
+[TXT] 15001.drift             29-Sep-2013 17:37   36K  Standard Meteorological Data for Drifting Buoys
+[TXT] 15002.drift             29-Sep-2013 18:18   45K  Standard Meteorological Data for Drifting Buoys
+[TXT] 15006.drift             29-Sep-2013 18:18   45K  Standard Meteorological Data for Drifting Buoys
+[TXT] 15007.drift             29-Sep-2013 16:42   39K  Standard Meteorological Data for Drifting Buoys
+[TXT] 21346.dart              29-Sep-2013 13:43  131K  Water Column Height (DART) Data
+[TXT] 21347.dart              29-Sep-2013 13:43  126K  Water Column Height (DART) Data
+[TXT] 21348.dart              29-Sep-2013 13:43  132K  Water Column Height (DART) Data
+[TXT] 21401.dart              24-Jun-2012 07:31  119K  Water Column Height (DART) Data
+[TXT] 21402.dart              29-Sep-2013 13:33  120K  Water Column Height (DART) Data
+[TXT] 21413.dart              29-Sep-2013 13:26  132K  Water Column Height (DART) Data
+[TXT] 21414.dart              29-Sep-2013 13:33  150K  Water Column Height (DART) Data
+[TXT] 21415.dart              16-Aug-2013 13:28  119K  Water Column Height (DART) Data
+[TXT] 21416.dart              23-Jul-2013 19:28   44K  Water Column Height (DART) Data
+[TXT] 21417.dart              21-Aug-2008 13:47  138K  Water Column Height (DART) Data
+[TXT] 21418.dart              29-Sep-2013 13:33  140K  Water Column Height (DART) Data
+[TXT] 21419.dart              29-Sep-2013 13:26  132K  Water Column Height (DART) Data
+[TXT] 21595.drift             25-Aug-2013 08:08   14K  Standard Meteorological Data for Drifting Buoys
+[TXT] 21595.spec              25-Aug-2013 08:08   14K  Spectral Wave Summary Data
+[TXT] 21597.drift             29-Sep-2013 18:18   46K  Standard Meteorological Data for Drifting Buoys
+[TXT] 21597.spec              29-Sep-2013 18:18   47K  Spectral Wave Summary Data
+[TXT] 22101.drift             29-Sep-2013 18:26   65K  Standard Meteorological Data for Drifting Buoys
+[TXT] 22102.drift             29-Sep-2013 18:26   65K  Standard Meteorological Data for Drifting Buoys
+[TXT] 22103.drift             29-Sep-2013 18:26   74K  Standard Meteorological Data for Drifting Buoys
+[TXT] 22104.drift             29-Sep-2013 18:26   73K  Standard Meteorological Data for Drifting Buoys
+[TXT] 22105.drift             29-Sep-2013 18:26   74K  Standard Meteorological Data for Drifting Buoys
+[TXT] 22106.drift             29-Sep-2013 18:26   69K  Standard Meteorological Data for Drifting Buoys
+[TXT] 22107.drift             29-Sep-2013 18:26   74K  Standard Meteorological Data for Drifting Buoys
+[TXT] 22108.drift             29-Sep-2013 16:26   70K  Standard Meteorological Data for Drifting Buoys
+[TXT] 23227.dart              29-Sep-2013 14:26  213K  Water Column Height (DART) Data
+[TXT] 23228.dart              29-Sep-2013 14:26  127K  Water Column Height (DART) Data
+[TXT] 23401.dart              21-Aug-2013 07:32  131K  Water Column Height (DART) Data
+[TXT] 28401.drift             29-Sep-2013 16:42  3.8K  Standard Meteorological Data for Drifting Buoys
+[TXT] 28901.ocean             28-Aug-2013 13:07   35K  Oceanographic Data
+[TXT] 31001.drift             29-Sep-2013 18:41   41K  Standard Meteorological Data for Drifting Buoys
+[TXT] 31002.drift             29-Sep-2013 18:41   40K  Standard Meteorological Data for Drifting Buoys
+[TXT] 31003.drift             29-Sep-2013 18:41   41K  Standard Meteorological Data for Drifting Buoys
+[TXT] 31004.drift             29-Sep-2013 18:41   42K  Standard Meteorological Data for Drifting Buoys
+[TXT] 31005.drift             29-Sep-2013 18:41   42K  Standard Meteorological Data for Drifting Buoys
+[TXT] 31006.drift             29-Sep-2013 18:41   42K  Standard Meteorological Data for Drifting Buoys
+[TXT] 31007.drift             29-Sep-2013 18:41   43K  Standard Meteorological Data for Drifting Buoys
+[TXT] 31051.drift             29-Sep-2013 07:22   22K  Standard Meteorological Data for Drifting Buoys
+[TXT] 31052.drift             29-Sep-2013 18:41   70K  Standard Meteorological Data for Drifting Buoys
+[TXT] 31053.drift             29-Sep-2013 16:42   71K  Standard Meteorological Data for Drifting Buoys
+[TXT] 31260.drift             16-Sep-2013 10:32   37K  Standard Meteorological Data for Drifting Buoys
+[TXT] 32012.data_spec         29-Sep-2013 18:06  719K  Raw Spectral Wave Data
+[TXT] 32012.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 32012.swdir             29-Sep-2013 18:06  711K  Spectral Wave Data (alpha1)
+[TXT] 32012.swdir2            29-Sep-2013 18:06  707K  Spectral Wave Data (alpha2)
+[TXT] 32012.swr1              29-Sep-2013 18:06  687K  Spectral Wave Data (r1)
+[TXT] 32012.swr2              29-Sep-2013 18:07  687K  Spectral Wave Data (r2)
+[TXT] 32012.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 32066.dart              26-Aug-2013 02:27  102K  Water Column Height (DART) Data
+[TXT] 32401.dart              29-Sep-2013 13:43  141K  Water Column Height (DART) Data
+[TXT] 32402.dart              29-Sep-2013 13:26  132K  Water Column Height (DART) Data
+[TXT] 32411.dart              29-Sep-2013 13:26  132K  Water Column Height (DART) Data
+[TXT] 32412.dart              14-Nov-2012 18:26  133K  Water Column Height (DART) Data
+[TXT] 32413.dart              23-Oct-2012 19:27  133K  Water Column Height (DART) Data
+[TXT] 41002.cwind             29-Sep-2013 18:02  252K  Continuous Winds Data
+[TXT] 41002.data_spec         29-Sep-2013 18:02  673K  Raw Spectral Wave Data
+[TXT] 41002.spec              29-Sep-2013 17:57   71K  Spectral Wave Summary Data
+[TXT] 41002.supl              29-Sep-2013 18:02   50K  Supplemental Measurements Data
+[TXT] 41002.swdir             29-Sep-2013 18:02  650K  Spectral Wave Data (alpha1)
+[TXT] 41002.swdir2            29-Sep-2013 18:02  651K  Spectral Wave Data (alpha2)
+[TXT] 41002.swr1              29-Sep-2013 18:02  641K  Spectral Wave Data (r1)
+[TXT] 41002.swr2              29-Sep-2013 18:02  641K  Spectral Wave Data (r2)
+[TXT] 41002.txt               29-Sep-2013 18:03  101K  Standard Meteorological Data
+[TXT] 41004.cwind             29-Sep-2013 18:02  256K  Continuous Winds Data
+[TXT] 41004.txt               29-Sep-2013 18:01  101K  Standard Meteorological Data
+[TXT] 41008.cwind             29-Sep-2013 18:06  257K  Continuous Winds Data
+[TXT] 41008.data_spec         29-Sep-2013 18:06  714K  Raw Spectral Wave Data
+[TXT] 41008.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 41008.swdir             29-Sep-2013 18:06  689K  Spectral Wave Data (alpha1)
+[TXT] 41008.swdir2            29-Sep-2013 18:06  690K  Spectral Wave Data (alpha2)
+[TXT] 41008.swr1              29-Sep-2013 18:06  680K  Spectral Wave Data (r1)
+[TXT] 41008.swr2              29-Sep-2013 18:07  680K  Spectral Wave Data (r2)
+[TXT] 41008.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 41009.cwind             29-Sep-2013 18:41  259K  Continuous Winds Data
+[TXT] 41009.data_spec         29-Sep-2013 18:13  719K  Raw Spectral Wave Data
+[TXT] 41009.spec              29-Sep-2013 18:06   75K  Spectral Wave Summary Data
+[TXT] 41009.swdir             29-Sep-2013 18:13  686K  Spectral Wave Data (alpha1)
+[TXT] 41009.swdir2            29-Sep-2013 18:13  688K  Spectral Wave Data (alpha2)
+[TXT] 41009.swr1              29-Sep-2013 18:13  683K  Spectral Wave Data (r1)
+[TXT] 41009.swr2              29-Sep-2013 18:13  683K  Spectral Wave Data (r2)
+[TXT] 41009.txt               29-Sep-2013 18:42  203K  Standard Meteorological Data
+[TXT] 41012.adcp2             29-Sep-2013 18:01  2.6M  Acoustic Doppler Current Profiler Data
+[TXT] 41012.cwind             29-Sep-2013 18:06  258K  Continuous Winds Data
+[TXT] 41012.data_spec         29-Sep-2013 18:06  712K  Raw Spectral Wave Data
+[TXT] 41012.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 41012.swdir             29-Sep-2013 18:06  686K  Spectral Wave Data (alpha1)
+[TXT] 41012.swdir2            29-Sep-2013 18:06  688K  Spectral Wave Data (alpha2)
+[TXT] 41012.swr1              29-Sep-2013 18:06  677K  Spectral Wave Data (r1)
+[TXT] 41012.swr2              29-Sep-2013 18:07  677K  Spectral Wave Data (r2)
+[TXT] 41012.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 41013.cwind             29-Sep-2013 18:06  258K  Continuous Winds Data
+[TXT] 41013.data_spec         29-Sep-2013 18:06  718K  Raw Spectral Wave Data
+[TXT] 41013.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 41013.swdir             29-Sep-2013 18:06  693K  Spectral Wave Data (alpha1)
+[TXT] 41013.swdir2            29-Sep-2013 18:06  691K  Spectral Wave Data (alpha2)
+[TXT] 41013.swr1              29-Sep-2013 18:06  684K  Spectral Wave Data (r1)
+[TXT] 41013.swr2              29-Sep-2013 18:07  684K  Spectral Wave Data (r2)
+[TXT] 41013.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 41024.ocean             29-Sep-2013 18:36   72K  Oceanographic Data
+[TXT] 41024.txt               29-Sep-2013 18:36   80K  Standard Meteorological Data
+[TXT] 41025.cwind             29-Sep-2013 18:06   95K  Continuous Winds Data
+[TXT] 41025.data_spec         29-Sep-2013 18:06  260K  Raw Spectral Wave Data
+[TXT] 41025.spec              29-Sep-2013 18:02   27K  Spectral Wave Summary Data
+[TXT] 41025.swdir             29-Sep-2013 18:06  247K  Spectral Wave Data (alpha1)
+[TXT] 41025.swdir2            29-Sep-2013 18:06  249K  Spectral Wave Data (alpha2)
+[TXT] 41025.swr1              29-Sep-2013 18:06  247K  Spectral Wave Data (r1)
+[TXT] 41025.swr2              29-Sep-2013 18:07  247K  Spectral Wave Data (r2)
+[TXT] 41025.txt               29-Sep-2013 18:07   38K  Standard Meteorological Data
+[TXT] 41026.drift             29-Sep-2013 18:41   40K  Standard Meteorological Data for Drifting Buoys
+[TXT] 41029.ocean             29-Sep-2013 18:32   85K  Oceanographic Data
+[TXT] 41029.txt               29-Sep-2013 18:36   99K  Standard Meteorological Data
+[TXT] 41033.ocean             29-Sep-2013 18:36   84K  Oceanographic Data
+[TXT] 41033.txt               29-Sep-2013 18:41   97K  Standard Meteorological Data
+[TXT] 41036.adcp              21-Sep-2013 23:21   69K  Acoustic Doppler Current Profiler Data
+[TXT] 41036.cwind             29-Sep-2013 18:12  258K  Continuous Winds Data
+[TXT] 41036.data_spec         29-Sep-2013 18:13  714K  Raw Spectral Wave Data
+[TXT] 41036.spec              29-Sep-2013 18:13   75K  Spectral Wave Summary Data
+[TXT] 41036.srad              29-Sep-2013 18:41   81K  Solar Radiation Data
+[TXT] 41036.swdir             29-Sep-2013 18:13  690K  Spectral Wave Data (alpha1)
+[TXT] 41036.swdir2            29-Sep-2013 18:13  687K  Spectral Wave Data (alpha2)
+[TXT] 41036.swr1              29-Sep-2013 18:13  680K  Spectral Wave Data (r1)
+[TXT] 41036.swr2              29-Sep-2013 18:13  680K  Spectral Wave Data (r2)
+[TXT] 41036.txt               29-Sep-2013 18:13  201K  Standard Meteorological Data
+[TXT] 41037.ocean             29-Sep-2013 17:47   32K  Oceanographic Data
+[TXT] 41037.txt               29-Sep-2013 17:46   33K  Standard Meteorological Data
+[TXT] 41038.ocean             29-Sep-2013 18:17   87K  Oceanographic Data
+[TXT] 41038.txt               29-Sep-2013 18:16  101K  Standard Meteorological Data
+[TXT] 41040.cwind             29-Sep-2013 18:06  258K  Continuous Winds Data
+[TXT] 41040.data_spec         29-Sep-2013 18:13  718K  Raw Spectral Wave Data
+[TXT] 41040.spec              29-Sep-2013 18:06   75K  Spectral Wave Summary Data
+[TXT] 41040.supl              29-Sep-2013 18:06   52K  Supplemental Measurements Data
+[TXT] 41040.swdir             29-Sep-2013 18:13  681K  Spectral Wave Data (alpha1)
+[TXT] 41040.swdir2            29-Sep-2013 18:13  684K  Spectral Wave Data (alpha2)
+[TXT] 41040.swr1              29-Sep-2013 18:13  670K  Spectral Wave Data (r1)
+[TXT] 41040.swr2              29-Sep-2013 18:13  670K  Spectral Wave Data (r2)
+[TXT] 41040.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 41041.cwind             29-Sep-2013 18:06  257K  Continuous Winds Data
+[TXT] 41041.data_spec         29-Sep-2013 18:06  715K  Raw Spectral Wave Data
+[TXT] 41041.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 41041.supl              29-Sep-2013 18:06   51K  Supplemental Measurements Data
+[TXT] 41041.swdir             29-Sep-2013 18:06  675K  Spectral Wave Data (alpha1)
+[TXT] 41041.swdir2            29-Sep-2013 18:06  677K  Spectral Wave Data (alpha2)
+[TXT] 41041.swr1              29-Sep-2013 18:06  669K  Spectral Wave Data (r1)
+[TXT] 41041.swr2              29-Sep-2013 18:07  669K  Spectral Wave Data (r2)
+[TXT] 41041.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 41043.cwind             29-Sep-2013 18:12  254K  Continuous Winds Data
+[TXT] 41043.data_spec         29-Sep-2013 18:13  706K  Raw Spectral Wave Data
+[TXT] 41043.spec              29-Sep-2013 18:13   74K  Spectral Wave Summary Data
+[TXT] 41043.supl              29-Sep-2013 18:12   51K  Supplemental Measurements Data
+[TXT] 41043.swdir             29-Sep-2013 18:13  680K  Spectral Wave Data (alpha1)
+[TXT] 41043.swdir2            29-Sep-2013 18:13  683K  Spectral Wave Data (alpha2)
+[TXT] 41043.swr1              29-Sep-2013 18:13  673K  Spectral Wave Data (r1)
+[TXT] 41043.swr2              29-Sep-2013 18:13  673K  Spectral Wave Data (r2)
+[TXT] 41043.txt               29-Sep-2013 18:13  100K  Standard Meteorological Data
+[TXT] 41044.cwind             29-Sep-2013 18:06  256K  Continuous Winds Data
+[TXT] 41044.data_spec         29-Sep-2013 18:06  714K  Raw Spectral Wave Data
+[TXT] 41044.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 41044.supl              29-Sep-2013 18:06   51K  Supplemental Measurements Data
+[TXT] 41044.swdir             29-Sep-2013 18:06  686K  Spectral Wave Data (alpha1)
+[TXT] 41044.swdir2            29-Sep-2013 18:06  687K  Spectral Wave Data (alpha2)
+[TXT] 41044.swr1              29-Sep-2013 18:06  677K  Spectral Wave Data (r1)
+[TXT] 41044.swr2              29-Sep-2013 18:07  677K  Spectral Wave Data (r2)
+[TXT] 41044.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 41046.cwind             29-Sep-2013 18:18  257K  Continuous Winds Data
+[TXT] 41046.data_spec         29-Sep-2013 18:18  716K  Raw Spectral Wave Data
+[TXT] 41046.spec              29-Sep-2013 18:13   75K  Spectral Wave Summary Data
+[TXT] 41046.supl              29-Sep-2013 18:17   51K  Supplemental Measurements Data
+[TXT] 41046.txt               29-Sep-2013 18:18  101K  Standard Meteorological Data
+[TXT] 41047.cwind             29-Sep-2013 18:06  256K  Continuous Winds Data
+[TXT] 41047.data_spec         29-Sep-2013 18:13  712K  Raw Spectral Wave Data
+[TXT] 41047.spec              29-Sep-2013 18:06   75K  Spectral Wave Summary Data
+[TXT] 41047.supl              29-Sep-2013 18:06   51K  Supplemental Measurements Data
+[TXT] 41047.swdir             29-Sep-2013 18:13  688K  Spectral Wave Data (alpha1)
+[TXT] 41047.swdir2            29-Sep-2013 18:13  690K  Spectral Wave Data (alpha2)
+[TXT] 41047.swr1              29-Sep-2013 18:13  668K  Spectral Wave Data (r1)
+[TXT] 41047.swr2              29-Sep-2013 18:13  668K  Spectral Wave Data (r2)
+[TXT] 41047.txt               29-Sep-2013 18:07  100K  Standard Meteorological Data
+[TXT] 41048.cwind             29-Sep-2013 18:06  256K  Continuous Winds Data
+[TXT] 41048.data_spec         29-Sep-2013 18:13  712K  Raw Spectral Wave Data
+[TXT] 41048.spec              29-Sep-2013 18:06   75K  Spectral Wave Summary Data
+[TXT] 41048.supl              29-Sep-2013 18:06   51K  Supplemental Measurements Data
+[TXT] 41048.swdir             29-Sep-2013 18:13  688K  Spectral Wave Data (alpha1)
+[TXT] 41048.swdir2            29-Sep-2013 18:13  690K  Spectral Wave Data (alpha2)
+[TXT] 41048.swr1              29-Sep-2013 18:13  680K  Spectral Wave Data (r1)
+[TXT] 41048.swr2              29-Sep-2013 18:13  680K  Spectral Wave Data (r2)
+[TXT] 41048.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 41049.cwind             29-Sep-2013 18:06  258K  Continuous Winds Data
+[TXT] 41049.data_spec         29-Sep-2013 18:06  717K  Raw Spectral Wave Data
+[TXT] 41049.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 41049.supl              29-Sep-2013 18:06   52K  Supplemental Measurements Data
+[TXT] 41049.swdir             29-Sep-2013 18:06  701K  Spectral Wave Data (alpha1)
+[TXT] 41049.swdir2            29-Sep-2013 18:06  701K  Spectral Wave Data (alpha2)
+[TXT] 41049.swr1              29-Sep-2013 18:06  685K  Spectral Wave Data (r1)
+[TXT] 41049.swr2              29-Sep-2013 18:07  685K  Spectral Wave Data (r2)
+[TXT] 41049.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 41051.adcp              29-Sep-2013 17:16  118K  Acoustic Doppler Current Profiler Data
+[TXT] 41051.ocean             29-Sep-2013 17:17   85K  Oceanographic Data
+[TXT] 41051.txt               29-Sep-2013 18:16  549K  Standard Meteorological Data
+[TXT] 41052.adcp              29-Sep-2013 18:26  771K  Acoustic Doppler Current Profiler Data
+[TXT] 41052.ocean             29-Sep-2013 18:26   87K  Oceanographic Data
+[TXT] 41052.txt               29-Sep-2013 18:26  602K  Standard Meteorological Data
+[TXT] 41053.adcp              29-Sep-2013 18:41  614K  Acoustic Doppler Current Profiler Data
+[TXT] 41053.ocean             29-Sep-2013 17:47   87K  Oceanographic Data
+[TXT] 41053.txt               29-Sep-2013 17:46  524K  Standard Meteorological Data
+[TXT] 41056.ocean             29-Sep-2013 18:26   33K  Oceanographic Data
+[TXT] 41056.txt               29-Sep-2013 18:26  226K  Standard Meteorological Data
+[TXT] 41060.data_spec         29-Sep-2013 18:06  719K  Raw Spectral Wave Data
+[TXT] 41060.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 41060.swdir             29-Sep-2013 18:06  684K  Spectral Wave Data (alpha1)
+[TXT] 41060.swdir2            29-Sep-2013 18:06  687K  Spectral Wave Data (alpha2)
+[TXT] 41060.swr1              29-Sep-2013 18:06  687K  Spectral Wave Data (r1)
+[TXT] 41060.swr2              29-Sep-2013 18:07  687K  Spectral Wave Data (r2)
+[TXT] 41060.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 41061.data_spec         29-Sep-2013 18:06  717K  Raw Spectral Wave Data
+[TXT] 41061.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 41061.swdir             29-Sep-2013 18:06  685K  Spectral Wave Data (alpha1)
+[TXT] 41061.swdir2            29-Sep-2013 18:06  687K  Spectral Wave Data (alpha2)
+[TXT] 41061.swr1              29-Sep-2013 18:06  687K  Spectral Wave Data (r1)
+[TXT] 41061.swr2              29-Sep-2013 18:07  687K  Spectral Wave Data (r2)
+[TXT] 41061.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 41108.data_spec         29-Sep-2013 18:13  1.0M  Raw Spectral Wave Data
+[TXT] 41108.spec              29-Sep-2013 18:13  149K  Spectral Wave Summary Data
+[TXT] 41108.swdir             29-Sep-2013 18:13  951K  Spectral Wave Data (alpha1)
+[TXT] 41108.swdir2            29-Sep-2013 18:13  949K  Spectral Wave Data (alpha2)
+[TXT] 41108.swr1              29-Sep-2013 18:13  910K  Spectral Wave Data (r1)
+[TXT] 41108.swr2              29-Sep-2013 18:13  910K  Spectral Wave Data (r2)
+[TXT] 41108.txt               29-Sep-2013 18:13  200K  Standard Meteorological Data
+[TXT] 41109.data_spec         29-Sep-2013 18:13  1.0M  Raw Spectral Wave Data
+[TXT] 41109.spec              29-Sep-2013 18:13  149K  Spectral Wave Summary Data
+[TXT] 41109.swdir             29-Sep-2013 18:13  956K  Spectral Wave Data (alpha1)
+[TXT] 41109.swdir2            29-Sep-2013 18:13  954K  Spectral Wave Data (alpha2)
+[TXT] 41109.swr1              29-Sep-2013 18:13  910K  Spectral Wave Data (r1)
+[TXT] 41109.swr2              29-Sep-2013 18:13  910K  Spectral Wave Data (r2)
+[TXT] 41109.txt               29-Sep-2013 18:13  200K  Standard Meteorological Data
+[TXT] 41110.data_spec         29-Sep-2013 18:32  1.0M  Raw Spectral Wave Data
+[TXT] 41110.spec              29-Sep-2013 18:32  149K  Spectral Wave Summary Data
+[TXT] 41110.swdir             29-Sep-2013 18:32  946K  Spectral Wave Data (alpha1)
+[TXT] 41110.swdir2            29-Sep-2013 18:32  944K  Spectral Wave Data (alpha2)
+[TXT] 41110.swr1              29-Sep-2013 18:32  909K  Spectral Wave Data (r1)
+[TXT] 41110.swr2              29-Sep-2013 18:32  909K  Spectral Wave Data (r2)
+[TXT] 41110.txt               29-Sep-2013 18:37  200K  Standard Meteorological Data
+[TXT] 41112.data_spec         29-Sep-2013 18:18  1.0M  Raw Spectral Wave Data
+[TXT] 41112.spec              29-Sep-2013 18:13  149K  Spectral Wave Summary Data
+[TXT] 41112.swdir             29-Sep-2013 18:18  947K  Spectral Wave Data (alpha1)
+[TXT] 41112.swdir2            29-Sep-2013 18:18  948K  Spectral Wave Data (alpha2)
+[TXT] 41112.swr1              29-Sep-2013 18:18  910K  Spectral Wave Data (r1)
+[TXT] 41112.swr2              29-Sep-2013 18:18  910K  Spectral Wave Data (r2)
+[TXT] 41112.txt               29-Sep-2013 18:13  200K  Standard Meteorological Data
+[TXT] 41113.data_spec         29-Sep-2013 18:32  1.0M  Raw Spectral Wave Data
+[TXT] 41113.spec              29-Sep-2013 18:32  149K  Spectral Wave Summary Data
+[TXT] 41113.swdir             29-Sep-2013 18:32  940K  Spectral Wave Data (alpha1)
+[TXT] 41113.swdir2            29-Sep-2013 18:32  942K  Spectral Wave Data (alpha2)
+[TXT] 41113.swr1              29-Sep-2013 18:32  908K  Spectral Wave Data (r1)
+[TXT] 41113.swr2              29-Sep-2013 18:32  908K  Spectral Wave Data (r2)
+[TXT] 41113.txt               29-Sep-2013 18:37  200K  Standard Meteorological Data
+[TXT] 41114.data_spec         29-Sep-2013 18:37  1.0M  Raw Spectral Wave Data
+[TXT] 41114.spec              29-Sep-2013 18:32  149K  Spectral Wave Summary Data
+[TXT] 41114.swdir             29-Sep-2013 18:37  933K  Spectral Wave Data (alpha1)
+[TXT] 41114.swdir2            29-Sep-2013 18:37  936K  Spectral Wave Data (alpha2)
+[TXT] 41114.swr1              29-Sep-2013 18:37  909K  Spectral Wave Data (r1)
+[TXT] 41114.swr2              29-Sep-2013 18:37  909K  Spectral Wave Data (r2)
+[TXT] 41114.txt               29-Sep-2013 18:37  200K  Standard Meteorological Data
+[TXT] 41115.data_spec         29-Sep-2013 18:32  1.0M  Raw Spectral Wave Data
+[TXT] 41115.spec              29-Sep-2013 18:32  149K  Spectral Wave Summary Data
+[TXT] 41115.swdir             29-Sep-2013 18:32  928K  Spectral Wave Data (alpha1)
+[TXT] 41115.swdir2            29-Sep-2013 18:32  926K  Spectral Wave Data (alpha2)
+[TXT] 41115.swr1              29-Sep-2013 18:32  909K  Spectral Wave Data (r1)
+[TXT] 41115.swr2              29-Sep-2013 18:32  909K  Spectral Wave Data (r2)
+[TXT] 41115.txt               29-Sep-2013 18:37  200K  Standard Meteorological Data
+[TXT] 41139.drift             29-Sep-2013 18:41   40K  Standard Meteorological Data for Drifting Buoys
+[TXT] 41300.txt               29-Sep-2013 18:26  2.4K  Standard Meteorological Data
+[TXT] 41420.dart              29-Sep-2013 13:22  133K  Water Column Height (DART) Data
+[   ] 41420.dartd             10-Apr-2007 13:29  174K  Water Column Height (DART) Data
+[TXT] 41421.dart              29-Sep-2013 13:26  132K  Water Column Height (DART) Data
+[   ] 41421.dartd             10-Apr-2007 13:32  173K  Water Column Height (DART) Data
+[TXT] 41424.dart              29-Sep-2013 13:26  131K  Water Column Height (DART) Data
+[   ] 41424.dartd             10-Apr-2007 13:32  175K  Water Column Height (DART) Data
+[TXT] 41670.drift             29-Sep-2013 18:41  146K  Standard Meteorological Data for Drifting Buoys
+[TXT] 41852.drift             29-Sep-2013 17:33  135K  Standard Meteorological Data for Drifting Buoys
+[TXT] 41933.drift             29-Sep-2013 16:26   72K  Standard Meteorological Data for Drifting Buoys
+[TXT] 42001.cwind             29-Sep-2013 18:06  258K  Continuous Winds Data
+[TXT] 42001.data_spec         29-Sep-2013 18:06  718K  Raw Spectral Wave Data
+[TXT] 42001.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 42001.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 42002.cwind             29-Sep-2013 18:06  235K  Continuous Winds Data
+[TXT] 42002.data_spec         29-Sep-2013 18:06  557K  Raw Spectral Wave Data
+[TXT] 42002.spec              29-Sep-2013 18:02   58K  Spectral Wave Summary Data
+[TXT] 42002.swdir             29-Sep-2013 18:06  413K  Spectral Wave Data (alpha1)
+[TXT] 42002.swdir2            29-Sep-2013 18:06  414K  Spectral Wave Data (alpha2)
+[TXT] 42002.swr1              29-Sep-2013 18:06  432K  Spectral Wave Data (r1)
+[TXT] 42002.swr2              29-Sep-2013 18:07  432K  Spectral Wave Data (r2)
+[TXT] 42002.txt               29-Sep-2013 18:07   99K  Standard Meteorological Data
+[TXT] 42003.cwind             29-Sep-2013 18:06  256K  Continuous Winds Data
+[TXT] 42003.data_spec         29-Sep-2013 18:13  713K  Raw Spectral Wave Data
+[TXT] 42003.spec              29-Sep-2013 18:06   75K  Spectral Wave Summary Data
+[TXT] 42003.supl              29-Sep-2013 18:06   51K  Supplemental Measurements Data
+[TXT] 42003.swdir             29-Sep-2013 18:13  657K  Spectral Wave Data (alpha1)
+[TXT] 42003.swdir2            29-Sep-2013 18:13  656K  Spectral Wave Data (alpha2)
+[TXT] 42003.swr1              29-Sep-2013 18:13  653K  Spectral Wave Data (r1)
+[TXT] 42003.swr2              29-Sep-2013 18:13  653K  Spectral Wave Data (r2)
+[TXT] 42003.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 42012.cwind             29-Sep-2013 18:06  257K  Continuous Winds Data
+[TXT] 42012.data_spec         29-Sep-2013 18:06  716K  Raw Spectral Wave Data
+[TXT] 42012.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 42012.swdir             29-Sep-2013 18:06  671K  Spectral Wave Data (alpha1)
+[TXT] 42012.swdir2            29-Sep-2013 18:06  670K  Spectral Wave Data (alpha2)
+[TXT] 42012.swr1              29-Sep-2013 18:06  660K  Spectral Wave Data (r1)
+[TXT] 42012.swr2              29-Sep-2013 18:07  660K  Spectral Wave Data (r2)
+[TXT] 42012.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 42013.adcp              18-Aug-2013 02:41   78K  Acoustic Doppler Current Profiler Data
+[TXT] 42013.ocean             16-Aug-2013 08:17  3.7K  Oceanographic Data
+[TXT] 42013.srad              16-Aug-2013 11:46   40K  Solar Radiation Data
+[TXT] 42013.txt               16-Aug-2013 11:46   43K  Standard Meteorological Data
+[TXT] 42019.cwind             29-Sep-2013 18:06  258K  Continuous Winds Data
+[TXT] 42019.data_spec         29-Sep-2013 18:06  719K  Raw Spectral Wave Data
+[TXT] 42019.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 42019.swdir             29-Sep-2013 18:06  699K  Spectral Wave Data (alpha1)
+[TXT] 42019.swdir2            29-Sep-2013 18:06  697K  Spectral Wave Data (alpha2)
+[TXT] 42019.swr1              29-Sep-2013 18:06  695K  Spectral Wave Data (r1)
+[TXT] 42019.swr2              29-Sep-2013 18:07  695K  Spectral Wave Data (r2)
+[TXT] 42019.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 42020.adcp              29-Sep-2013 07:01   17K  Acoustic Doppler Current Profiler Data
+[TXT] 42020.cwind             29-Sep-2013 18:02  258K  Continuous Winds Data
+[TXT] 42020.data_spec         29-Sep-2013 18:02  718K  Raw Spectral Wave Data
+[TXT] 42020.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 42020.swdir             29-Sep-2013 18:02  698K  Spectral Wave Data (alpha1)
+[TXT] 42020.swdir2            29-Sep-2013 18:02  698K  Spectral Wave Data (alpha2)
+[TXT] 42020.swr1              29-Sep-2013 18:02  693K  Spectral Wave Data (r1)
+[TXT] 42020.swr2              29-Sep-2013 18:02  693K  Spectral Wave Data (r2)
+[TXT] 42020.txt               29-Sep-2013 18:03  101K  Standard Meteorological Data
+[TXT] 42022.ocean             29-Sep-2013 18:32  164K  Oceanographic Data
+[TXT] 42022.txt               29-Sep-2013 18:31  101K  Standard Meteorological Data
+[TXT] 42023.adcp              29-Sep-2013 17:56  415K  Acoustic Doppler Current Profiler Data
+[TXT] 42023.ocean             29-Sep-2013 17:56  170K  Oceanographic Data
+[TXT] 42023.txt               29-Sep-2013 17:56  197K  Standard Meteorological Data
+[TXT] 42035.cwind             29-Sep-2013 18:06  257K  Continuous Winds Data
+[TXT] 42035.data_spec         29-Sep-2013 18:06  717K  Raw Spectral Wave Data
+[TXT] 42035.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 42035.swdir             29-Sep-2013 18:06  703K  Spectral Wave Data (alpha1)
+[TXT] 42035.swdir2            29-Sep-2013 18:06  701K  Spectral Wave Data (alpha2)
+[TXT] 42035.swr1              29-Sep-2013 18:06  689K  Spectral Wave Data (r1)
+[TXT] 42035.swr2              29-Sep-2013 18:07  689K  Spectral Wave Data (r2)
+[TXT] 42035.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 42036.cwind             29-Sep-2013 18:06  258K  Continuous Winds Data
+[TXT] 42036.data_spec         29-Sep-2013 18:06  718K  Raw Spectral Wave Data
+[TXT] 42036.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 42036.swdir             29-Sep-2013 18:06  677K  Spectral Wave Data (alpha1)
+[TXT] 42036.swdir2            29-Sep-2013 18:06  676K  Spectral Wave Data (alpha2)
+[TXT] 42036.swr1              29-Sep-2013 18:06  670K  Spectral Wave Data (r1)
+[TXT] 42036.swr2              29-Sep-2013 18:07  670K  Spectral Wave Data (r2)
+[TXT] 42036.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 42039.cwind             29-Sep-2013 18:06  255K  Continuous Winds Data
+[TXT] 42039.data_spec         29-Sep-2013 18:13  711K  Raw Spectral Wave Data
+[TXT] 42039.spec              29-Sep-2013 18:06   75K  Spectral Wave Summary Data
+[TXT] 42039.supl              29-Sep-2013 18:06   51K  Supplemental Measurements Data
+[TXT] 42039.txt               29-Sep-2013 18:07  100K  Standard Meteorological Data
+[TXT] 42040.cwind             29-Sep-2013 18:06  225K  Continuous Winds Data
+[TXT] 42040.data_spec         29-Sep-2013 18:06  719K  Raw Spectral Wave Data
+[TXT] 42040.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 42040.supl              29-Sep-2013 18:06   45K  Supplemental Measurements Data
+[TXT] 42040.swdir             29-Sep-2013 18:06  539K  Spectral Wave Data (alpha1)
+[TXT] 42040.swdir2            29-Sep-2013 18:06  539K  Spectral Wave Data (alpha2)
+[TXT] 42040.swr1              29-Sep-2013 18:06  561K  Spectral Wave Data (r1)
+[TXT] 42040.swr2              29-Sep-2013 18:07  561K  Spectral Wave Data (r2)
+[TXT] 42040.txt               29-Sep-2013 18:07   96K  Standard Meteorological Data
+[TXT] 42043.adcp              29-Sep-2013 17:26   69K  Acoustic Doppler Current Profiler Data
+[TXT] 42043.ocean             29-Sep-2013 17:26  164K  Oceanographic Data
+[TXT] 42043.txt               29-Sep-2013 17:26  183K  Standard Meteorological Data
+[TXT] 42044.adcp              28-Sep-2013 15:26  1.6K  Acoustic Doppler Current Profiler Data
+[TXT] 42044.ocean             29-Sep-2013 18:26  138K  Oceanographic Data
+[TXT] 42045.adcp              29-Sep-2013 17:26   70K  Acoustic Doppler Current Profiler Data
+[TXT] 42045.ocean             29-Sep-2013 17:26  167K  Oceanographic Data
+[TXT] 42045.txt               29-Sep-2013 17:26  187K  Standard Meteorological Data
+[TXT] 42046.adcp              29-Sep-2013 17:26   69K  Acoustic Doppler Current Profiler Data
+[TXT] 42046.ocean             29-Sep-2013 17:26  165K  Oceanographic Data
+[TXT] 42046.txt               29-Sep-2013 17:26  183K  Standard Meteorological Data
+[TXT] 42047.ocean             29-Sep-2013 17:26   65K  Oceanographic Data
+[TXT] 42047.txt               29-Sep-2013 17:26  186K  Standard Meteorological Data
+[TXT] 42048.adcp              29-Sep-2013 08:26   58K  Acoustic Doppler Current Profiler Data
+[TXT] 42048.ocean             29-Sep-2013 08:26  139K  Oceanographic Data
+[TXT] 42049.adcp              29-Sep-2013 17:26   48K  Acoustic Doppler Current Profiler Data
+[TXT] 42049.ocean             29-Sep-2013 17:26  126K  Oceanographic Data
+[TXT] 42050.ocean             29-Sep-2013 18:26  173K  Oceanographic Data
+[TXT] 42051.adcp              29-Sep-2013 18:26   65K  Acoustic Doppler Current Profiler Data
+[TXT] 42051.ocean             29-Sep-2013 18:26  155K  Oceanographic Data
+[TXT] 42055.cwind             29-Sep-2013 18:06  256K  Continuous Winds Data
+[TXT] 42055.data_spec         29-Sep-2013 18:13  713K  Raw Spectral Wave Data
+[TXT] 42055.spec              29-Sep-2013 18:06   75K  Spectral Wave Summary Data
+[TXT] 42055.supl              29-Sep-2013 18:06   51K  Supplemental Measurements Data
+[TXT] 42055.swdir             29-Sep-2013 18:13  687K  Spectral Wave Data (alpha1)
+[TXT] 42055.swdir2            29-Sep-2013 18:13  687K  Spectral Wave Data (alpha2)
+[TXT] 42055.swr1              29-Sep-2013 18:13  690K  Spectral Wave Data (r1)
+[TXT] 42055.swr2              29-Sep-2013 18:13  690K  Spectral Wave Data (r2)
+[TXT] 42055.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 42056.cwind             29-Sep-2013 18:06  255K  Continuous Winds Data
+[TXT] 42056.data_spec         29-Sep-2013 18:13  709K  Raw Spectral Wave Data
+[TXT] 42056.spec              29-Sep-2013 18:06   74K  Spectral Wave Summary Data
+[TXT] 42056.supl              29-Sep-2013 18:06   51K  Supplemental Measurements Data
+[TXT] 42056.swdir             29-Sep-2013 18:13  691K  Spectral Wave Data (alpha1)
+[TXT] 42056.swdir2            29-Sep-2013 18:13  690K  Spectral Wave Data (alpha2)
+[TXT] 42056.swr1              29-Sep-2013 18:13  683K  Spectral Wave Data (r1)
+[TXT] 42056.swr2              29-Sep-2013 18:13  683K  Spectral Wave Data (r2)
+[TXT] 42056.txt               29-Sep-2013 18:07  100K  Standard Meteorological Data
+[TXT] 42057.cwind             29-Sep-2013 18:06  254K  Continuous Winds Data
+[TXT] 42057.data_spec         29-Sep-2013 18:13  707K  Raw Spectral Wave Data
+[TXT] 42057.spec              29-Sep-2013 18:06   74K  Spectral Wave Summary Data
+[TXT] 42057.supl              29-Sep-2013 18:06   51K  Supplemental Measurements Data
+[TXT] 42057.swdir             29-Sep-2013 18:13  678K  Spectral Wave Data (alpha1)
+[TXT] 42057.swdir2            29-Sep-2013 18:13  679K  Spectral Wave Data (alpha2)
+[TXT] 42057.swr1              29-Sep-2013 18:13  679K  Spectral Wave Data (r1)
+[TXT] 42057.swr2              29-Sep-2013 18:13  679K  Spectral Wave Data (r2)
+[TXT] 42057.txt               29-Sep-2013 18:07  100K  Standard Meteorological Data
+[TXT] 42058.cwind             29-Sep-2013 18:06  257K  Continuous Winds Data
+[TXT] 42058.data_spec         29-Sep-2013 18:13  716K  Raw Spectral Wave Data
+[TXT] 42058.spec              29-Sep-2013 18:06   75K  Spectral Wave Summary Data
+[TXT] 42058.supl              29-Sep-2013 18:06   51K  Supplemental Measurements Data
+[TXT] 42058.swdir             29-Sep-2013 18:13  688K  Spectral Wave Data (alpha1)
+[TXT] 42058.swdir2            29-Sep-2013 18:13  691K  Spectral Wave Data (alpha2)
+[TXT] 42058.swr1              29-Sep-2013 18:13  690K  Spectral Wave Data (r1)
+[TXT] 42058.swr2              29-Sep-2013 18:13  690K  Spectral Wave Data (r2)
+[TXT] 42058.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 42059.cwind             29-Sep-2013 18:06  258K  Continuous Winds Data
+[TXT] 42059.data_spec         29-Sep-2013 18:06  719K  Raw Spectral Wave Data
+[TXT] 42059.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 42059.supl              29-Sep-2013 18:06   52K  Supplemental Measurements Data
+[TXT] 42059.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 42060.cwind             29-Sep-2013 18:18  254K  Continuous Winds Data
+[TXT] 42060.data_spec         29-Sep-2013 18:18  708K  Raw Spectral Wave Data
+[TXT] 42060.spec              29-Sep-2013 18:13   74K  Spectral Wave Summary Data
+[TXT] 42060.supl              29-Sep-2013 18:17   51K  Supplemental Measurements Data
+[TXT] 42060.swdir             29-Sep-2013 18:18  676K  Spectral Wave Data (alpha1)
+[TXT] 42060.swdir2            29-Sep-2013 18:18  675K  Spectral Wave Data (alpha2)
+[TXT] 42060.swr1              29-Sep-2013 18:18  654K  Spectral Wave Data (r1)
+[TXT] 42060.swr2              29-Sep-2013 18:18  654K  Spectral Wave Data (r2)
+[TXT] 42060.txt               29-Sep-2013 18:18  100K  Standard Meteorological Data
+[TXT] 42067.ocean             29-Sep-2013 18:26  243   Oceanographic Data
+[TXT] 42085.adcp              29-Sep-2013 18:26  269K  Acoustic Doppler Current Profiler Data
+[TXT] 42085.ocean             29-Sep-2013 18:26   87K  Oceanographic Data
+[TXT] 42085.txt               29-Sep-2013 18:26  573K  Standard Meteorological Data
+[TXT] 42099.data_spec         29-Sep-2013 18:13  1.0M  Raw Spectral Wave Data
+[TXT] 42099.spec              29-Sep-2013 18:13  149K  Spectral Wave Summary Data
+[TXT] 42099.swdir             29-Sep-2013 18:13  948K  Spectral Wave Data (alpha1)
+[TXT] 42099.swdir2            29-Sep-2013 18:13  947K  Spectral Wave Data (alpha2)
+[TXT] 42099.swr1              29-Sep-2013 18:13  902K  Spectral Wave Data (r1)
+[TXT] 42099.swr2              29-Sep-2013 18:13  902K  Spectral Wave Data (r2)
+[TXT] 42099.txt               29-Sep-2013 18:13  200K  Standard Meteorological Data
+[TXT] 42360.adcp              29-Sep-2013 17:51  246K  Acoustic Doppler Current Profiler Data
+[TXT] 42360.txt               29-Sep-2013 17:56   94K  Standard Meteorological Data
+[TXT] 42361.txt               29-Sep-2013 17:46   93K  Standard Meteorological Data
+[TXT] 42362.adcp2             29-Sep-2013 18:31   50M  Acoustic Doppler Current Profiler Data
+[TXT] 42362.txt               29-Sep-2013 11:46  101K  Standard Meteorological Data
+[TXT] 42363.adcp2             29-Sep-2013 18:06   17M  Acoustic Doppler Current Profiler Data
+[TXT] 42363.txt               29-Sep-2013 16:26  9.4K  Standard Meteorological Data
+[TXT] 42364.adcp2             29-Sep-2013 18:31   27M  Acoustic Doppler Current Profiler Data
+[TXT] 42364.ocean             29-Sep-2013 18:32  351K  Oceanographic Data
+[TXT] 42364.txt               29-Sep-2013 17:46   85K  Standard Meteorological Data
+[TXT] 42365.adcp2             29-Sep-2013 18:31   50M  Acoustic Doppler Current Profiler Data
+[TXT] 42365.ocean             29-Sep-2013 18:32  529K  Oceanographic Data
+[TXT] 42365.txt               29-Sep-2013 18:41   90K  Standard Meteorological Data
+[TXT] 42368.adcp2             29-Sep-2013 18:31   27M  Acoustic Doppler Current Profiler Data
+[TXT] 42369.adcp2             29-Sep-2013 18:41   20M  Acoustic Doppler Current Profiler Data
+[TXT] 42369.ocean             29-Sep-2013 18:41   96K  Oceanographic Data
+[TXT] 42369.txt               27-Aug-2013 14:16  276K  Standard Meteorological Data
+[TXT] 42370.adcp2             29-Sep-2013 18:36   25M  Acoustic Doppler Current Profiler Data
+[TXT] 42370.ocean             29-Sep-2013 16:42   29K  Oceanographic Data
+[TXT] 42373.adcp2             29-Sep-2013 18:41   13M  Acoustic Doppler Current Profiler Data
+[TXT] 42373.ocean             29-Sep-2013 18:41  261K  Oceanographic Data
+[TXT] 42374.adcp2             29-Sep-2013 18:21   13M  Acoustic Doppler Current Profiler Data
+[TXT] 42374.ocean             29-Sep-2013 18:22  261K  Oceanographic Data
+[TXT] 42375.adcp2             29-Sep-2013 18:31   13M  Acoustic Doppler Current Profiler Data
+[TXT] 42375.ocean             29-Sep-2013 18:32  261K  Oceanographic Data
+[TXT] 42375.txt               29-Sep-2013 18:36  302K  Standard Meteorological Data
+[TXT] 42377.adcp2             29-Sep-2013 18:31   13M  Acoustic Doppler Current Profiler Data
+[TXT] 42377.ocean             29-Sep-2013 18:32  247K  Oceanographic Data
+[TXT] 42379.adcp2             29-Sep-2013 18:36   13M  Acoustic Doppler Current Profiler Data
+[TXT] 42381.adcp2             29-Sep-2013 18:41   21M  Acoustic Doppler Current Profiler Data
+[TXT] 42381.ocean             29-Sep-2013 18:41  522K  Oceanographic Data
+[TXT] 42382.adcp2             29-Sep-2013 18:41   17M  Acoustic Doppler Current Profiler Data
+[TXT] 42382.ocean             29-Sep-2013 18:41  249K  Oceanographic Data
+[TXT] 42383.adcp2             29-Sep-2013 18:31   13M  Acoustic Doppler Current Profiler Data
+[TXT] 42383.ocean             29-Sep-2013 18:32  261K  Oceanographic Data
+[TXT] 42385.adcp2             29-Sep-2013 18:41   13M  Acoustic Doppler Current Profiler Data
+[TXT] 42386.adcp2             29-Sep-2013 18:41   13M  Acoustic Doppler Current Profiler Data
+[TXT] 42387.adcp2             29-Sep-2013 18:36   13M  Acoustic Doppler Current Profiler Data
+[TXT] 42387.ocean             29-Sep-2013 18:36  237K  Oceanographic Data
+[TXT] 42390.adcp2             29-Sep-2013 14:32   28M  Acoustic Doppler Current Profiler Data
+[TXT] 42390.ocean             29-Sep-2013 14:32  296K  Oceanographic Data
+[TXT] 42390.txt               29-Sep-2013 17:46   97K  Standard Meteorological Data
+[TXT] 42392.txt               29-Sep-2013 18:36  301K  Standard Meteorological Data
+[TXT] 42407.dart              29-Sep-2013 13:26  132K  Water Column Height (DART) Data
+[   ] 42407.dartd             10-Apr-2007 13:37  175K  Water Column Height (DART) Data
+[TXT] 42408.dart              27-Nov-2008 18:26  133K  Water Column Height (DART) Data
+[   ] 42408.dartd             31-Mar-2007 19:32  161K  Water Column Height (DART) Data
+[TXT] 42409.dart              08-Oct-2012 01:26  4.9K  Water Column Height (DART) Data
+[TXT] 42429.dart              09-Mar-2013 18:23   54K  Water Column Height (DART) Data
+[TXT] 42851.adcp2             29-Sep-2013 18:16   15M  Acoustic Doppler Current Profiler Data
+[TXT] 42851.ocean             29-Sep-2013 18:17  148K  Oceanographic Data
+[TXT] 42852.adcp2             26-Aug-2013 02:56   13M  Acoustic Doppler Current Profiler Data
+[TXT] 42852.ocean             26-Aug-2013 02:56  257K  Oceanographic Data
+[TXT] 42854.adcp2             29-Sep-2013 18:17   19M  Acoustic Doppler Current Profiler Data
+[TXT] 42855.adcp2             29-Sep-2013 18:36  4.1M  Acoustic Doppler Current Profiler Data
+[TXT] 42855.ocean             29-Sep-2013 18:36   74K  Oceanographic Data
+[TXT] 42856.adcp              29-Sep-2013 16:46  227K  Acoustic Doppler Current Profiler Data
+[TXT] 42861.adcp2             29-Sep-2013 18:17   30M  Acoustic Doppler Current Profiler Data
+[TXT] 42861.ocean             29-Sep-2013 18:17  238K  Oceanographic Data
+[TXT] 42862.adcp2             29-Sep-2013 18:32   53M  Acoustic Doppler Current Profiler Data
+[TXT] 42862.ocean             29-Sep-2013 18:32  514K  Oceanographic Data
+[TXT] 42863.adcp2             29-Sep-2013 13:42  1.4M  Acoustic Doppler Current Profiler Data
+[TXT] 42863.ocean             29-Sep-2013 10:43  8.9K  Oceanographic Data
+[TXT] 42867.adcp2             29-Sep-2013 18:32   18M  Acoustic Doppler Current Profiler Data
+[TXT] 42867.ocean             29-Sep-2013 18:32  246K  Oceanographic Data
+[TXT] 42868.adcp2             29-Sep-2013 18:36   25M  Acoustic Doppler Current Profiler Data
+[TXT] 42871.adcp2             13-Sep-2013 06:01   11M  Acoustic Doppler Current Profiler Data
+[TXT] 42871.ocean             13-Sep-2013 06:02  107K  Oceanographic Data
+[TXT] 42885.adcp2             29-Sep-2013 18:41   33M  Acoustic Doppler Current Profiler Data
+[TXT] 42885.ocean             29-Sep-2013 18:41  518K  Oceanographic Data
+[TXT] 42886.adcp2             29-Sep-2013 18:41   31M  Acoustic Doppler Current Profiler Data
+[TXT] 42886.ocean             29-Sep-2013 18:41  509K  Oceanographic Data
+[TXT] 42887.adcp2             29-Sep-2013 18:41   17M  Acoustic Doppler Current Profiler Data
+[TXT] 42887.ocean             29-Sep-2013 18:41  353K  Oceanographic Data
+[TXT] 42887.txt               29-Sep-2013 18:36  302K  Standard Meteorological Data
+[TXT] 42890.adcp2             29-Sep-2013 18:36  427K  Acoustic Doppler Current Profiler Data
+[TXT] 42890.ocean             29-Sep-2013 18:36  262K  Oceanographic Data
+[TXT] 42897.adcp2             25-Sep-2013 19:38   30M  Acoustic Doppler Current Profiler Data
+[TXT] 42897.ocean             25-Sep-2013 19:39  237K  Oceanographic Data
+[TXT] 42908.adcp2             29-Sep-2013 18:36   26M  Acoustic Doppler Current Profiler Data
+[TXT] 42908.ocean             29-Sep-2013 18:36  518K  Oceanographic Data
+[TXT] 42909.adcp2             29-Sep-2013 18:41   18M  Acoustic Doppler Current Profiler Data
+[TXT] 42909.ocean             29-Sep-2013 18:41  324K  Oceanographic Data
+[TXT] 42910.adcp2             29-Sep-2013 18:17   48M  Acoustic Doppler Current Profiler Data
+[TXT] 42910.ocean             29-Sep-2013 18:17  499K  Oceanographic Data
+[TXT] 42912.adcp2             24-Sep-2013 05:56   20M  Acoustic Doppler Current Profiler Data
+[TXT] 42912.ocean             24-Sep-2013 05:56  255K  Oceanographic Data
+[TXT] 42913.adcp2             20-Sep-2013 09:22   29M  Acoustic Doppler Current Profiler Data
+[TXT] 42913.ocean             20-Sep-2013 09:22  518K  Oceanographic Data
+[TXT] 42914.adcp2             23-Sep-2013 14:36  102M  Acoustic Doppler Current Profiler Data
+[TXT] 42914.ocean             23-Sep-2013 14:36  788K  Oceanographic Data
+[TXT] 42915.adcp2             29-Sep-2013 18:41   42M  Acoustic Doppler Current Profiler Data
+[TXT] 42915.ocean             29-Sep-2013 18:41  519K  Oceanographic Data
+[TXT] 42916.adcp2             29-Sep-2013 18:41   17M  Acoustic Doppler Current Profiler Data
+[TXT] 42916.ocean             29-Sep-2013 18:41  353K  Oceanographic Data
+[TXT] 42917.adcp2             29-Sep-2013 18:41   27M  Acoustic Doppler Current Profiler Data
+[TXT] 42917.ocean             29-Sep-2013 18:41  333K  Oceanographic Data
+[TXT] 42918.adcp2             29-Sep-2013 18:17   38M  Acoustic Doppler Current Profiler Data
+[TXT] 42918.ocean             29-Sep-2013 18:17  368K  Oceanographic Data
+[TXT] 42919.adcp2             29-Sep-2013 18:41   27M  Acoustic Doppler Current Profiler Data
+[TXT] 42919.ocean             29-Sep-2013 18:41  258K  Oceanographic Data
+[TXT] 42921.adcp2             29-Sep-2013 18:36   27M  Acoustic Doppler Current Profiler Data
+[TXT] 42921.ocean             29-Sep-2013 18:36  479K  Oceanographic Data
+[TXT] 42922.adcp2             09-Sep-2013 10:43   30M  Acoustic Doppler Current Profiler Data
+[TXT] 42923.adcp2             16-Sep-2013 19:35   14M  Acoustic Doppler Current Profiler Data
+[TXT] 42924.adcp2             29-Sep-2013 18:36   16M  Acoustic Doppler Current Profiler Data
+[TXT] 42924.ocean             29-Sep-2013 18:36  152K  Oceanographic Data
+[TXT] 42925.adcp2             29-Sep-2013 18:41   29M  Acoustic Doppler Current Profiler Data
+[TXT] 42925.ocean             29-Sep-2013 18:41  522K  Oceanographic Data
+[TXT] 42926.adcp2             16-Sep-2013 07:56   47M  Acoustic Doppler Current Profiler Data
+[TXT] 42926.ocean             16-Sep-2013 07:56  459K  Oceanographic Data
+[TXT] 42927.adcp2             29-Sep-2013 18:17   51M  Acoustic Doppler Current Profiler Data
+[TXT] 42927.ocean             29-Sep-2013 18:17  495K  Oceanographic Data
+[TXT] 42928.adcp2             29-Sep-2013 18:41   18M  Acoustic Doppler Current Profiler Data
+[TXT] 42928.ocean             29-Sep-2013 18:41  326K  Oceanographic Data
+[TXT] 42929.adcp2             29-Sep-2013 18:21   25M  Acoustic Doppler Current Profiler Data
+[TXT] 42929.ocean             29-Sep-2013 18:22  242K  Oceanographic Data
+[TXT] 42930.adcp2             29-Sep-2013 18:41   62M  Acoustic Doppler Current Profiler Data
+[TXT] 42930.ocean             29-Sep-2013 18:32  376K  Oceanographic Data
+[TXT] 43412.dart              29-Sep-2013 13:22  130K  Water Column Height (DART) Data
+[TXT] 43413.dart              29-Sep-2013 13:33  132K  Water Column Height (DART) Data
+[TXT] 44007.data_spec         29-Sep-2013 18:13  709K  Raw Spectral Wave Data
+[TXT] 44007.spec              29-Sep-2013 18:06   74K  Spectral Wave Summary Data
+[TXT] 44007.txt               29-Sep-2013 18:13  101K  Standard Meteorological Data
+[TXT] 44009.data_spec         29-Sep-2013 18:06  710K  Raw Spectral Wave Data
+[TXT] 44009.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 44009.swdir             29-Sep-2013 18:06  687K  Spectral Wave Data (alpha1)
+[TXT] 44009.swdir2            29-Sep-2013 18:06  688K  Spectral Wave Data (alpha2)
+[TXT] 44009.swr1              29-Sep-2013 18:06  675K  Spectral Wave Data (r1)
+[TXT] 44009.swr2              29-Sep-2013 18:07  675K  Spectral Wave Data (r2)
+[TXT] 44009.txt               29-Sep-2013 18:07  100K  Standard Meteorological Data
+[TXT] 44013.cwind             29-Sep-2013 18:12  259K  Continuous Winds Data
+[TXT] 44013.data_spec         20-Sep-2013 21:12  722K  Raw Spectral Wave Data
+[TXT] 44013.spec              20-Sep-2013 21:09   76K  Spectral Wave Summary Data
+[TXT] 44013.swdir             20-Sep-2013 21:12  654K  Spectral Wave Data (alpha1)
+[TXT] 44013.swdir2            20-Sep-2013 21:12  655K  Spectral Wave Data (alpha2)
+[TXT] 44013.swr1              20-Sep-2013 21:12  644K  Spectral Wave Data (r1)
+[TXT] 44013.swr2              20-Sep-2013 21:12  644K  Spectral Wave Data (r2)
+[TXT] 44013.txt               29-Sep-2013 18:13  101K  Standard Meteorological Data
+[TXT] 44014.data_spec         29-Sep-2013 18:06  714K  Raw Spectral Wave Data
+[TXT] 44014.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 44014.swdir             29-Sep-2013 18:06  685K  Spectral Wave Data (alpha1)
+[TXT] 44014.swdir2            29-Sep-2013 18:06  686K  Spectral Wave Data (alpha2)
+[TXT] 44014.swr1              29-Sep-2013 18:06  678K  Spectral Wave Data (r1)
+[TXT] 44014.swr2              29-Sep-2013 18:07  678K  Spectral Wave Data (r2)
+[TXT] 44014.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 44017.cwind             29-Sep-2013 18:06  256K  Continuous Winds Data
+[TXT] 44017.data_spec         29-Sep-2013 18:06  712K  Raw Spectral Wave Data
+[TXT] 44017.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 44017.swdir             29-Sep-2013 17:08  610K  Spectral Wave Data (alpha1)
+[TXT] 44017.swdir2            29-Sep-2013 17:08  609K  Spectral Wave Data (alpha2)
+[TXT] 44017.swr1              29-Sep-2013 17:08  591K  Spectral Wave Data (r1)
+[TXT] 44017.swr2              29-Sep-2013 17:08  591K  Spectral Wave Data (r2)
+[TXT] 44017.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 44020.cwind             16-Sep-2013 21:00  259K  Continuous Winds Data
+[TXT] 44020.data_spec         29-Sep-2013 18:06  720K  Raw Spectral Wave Data
+[TXT] 44020.spec              29-Sep-2013 18:02   76K  Spectral Wave Summary Data
+[TXT] 44020.swdir             29-Sep-2013 18:06  582K  Spectral Wave Data (alpha1)
+[TXT] 44020.swdir2            29-Sep-2013 18:06  582K  Spectral Wave Data (alpha2)
+[TXT] 44020.swr1              29-Sep-2013 18:06  576K  Spectral Wave Data (r1)
+[TXT] 44020.swr2              29-Sep-2013 18:07  576K  Spectral Wave Data (r2)
+[TXT] 44020.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 44022.txt               29-Sep-2013 18:31  370K  Standard Meteorological Data
+[TXT] 44024.adcp              29-Sep-2013 17:51  483K  Acoustic Doppler Current Profiler Data
+[TXT] 44024.ocean             29-Sep-2013 17:51   85K  Oceanographic Data
+[TXT] 44024.txt               29-Sep-2013 17:56  100K  Standard Meteorological Data
+[TXT] 44025.cwind             29-Sep-2013 18:02  258K  Continuous Winds Data
+[TXT] 44025.data_spec         29-Sep-2013 18:02  719K  Raw Spectral Wave Data
+[TXT] 44025.spec              29-Sep-2013 17:57   75K  Spectral Wave Summary Data
+[TXT] 44025.swdir             29-Sep-2013 18:02  702K  Spectral Wave Data (alpha1)
+[TXT] 44025.swdir2            29-Sep-2013 18:02  701K  Spectral Wave Data (alpha2)
+[TXT] 44025.swr1              29-Sep-2013 18:02  682K  Spectral Wave Data (r1)
+[TXT] 44025.swr2              29-Sep-2013 18:02  682K  Spectral Wave Data (r2)
+[TXT] 44025.txt               29-Sep-2013 18:03  101K  Standard Meteorological Data
+[TXT] 44027.cwind             29-Sep-2013 18:06  258K  Continuous Winds Data
+[TXT] 44027.data_spec         29-Sep-2013 18:06  718K  Raw Spectral Wave Data
+[TXT] 44027.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 44027.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 44029.adcp              29-Sep-2013 17:51  289K  Acoustic Doppler Current Profiler Data
+[TXT] 44029.ocean             29-Sep-2013 17:51   87K  Oceanographic Data
+[TXT] 44029.txt               29-Sep-2013 17:56  101K  Standard Meteorological Data
+[TXT] 44030.adcp              29-Sep-2013 17:51  172K  Acoustic Doppler Current Profiler Data
+[TXT] 44030.ocean             29-Sep-2013 17:51   87K  Oceanographic Data
+[TXT] 44030.txt               29-Sep-2013 17:56  101K  Standard Meteorological Data
+[TXT] 44032.ocean             29-Sep-2013 17:51   87K  Oceanographic Data
+[TXT] 44032.txt               29-Sep-2013 17:56  101K  Standard Meteorological Data
+[TXT] 44033.adcp              29-Sep-2013 17:51  480K  Acoustic Doppler Current Profiler Data
+[TXT] 44033.ocean             29-Sep-2013 17:51   87K  Oceanographic Data
+[TXT] 44033.txt               29-Sep-2013 17:56  101K  Standard Meteorological Data
+[TXT] 44034.adcp              29-Sep-2013 17:51  444K  Acoustic Doppler Current Profiler Data
+[TXT] 44034.ocean             29-Sep-2013 17:51   87K  Oceanographic Data
+[TXT] 44034.txt               29-Sep-2013 17:56  101K  Standard Meteorological Data
+[TXT] 44037.ocean             29-Sep-2013 17:51   83K  Oceanographic Data
+[TXT] 44037.txt               29-Sep-2013 17:56   97K  Standard Meteorological Data
+[TXT] 44039.txt               29-Sep-2013 18:31  340K  Standard Meteorological Data
+[TXT] 44040.txt               29-Sep-2013 18:41  276K  Standard Meteorological Data
+[TXT] 44041.ocean             29-Sep-2013 18:17   80K  Oceanographic Data
+[TXT] 44041.txt               29-Sep-2013 18:41  557K  Standard Meteorological Data
+[TXT] 44042.ocean             29-Sep-2013 18:17   80K  Oceanographic Data
+[TXT] 44042.txt               29-Sep-2013 18:41  555K  Standard Meteorological Data
+[TXT] 44043.ocean             29-Sep-2013 18:17   67K  Oceanographic Data
+[TXT] 44043.txt               29-Sep-2013 18:41  557K  Standard Meteorological Data
+[TXT] 44056.data_spec         29-Sep-2013 18:13  1.0M  Raw Spectral Wave Data
+[TXT] 44056.spec              29-Sep-2013 18:13  149K  Spectral Wave Summary Data
+[TXT] 44056.swdir             29-Sep-2013 18:13  937K  Spectral Wave Data (alpha1)
+[TXT] 44056.swdir2            29-Sep-2013 18:13  937K  Spectral Wave Data (alpha2)
+[TXT] 44056.swr1              29-Sep-2013 18:13  911K  Spectral Wave Data (r1)
+[TXT] 44056.swr2              29-Sep-2013 18:13  911K  Spectral Wave Data (r2)
+[TXT] 44056.txt               29-Sep-2013 18:13  200K  Standard Meteorological Data
+[TXT] 44057.ocean             29-Sep-2013 18:17   80K  Oceanographic Data
+[TXT] 44057.txt               29-Sep-2013 18:36  556K  Standard Meteorological Data
+[TXT] 44058.ocean             29-Sep-2013 18:17   80K  Oceanographic Data
+[TXT] 44058.txt               29-Sep-2013 18:36  557K  Standard Meteorological Data
+[TXT] 44059.txt               29-Sep-2013 18:36  559K  Standard Meteorological Data
+[TXT] 44060.txt               29-Sep-2013 18:31  378K  Standard Meteorological Data
+[TXT] 44061.ocean             29-Sep-2013 18:17   80K  Oceanographic Data
+[TXT] 44061.txt               29-Sep-2013 18:36  557K  Standard Meteorological Data
+[TXT] 44062.ocean             23-Sep-2013 09:13   86K  Oceanographic Data
+[TXT] 44062.txt               29-Sep-2013 18:41  557K  Standard Meteorological Data
+[TXT] 44063.ocean             29-Sep-2013 18:17   80K  Oceanographic Data
+[TXT] 44063.txt               29-Sep-2013 18:41  558K  Standard Meteorological Data
+[TXT] 44064.ocean             29-Sep-2013 18:17   80K  Oceanographic Data
+[TXT] 44064.txt               29-Sep-2013 18:41  556K  Standard Meteorological Data
+[TXT] 44065.cwind             29-Sep-2013 18:22  259K  Continuous Winds Data
+[TXT] 44065.data_spec         29-Sep-2013 18:22  720K  Raw Spectral Wave Data
+[TXT] 44065.spec              29-Sep-2013 18:18   75K  Spectral Wave Summary Data
+[TXT] 44065.swdir             29-Sep-2013 18:22  705K  Spectral Wave Data (alpha1)
+[TXT] 44065.swdir2            29-Sep-2013 18:22  704K  Spectral Wave Data (alpha2)
+[TXT] 44065.swr1              29-Sep-2013 18:22  682K  Spectral Wave Data (r1)
+[TXT] 44065.swr2              29-Sep-2013 18:22  682K  Spectral Wave Data (r2)
+[TXT] 44065.txt               29-Sep-2013 18:22  101K  Standard Meteorological Data
+[TXT] 44066.cwind             29-Sep-2013 18:06  257K  Continuous Winds Data
+[TXT] 44066.data_spec         29-Sep-2013 18:13  716K  Raw Spectral Wave Data
+[TXT] 44066.spec              29-Sep-2013 18:06   75K  Spectral Wave Summary Data
+[TXT] 44066.swdir             29-Sep-2013 18:13  696K  Spectral Wave Data (alpha1)
+[TXT] 44066.swdir2            29-Sep-2013 18:13  696K  Spectral Wave Data (alpha2)
+[TXT] 44066.swr1              29-Sep-2013 18:13  681K  Spectral Wave Data (r1)
+[TXT] 44066.swr2              29-Sep-2013 18:13  681K  Spectral Wave Data (r2)
+[TXT] 44066.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 44095.data_spec         29-Sep-2013 18:32  1.0M  Raw Spectral Wave Data
+[TXT] 44095.spec              29-Sep-2013 18:32  148K  Spectral Wave Summary Data
+[TXT] 44095.swdir             29-Sep-2013 18:32  933K  Spectral Wave Data (alpha1)
+[TXT] 44095.swdir2            29-Sep-2013 18:32  937K  Spectral Wave Data (alpha2)
+[TXT] 44095.swr1              29-Sep-2013 18:32  909K  Spectral Wave Data (r1)
+[TXT] 44095.swr2              29-Sep-2013 18:32  909K  Spectral Wave Data (r2)
+[TXT] 44095.txt               29-Sep-2013 18:37  199K  Standard Meteorological Data
+[TXT] 44096.data_spec         29-Sep-2013 18:32  369K  Raw Spectral Wave Data
+[TXT] 44096.spec              29-Sep-2013 18:32   56K  Spectral Wave Summary Data
+[TXT] 44096.swdir             29-Sep-2013 18:32  350K  Spectral Wave Data (alpha1)
+[TXT] 44096.swdir2            29-Sep-2013 18:32  350K  Spectral Wave Data (alpha2)
+[TXT] 44096.swr1              29-Sep-2013 18:32  341K  Spectral Wave Data (r1)
+[TXT] 44096.swr2              29-Sep-2013 18:32  341K  Spectral Wave Data (r2)
+[TXT] 44096.txt               29-Sep-2013 18:37   75K  Standard Meteorological Data
+[TXT] 44097.data_spec         29-Sep-2013 18:18  1.0M  Raw Spectral Wave Data
+[TXT] 44097.spec              29-Sep-2013 18:13  149K  Spectral Wave Summary Data
+[TXT] 44097.swdir             29-Sep-2013 18:18  967K  Spectral Wave Data (alpha1)
+[TXT] 44097.swdir2            29-Sep-2013 18:18  966K  Spectral Wave Data (alpha2)
+[TXT] 44097.swr1              29-Sep-2013 18:18  910K  Spectral Wave Data (r1)
+[TXT] 44097.swr2              29-Sep-2013 18:18  910K  Spectral Wave Data (r2)
+[TXT] 44097.txt               29-Sep-2013 18:18  200K  Standard Meteorological Data
+[TXT] 44098.data_spec         29-Sep-2013 18:13  1.0M  Raw Spectral Wave Data
+[TXT] 44098.spec              29-Sep-2013 18:13  149K  Spectral Wave Summary Data
+[TXT] 44098.swdir             29-Sep-2013 18:13  964K  Spectral Wave Data (alpha1)
+[TXT] 44098.swdir2            29-Sep-2013 18:13  963K  Spectral Wave Data (alpha2)
+[TXT] 44098.swr1              29-Sep-2013 18:13  911K  Spectral Wave Data (r1)
+[TXT] 44098.swr2              29-Sep-2013 18:13  911K  Spectral Wave Data (r2)
+[TXT] 44098.txt               29-Sep-2013 18:13  200K  Standard Meteorological Data
+[TXT] 44099.data_spec         29-Sep-2013 18:37  1.0M  Raw Spectral Wave Data
+[TXT] 44099.spec              29-Sep-2013 18:32  149K  Spectral Wave Summary Data
+[TXT] 44099.swdir             29-Sep-2013 18:37  940K  Spectral Wave Data (alpha1)
+[TXT] 44099.swdir2            29-Sep-2013 18:37  939K  Spectral Wave Data (alpha2)
+[TXT] 44099.swr1              29-Sep-2013 18:37  908K  Spectral Wave Data (r1)
+[TXT] 44099.swr2              29-Sep-2013 18:37  908K  Spectral Wave Data (r2)
+[TXT] 44099.txt               29-Sep-2013 18:37  200K  Standard Meteorological Data
+[TXT] 44100.data_spec         29-Sep-2013 18:32  1.0M  Raw Spectral Wave Data
+[TXT] 44100.spec              29-Sep-2013 18:32  148K  Spectral Wave Summary Data
+[TXT] 44100.swdir             29-Sep-2013 18:32  936K  Spectral Wave Data (alpha1)
+[TXT] 44100.swdir2            29-Sep-2013 18:32  938K  Spectral Wave Data (alpha2)
+[TXT] 44100.swr1              29-Sep-2013 18:32  909K  Spectral Wave Data (r1)
+[TXT] 44100.swr2              29-Sep-2013 18:32  909K  Spectral Wave Data (r2)
+[TXT] 44100.txt               29-Sep-2013 18:37  199K  Standard Meteorological Data
+[TXT] 44137.txt               29-Sep-2013 17:56   99K  Standard Meteorological Data
+[TXT] 44138.txt               26-Sep-2013 05:56  1.6K  Standard Meteorological Data
+[TXT] 44139.txt               29-Sep-2013 18:26  100K  Standard Meteorological Data
+[TXT] 44140.txt               29-Sep-2013 18:41   11K  Standard Meteorological Data
+[TXT] 44141.txt               29-Sep-2013 17:56  100K  Standard Meteorological Data
+[TXT] 44150.txt               29-Sep-2013 18:26   98K  Standard Meteorological Data
+[TXT] 44251.txt               29-Sep-2013 18:26   99K  Standard Meteorological Data
+[TXT] 44255.txt               29-Sep-2013 18:26   95K  Standard Meteorological Data
+[TXT] 44258.txt               29-Sep-2013 18:41  100K  Standard Meteorological Data
+[TXT] 44401.dart              17-Dec-2012 12:32  133K  Water Column Height (DART) Data
+[TXT] 44402.dart              29-Sep-2013 13:33  132K  Water Column Height (DART) Data
+[TXT] 45001.cwind             29-Sep-2013 18:06  255K  Continuous Winds Data
+[TXT] 45001.data_spec         29-Sep-2013 18:06  707K  Raw Spectral Wave Data
+[TXT] 45001.spec              29-Sep-2013 18:02   74K  Spectral Wave Summary Data
+[TXT] 45001.swdir             29-Sep-2013 18:06  534K  Spectral Wave Data (alpha1)
+[TXT] 45001.swdir2            29-Sep-2013 18:06  534K  Spectral Wave Data (alpha2)
+[TXT] 45001.swr1              29-Sep-2013 18:06  528K  Spectral Wave Data (r1)
+[TXT] 45001.swr2              29-Sep-2013 18:07  528K  Spectral Wave Data (r2)
+[TXT] 45001.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 45002.cwind             29-Sep-2013 18:06  256K  Continuous Winds Data
+[TXT] 45002.data_spec         29-Sep-2013 18:13  711K  Raw Spectral Wave Data
+[TXT] 45002.spec              29-Sep-2013 18:06   75K  Spectral Wave Summary Data
+[TXT] 45002.swdir             29-Sep-2013 18:13  575K  Spectral Wave Data (alpha1)
+[TXT] 45002.swdir2            29-Sep-2013 18:13  575K  Spectral Wave Data (alpha2)
+[TXT] 45002.swr1              29-Sep-2013 18:13  570K  Spectral Wave Data (r1)
+[TXT] 45002.swr2              29-Sep-2013 18:13  570K  Spectral Wave Data (r2)
+[TXT] 45002.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 45003.cwind             29-Sep-2013 18:06  259K  Continuous Winds Data
+[TXT] 45003.data_spec         29-Sep-2013 18:06  710K  Raw Spectral Wave Data
+[TXT] 45003.spec              29-Sep-2013 18:02   74K  Spectral Wave Summary Data
+[TXT] 45003.swdir             29-Sep-2013 18:06  474K  Spectral Wave Data (alpha1)
+[TXT] 45003.swdir2            29-Sep-2013 18:06  474K  Spectral Wave Data (alpha2)
+[TXT] 45003.swr1              29-Sep-2013 18:06  468K  Spectral Wave Data (r1)
+[TXT] 45003.swr2              29-Sep-2013 18:07  468K  Spectral Wave Data (r2)
+[TXT] 45003.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 45005.cwind             29-Sep-2013 18:06  257K  Continuous Winds Data
+[TXT] 45005.data_spec         29-Sep-2013 18:06  705K  Raw Spectral Wave Data
+[TXT] 45005.spec              29-Sep-2013 18:02   74K  Spectral Wave Summary Data
+[TXT] 45005.swdir             29-Sep-2013 13:07  460K  Spectral Wave Data (alpha1)
+[TXT] 45005.swdir2            29-Sep-2013 13:07  460K  Spectral Wave Data (alpha2)
+[TXT] 45005.swr1              29-Sep-2013 13:07  466K  Spectral Wave Data (r1)
+[TXT] 45005.swr2              29-Sep-2013 13:07  466K  Spectral Wave Data (r2)
+[TXT] 45005.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 45006.cwind             29-Sep-2013 18:22  258K  Continuous Winds Data
+[TXT] 45006.data_spec         29-Sep-2013 18:22  715K  Raw Spectral Wave Data
+[TXT] 45006.spec              29-Sep-2013 18:22   75K  Spectral Wave Summary Data
+[TXT] 45006.txt               29-Sep-2013 18:22  101K  Standard Meteorological Data
+[TXT] 45007.cwind             29-Sep-2013 18:06  257K  Continuous Winds Data
+[TXT] 45007.data_spec         29-Sep-2013 18:06  714K  Raw Spectral Wave Data
+[TXT] 45007.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 45007.swdir             29-Sep-2013 18:06  553K  Spectral Wave Data (alpha1)
+[TXT] 45007.swdir2            29-Sep-2013 18:06  553K  Spectral Wave Data (alpha2)
+[TXT] 45007.swr1              29-Sep-2013 18:06  552K  Spectral Wave Data (r1)
+[TXT] 45007.swr2              29-Sep-2013 18:07  552K  Spectral Wave Data (r2)
+[TXT] 45007.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 45008.cwind             29-Sep-2013 18:12  258K  Continuous Winds Data
+[TXT] 45008.data_spec         29-Sep-2013 18:13  719K  Raw Spectral Wave Data
+[TXT] 45008.spec              29-Sep-2013 18:06   75K  Spectral Wave Summary Data
+[TXT] 45008.swdir             29-Sep-2013 18:13  515K  Spectral Wave Data (alpha1)
+[TXT] 45008.swdir2            29-Sep-2013 18:13  515K  Spectral Wave Data (alpha2)
+[TXT] 45008.swr1              29-Sep-2013 18:13  513K  Spectral Wave Data (r1)
+[TXT] 45008.swr2              29-Sep-2013 18:13  513K  Spectral Wave Data (r2)
+[TXT] 45008.txt               29-Sep-2013 18:13  101K  Standard Meteorological Data
+[TXT] 45012.cwind             29-Sep-2013 18:12  257K  Continuous Winds Data
+[TXT] 45012.data_spec         29-Sep-2013 18:13  712K  Raw Spectral Wave Data
+[TXT] 45012.spec              29-Sep-2013 18:06   75K  Spectral Wave Summary Data
+[TXT] 45012.txt               29-Sep-2013 18:13  101K  Standard Meteorological Data
+[TXT] 45013.ocean             27-Aug-2013 11:26  125K  Oceanographic Data
+[TXT] 45013.txt               27-Aug-2013 11:21  160K  Standard Meteorological Data
+[TXT] 45014.txt               29-Sep-2013 18:26  185K  Standard Meteorological Data
+[TXT] 45022.ocean             29-Sep-2013 18:17  283K  Oceanographic Data
+[TXT] 45022.srad              29-Sep-2013 18:17  138K  Solar Radiation Data
+[TXT] 45022.txt               29-Sep-2013 18:16  342K  Standard Meteorological Data
+[TXT] 45023.ocean             26-Aug-2013 13:27  364K  Oceanographic Data
+[TXT] 45023.srad              26-Aug-2013 13:27  171K  Solar Radiation Data
+[TXT] 45023.txt               26-Aug-2013 13:31  422K  Standard Meteorological Data
+[TXT] 45024.ocean             29-Sep-2013 18:36  203K  Oceanographic Data
+[TXT] 45024.srad              29-Sep-2013 18:36   96K  Solar Radiation Data
+[TXT] 45024.txt               29-Sep-2013 18:36  196K  Standard Meteorological Data
+[TXT] 45025.ocean             29-Sep-2013 18:36  505K  Oceanographic Data
+[TXT] 45025.txt               29-Sep-2013 18:36  603K  Standard Meteorological Data
+[TXT] 45026.ocean             29-Sep-2013 18:17  455K  Oceanographic Data
+[TXT] 45026.txt               29-Sep-2013 18:16  538K  Standard Meteorological Data
+[TXT] 45027.srad              29-Sep-2013 17:47  243K  Solar Radiation Data
+[TXT] 45027.txt               29-Sep-2013 17:46  589K  Standard Meteorological Data
+[TXT] 45028.srad              29-Sep-2013 17:47  243K  Solar Radiation Data
+[TXT] 45028.txt               29-Sep-2013 17:46  590K  Standard Meteorological Data
+[TXT] 45029.adcp              29-Sep-2013 18:36  2.4M  Acoustic Doppler Current Profiler Data
+[TXT] 45029.ocean             29-Sep-2013 18:36  517K  Oceanographic Data
+[TXT] 45029.txt               29-Sep-2013 18:36  600K  Standard Meteorological Data
+[TXT] 45132.txt               29-Sep-2013 18:36  101K  Standard Meteorological Data
+[TXT] 45135.txt               29-Sep-2013 18:36  100K  Standard Meteorological Data
+[TXT] 45136.txt               29-Sep-2013 18:36  100K  Standard Meteorological Data
+[TXT] 45137.txt               29-Sep-2013 18:36  100K  Standard Meteorological Data
+[TXT] 45138.txt               29-Sep-2013 18:26  100K  Standard Meteorological Data
+[TXT] 45139.txt               29-Sep-2013 17:56  100K  Standard Meteorological Data
+[TXT] 45140.txt               29-Sep-2013 18:26   98K  Standard Meteorological Data
+[TXT] 45141.txt               29-Sep-2013 17:56   97K  Standard Meteorological Data
+[TXT] 45142.txt               29-Sep-2013 18:41  100K  Standard Meteorological Data
+[TXT] 45143.txt               29-Sep-2013 17:56  100K  Standard Meteorological Data
+[TXT] 45144.txt               24-Sep-2013 13:16   52K  Standard Meteorological Data
+[TXT] 45145.txt               29-Sep-2013 18:26  100K  Standard Meteorological Data
+[TXT] 45147.txt               29-Sep-2013 18:36   99K  Standard Meteorological Data
+[TXT] 45148.txt               29-Sep-2013 18:26  101K  Standard Meteorological Data
+[TXT] 45149.txt               29-Sep-2013 18:36   98K  Standard Meteorological Data
+[TXT] 45150.txt               29-Sep-2013 18:36   97K  Standard Meteorological Data
+[TXT] 45151.txt               29-Sep-2013 18:26  100K  Standard Meteorological Data
+[TXT] 45152.txt               29-Sep-2013 18:36  100K  Standard Meteorological Data
+[TXT] 45154.txt               29-Sep-2013 18:41   99K  Standard Meteorological Data
+[TXT] 45159.txt               29-Sep-2013 18:36   77K  Standard Meteorological Data
+[TXT] 45161.txt               29-Sep-2013 18:41   94K  Standard Meteorological Data
+[TXT] 45162.txt               29-Sep-2013 18:41   86K  Standard Meteorological Data
+[TXT] 45163.txt               29-Sep-2013 18:41   86K  Standard Meteorological Data
+[TXT] 45165.txt               29-Sep-2013 18:36  601K  Standard Meteorological Data
+[TXT] 45166.txt               29-Sep-2013 18:01  317K  Standard Meteorological Data
+[TXT] 45170.txt               29-Sep-2013 18:36  604K  Standard Meteorological Data
+[TXT] 46001.data_spec         29-Sep-2013 18:06  713K  Raw Spectral Wave Data
+[TXT] 46001.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 46001.supl              09-Sep-2013 12:07   51K  Supplemental Measurements Data
+[TXT] 46001.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 46002.cwind             29-Sep-2013 18:02  255K  Continuous Winds Data
+[TXT] 46002.data_spec         29-Sep-2013 18:02  706K  Raw Spectral Wave Data
+[TXT] 46002.spec              29-Sep-2013 18:02   74K  Spectral Wave Summary Data
+[TXT] 46002.txt               29-Sep-2013 18:03  101K  Standard Meteorological Data
+[TXT] 46004.txt               29-Sep-2013 18:41   99K  Standard Meteorological Data
+[TXT] 46011.cwind             29-Sep-2013 18:02  257K  Continuous Winds Data
+[TXT] 46011.data_spec         29-Sep-2013 18:02  711K  Raw Spectral Wave Data
+[TXT] 46011.spec              29-Sep-2013 17:57   75K  Spectral Wave Summary Data
+[TXT] 46011.swdir             29-Sep-2013 18:02  704K  Spectral Wave Data (alpha1)
+[TXT] 46011.swdir2            29-Sep-2013 18:02  703K  Spectral Wave Data (alpha2)
+[TXT] 46011.swr1              29-Sep-2013 18:02  679K  Spectral Wave Data (r1)
+[TXT] 46011.swr2              29-Sep-2013 18:02  679K  Spectral Wave Data (r2)
+[TXT] 46011.txt               29-Sep-2013 18:03  101K  Standard Meteorological Data
+[TXT] 46013.cwind             29-Sep-2013 18:06  249K  Continuous Winds Data
+[TXT] 46013.data_spec         29-Sep-2013 18:06  681K  Raw Spectral Wave Data
+[TXT] 46013.spec              29-Sep-2013 18:02   71K  Spectral Wave Summary Data
+[TXT] 46013.txt               29-Sep-2013 18:07  100K  Standard Meteorological Data
+[TXT] 46014.cwind             29-Sep-2013 18:02  255K  Continuous Winds Data
+[TXT] 46014.data_spec         29-Sep-2013 18:02  702K  Raw Spectral Wave Data
+[TXT] 46014.spec              29-Sep-2013 17:57   74K  Spectral Wave Summary Data
+[TXT] 46014.txt               29-Sep-2013 18:03  101K  Standard Meteorological Data
+[TXT] 46015.cwind             29-Sep-2013 18:06  257K  Continuous Winds Data
+[TXT] 46015.data_spec         29-Sep-2013 18:06  716K  Raw Spectral Wave Data
+[TXT] 46015.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 46015.swdir             29-Sep-2013 18:06  704K  Spectral Wave Data (alpha1)
+[TXT] 46015.swdir2            29-Sep-2013 18:06  703K  Spectral Wave Data (alpha2)
+[TXT] 46015.swr1              29-Sep-2013 18:06  684K  Spectral Wave Data (r1)
+[TXT] 46015.swr2              29-Sep-2013 18:07  684K  Spectral Wave Data (r2)
+[TXT] 46015.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 46022.cwind             29-Sep-2013 17:02  238K  Continuous Winds Data
+[TXT] 46022.data_spec         29-Sep-2013 17:08  655K  Raw Spectral Wave Data
+[TXT] 46022.spec              29-Sep-2013 17:02   69K  Spectral Wave Summary Data
+[TXT] 46022.txt               29-Sep-2013 17:03   97K  Standard Meteorological Data
+[TXT] 46025.cwind             29-Sep-2013 18:06  256K  Continuous Winds Data
+[TXT] 46025.data_spec         29-Sep-2013 18:13  713K  Raw Spectral Wave Data
+[TXT] 46025.spec              29-Sep-2013 18:06   75K  Spectral Wave Summary Data
+[TXT] 46025.swdir             29-Sep-2013 18:13  706K  Spectral Wave Data (alpha1)
+[TXT] 46025.swdir2            29-Sep-2013 18:13  704K  Spectral Wave Data (alpha2)
+[TXT] 46025.swr1              29-Sep-2013 18:13  676K  Spectral Wave Data (r1)
+[TXT] 46025.swr2              29-Sep-2013 18:13  676K  Spectral Wave Data (r2)
+[TXT] 46025.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 46026.cwind             29-Sep-2013 18:06  253K  Continuous Winds Data
+[TXT] 46026.data_spec         29-Sep-2013 18:13  706K  Raw Spectral Wave Data
+[TXT] 46026.spec              29-Sep-2013 18:06   74K  Spectral Wave Summary Data
+[TXT] 46026.swdir             29-Sep-2013 18:13  699K  Spectral Wave Data (alpha1)
+[TXT] 46026.swdir2            29-Sep-2013 18:13  699K  Spectral Wave Data (alpha2)
+[TXT] 46026.swr1              29-Sep-2013 18:13  671K  Spectral Wave Data (r1)
+[TXT] 46026.swr2              29-Sep-2013 18:13  671K  Spectral Wave Data (r2)
+[TXT] 46026.txt               29-Sep-2013 18:07  100K  Standard Meteorological Data
+[TXT] 46027.cwind             29-Sep-2013 18:06  258K  Continuous Winds Data
+[TXT] 46027.data_spec         29-Sep-2013 18:06  718K  Raw Spectral Wave Data
+[TXT] 46027.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 46027.swdir             29-Sep-2013 18:06  710K  Spectral Wave Data (alpha1)
+[TXT] 46027.swdir2            29-Sep-2013 18:06  710K  Spectral Wave Data (alpha2)
+[TXT] 46027.swr1              29-Sep-2013 18:07  689K  Spectral Wave Data (r1)
+[TXT] 46027.swr2              29-Sep-2013 18:07  689K  Spectral Wave Data (r2)
+[TXT] 46027.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 46028.cwind             29-Sep-2013 18:06  250K  Continuous Winds Data
+[TXT] 46028.data_spec         29-Sep-2013 18:06  648K  Raw Spectral Wave Data
+[TXT] 46028.spec              29-Sep-2013 18:02   68K  Spectral Wave Summary Data
+[TXT] 46028.swdir             29-Sep-2013 18:06  640K  Spectral Wave Data (alpha1)
+[TXT] 46028.swdir2            29-Sep-2013 18:06  639K  Spectral Wave Data (alpha2)
+[TXT] 46028.swr1              29-Sep-2013 18:07  618K  Spectral Wave Data (r1)
+[TXT] 46028.swr2              29-Sep-2013 18:07  618K  Spectral Wave Data (r2)
+[TXT] 46028.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 46029.cwind             29-Sep-2013 18:06  239K  Continuous Winds Data
+[TXT] 46029.data_spec         29-Sep-2013 18:13  667K  Raw Spectral Wave Data
+[TXT] 46029.spec              29-Sep-2013 18:06   70K  Spectral Wave Summary Data
+[TXT] 46029.swdir             29-Sep-2013 18:13  658K  Spectral Wave Data (alpha1)
+[TXT] 46029.swdir2            29-Sep-2013 18:13  657K  Spectral Wave Data (alpha2)
+[TXT] 46029.swr1              29-Sep-2013 18:13  636K  Spectral Wave Data (r1)
+[TXT] 46029.swr2              29-Sep-2013 18:13  636K  Spectral Wave Data (r2)
+[TXT] 46029.txt               29-Sep-2013 18:07   94K  Standard Meteorological Data
+[TXT] 46036.txt               29-Sep-2013 18:41  100K  Standard Meteorological Data
+[TXT] 46041.data_spec         29-Sep-2013 18:18  714K  Raw Spectral Wave Data
+[TXT] 46041.spec              29-Sep-2013 18:13   75K  Spectral Wave Summary Data
+[TXT] 46041.txt               29-Sep-2013 18:13  101K  Standard Meteorological Data
+[TXT] 46042.cwind             29-Sep-2013 18:06  257K  Continuous Winds Data
+[TXT] 46042.data_spec         29-Sep-2013 18:06  716K  Raw Spectral Wave Data
+[TXT] 46042.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 46042.swdir             29-Sep-2013 18:06  707K  Spectral Wave Data (alpha1)
+[TXT] 46042.swdir2            29-Sep-2013 18:06  706K  Spectral Wave Data (alpha2)
+[TXT] 46042.swr1              29-Sep-2013 18:07  673K  Spectral Wave Data (r1)
+[TXT] 46042.swr2              29-Sep-2013 18:07  673K  Spectral Wave Data (r2)
+[TXT] 46042.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 46044.adcp2             25-Sep-2013 07:06  3.4M  Acoustic Doppler Current Profiler Data
+[TXT] 46044.cwind             29-Sep-2013 18:06  254K  Continuous Winds Data
+[TXT] 46044.data_spec         29-Sep-2013 18:13  708K  Raw Spectral Wave Data
+[TXT] 46044.spec              29-Sep-2013 18:06   74K  Spectral Wave Summary Data
+[TXT] 46044.supl              29-Sep-2013 18:06   51K  Supplemental Measurements Data
+[TXT] 46044.swdir             29-Sep-2013 18:13  700K  Spectral Wave Data (alpha1)
+[TXT] 46044.swdir2            29-Sep-2013 18:13  698K  Spectral Wave Data (alpha2)
+[TXT] 46044.swr1              29-Sep-2013 18:13  673K  Spectral Wave Data (r1)
+[TXT] 46044.swr2              29-Sep-2013 18:13  673K  Spectral Wave Data (r2)
+[TXT] 46044.txt               29-Sep-2013 18:07  100K  Standard Meteorological Data
+[TXT] 46050.cwind             29-Sep-2013 18:06  254K  Continuous Winds Data
+[TXT] 46050.data_spec         29-Sep-2013 18:06  706K  Raw Spectral Wave Data
+[TXT] 46050.spec              29-Sep-2013 18:02   74K  Spectral Wave Summary Data
+[TXT] 46050.swdir             29-Sep-2013 18:06  695K  Spectral Wave Data (alpha1)
+[TXT] 46050.swdir2            29-Sep-2013 18:06  694K  Spectral Wave Data (alpha2)
+[TXT] 46050.swr1              29-Sep-2013 18:07  676K  Spectral Wave Data (r1)
+[TXT] 46050.swr2              29-Sep-2013 18:07  676K  Spectral Wave Data (r2)
+[TXT] 46050.txt               29-Sep-2013 18:07  100K  Standard Meteorological Data
+[TXT] 46053.cwind             29-Sep-2013 18:18  258K  Continuous Winds Data
+[TXT] 46053.data_spec         29-Sep-2013 18:18  707K  Raw Spectral Wave Data
+[TXT] 46053.spec              29-Sep-2013 18:13   74K  Spectral Wave Summary Data
+[TXT] 46053.swdir             29-Sep-2013 18:18  700K  Spectral Wave Data (alpha1)
+[TXT] 46053.swdir2            29-Sep-2013 18:18  700K  Spectral Wave Data (alpha2)
+[TXT] 46053.swr1              29-Sep-2013 18:18  672K  Spectral Wave Data (r1)
+[TXT] 46053.swr2              29-Sep-2013 18:18  672K  Spectral Wave Data (r2)
+[TXT] 46053.txt               29-Sep-2013 18:18  101K  Standard Meteorological Data
+[TXT] 46054.cwind             29-Sep-2013 17:02  148K  Continuous Winds Data
+[TXT] 46054.data_spec         29-Sep-2013 15:27  316K  Raw Spectral Wave Data
+[TXT] 46054.spec              29-Sep-2013 15:22   33K  Spectral Wave Summary Data
+[TXT] 46054.txt               29-Sep-2013 18:07   91K  Standard Meteorological Data
+[TXT] 46060.cwind             29-Sep-2013 18:06  248K  Continuous Winds Data
+[TXT] 46060.data_spec         29-Sep-2013 18:13  637K  Raw Spectral Wave Data
+[TXT] 46060.spec              29-Sep-2013 18:06   67K  Spectral Wave Summary Data
+[TXT] 46060.supl              29-Sep-2013 18:06   50K  Supplemental Measurements Data
+[TXT] 46060.swdir             29-Sep-2013 18:13  505K  Spectral Wave Data (alpha1)
+[TXT] 46060.swdir2            29-Sep-2013 18:13  504K  Spectral Wave Data (alpha2)
+[TXT] 46060.swr1              29-Sep-2013 18:13  490K  Spectral Wave Data (r1)
+[TXT] 46060.swr2              29-Sep-2013 18:13  490K  Spectral Wave Data (r2)
+[TXT] 46060.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 46061.cwind             29-Sep-2013 18:06  171K  Continuous Winds Data
+[TXT] 46061.data_spec         29-Sep-2013 18:06  401K  Raw Spectral Wave Data
+[TXT] 46061.spec              29-Sep-2013 18:06   42K  Spectral Wave Summary Data
+[TXT] 46061.txt               29-Sep-2013 18:07   91K  Standard Meteorological Data
+[TXT] 46066.cwind             29-Sep-2013 18:06  191K  Continuous Winds Data
+[TXT] 46066.data_spec         29-Sep-2013 18:13  532K  Raw Spectral Wave Data
+[TXT] 46066.spec              29-Sep-2013 18:06   56K  Spectral Wave Summary Data
+[TXT] 46066.supl              29-Sep-2013 18:06   38K  Supplemental Measurements Data
+[TXT] 46066.swdir             29-Sep-2013 18:13  524K  Spectral Wave Data (alpha1)
+[TXT] 46066.swdir2            29-Sep-2013 18:13  522K  Spectral Wave Data (alpha2)
+[TXT] 46066.swr1              29-Sep-2013 18:13  508K  Spectral Wave Data (r1)
+[TXT] 46066.swr2              29-Sep-2013 18:13  508K  Spectral Wave Data (r2)
+[TXT] 46066.txt               29-Sep-2013 18:07   75K  Standard Meteorological Data
+[TXT] 46069.cwind             29-Sep-2013 18:12  257K  Continuous Winds Data
+[TXT] 46069.data_spec         29-Sep-2013 18:13  716K  Raw Spectral Wave Data
+[TXT] 46069.spec              29-Sep-2013 18:06   75K  Spectral Wave Summary Data
+[TXT] 46069.txt               29-Sep-2013 18:13  101K  Standard Meteorological Data
+[TXT] 46070.data_spec         29-Sep-2013 18:06  719K  Raw Spectral Wave Data
+[TXT] 46070.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 46070.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 46072.data_spec         20-Sep-2013 04:12   31K  Raw Spectral Wave Data
+[TXT] 46072.spec              20-Sep-2013 04:07  3.5K  Spectral Wave Summary Data
+[TXT] 46072.txt               29-Sep-2013 15:09   66K  Standard Meteorological Data
+[TXT] 46075.cwind             29-Sep-2013 18:06  257K  Continuous Winds Data
+[TXT] 46075.data_spec         29-Sep-2013 18:06  714K  Raw Spectral Wave Data
+[TXT] 46075.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 46075.supl              29-Sep-2013 18:06   52K  Supplemental Measurements Data
+[TXT] 46075.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 46076.cwind             29-Sep-2013 18:12  251K  Continuous Winds Data
+[TXT] 46076.data_spec         29-Sep-2013 18:18  681K  Raw Spectral Wave Data
+[TXT] 46076.spec              29-Sep-2013 18:13   72K  Spectral Wave Summary Data
+[TXT] 46076.supl              29-Sep-2013 18:12   50K  Supplemental Measurements Data
+[TXT] 46076.txt               29-Sep-2013 18:13  101K  Standard Meteorological Data
+[TXT] 46077.cwind             29-Sep-2013 18:18  257K  Continuous Winds Data
+[TXT] 46077.data_spec         29-Sep-2013 18:18  714K  Raw Spectral Wave Data
+[TXT] 46077.spec              29-Sep-2013 18:13   75K  Spectral Wave Summary Data
+[TXT] 46077.supl              29-Sep-2013 18:17   52K  Supplemental Measurements Data
+[TXT] 46077.txt               29-Sep-2013 18:18  101K  Standard Meteorological Data
+[TXT] 46078.cwind             29-Sep-2013 18:12  195K  Continuous Winds Data
+[TXT] 46078.data_spec         29-Sep-2013 18:13  544K  Raw Spectral Wave Data
+[TXT] 46078.spec              29-Sep-2013 18:06   57K  Spectral Wave Summary Data
+[TXT] 46078.supl              29-Sep-2013 18:12   39K  Supplemental Measurements Data
+[TXT] 46078.swdir             29-Sep-2013 18:13  535K  Spectral Wave Data (alpha1)
+[TXT] 46078.swdir2            29-Sep-2013 18:13  534K  Spectral Wave Data (alpha2)
+[TXT] 46078.swr1              29-Sep-2013 18:13  519K  Spectral Wave Data (r1)
+[TXT] 46078.swr2              29-Sep-2013 18:13  519K  Spectral Wave Data (r2)
+[TXT] 46078.txt               29-Sep-2013 18:13   77K  Standard Meteorological Data
+[TXT] 46081.cwind             29-Sep-2013 18:02  256K  Continuous Winds Data
+[TXT] 46081.data_spec         29-Sep-2013 18:02  707K  Raw Spectral Wave Data
+[TXT] 46081.spec              29-Sep-2013 17:57   74K  Spectral Wave Summary Data
+[TXT] 46081.supl              29-Sep-2013 18:02   51K  Supplemental Measurements Data
+[TXT] 46081.txt               29-Sep-2013 18:03  101K  Standard Meteorological Data
+[TXT] 46082.data_spec         27-Sep-2013 20:12  720K  Raw Spectral Wave Data
+[TXT] 46082.spec              27-Sep-2013 20:08   76K  Spectral Wave Summary Data
+[TXT] 46082.supl              27-Sep-2013 20:07   52K  Supplemental Measurements Data
+[TXT] 46082.txt               27-Sep-2013 20:08  101K  Standard Meteorological Data
+[TXT] 46083.cwind             29-Sep-2013 18:18  254K  Continuous Winds Data
+[TXT] 46083.data_spec         29-Sep-2013 18:18  701K  Raw Spectral Wave Data
+[TXT] 46083.spec              29-Sep-2013 18:13   74K  Spectral Wave Summary Data
+[TXT] 46083.supl              29-Sep-2013 18:17   51K  Supplemental Measurements Data
+[TXT] 46083.txt               29-Sep-2013 18:18  101K  Standard Meteorological Data
+[TXT] 46084.cwind             29-Sep-2013 18:02  224K  Continuous Winds Data
+[TXT] 46084.data_spec         29-Sep-2013 18:02  625K  Raw Spectral Wave Data
+[TXT] 46084.spec              29-Sep-2013 17:57   65K  Spectral Wave Summary Data
+[TXT] 46084.supl              29-Sep-2013 18:02   45K  Supplemental Measurements Data
+[TXT] 46084.txt               29-Sep-2013 18:03   88K  Standard Meteorological Data
+[TXT] 46086.cwind             29-Sep-2013 18:06  258K  Continuous Winds Data
+[TXT] 46086.data_spec         29-Sep-2013 18:06  718K  Raw Spectral Wave Data
+[TXT] 46086.spec              29-Sep-2013 18:02   75K  Spectral Wave Summary Data
+[TXT] 46086.swdir             29-Sep-2013 18:06  711K  Spectral Wave Data (alpha1)
+[TXT] 46086.swdir2            29-Sep-2013 18:06  711K  Spectral Wave Data (alpha2)
+[TXT] 46086.swr1              29-Sep-2013 18:07  680K  Spectral Wave Data (r1)
+[TXT] 46086.swr2              29-Sep-2013 18:07  680K  Spectral Wave Data (r2)
+[TXT] 46086.txt               29-Sep-2013 18:07  101K  Standard Meteorological Data
+[TXT] 46087.adcp              19-Sep-2013 20:31   10K  Acoustic Doppler Current Profiler Data
+[TXT] 46087.cwind             19-Sep-2013 20:34   65K  Continuous Winds Data
+[TXT] 46087.txt               19-Sep-2013 20:31   26K  Standard Meteorological Data
+[TXT] 46088.adcp              29-Sep-2013 10:36   68K  Acoustic Doppler Current Profiler Data
+[TXT] 46088.cwind             29-Sep-2013 10:43  240K  Continuous Winds Data
+[TXT] 46088.data_spec         29-Sep-2013 10:43  664K  Raw Spectral Wave Data
+[TXT] 46088.spec              29-Sep-2013 10:37  138K  Spectral Wave Summary Data
+[TXT] 46088.swdir             29-Sep-2013 09:42  217K  Spectral Wave Data (alpha1)
+[TXT] 46088.swdir2            29-Sep-2013 09:42  217K  Spectral Wave Data (alpha2)
+[TXT] 46088.swr1              29-Sep-2013 09:42  211K  Spectral Wave Data (r1)
+[TXT] 46088.swr2              29-Sep-2013 09:42  211K  Spectral Wave Data (r2)
+[TXT] 46088.txt               29-Sep-2013 10:43  187K  Standard Meteorological Data
+[TXT] 46089.cwind             29-Sep-2013 18:12  258K  Continuous Winds Data
+[TXT] 46089.data_spec         29-Sep-2013 18:13  717K  Raw Spectral Wave Data
+[TXT] 46089.spec              29-Sep-2013 18:13   75K  Spectral Wave Summary Data
+[TXT] 46089.swdir             29-Sep-2013 18:13  705K  Spectral Wave Data (alpha1)
+[TXT] 46089.swdir2            29-Sep-2013 18:13  704K  Spectral Wave Data (alpha2)
+[TXT] 46089.swr1              29-Sep-2013 18:13  686K  Spectral Wave Data (r1)
+[TXT] 46089.swr2              29-Sep-2013 18:13  686K  Spectral Wave Data (r2)
+[TXT] 46089.txt               29-Sep-2013 18:13  101K  Standard Meteorological Data
+[TXT] 46092.txt               29-Sep-2013 18:41   95K  Standard Meteorological Data
+[TXT] 46094.ocean             12-Sep-2013 20:37  516K  Oceanographic Data
+[TXT] 46094.txt               12-Sep-2013 20:41  563K  Standard Meteorological Data
+[TXT] 46096.ocean             29-Sep-2013 18:12   34K  Oceanographic Data
+[TXT] 46096.txt               29-Sep-2013 18:11  1.1K  Standard Meteorological Data
+[TXT] 46108.data_spec         29-Sep-2013 18:13  1.0M  Raw Spectral Wave Data
+[TXT] 46108.spec              29-Sep-2013 18:13  148K  Spectral Wave Summary Data
+[TXT] 46108.swdir             29-Sep-2013 18:13  866K  Spectral Wave Data (alpha1)
+[TXT] 46108.swdir2            29-Sep-2013 18:13  865K  Spectral Wave Data (alpha2)
+[TXT] 46108.swr1              29-Sep-2013 18:13  811K  Spectral Wave Data (r1)
+[TXT] 46108.swr2              29-Sep-2013 18:13  811K  Spectral Wave Data (r2)
+[TXT] 46108.txt               29-Sep-2013 18:18  199K  Standard Meteorological Data
+[TXT] 46114.data_spec         29-Sep-2013 18:32  1.0M  Raw Spectral Wave Data
+[TXT] 46114.spec              29-Sep-2013 18:32  148K  Spectral Wave Summary Data
+[TXT] 46114.swdir             29-Sep-2013 18:32  1.0M  Spectral Wave Data (alpha1)
+[TXT] 46114.swdir2            29-Sep-2013 18:32  973K  Spectral Wave Data (alpha2)
+[TXT] 46114.swr1              29-Sep-2013 18:32  910K  Spectral Wave Data (r1)
+[TXT] 46114.swr2              29-Sep-2013 18:32  910K  Spectral Wave Data (r2)
+[TXT] 46114.txt               29-Sep-2013 18:37  198K  Standard Meteorological Data
+[TXT] 46121.ocean             26-Sep-2013 13:52   17K  Oceanographic Data
+[TXT] 46121.txt               27-Aug-2013 17:36  601K  Standard Meteorological Data
+[TXT] 46122.ocean             15-Sep-2013 15:56  4.8K  Oceanographic Data
+[TXT] 46123.ocean             26-Sep-2013 13:52   11K  Oceanographic Data
+[TXT] 46124.ocean             26-Sep-2013 13:52  2.1K  Oceanographic Data
+[TXT] 46131.txt               29-Sep-2013 18:36   92K  Standard Meteorological Data
+[TXT] 46132.txt               29-Sep-2013 18:36  100K  Standard Meteorological Data
+[TXT] 46145.txt               29-Sep-2013 18:36  100K  Standard Meteorological Data
+[TXT] 46146.txt               29-Sep-2013 18:41   57K  Standard Meteorological Data
+[TXT] 46147.txt               29-Sep-2013 18:36  100K  Standard Meteorological Data
+[TXT] 46181.txt               29-Sep-2013 18:41  100K  Standard Meteorological Data
+[TXT] 46183.txt               29-Sep-2013 18:41   99K  Standard Meteorological Data
+[TXT] 46184.txt               29-Sep-2013 18:41  100K  Standard Meteorological Data
+[TXT] 46185.txt               29-Sep-2013 18:36  100K  Standard Meteorological Data
+[TXT] 46204.txt               29-Sep-2013 18:36  100K  Standard Meteorological Data
+[TXT] 46205.txt               29-Sep-2013 18:36  100K  Standard Meteorological Data
+[TXT] 46206.txt               29-Sep-2013 18:36  100K  Standard Meteorological Data
+[TXT] 46207.txt               29-Sep-2013 18:36  100K  Standard Meteorological Data
+[TXT] 46211.data_spec         29-Sep-2013 18:13  1.0M  Raw Spectral Wave Data
+[TXT] 46211.spec              29-Sep-2013 18:13  150K  Spectral Wave Summary Data
+[TXT] 46211.swdir             29-Sep-2013 18:13  1.0M  Spectral Wave Data (alpha1)
+[TXT] 46211.swdir2            29-Sep-2013 18:13  1.0M  Spectral Wave Data (alpha2)
+[TXT] 46211.swr1              29-Sep-2013 18:13  912K  Spectral Wave Data (r1)
+[TXT] 46211.swr2              29-Sep-2013 18:13  912K  Spectral Wave Data (r2)
+[TXT] 46211.txt               29-Sep-2013 18:13  201K  Standard Meteorological Data
+[TXT] 46213.data_spec         29-Sep-2013 18:13  1.0M  Raw Spectral Wave Data
+[TXT] 46213.spec              29-Sep-2013 18:13  149K  Spectral Wave Summary Data
+[TXT] 46213.swdir             29-Sep-2013 18:13  966K  Spectral Wave Data (alpha1)
+[TXT] 46213.swdir2            29-Sep-2013 18:13  963K  Spectral Wave Data (alpha2)
+[TXT] 46213.swr1              29-Sep-2013 18:13  909K  Spectral Wave Data (r1)
+[TXT] 46213.swr2              29-Sep-2013 18:13  909K  Spectral Wave Data (r2)
+[TXT] 46213.txt               29-Sep-2013 18:13  200K  Standard Meteorological Data
+[TXT] 46214.data_spec         29-Sep-2013 18:18  1.0M  Raw Spectral Wave Data
+[TXT] 46214.spec              29-Sep-2013 18:13  148K  Spectral Wave Summary Data
+[TXT] 46214.swdir             29-Sep-2013 18:18  1.0M  Spectral Wave Data (alpha1)
+[TXT] 46214.swdir2            29-Sep-2013 18:18  967K  Spectral Wave Data (alpha2)
+[TXT] 46214.swr1              29-Sep-2013 18:18  907K  Spectral Wave Data (r1)
+[TXT] 46214.swr2              29-Sep-2013 18:18  907K  Spectral Wave Data (r2)
+[TXT] 46214.txt               29-Sep-2013 18:13  199K  Standard Meteorological Data
+[TXT] 46215.data_spec         29-Sep-2013 18:32  773K  Raw Spectral Wave Data
+[TXT] 46215.spec              29-Sep-2013 18:32  117K  Spectral Wave Summary Data
+[TXT] 46215.swdir             29-Sep-2013 18:32  767K  Spectral Wave Data (alpha1)
+[TXT] 46215.swdir2            29-Sep-2013 18:32  767K  Spectral Wave Data (alpha2)
+[TXT] 46215.swr1              29-Sep-2013 18:32  714K  Spectral Wave Data (r1)
+[TXT] 46215.swr2              29-Sep-2013 18:32  714K  Spectral Wave Data (r2)
+[TXT] 46215.txt               29-Sep-2013 18:33  157K  Standard Meteorological Data
+[TXT] 46216.data_spec         29-Sep-2013 18:32  1.0M  Raw Spectral Wave Data
+[TXT] 46216.spec              29-Sep-2013 18:32  149K  Spectral Wave Summary Data
+[TXT] 46216.swdir             29-Sep-2013 18:32  1.0M  Spectral Wave Data (alpha1)
+[TXT] 46216.swdir2            29-Sep-2013 18:32  972K  Spectral Wave Data (alpha2)
+[TXT] 46216.swr1              29-Sep-2013 18:32  907K  Spectral Wave Data (r1)
+[TXT] 46216.swr2              29-Sep-2013 18:32  907K  Spectral Wave Data (r2)
+[TXT] 46216.txt               29-Sep-2013 18:33  200K  Standard Meteorological Data
+[TXT] 46217.data_spec         29-Sep-2013 18:32  1.0M  Raw Spectral Wave Data
+[TXT] 46217.spec              29-Sep-2013 18:32  148K  Spectral Wave Summary Data
+[TXT] 46217.swdir             29-Sep-2013 18:32  1.0M  Spectral Wave Data (alpha1)
+[TXT] 46217.swdir2            29-Sep-2013 18:32  1.0M  Spectral Wave Data (alpha2)
+[TXT] 46217.swr1              29-Sep-2013 18:32  909K  Spectral Wave Data (r1)
+[TXT] 46217.swr2              29-Sep-2013 18:32  909K  Spectral Wave Data (r2)
+[TXT] 46217.txt               29-Sep-2013 18:33  199K  Standard Meteorological Data
+[TXT] 46218.data_spec         29-Sep-2013 18:32  1.0M  Raw Spectral Wave Data
+[TXT] 46218.spec              29-Sep-2013 18:32  148K  Spectral Wave Summary Data
+[TXT] 46218.swdir             29-Sep-2013 18:32  973K  Spectral Wave Data (alpha1)
+[TXT] 46218.swdir2            29-Sep-2013 18:32  963K  Spectral Wave Data (alpha2)
+[TXT] 46218.swr1              29-Sep-2013 18:32  909K  Spectral Wave Data (r1)
+[TXT] 46218.swr2              29-Sep-2013 18:32  909K  Spectral Wave Data (r2)
+[TXT] 46218.txt               29-Sep-2013 18:33  199K  Standard Meteorological Data
+[TXT] 46219.data_spec         29-Sep-2013 18:32  1.0M  Raw Spectral Wave Data
+[TXT] 46219.spec              29-Sep-2013 18:32  148K  Spectral Wave Summary Data
+[TXT] 46219.swdir             29-Sep-2013 18:32  1.0M  Spectral Wave Data (alpha1)
+[TXT] 46219.swdir2            29-Sep-2013 18:32  971K  Spectral Wave Data (alpha2)
+[TXT] 46219.swr1              29-Sep-2013 18:32  909K  Spectral Wave Data (r1)
+[TXT] 46219.swr2              29-Sep-2013 18:32  909K  Spectral Wave Data (r2)
+[TXT] 46219.txt               29-Sep-2013 18:33  199K  Standard Meteorological Data
+[TXT] 46221.data_spec         29-Sep-2013 18:37  1.0M  Raw Spectral Wave Data
+[TXT] 46221.spec              29-Sep-2013 18:32  149K  Spectral Wave Summary Data
+[TXT] 46221.swdir             29-Sep-2013 18:37  1.0M  Spectral Wave Data (alpha1)
+[TXT] 46221.swdir2            29-Sep-2013 18:37  1.0M  Spectral Wave Data (alpha2)
+[TXT] 46221.swr1              29-Sep-2013 18:37  910K  Spectral Wave Data (r1)
+[TXT] 46221.swr2              29-Sep-2013 18:37  910K  Spectral Wave Data (r2)
+[TXT] 46221.txt               29-Sep-2013 18:37  200K  Standard Meteorological Data
+[TXT] 46222.data_spec         29-Sep-2013 18:32  1.0M  Raw Spectral Wave Data
+[TXT] 46222.spec              29-Sep-2013 18:32  149K  Spectral Wave Summary Data
+[TXT] 46222.swdir             29-Sep-2013 18:32  1.0M  Spectral Wave Data (alpha1)
+[TXT] 46222.swdir2            29-Sep-2013 18:32  1.0M  Spectral Wave Data (alpha2)
+[TXT] 46222.swr1              29-Sep-2013 18:32  907K  Spectral Wave Data (r1)
+[TXT] 46222.swr2              29-Sep-2013 18:32  907K  Spectral Wave Data (r2)
+[TXT] 46222.txt               29-Sep-2013 18:33  200K  Standard Meteorological Data
+[TXT] 46223.data_spec         29-Sep-2013 18:32  1.0M  Raw Spectral Wave Data
+[TXT] 46223.spec              29-Sep-2013 18:32  149K  Spectral Wave Summary Data
+[TXT] 46223.swdir             29-Sep-2013 18:32  1.0M  Spectral Wave Data (alpha1)
+[TXT] 46223.swdir2            29-Sep-2013 18:32  1.0M  Spectral Wave Data (alpha2)
+[TXT] 46223.swr1              29-Sep-2013 18:32  907K  Spectral Wave Data (r1)
+[TXT] 46223.swr2              29-Sep-2013 18:32  907K  Spectral Wave Data (r2)
+[TXT] 46223.txt               29-Sep-2013 18:33  200K  Standard Meteorological Data
+[TXT] 46224.data_spec         29-Sep-2013 18:13  969K  Raw Spectral Wave Data
+[TXT] 46224.spec              29-Sep-2013 18:13  146K  Spectral Wave Summary Data
+[TXT] 46224.swdir             29-Sep-2013 18:13  961K  Spectral Wave Data (alpha1)
+[TXT] 46224.swdir2            29-Sep-2013 18:13  961K  Spectral Wave Data (alpha2)
+[TXT] 46224.swr1              29-Sep-2013 18:13  895K  Spectral Wave Data (r1)
+[TXT] 46224.swr2              29-Sep-2013 18:13  895K  Spectral Wave Data (r2)
+[TXT] 46224.txt               29-Sep-2013 18:13  196K  Standard Meteorological Data
+[TXT] 46225.data_spec         29-Sep-2013 18:32  961K  Raw Spectral Wave Data
+[TXT] 46225.spec              29-Sep-2013 18:32  145K  Spectral Wave Summary Data
+[TXT] 46225.swdir             29-Sep-2013 18:32  953K  Spectral Wave Data (alpha1)
+[TXT] 46225.swdir2            29-Sep-2013 18:32  953K  Spectral Wave Data (alpha2)
+[TXT] 46225.swr1              29-Sep-2013 18:32  887K  Spectral Wave Data (r1)
+[TXT] 46225.swr2              29-Sep-2013 18:32  887K  Spectral Wave Data (r2)
+[TXT] 46225.txt               29-Sep-2013 18:33  195K  Standard Meteorological Data
+[TXT] 46229.data_spec         29-Sep-2013 18:13  1.0M  Raw Spectral Wave Data
+[TXT] 46229.spec              29-Sep-2013 18:13  149K  Spectral Wave Summary Data
+[TXT] 46229.swdir             29-Sep-2013 18:13  969K  Spectral Wave Data (alpha1)
+[TXT] 46229.swdir2            29-Sep-2013 18:13  968K  Spectral Wave Data (alpha2)
+[TXT] 46229.swr1              29-Sep-2013 18:13  910K  Spectral Wave Data (r1)
+[TXT] 46229.swr2              29-Sep-2013 18:13  910K  Spectral Wave Data (r2)
+[TXT] 46229.txt               29-Sep-2013 18:13  200K  Standard Meteorological Data
+[TXT] 46232.data_spec         29-Sep-2013 18:13  1.0M  Raw Spectral Wave Data
+[TXT] 46232.spec              29-Sep-2013 18:13  148K  Spectral Wave Summary Data
+[TXT] 46232.swdir             29-Sep-2013 18:13  1.0M  Spectral Wave Data (alpha1)
+[TXT] 46232.swdir2            29-Sep-2013 18:13  1.0M  Spectral Wave Data (alpha2)
+[TXT] 46232.swr1              29-Sep-2013 18:13  911K  Spectral Wave Data (r1)
+[TXT] 46232.swr2              29-Sep-2013 18:13  911K  Spectral Wave Data (r2)
+[TXT] 46232.txt               29-Sep-2013 18:13  199K  Standard Meteorological Data
+[TXT] 46236.data_spec         29-Sep-2013 18:13  1.0M  Raw Spectral Wave Data
+[TXT] 46236.spec              29-Sep-2013 18:13  149K  Spectral Wave Summary Data
+[TXT] 46236.swdir             29-Sep-2013 18:13  1.0M  Spectral Wave Data (alpha1)
+[TXT] 46236.swdir2            29-Sep-2013 18:13  1.0M  Spectral Wave Data (alpha2)
+[TXT] 46236.swr1              29-Sep-2013 18:13  909K  Spectral Wave Data (r1)
+[TXT] 46236.swr2              29-Sep-2013 18:13  909K  Spectral Wave Data (r2)
+[TXT] 46236.txt               29-Sep-2013 18:13  200K  Standard Meteorological Data
+[TXT] 46237.data_spec         29-Sep-2013 18:13  1.0M  Raw Spectral Wave Data
+[TXT] 46237.spec              29-Sep-2013 18:13  150K  Spectral Wave Summary Data
+[TXT] 46237.swdir             29-Sep-2013 18:13  1.0M  Spectral Wave Data (alpha1)
+[TXT] 46237.swdir2            29-Sep-2013 18:13  1.0M  Spectral Wave Data (alpha2)
+[TXT] 46237.swr1              29-Sep-2013 18:13  911K  Spectral Wave Data (r1)
+[TXT] 46237.swr2              29-Sep-2013 18:13  912K  Spectral Wave Data (r2)
+[TXT] 46237.txt               29-Sep-2013 18:13  201K  Standard Meteorological Data
+[TXT] 46238.txt               13-Sep-2013 12:31  199K  Standard Meteorological Data
+[TXT] 46239.data_spec         29-Sep-2013 18:32  1.0M  Raw Spectral Wave Data
+[TXT] 46239.spec              29-Sep-2013 18:32  148K  Spectral Wave Summary Data
+[TXT] 46239.swdir             29-Sep-2013 18:32  1.0M  Spectral Wave Data (alpha1)
+[TXT] 46239.swdir2            29-Sep-2013 18:32  966K  Spectral Wave Data (alpha2)
+[TXT] 46239.swr1              29-Sep-2013 18:32  908K  Spectral Wave Data (r1)
+[TXT] 46239.swr2              29-Sep-2013 18:32  908K  Spectral Wave Data (r2)
+[TXT] 46239.txt               29-Sep-2013 18:37  199K  Standard Meteorological Data
+[TXT] 46240.data_spec         29-Sep-2013 18:13  1.0M  Raw Spectral Wave Data
+[TXT] 46240.spec              29-Sep-2013 18:13  148K  Spectral Wave Summary Data
+[TXT] 46240.swdir             29-Sep-2013 18:13  937K  Spectral Wave Data (alpha1)
+[TXT] 46240.swdir2            29-Sep-2013 18:13  944K  Spectral Wave Data (alpha2)
+[TXT] 46240.swr1              29-Sep-2013 18:13  886K  Spectral Wave Data (r1)
+[TXT] 46240.swr2              29-Sep-2013 18:13  886K  Spectral Wave Data (r2)
+[TXT] 46240.txt               29-Sep-2013 18:13  199K  Standard Meteorological Data
+[TXT] 46242.data_spec         29-Sep-2013 18:13  1.0M  Raw Spectral Wave Data
+[TXT] 46242.spec              29-Sep-2013 18:13  149K  Spectral Wave Summary Data
+[TXT] 46242.swdir             29-Sep-2013 18:13  1.0M  Spectral Wave Data (alpha1)
+[TXT] 46242.swdir2            29-Sep-2013 18:13  1.0M  Spectral Wave Data (alpha2)
+[TXT] 46242.swr1              29-Sep-2013 18:13  908K  Spectral Wave Data (r1)
+[TXT] 46242.swr2              29-Sep-2013 18:13  907K  Spectral Wave Data (r2)
+[TXT] 46242.txt               29-Sep-2013 18:13  200K  Standard Meteorological Data
+[TXT] 46243.data_spec         29-Sep-2013 18:32  1.0M  Raw Spectral Wave Data
+[TXT] 46243.spec              29-Sep-2013 18:32  149K  Spectral Wave Summary Data
+[TXT] 46243.swdir             29-Sep-2013 18:32  1.0M  Spectral Wave Data (alpha1)
+[TXT] 46243.swdir2            29-Sep-2013 18:32  972K  Spectral Wave Data (alpha2)
+[TXT] 46243.swr1              29-Sep-2013 18:32  909K  Spectral Wave Data (r1)
+[TXT] 46243.swr2              29-Sep-2013 18:32  909K  Spectral Wave Data (r2)
+[TXT] 46243.txt               29-Sep-2013 18:33  200K  Standard Meteorological Data
+[TXT] 46244.data_spec         29-Sep-2013 18:13  887K  Raw Spectral Wave Data
+[TXT] 46244.spec              29-Sep-2013 18:13  133K  Spectral Wave Summary Data
+[TXT] 46244.swdir             29-Sep-2013 18:13  874K  Spectral Wave Data (alpha1)
+[TXT] 46244.swdir2            29-Sep-2013 18:13  871K  Spectral Wave Data (alpha2)
+[TXT] 46244.swr1              29-Sep-2013 18:13  818K  Spectral Wave Data (r1)
+[TXT] 46244.swr2              29-Sep-2013 18:13  818K  Spectral Wave Data (r2)
+[TXT] 46244.txt               29-Sep-2013 18:13  179K  Standard Meteorological Data
+[TXT] 46246.data_spec         29-Sep-2013 13:33  166K  Raw Spectral Wave Data
+[TXT] 46246.spec              29-Sep-2013 13:33   25K  Spectral Wave Summary Data
+[TXT] 46246.swdir             29-Sep-2013 13:33  164K  Spectral Wave Data (alpha1)
+[TXT] 46246.swdir2            29-Sep-2013 13:33  163K  Spectral Wave Data (alpha2)
+[TXT] 46246.swr1              29-Sep-2013 13:33  153K  Spectral Wave Data (r1)
+[TXT] 46246.swr2              29-Sep-2013 13:33  153K  Spectral Wave Data (r2)
+[TXT] 46246.txt               29-Sep-2013 13:33   34K  Standard Meteorological Data
+[TXT] 46248.data_spec         29-Sep-2013 18:32  1.0M  Raw Spectral Wave Data
+[TXT] 46248.spec              29-Sep-2013 18:32  149K  Spectral Wave Summary Data
+[TXT] 46248.swdir             29-Sep-2013 18:32  972K  Spectral Wave Data (alpha1)
+[TXT] 46248.swdir2            29-Sep-2013 18:32  971K  Spectral Wave Data (alpha2)
+[TXT] 46248.swr1              29-Sep-2013 18:32  909K  Spectral Wave Data (r1)
+[TXT] 46248.swr2              29-Sep-2013 18:32  909K  Spectral Wave Data (r2)
+[TXT] 46248.txt               29-Sep-2013 18:33  200K  Standard Meteorological Data
+[TXT] 46251.data_spec         29-Sep-2013 18:32  347K  Raw Spectral Wave Data
+[TXT] 46251.spec              29-Sep-2013 18:32   52K  Spectral Wave Summary Data
+[TXT] 46251.swdir             29-Sep-2013 18:32  344K  Spectral Wave Data (alpha1)
+[TXT] 46251.swdir2            29-Sep-2013 18:32  344K  Spectral Wave Data (alpha2)
+[TXT] 46251.swr1              29-Sep-2013 18:32  320K  Spectral Wave Data (r1)
+[TXT] 46251.swr2              29-Sep-2013 18:32  320K  Spectral Wave Data (r2)
+[TXT] 46251.txt               29-Sep-2013 18:33   70K  Standard Meteorological Data
+[TXT] 46401.dart              07-Dec-2005 01:21  125K  Water Column Height (DART) Data
+[TXT] 46402.dart              29-Sep-2013 13:26  141K  Water Column Height (DART) Data
+[   ] 46402.dartd             02-Jan-2007 18:26  3.9K  Water Column Height (DART) Data
+[TXT] 46403.dart              29-Sep-2013 13:26  140K  Water Column Height (DART) Data
+[   ] 46403.dartd             10-Apr-2007 07:46  169K  Water Column Height (DART) Data
+[TXT] 46404.dart              29-Sep-2013 13:26  132K  Water Column Height (DART) Data
+[   ] 46404.dartd             10-Apr-2007 13:37  170K  Water Column Height (DART) Data
+[TXT] 46405.dart              27-Sep-2007 14:45  120K  Water Column Height (DART) Data
+[   ] 46405.dartd             10-Apr-2007 13:37  171K  Water Column Height (DART) Data
+[TXT] 46406.dart              01-Sep-2006 15:39  133K  Water Column Height (DART) Data
+[   ] 46406.dartd             08-Aug-2006 10:31  1.6K  Water Column Height (DART) Data
+[   ] 46406.dartx             08-Aug-2006 10:31  1.6K  Water Column Height (DART) Data
+[TXT] 46407.dart              29-Sep-2013 13:26  132K  Water Column Height (DART) Data
+[TXT] 46408.dart              29-Sep-2013 13:26  216K  Water Column Height (DART) Data
+[TXT] 46409.dart              29-Sep-2013 13:26  132K  Water Column Height (DART) Data
+[TXT] 46410.dart              29-Sep-2013 13:26  132K  Water Column Height (DART) Data
+[TXT] 46411.dart              29-Sep-2013 13:26  127K  Water Column Height (DART) Data
+[TXT] 46412.dart              06-Sep-2013 01:29  130K  Water Column Height (DART) Data
+[TXT] 46413.dart              10-Aug-2013 19:13  122K  Water Column Height (DART) Data
+[TXT] 46419.dart              29-Sep-2013 13:26  141K  Water Column Height (DART) Data
+[TXT] 46482.dart              07-Aug-2007 13:32  142K  Water Column Height (DART) Data
+[TXT] 46499.dart              13-Mar-2008 13:31  3.0K  Water Column Height (DART) Data
+[TXT] 48012.txt               29-Sep-2013 18:36  770K  Standard Meteorological Data
+[TXT] 48211.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] 48212.txt               29-Sep-2013 18:36  803K  Standard Meteorological Data
+[TXT] 48213.srad              29-Sep-2013 18:36  616K  Solar Radiation Data
+[TXT] 48213.txt               29-Sep-2013 18:41  1.5M  Standard Meteorological Data
+[TXT] 48214.srad              29-Sep-2013 18:36  613K  Solar Radiation Data
+[TXT] 48214.txt               29-Sep-2013 18:41  1.5M  Standard Meteorological Data
+[TXT] 48400.drift             29-Sep-2013 18:22  6.9K  Standard Meteorological Data for Drifting Buoys
+[TXT] 48911.ocean             29-Sep-2013 13:37   39K  Oceanographic Data
+[TXT] 51000.cwind             29-Sep-2013 18:12  257K  Continuous Winds Data
+[TXT] 51000.data_spec         29-Sep-2013 18:13  713K  Raw Spectral Wave Data
+[TXT] 51000.spec              29-Sep-2013 18:13   75K  Spectral Wave Summary Data
+[TXT] 51000.txt               29-Sep-2013 18:13  101K  Standard Meteorological Data
+[TXT] 51003.cwind             29-Sep-2013 18:18  258K  Continuous Winds Data
+[TXT] 51003.data_spec         29-Sep-2013 18:18  718K  Raw Spectral Wave Data
+[TXT] 51003.spec              29-Sep-2013 18:13   75K  Spectral Wave Summary Data
+[TXT] 51003.txt               29-Sep-2013 18:18  101K  Standard Meteorological Data
+[TXT] 51004.cwind             29-Sep-2013 18:12  257K  Continuous Winds Data
+[TXT] 51004.data_spec         29-Sep-2013 18:13  714K  Raw Spectral Wave Data
+[TXT] 51004.spec              29-Sep-2013 18:06   75K  Spectral Wave Summary Data
+[TXT] 51004.swdir             29-Sep-2013 18:13  678K  Spectral Wave Data (alpha1)
+[TXT] 51004.swdir2            29-Sep-2013 18:13  681K  Spectral Wave Data (alpha2)
+[TXT] 51004.swr1              29-Sep-2013 18:13  677K  Spectral Wave Data (r1)
+[TXT] 51004.swr2              29-Sep-2013 18:13  677K  Spectral Wave Data (r2)
+[TXT] 51004.txt               29-Sep-2013 18:13  101K  Standard Meteorological Data
+[TXT] 51100.cwind             29-Sep-2013 17:12  177K  Continuous Winds Data
+[TXT] 51100.data_spec         29-Sep-2013 16:13  237K  Raw Spectral Wave Data
+[TXT] 51100.spec              29-Sep-2013 16:08   25K  Spectral Wave Summary Data
+[TXT] 51100.swdir             29-Sep-2013 16:14  227K  Spectral Wave Data (alpha1)
+[TXT] 51100.swdir2            29-Sep-2013 16:14  229K  Spectral Wave Data (alpha2)
+[TXT] 51100.swr1              29-Sep-2013 16:14  226K  Spectral Wave Data (r1)
+[TXT] 51100.swr2              29-Sep-2013 16:14  226K  Spectral Wave Data (r2)
+[TXT] 51100.txt               29-Sep-2013 18:13   95K  Standard Meteorological Data
+[TXT] 51101.cwind             29-Sep-2013 18:13  258K  Continuous Winds Data
+[TXT] 51101.data_spec         29-Sep-2013 18:13  719K  Raw Spectral Wave Data
+[TXT] 51101.spec              29-Sep-2013 18:06   75K  Spectral Wave Summary Data
+[TXT] 51101.swdir             29-Sep-2013 18:13  694K  Spectral Wave Data (alpha1)
+[TXT] 51101.swdir2            29-Sep-2013 18:13  696K  Spectral Wave Data (alpha2)
+[TXT] 51101.swr1              29-Sep-2013 18:13  684K  Spectral Wave Data (r1)
+[TXT] 51101.swr2              29-Sep-2013 18:13  684K  Spectral Wave Data (r2)
+[TXT] 51101.txt               29-Sep-2013 18:13  101K  Standard Meteorological Data
+[TXT] 51201.data_spec         29-Sep-2013 18:13  1.0M  Raw Spectral Wave Data
+[TXT] 51201.spec              29-Sep-2013 18:13  149K  Spectral Wave Summary Data
+[TXT] 51201.swdir             29-Sep-2013 18:13  917K  Spectral Wave Data (alpha1)
+[TXT] 51201.swdir2            29-Sep-2013 18:13  917K  Spectral Wave Data (alpha2)
+[TXT] 51201.swr1              29-Sep-2013 18:13  909K  Spectral Wave Data (r1)
+[TXT] 51201.swr2              29-Sep-2013 18:13  909K  Spectral Wave Data (r2)
+[TXT] 51201.txt               29-Sep-2013 18:13  200K  Standard Meteorological Data
+[TXT] 51202.data_spec         17-Sep-2013 15:02  1.0M  Raw Spectral Wave Data
+[TXT] 51202.spec              17-Sep-2013 15:02  149K  Spectral Wave Summary Data
+[TXT] 51202.swdir             17-Sep-2013 15:02  918K  Spectral Wave Data (alpha1)
+[TXT] 51202.swdir2            17-Sep-2013 15:02  925K  Spectral Wave Data (alpha2)
+[TXT] 51202.swr1              17-Sep-2013 15:02  910K  Spectral Wave Data (r1)
+[TXT] 51202.swr2              17-Sep-2013 15:03  910K  Spectral Wave Data (r2)
+[TXT] 51202.txt               17-Sep-2013 15:09  200K  Standard Meteorological Data
+[TXT] 51203.txt               29-Sep-2013 18:36  165K  Standard Meteorological Data
+[TXT] 51204.data_spec         29-Sep-2013 18:32  1.0M  Raw Spectral Wave Data
+[TXT] 51204.spec              29-Sep-2013 18:32  146K  Spectral Wave Summary Data
+[TXT] 51204.swdir             29-Sep-2013 18:32  967K  Spectral Wave Data (alpha1)
+[TXT] 51204.swdir2            29-Sep-2013 18:32  967K  Spectral Wave Data (alpha2)
+[TXT] 51204.swr1              29-Sep-2013 18:32  907K  Spectral Wave Data (r1)
+[TXT] 51204.swr2              29-Sep-2013 18:32  907K  Spectral Wave Data (r2)
+[TXT] 51204.txt               29-Sep-2013 18:37  196K  Standard Meteorological Data
+[TXT] 51205.data_spec         29-Sep-2013 18:13  1.0M  Raw Spectral Wave Data
+[TXT] 51205.spec              29-Sep-2013 18:13  148K  Spectral Wave Summary Data
+[TXT] 51205.swdir             29-Sep-2013 18:13  915K  Spectral Wave Data (alpha1)
+[TXT] 51205.swdir2            29-Sep-2013 18:13  923K  Spectral Wave Data (alpha2)
+[TXT] 51205.swr1              29-Sep-2013 18:13  909K  Spectral Wave Data (r1)
+[TXT] 51205.swr2              29-Sep-2013 18:13  909K  Spectral Wave Data (r2)
+[TXT] 51205.txt               29-Sep-2013 18:13  200K  Standard Meteorological Data
+[TXT] 51206.data_spec         29-Sep-2013 18:32  1.0M  Raw Spectral Wave Data
+[TXT] 51206.spec              29-Sep-2013 18:32  148K  Spectral Wave Summary Data
+[TXT] 51206.swdir             29-Sep-2013 18:32  932K  Spectral Wave Data (alpha1)
+[TXT] 51206.swdir2            29-Sep-2013 18:32  937K  Spectral Wave Data (alpha2)
+[TXT] 51206.swr1              29-Sep-2013 18:32  909K  Spectral Wave Data (r1)
+[TXT] 51206.swr2              29-Sep-2013 18:32  909K  Spectral Wave Data (r2)
+[TXT] 51206.txt               29-Sep-2013 18:37  199K  Standard Meteorological Data
+[TXT] 51207.data_spec         29-Sep-2013 18:32  1.0M  Raw Spectral Wave Data
+[TXT] 51207.spec              29-Sep-2013 18:32  148K  Spectral Wave Summary Data
+[TXT] 51207.swdir             29-Sep-2013 18:32  911K  Spectral Wave Data (alpha1)
+[TXT] 51207.swdir2            29-Sep-2013 18:32  915K  Spectral Wave Data (alpha2)
+[TXT] 51207.swr1              29-Sep-2013 18:32  909K  Spectral Wave Data (r1)
+[TXT] 51207.swr2              29-Sep-2013 18:33  909K  Spectral Wave Data (r2)
+[TXT] 51207.txt               29-Sep-2013 18:37  199K  Standard Meteorological Data
+[TXT] 51406.dart              21-Feb-2013 07:23  128K  Water Column Height (DART) Data
+[TXT] 51407.dart              29-Sep-2013 13:26  131K  Water Column Height (DART) Data
+[TXT] 51407.dart.bak          24-Jun-2010 13:26   48K  Water Column Height (DART) Data
+[TXT] 51425.dart              29-Sep-2013 13:26  130K  Water Column Height (DART) Data
+[TXT] 51426.dart              29-Sep-2013 13:26   68K  Water Column Height (DART) Data
+[TXT] 52200.data_spec         29-Sep-2013 18:13  1.0M  Raw Spectral Wave Data
+[TXT] 52200.spec              29-Sep-2013 18:13  148K  Spectral Wave Summary Data
+[TXT] 52200.swdir             29-Sep-2013 18:13  954K  Spectral Wave Data (alpha1)
+[TXT] 52200.swdir2            29-Sep-2013 18:13  951K  Spectral Wave Data (alpha2)
+[TXT] 52200.swr1              29-Sep-2013 18:13  910K  Spectral Wave Data (r1)
+[TXT] 52200.swr2              29-Sep-2013 18:13  910K  Spectral Wave Data (r2)
+[TXT] 52200.txt               29-Sep-2013 18:13  199K  Standard Meteorological Data
+[TXT] 52202.data_spec         29-Sep-2013 18:13  1.0M  Raw Spectral Wave Data
+[TXT] 52202.spec              29-Sep-2013 18:13  147K  Spectral Wave Summary Data
+[TXT] 52202.swdir             29-Sep-2013 18:13  951K  Spectral Wave Data (alpha1)
+[TXT] 52202.swdir2            29-Sep-2013 18:13  950K  Spectral Wave Data (alpha2)
+[TXT] 52202.swr1              29-Sep-2013 18:13  909K  Spectral Wave Data (r1)
+[TXT] 52202.swr2              29-Sep-2013 18:13  909K  Spectral Wave Data (r2)
+[TXT] 52202.txt               29-Sep-2013 18:13  197K  Standard Meteorological Data
+[TXT] 52211.data_spec         29-Sep-2013 18:32  1.0M  Raw Spectral Wave Data
+[TXT] 52211.spec              29-Sep-2013 18:32  149K  Spectral Wave Summary Data
+[TXT] 52211.swdir             29-Sep-2013 18:32  947K  Spectral Wave Data (alpha1)
+[TXT] 52211.swdir2            29-Sep-2013 18:32  945K  Spectral Wave Data (alpha2)
+[TXT] 52211.swr1              29-Sep-2013 18:32  908K  Spectral Wave Data (r1)
+[TXT] 52211.swr2              29-Sep-2013 18:33  908K  Spectral Wave Data (r2)
+[TXT] 52211.txt               29-Sep-2013 18:37  200K  Standard Meteorological Data
+[TXT] 52401.dart              29-Sep-2013 13:22  132K  Water Column Height (DART) Data
+[TXT] 52402.dart              29-Sep-2013 13:26  132K  Water Column Height (DART) Data
+[TXT] 52403.dart              29-Sep-2013 13:26  132K  Water Column Height (DART) Data
+[TXT] 52404.dart              27-Sep-2013 01:28  131K  Water Column Height (DART) Data
+[TXT] 52405.dart              29-Sep-2013 13:26  132K  Water Column Height (DART) Data
+[TXT] 52406.dart              29-Sep-2013 13:26  160K  Water Column Height (DART) Data
+[TXT] 52843.drift             29-Sep-2013 18:41   73K  Standard Meteorological Data for Drifting Buoys
+[TXT] 53046.dart              07-Jul-2013 05:47   81K  Water Column Height (DART) Data
+[TXT] 53401.dart              13-Mar-2008 19:43  149K  Water Column Height (DART) Data
+[TXT] 54401.dart              17-Sep-2013 17:48   43K  Water Column Height (DART) Data
+[TXT] 55012.dart              29-Sep-2013 13:43  132K  Water Column Height (DART) Data
+[TXT] 55013.dart              02-May-2013 01:33   85K  Water Column Height (DART) Data
+[TXT] 55015.dart              29-Sep-2013 13:43  133K  Water Column Height (DART) Data
+[TXT] 55016.dart              04-Jan-2011 00:16  138K  Water Column Height (DART) Data
+[TXT] 55023.dart              13-Jul-2013 01:44  129K  Water Column Height (DART) Data
+[TXT] 55042.dart              29-Sep-2013 13:43  105K  Water Column Height (DART) Data
+[TXT] 55401.dart              23-Mar-2008 01:31  131K  Water Column Height (DART) Data
+[TXT] 56001.dart              29-Sep-2013 13:43  150K  Water Column Height (DART) Data
+[TXT] 56003.dart              29-Sep-2013 13:43  131K  Water Column Height (DART) Data
+[TXT] 58901.ocean             29-Sep-2013 13:06   37K  Oceanographic Data
+[TXT] 58903.ocean             29-Aug-2013 19:08   40K  Oceanographic Data
+[TXT] 61001.txt               29-Sep-2013 16:36  940   Standard Meteorological Data
+[TXT] 61002.txt               29-Sep-2013 16:26  940   Standard Meteorological Data
+[TXT] 62001.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62027.spec              29-Sep-2013 16:37   25K  Spectral Wave Summary Data
+[TXT] 62027.txt               29-Sep-2013 16:38   34K  Standard Meteorological Data
+[TXT] 62029.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62081.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62095.txt               29-Sep-2013 18:36  1.9K  Standard Meteorological Data
+[TXT] 62103.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62105.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62107.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62114.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62121.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62127.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62142.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62144.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62145.txt               19-Sep-2013 06:36  376   Standard Meteorological Data
+[TXT] 62146.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62148.txt               14-Sep-2013 07:36  2.3K  Standard Meteorological Data
+[TXT] 62149.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62150.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62163.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62164.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62165.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62301.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62303.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62304.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 62305.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 63105.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 63110.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 63112.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 63113.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 63117.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 64045.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 64046.txt               29-Sep-2013 18:36  2.4K  Standard Meteorological Data
+[TXT] 97001.drift             29-Sep-2013 17:57   74K  Standard Meteorological Data for Drifting Buoys
+[TXT] AAMC1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] ACFS1.ocean             29-Sep-2013 17:57  342K  Oceanographic Data
+[TXT] ACQS1.ocean             29-Sep-2013 18:26  334K  Oceanographic Data
+[TXT] ACXS1.txt               29-Sep-2013 18:26  385K  Standard Meteorological Data
+[TXT] ACYN4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] ADKA2.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] AGCM4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] AGMW3.txt               29-Sep-2013 18:36  176K  Standard Meteorological Data
+[TXT] ALIA2.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] ALXN6.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] AMAA2.cwind             29-Sep-2013 18:41  259K  Continuous Winds Data
+[TXT] AMAA2.txt               29-Sep-2013 18:41  203K  Standard Meteorological Data
+[TXT] AMRL1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] ANMN6.txt               29-Sep-2013 17:56  398K  Standard Meteorological Data
+[TXT] ANRN6.ocean             13-Sep-2013 12:56  2.7K  Oceanographic Data
+[TXT] ANTA2.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] ANVC1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] APAM2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] APCF1.txt               29-Sep-2013 18:31  932K  Standard Meteorological Data
+[TXT] APNM4.txt               29-Sep-2013 18:41  371K  Standard Meteorological Data
+[TXT] APRP7.txt               29-Sep-2013 18:36  947K  Standard Meteorological Data
+[TXT] APXF1.txt               29-Sep-2013 18:26  400K  Standard Meteorological Data
+[TXT] AROP4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] ARPF1.txt               29-Sep-2013 18:01  750K  Standard Meteorological Data
+[TXT] ASTO3.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] ATGM1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] ATKA2.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] AUGA2.cwind             29-Sep-2013 18:41  259K  Continuous Winds Data
+[TXT] AUGA2.txt               29-Sep-2013 18:41  203K  Standard Meteorological Data
+[TXT] BABT2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] BARA9.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] BARN6.txt               29-Sep-2013 18:16  589K  Standard Meteorological Data
+[TXT] BATN6.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] BDRN4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] BDVF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] BDVF1.rain              29-Sep-2013 17:37   24K  Hourly Rain Data
+[TXT] BDVF1.txt               29-Sep-2013 17:36   96K  Standard Meteorological Data
+[TXT] BEPB6.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] BFTN7.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] BGCF1.txt               29-Sep-2013 18:01  1.0M  Standard Meteorological Data
+[TXT] BGNN4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] BGXN3.txt               29-Sep-2013 18:26  399K  Standard Meteorological Data
+[TXT] BHBM3.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] BHRI3.txt               29-Sep-2013 17:56  504K  Standard Meteorological Data
+[TXT] BIGM4.txt               29-Sep-2013 17:56  609K  Standard Meteorological Data
+[TXT] BISM2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] BKTL1.txt               29-Sep-2013 01:56  1.0M  Standard Meteorological Data
+[TXT] BLIA2.cwind             29-Sep-2013 18:41  259K  Continuous Winds Data
+[TXT] BLIA2.txt               29-Sep-2013 18:41  203K  Standard Meteorological Data
+[TXT] BLTA2.txt               29-Sep-2013 18:36   88K  Standard Meteorological Data
+[TXT] BLTM2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] BLTM3.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] BNKF1.ocean             29-Sep-2013 17:37   70K  Oceanographic Data
+[TXT] BNKF1.rain              29-Sep-2013 17:37   21K  Hourly Rain Data
+[TXT] BNKF1.txt               29-Sep-2013 17:36   80K  Standard Meteorological Data
+[TXT] BOBF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] BOBF1.rain              29-Sep-2013 17:37   25K  Hourly Rain Data
+[TXT] BOBF1.txt               29-Sep-2013 17:36   96K  Standard Meteorological Data
+[TXT] BRHC3.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] BRIM2.ocean             29-Sep-2013 17:57  345K  Oceanographic Data
+[TXT] BSBM4.txt               29-Sep-2013 17:56  610K  Standard Meteorological Data
+[TXT] BSCA1.ocean             29-Sep-2013 18:12  174K  Oceanographic Data
+[TXT] BSCA1.srad              29-Sep-2013 18:12   72K  Solar Radiation Data
+[TXT] BSCA1.txt               29-Sep-2013 18:11  201K  Standard Meteorological Data
+[TXT] BSLM2.txt               29-Sep-2013 18:26  394K  Standard Meteorological Data
+[TXT] BTHD1.data_spec         29-Sep-2013 18:32  520K  Raw Spectral Wave Data
+[TXT] BTHD1.spec              29-Sep-2013 18:32   62K  Spectral Wave Summary Data
+[TXT] BTHD1.swdir             29-Sep-2013 18:32  494K  Spectral Wave Data (alpha1)
+[TXT] BTHD1.swdir2            29-Sep-2013 18:32  493K  Spectral Wave Data (alpha2)
+[TXT] BTHD1.swr1              29-Sep-2013 18:32  482K  Spectral Wave Data (r1)
+[TXT] BTHD1.swr2              29-Sep-2013 18:33  479K  Spectral Wave Data (r2)
+[TXT] BTHD1.txt               29-Sep-2013 18:37   84K  Standard Meteorological Data
+[TXT] BUFN6.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] BURL1.cwind             29-Sep-2013 18:18  258K  Continuous Winds Data
+[TXT] BURL1.txt               29-Sep-2013 18:16  101K  Standard Meteorological Data
+[TXT] BUZM3.cwind             29-Sep-2013 18:18  259K  Continuous Winds Data
+[TXT] BUZM3.txt               29-Sep-2013 18:16  102K  Standard Meteorological Data
+[TXT] BVQW1.ocean             29-Sep-2013 18:26  344K  Oceanographic Data
+[TXT] BWSF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] BWSF1.rain              29-Sep-2013 17:37   24K  Hourly Rain Data
+[TXT] BWSF1.txt               29-Sep-2013 17:36   96K  Standard Meteorological Data
+[TXT] BYGL1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] BZBM3.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] C58W3.txt               29-Sep-2013 13:11   20K  Standard Meteorological Data
+[TXT] CAMF1.ocean             18-Aug-2013 04:43  243   Oceanographic Data
+[TXT] CAMF1.txt               29-Sep-2013 17:46  960K  Standard Meteorological Data
+[TXT] CAMM2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] CANF1.rain              29-Sep-2013 17:37   24K  Hourly Rain Data
+[TXT] CANF1.txt               29-Sep-2013 17:36   95K  Standard Meteorological Data
+[TXT] CAPL1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] CARL1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] CASM1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] CBBV2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] CBLO1.txt               25-Sep-2013 11:21  255K  Standard Meteorological Data
+[TXT] CBRW3.txt               29-Sep-2013 17:56  607K  Standard Meteorological Data
+[TXT] CDEA2.txt               29-Sep-2013 18:36   89K  Standard Meteorological Data
+[TXT] CDRF1.cwind             29-Sep-2013 18:18  258K  Continuous Winds Data
+[TXT] CDRF1.txt               29-Sep-2013 18:16  101K  Standard Meteorological Data
+[TXT] CECC1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] CFWM1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] CGCL1.txt               29-Sep-2013 17:46  100K  Standard Meteorological Data
+[TXT] CHAO3.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] CHAV3.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] CHCM2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] CHDS1.txt               29-Sep-2013 17:56  607K  Standard Meteorological Data
+[TXT] CHII2.txt               29-Sep-2013 18:41  378K  Standard Meteorological Data
+[TXT] CHLV2.cwind             15-Aug-2013 13:16  257K  Continuous Winds Data
+[TXT] CHLV2.txt               15-Aug-2013 13:16  101K  Standard Meteorological Data
+[TXT] CHNO3.txt               29-Sep-2013 17:56  398K  Standard Meteorological Data
+[TXT] CHQO3.ocean             29-Sep-2013 17:57  344K  Oceanographic Data
+[TXT] CHSV3.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] CHTS1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] CHYV2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] CHYW1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] CLKN7.cwind             29-Sep-2013 18:18  259K  Continuous Winds Data
+[TXT] CLKN7.txt               29-Sep-2013 18:16  102K  Standard Meteorological Data
+[TXT] CLSM4.txt               29-Sep-2013 18:11  607K  Standard Meteorological Data
+[TXT] CMAN4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] CMTI2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] CNBF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] CNBF1.rain              29-Sep-2013 17:37   25K  Hourly Rain Data
+[TXT] CNBF1.txt               29-Sep-2013 17:36   96K  Standard Meteorological Data
+[TXT] CNDO1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] CNII2.txt               29-Sep-2013 18:41  404K  Standard Meteorological Data
+[TXT] COVM2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] CPNT2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] CPTR1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] CPXC1.txt               29-Sep-2013 18:41  635K  Standard Meteorological Data
+[TXT] CRTA1.ocean             29-Sep-2013 18:32  171K  Oceanographic Data
+[TXT] CRTA1.srad              29-Sep-2013 18:32   70K  Solar Radiation Data
+[TXT] CRTA1.txt               29-Sep-2013 18:36  198K  Standard Meteorological Data
+[TXT] CRVA2.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] CRYV2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] CSPA2.txt               29-Sep-2013 18:26   73K  Standard Meteorological Data
+[TXT] CVQV2.ocean             29-Sep-2013 18:26  345K  Oceanographic Data
+[TXT] CWAF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] CWAF1.txt               29-Sep-2013 17:36   96K  Standard Meteorological Data
+[TXT] CWBF1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] CWQO3.ocean             29-Sep-2013 17:57  344K  Oceanographic Data
+[TXT] CYGM4.txt               29-Sep-2013 05:11   20K  Standard Meteorological Data
+[TXT] DARTH.dart              18-May-2009 07:22  131K  Water Column Height (DART) Data
+[TXT] DARTI.dart              18-May-2009 07:26  131K  Water Column Height (DART) Data
+[TXT] DARTJ.dart              10-Dec-2008 06:26  191K  Water Column Height (DART) Data
+[TXT] DARTK.dart              16-Dec-2008 00:26   15K  Water Column Height (DART) Data
+[TXT] DARTL.dart              24-Oct-2006 14:09   35K  Water Column Height (DART) Data
+[TXT] DARTM.dart              24-Oct-2006 13:45   36K  Water Column Height (DART) Data
+[TXT] DARTN.dart              07-Feb-2007 06:35  141K  Water Column Height (DART) Data
+[TXT] DARTO.dart              07-Feb-2007 06:35  141K  Water Column Height (DART) Data
+[TXT] DARTP.dart              29-Sep-2013 13:22  131K  Water Column Height (DART) Data
+[TXT] DARTQ.dart              29-Sep-2013 13:26  131K  Water Column Height (DART) Data
+[TXT] DARTR.dart              09-Feb-2012 10:36   12K  Water Column Height (DART) Data
+[TXT] DARTS.dart              10-May-2011 13:27   49K  Water Column Height (DART) Data
+[TXT] DARTT.dart              09-Feb-2012 10:36  8.1K  Water Column Height (DART) Data
+[TXT] DARTU.dart              03-Jun-2011 07:31  124K  Water Column Height (DART) Data
+[TXT] DBLN6.cwind             29-Sep-2013 18:13  259K  Continuous Winds Data
+[TXT] DBLN6.txt               29-Sep-2013 18:11  102K  Standard Meteorological Data
+[TXT] DBQS1.ocean             29-Sep-2013 18:26   85K  Oceanographic Data
+[TXT] DELD1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] DESW1.cwind             29-Sep-2013 18:13  258K  Continuous Winds Data
+[TXT] DESW1.txt               29-Sep-2013 18:11  101K  Standard Meteorological Data
+[TXT] DISW3.cwind             29-Sep-2013 18:13  258K  Continuous Winds Data
+[TXT] DISW3.txt               29-Sep-2013 18:11  102K  Standard Meteorological Data
+[TXT] DKCM6.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] DKKF1.ocean             29-Sep-2013 17:37   80K  Oceanographic Data
+[TXT] DKKF1.rain              29-Sep-2013 17:37   24K  Hourly Rain Data
+[TXT] DKKF1.txt               29-Sep-2013 17:36   92K  Standard Meteorological Data
+[TXT] DOMV2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] DPHA1.ocean             29-Sep-2013 18:26  166K  Oceanographic Data
+[TXT] DPHA1.srad              29-Sep-2013 18:26   71K  Solar Radiation Data
+[TXT] DPIA1.cwind             29-Sep-2013 18:18  258K  Continuous Winds Data
+[TXT] DPIA1.txt               29-Sep-2013 18:16  101K  Standard Meteorological Data
+[TXT] DPXC1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] DRFA2.cwind             29-Sep-2013 18:41  259K  Continuous Winds Data
+[TXT] DRFA2.txt               29-Sep-2013 18:41  203K  Standard Meteorological Data
+[TXT] DRSD1.txt               29-Sep-2013 16:56  363K  Standard Meteorological Data
+[TXT] DTLM4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] DUKN7.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] DULM5.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] EBSW1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] EGKF1.txt               29-Sep-2013 18:06  1.0M  Standard Meteorological Data
+[TXT] ELFA2.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] ELXC1.txt               29-Sep-2013 18:26  398K  Standard Meteorological Data
+[TXT] EPTT2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] ERKC1.ocean             29-Sep-2013 18:12  243   Oceanographic Data
+[TXT] EROA2.txt               29-Sep-2013 18:36   99K  Standard Meteorological Data
+[TXT] ESPP4.txt               05-Sep-2013 14:21  1.0M  Standard Meteorological Data
+[TXT] FAIO1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] FBIS1.cwind             29-Sep-2013 18:18  259K  Continuous Winds Data
+[TXT] FBIS1.txt               29-Sep-2013 18:16  102K  Standard Meteorological Data
+[TXT] FCGT2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] FFFC1.ocean             29-Sep-2013 17:57  344K  Oceanographic Data
+[TXT] FFIA2.cwind             29-Sep-2013 18:13  258K  Continuous Winds Data
+[TXT] FFIA2.txt               29-Sep-2013 18:11  101K  Standard Meteorological Data
+[TXT] FHPF1.txt               29-Sep-2013 17:56  1.0M  Standard Meteorological Data
+[TXT] FILA2.cwind             29-Sep-2013 18:41  259K  Continuous Winds Data
+[TXT] FILA2.txt               29-Sep-2013 18:41  203K  Standard Meteorological Data
+[TXT] FMOA1.txt               29-Sep-2013 18:31  905K  Standard Meteorological Data
+[TXT] FMRF1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] FOXR1.txt               29-Sep-2013 18:31  875K  Standard Meteorological Data
+[TXT] FPKG1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] FPTM4.txt               29-Sep-2013 17:56  609K  Standard Meteorological Data
+[TXT] FRDF1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] FRDP4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] FRDW1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] FRVM3.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] FRWL1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] FSKM2.txt               29-Sep-2013 18:31  972K  Standard Meteorological Data
+[TXT] FTGM4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] FTPC1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] FWYF1.cwind             29-Sep-2013 18:13  258K  Continuous Winds Data
+[TXT] FWYF1.txt               29-Sep-2013 18:11  101K  Standard Meteorological Data
+[TXT] GBIF1.ocean             29-Sep-2013 17:37   82K  Oceanographic Data
+[TXT] GBIF1.rain              29-Sep-2013 17:37   24K  Hourly Rain Data
+[TXT] GBIF1.txt               29-Sep-2013 17:36   95K  Standard Meteorological Data
+[TXT] GBQN3.ocean             29-Sep-2013 18:26  317K  Oceanographic Data
+[TXT] GBTF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] GBTF1.rain              29-Sep-2013 17:37   25K  Hourly Rain Data
+[TXT] GBTF1.txt               29-Sep-2013 17:36   96K  Standard Meteorological Data
+[TXT] GDMM5.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] GDQM6.ocean             29-Sep-2013 17:57  326K  Oceanographic Data
+[TXT] GDWV2.ocean             25-Sep-2013 15:56   10K  Oceanographic Data
+[TXT] GDXM6.txt               29-Sep-2013 18:26  389K  Standard Meteorological Data
+[TXT] GELO1.txt               29-Sep-2013 02:18   70K  Standard Meteorological Data
+[TXT] GGGC1.ocean             29-Sep-2013 17:57  343K  Oceanographic Data
+[TXT] GISL1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] GNJT2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] GPTW1.ocean             29-Sep-2013 16:07  639K  Oceanographic Data
+[TXT] GSLM4.txt               29-Sep-2013 18:11  687K  Standard Meteorological Data
+[TXT] GTLM4.txt               29-Sep-2013 17:56  630K  Standard Meteorological Data
+[TXT] GTOT2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] GTQF1.ocean             29-Sep-2013 18:26  345K  Oceanographic Data
+[TXT] GTRM4.txt               29-Sep-2013 18:11  607K  Standard Meteorological Data
+[TXT] GTXF1.txt               29-Sep-2013 18:26  399K  Standard Meteorological Data
+[TXT] HBYC1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] HCEF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] HCEF1.rain              29-Sep-2013 17:37   25K  Hourly Rain Data
+[TXT] HCEF1.txt               29-Sep-2013 17:36   96K  Standard Meteorological Data
+[TXT] HCGN7.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] HHLO1.txt               29-Sep-2013 18:21  592K  Standard Meteorological Data
+[TXT] HLNM4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] HMDO3.txt               29-Sep-2013 18:36  962K  Standard Meteorological Data
+[TXT] HMRA2.txt               29-Sep-2013 17:56  398K  Standard Meteorological Data
+[TXT] HMSA2.txt               29-Sep-2013 18:41  385K  Standard Meteorological Data
+[TXT] HRBM4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] HUQN6.ocean             13-Sep-2013 12:56  1.4K  Oceanographic Data
+[TXT] ICAC1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] ICYA2.txt               29-Sep-2013 18:41  357K  Standard Meteorological Data
+[TXT] IIWC1.txt               29-Sep-2013 18:01  1.0M  Standard Meteorological Data
+[TXT] ILOH1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] IOSN3.cwind             29-Sep-2013 18:18  259K  Continuous Winds Data
+[TXT] IOSN3.txt               29-Sep-2013 18:16  102K  Standard Meteorological Data
+[TXT] ITKA2.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] JCQN4.ocean             23-Sep-2013 14:57  1.4K  Oceanographic Data
+[TXT] JCRN4.txt               29-Sep-2013 17:56  397K  Standard Meteorological Data
+[TXT] JCTN4.ocean             29-Sep-2013 17:57  343K  Oceanographic Data
+[TXT] JKYF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] JKYF1.rain              29-Sep-2013 17:37   25K  Hourly Rain Data
+[TXT] JKYF1.txt               29-Sep-2013 17:36   96K  Standard Meteorological Data
+[TXT] JMLA2.txt               29-Sep-2013 18:41  389K  Standard Meteorological Data
+[TXT] JMPN7.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] JNEA2.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] JOQP4.ocean             29-Sep-2013 18:26  343K  Oceanographic Data
+[TXT] JOXP4.txt               13-Sep-2013 15:01  278K  Standard Meteorological Data
+[TXT] JPRN7.data_spec         29-Sep-2013 17:47  672K  Raw Spectral Wave Data
+[TXT] JPRN7.spec              29-Sep-2013 17:47   66K  Spectral Wave Summary Data
+[TXT] JPRN7.swdir             29-Sep-2013 17:47  635K  Spectral Wave Data (alpha1)
+[TXT] JPRN7.swdir2            29-Sep-2013 17:47  630K  Spectral Wave Data (alpha2)
+[TXT] JPRN7.swr1              29-Sep-2013 17:47  615K  Spectral Wave Data (r1)
+[TXT] JPRN7.swr2              29-Sep-2013 17:47  615K  Spectral Wave Data (r2)
+[TXT] JPRN7.txt               29-Sep-2013 17:48   87K  Standard Meteorological Data
+[TXT] JTAW1.ocean             29-Sep-2013 16:07  624K  Oceanographic Data
+[TXT] KATA1.ocean             29-Sep-2013 18:36  173K  Oceanographic Data
+[TXT] KATA1.srad              29-Sep-2013 18:36   68K  Solar Radiation Data
+[TXT] KATA1.txt               29-Sep-2013 18:36  199K  Standard Meteorological Data
+[TXT] KATP.txt                29-Sep-2013 18:26  303K  Standard Meteorological Data
+[TXT] KBBF.txt                29-Sep-2013 18:26  303K  Standard Meteorological Data
+[TXT] KBQX.txt                29-Sep-2013 18:26  226K  Standard Meteorological Data
+[TXT] KCHA2.ocean             29-Sep-2013 17:57  321K  Oceanographic Data
+[TXT] KCRH.txt                29-Sep-2013 18:26  187K  Standard Meteorological Data
+[TXT] KDAA2.txt               29-Sep-2013 18:36  954K  Standard Meteorological Data
+[TXT] KDLP.txt                29-Sep-2013 18:26  303K  Standard Meteorological Data
+[TXT] KECA2.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] KEHC.txt                29-Sep-2013 18:26  212K  Standard Meteorological Data
+[TXT] KEIR.txt                29-Sep-2013 18:26  243K  Standard Meteorological Data
+[TXT] KEMK.txt                29-Sep-2013 18:26  302K  Standard Meteorological Data
+[TXT] KGBK.txt                29-Sep-2013 18:26  303K  Standard Meteorological Data
+[TXT] KGCA2.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] KGHB.txt                29-Sep-2013 18:26  148K  Standard Meteorological Data
+[TXT] KGNA.txt                29-Sep-2013 18:01  101K  Standard Meteorological Data
+[TXT] KGRY.txt                29-Sep-2013 18:26  297K  Standard Meteorological Data
+[TXT] KGUL.txt                29-Sep-2013 18:26  303K  Standard Meteorological Data
+[TXT] KGVX.txt                29-Sep-2013 18:26  290K  Standard Meteorological Data
+[TXT] KHHV.txt                29-Sep-2013 18:26  283K  Standard Meteorological Data
+[TXT] KHQI.txt                29-Sep-2013 18:26  303K  Standard Meteorological Data
+[TXT] KIKT.txt                29-Sep-2013 18:26  303K  Standard Meteorological Data
+[TXT] KIPN.txt                29-Sep-2013 18:26  303K  Standard Meteorological Data
+[TXT] KLIH1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] KMDJ.txt                29-Sep-2013 18:26  303K  Standard Meteorological Data
+[TXT] KMIS.txt                29-Sep-2013 18:26  286K  Standard Meteorological Data
+[TXT] KMIU.txt                29-Sep-2013 18:26  200K  Standard Meteorological Data
+[TXT] KMYT.txt                24-Sep-2013 09:26  282K  Standard Meteorological Data
+[TXT] KMZG.txt                29-Sep-2013 18:26  303K  Standard Meteorological Data
+[TXT] KNSW3.txt               29-Sep-2013 18:11  601K  Standard Meteorological Data
+[TXT] KOPM.txt                17-Sep-2013 11:06  129K  Standard Meteorological Data
+[TXT] KP53.txt                29-Sep-2013 18:01  101K  Standard Meteorological Data
+[TXT] KP58.txt                29-Sep-2013 18:01  101K  Standard Meteorological Data
+[TXT] KP59.txt                29-Sep-2013 18:01  101K  Standard Meteorological Data
+[TXT] KPTN6.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] KPTV2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] KSCF.txt                29-Sep-2013 18:26  303K  Standard Meteorological Data
+[TXT] KSPR.txt                29-Sep-2013 18:26  303K  Standard Meteorological Data
+[TXT] KTNF1.cwind             29-Sep-2013 18:13  258K  Continuous Winds Data
+[TXT] KTNF1.txt               29-Sep-2013 18:11  101K  Standard Meteorological Data
+[TXT] KVAF.txt                29-Sep-2013 18:26  283K  Standard Meteorological Data
+[TXT] KVBS.txt                29-Sep-2013 18:26  302K  Standard Meteorological Data
+[TXT] KVKY.txt                29-Sep-2013 18:26  303K  Standard Meteorological Data
+[TXT] KVOA.txt                29-Sep-2013 18:26  303K  Standard Meteorological Data
+[TXT] KVQT.txt                29-Sep-2013 18:26  303K  Standard Meteorological Data
+[TXT] KWHH1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] KWJP8.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] KWNW3.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] KXIH.txt                29-Sep-2013 18:26  303K  Standard Meteorological Data
+[TXT] KXPY.txt                29-Sep-2013 18:26  280K  Standard Meteorological Data
+[TXT] KYWF1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] LAMV3.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] LAPW1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] LBRF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] LBRF1.rain              29-Sep-2013 17:37   24K  Hourly Rain Data
+[TXT] LBRF1.txt               29-Sep-2013 17:36   96K  Standard Meteorological Data
+[TXT] LBSF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] LBSF1.rain              29-Sep-2013 17:37   25K  Hourly Rain Data
+[TXT] LBSF1.txt               29-Sep-2013 17:36   96K  Standard Meteorological Data
+[TXT] LCLL1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] LDLC3.txt               29-Sep-2013 18:26  291K  Standard Meteorological Data
+[TXT] LDTM4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] LJAC1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] LJPC1.data_spec         29-Sep-2013 17:47  1.1M  Raw Spectral Wave Data
+[TXT] LJPC1.spec              29-Sep-2013 17:47   56K  Spectral Wave Summary Data
+[TXT] LJPC1.txt               29-Sep-2013 17:48  100K  Standard Meteorological Data
+[TXT] LKWF1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] LLBP7.supl              25-Sep-2013 23:16  301K  Supplemental Measurements Data
+[TXT] LLBP7.txt               25-Sep-2013 23:16  589K  Standard Meteorological Data
+[TXT] LMBV4.cwind             29-Sep-2013 18:18  258K  Continuous Winds Data
+[TXT] LMBV4.txt               29-Sep-2013 18:16  101K  Standard Meteorological Data
+[TXT] LMDF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] LMDF1.rain              29-Sep-2013 17:37   25K  Hourly Rain Data
+[TXT] LMDF1.txt               29-Sep-2013 17:36   96K  Standard Meteorological Data
+[TXT] LMFS1.txt               29-Sep-2013 18:31  608K  Standard Meteorological Data
+[TXT] LMRF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] LMRF1.rain              29-Sep-2013 17:37   25K  Hourly Rain Data
+[TXT] LMRF1.txt               29-Sep-2013 17:36   96K  Standard Meteorological Data
+[TXT] LMSS1.txt               26-Sep-2013 23:41   37K  Standard Meteorological Data
+[TXT] LNDC1.txt               29-Sep-2013 18:36  959K  Standard Meteorological Data
+[TXT] LOPL1.txt               29-Sep-2013 18:36  399K  Standard Meteorological Data
+[TXT] LOPW1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] LPNM4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] LPWA2.txt               15-Sep-2013 19:36  257K  Standard Meteorological Data
+[TXT] LRIF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] LRIF1.txt               29-Sep-2013 17:36   96K  Standard Meteorological Data
+[TXT] LRKF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] LRKF1.rain              29-Sep-2013 17:37   24K  Hourly Rain Data
+[TXT] LRKF1.txt               29-Sep-2013 17:36   95K  Standard Meteorological Data
+[TXT] LSIO3.ocean             29-Sep-2013 18:12  741K  Oceanographic Data
+[TXT] LSNF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] LSNF1.rain              29-Sep-2013 17:37   25K  Hourly Rain Data
+[TXT] LSNF1.txt               29-Sep-2013 17:36   96K  Standard Meteorological Data
+[TXT] LTBV3.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] LTQM2.ocean             29-Sep-2013 18:26  346K  Oceanographic Data
+[TXT] LTRM4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] LWSD1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] LWTV2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] MACM4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] MAXT2.txt               29-Sep-2013 18:26  390K  Standard Meteorological Data
+[TXT] MBLA1.ocean             29-Sep-2013 18:12   84K  Oceanographic Data
+[TXT] MBLA1.srad              29-Sep-2013 18:36   71K  Solar Radiation Data
+[TXT] MBLA1.txt               29-Sep-2013 18:36  202K  Standard Meteorological Data
+[TXT] MBRM4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] MCGA1.txt               29-Sep-2013 18:31  969K  Standard Meteorological Data
+[TXT] MCGM4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] MCYF1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] MCYI3.txt               29-Sep-2013 18:41  390K  Standard Meteorological Data
+[TXT] MEEM4.txt               29-Sep-2013 17:51  607K  Standard Meteorological Data
+[TXT] MGIP4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] MGPT2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] MGZP4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] MHPA1.ocean             29-Sep-2013 18:17  136K  Oceanographic Data
+[TXT] MHPA1.srad              29-Sep-2013 18:17   71K  Solar Radiation Data
+[TXT] MHPA1.txt               29-Sep-2013 18:16  194K  Standard Meteorological Data
+[TXT] MISM1.cwind             29-Sep-2013 18:18  259K  Continuous Winds Data
+[TXT] MISM1.txt               29-Sep-2013 18:16  102K  Standard Meteorological Data
+[TXT] MISP4.txt               29-Sep-2013 18:31  961K  Standard Meteorological Data
+[TXT] MKGM4.txt               29-Sep-2013 18:41  390K  Standard Meteorological Data
+[TXT] MLRF1.cwind             29-Sep-2013 18:18  258K  Continuous Winds Data
+[TXT] MLRF1.txt               29-Sep-2013 18:16  101K  Standard Meteorological Data
+[TXT] MLSC1.txt               29-Sep-2013 18:36  163K  Standard Meteorological Data
+[TXT] MLWW3.txt               29-Sep-2013 18:41  392K  Standard Meteorological Data
+[TXT] MNMM4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] MNPV2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] MOKH1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] MQTT2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] MRCP1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] MRHO1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] MRKA2.cwind             29-Sep-2013 18:41  259K  Continuous Winds Data
+[TXT] MRKA2.txt               29-Sep-2013 18:41  203K  Standard Meteorological Data
+[TXT] MRNA2.txt               29-Sep-2013 18:41  384K  Standard Meteorological Data
+[TXT] MROS1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] MRSL1.txt               29-Sep-2013 18:06   97K  Standard Meteorological Data
+[TXT] MRYA2.txt               23-Sep-2013 11:26  367K  Standard Meteorological Data
+[TXT] MTKN6.txt               29-Sep-2013 18:31  946K  Standard Meteorological Data
+[TXT] MTYC1.txt               29-Sep-2013 18:36  932K  Standard Meteorological Data
+[TXT] MUKF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] MUKF1.rain              29-Sep-2013 17:37   25K  Hourly Rain Data
+[TXT] MUKF1.txt               29-Sep-2013 17:36   96K  Standard Meteorological Data
+[TXT] MYPF1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] MZXC1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] NABM4.txt               29-Sep-2013 17:56  609K  Standard Meteorological Data
+[TXT] NAQR1.ocean             29-Sep-2013 18:26  344K  Oceanographic Data
+[TXT] NAXR1.txt               29-Sep-2013 18:26  398K  Standard Meteorological Data
+[TXT] NBLP1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] NCHT2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] NEAW1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] NFBF1.txt               29-Sep-2013 17:46  1.0M  Standard Meteorological Data
+[TXT] NGLT2.txt               29-Sep-2013 18:16  101K  Standard Meteorological Data
+[TXT] NIAN6.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] NIQS1.ocean             29-Sep-2013 18:26  345K  Oceanographic Data
+[TXT] NIWS1.txt               29-Sep-2013 18:26  399K  Standard Meteorological Data
+[TXT] NKTA2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] NLNC3.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] NMTA2.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] NOQN7.ocean             29-Sep-2013 18:26  344K  Oceanographic Data
+[TXT] NOXN7.txt               29-Sep-2013 18:26  399K  Standard Meteorological Data
+[TXT] NPDW3.txt               29-Sep-2013 17:51  605K  Standard Meteorological Data
+[TXT] NPSF1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] NSTP6.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] NTBC1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] NTKM3.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] NWCL1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] NWHC3.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] NWPO3.cwind             29-Sep-2013 18:13  258K  Continuous Winds Data
+[TXT] NWPO3.txt               29-Sep-2013 18:11  101K  Standard Meteorological Data
+[TXT] NWPR1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] NWWH1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] OBGN6.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] OBLA1.txt               29-Sep-2013 18:31  971K  Standard Meteorological Data
+[TXT] OBXC1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] OCIM2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] OCPN7.ocean             19-Sep-2013 19:43   96K  Oceanographic Data
+[TXT] OCPN7.txt               29-Sep-2013 18:41  386K  Standard Meteorological Data
+[TXT] OCSM2.data_spec         04-Sep-2013 12:28  590K  Raw Spectral Wave Data
+[TXT] OCSM2.spec              04-Sep-2013 12:28   71K  Spectral Wave Summary Data
+[TXT] OCSM2.txt               04-Sep-2013 12:28   95K  Standard Meteorological Data
+[TXT] OHBC1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] OKXC1.txt               29-Sep-2013 18:21  1.0M  Standard Meteorological Data
+[TXT] OLCN6.txt               29-Sep-2013 18:11  576K  Standard Meteorological Data
+[TXT] OLSA2.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] OMHC1.txt               29-Sep-2013 18:36  878K  Standard Meteorological Data
+[TXT] OOUH1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] OPTF1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] ORIN7.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] OSGN6.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] OSTF1.cwind             29-Sep-2013 18:06  258K  Continuous Winds Data
+[TXT] OSTF1.supl              29-Sep-2013 18:06   52K  Supplemental Measurements Data
+[TXT] OSTF1.txt               29-Sep-2013 18:06  101K  Standard Meteorological Data
+[TXT] OVIA2.txt               29-Sep-2013 18:36  555K  Standard Meteorological Data
+[TXT] OWQO1.ocean             29-Sep-2013 18:26  240K  Oceanographic Data
+[TXT] OWXO1.txt               29-Sep-2013 18:31  362K  Standard Meteorological Data
+[TXT] PACF1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] PACT2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] PBFW1.txt               29-Sep-2013 17:56  362K  Standard Meteorological Data
+[TXT] PBLW1.ocean             29-Sep-2013 17:57  343K  Oceanographic Data
+[TXT] PCGT2.txt               29-Sep-2013 18:16  101K  Standard Meteorological Data
+[TXT] PCLF1.txt               29-Sep-2013 18:31  944K  Standard Meteorological Data
+[TXT] PCLM4.txt               29-Sep-2013 17:56  605K  Standard Meteorological Data
+[TXT] PCNT2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] PCOC1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] PFXC1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] PGBP7.txt               29-Sep-2013 18:36  853K  Standard Meteorological Data
+[TXT] PHBP1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] PILA2.txt               29-Sep-2013 18:41  203K  Standard Meteorological Data
+[TXT] PILL1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] PILM4.cwind             29-Sep-2013 18:13  259K  Continuous Winds Data
+[TXT] PILM4.txt               29-Sep-2013 18:11  102K  Standard Meteorological Data
+[TXT] PKYF1.ocean             29-Sep-2013 17:37   82K  Oceanographic Data
+[TXT] PKYF1.rain              29-Sep-2013 17:37   24K  Hourly Rain Data
+[TXT] PKYF1.txt               29-Sep-2013 17:36   95K  Standard Meteorological Data
+[TXT] PLXA2.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] PMAF1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] PMOA2.txt               29-Sep-2013 18:36  950K  Standard Meteorological Data
+[TXT] PNGW3.txt               29-Sep-2013 17:56  602K  Standard Meteorological Data
+[TXT] PNLM4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] PNLM6.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] PORO3.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] PORT2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] POTA2.cwind             29-Sep-2013 18:41  259K  Continuous Winds Data
+[TXT] POTA2.txt               29-Sep-2013 18:41  203K  Standard Meteorological Data
+[TXT] PPTA1.ocean             29-Sep-2013 18:26  174K  Oceanographic Data
+[TXT] PPTA1.srad              29-Sep-2013 18:26   71K  Solar Radiation Data
+[TXT] PPTA1.txt               29-Sep-2013 18:26  202K  Standard Meteorological Data
+[TXT] PPTM2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] PPXC1.txt               29-Sep-2013 18:36  645K  Standard Meteorological Data
+[TXT] PRDA2.txt               29-Sep-2013 18:36  574K  Standard Meteorological Data
+[TXT] PRIM4.txt               29-Sep-2013 05:11   37K  Standard Meteorological Data
+[TXT] PRJC1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] PRTA2.txt               29-Sep-2013 18:26   90K  Standard Meteorological Data
+[TXT] PRYC1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] PSBC1.txt               29-Sep-2013 18:36  966K  Standard Meteorological Data
+[TXT] PSBM1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] PSCM4.txt               29-Sep-2013 18:11  606K  Standard Meteorological Data
+[TXT] PSLC1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] PSTL1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] PSTN6.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] PTAT2.cwind             29-Sep-2013 18:13  258K  Continuous Winds Data
+[TXT] PTAT2.txt               29-Sep-2013 18:11  101K  Standard Meteorological Data
+[TXT] PTAW1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] PTBM6.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] PTCR1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] PTGC1.cwind             29-Sep-2013 18:13  258K  Continuous Winds Data
+[TXT] PTGC1.txt               29-Sep-2013 18:11  101K  Standard Meteorological Data
+[TXT] PTIM4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] PTIT2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] PTLA2.txt               29-Sep-2013 18:41  386K  Standard Meteorological Data
+[TXT] PTRP4.txt               29-Sep-2013 18:36  1.2M  Standard Meteorological Data
+[TXT] PTWW1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] PVGF1.supl              29-Sep-2013 18:36  516K  Supplemental Measurements Data
+[TXT] PVGF1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] PWAW3.txt               29-Sep-2013 17:56  602K  Standard Meteorological Data
+[TXT] PXOC1.txt               29-Sep-2013 18:36  806K  Standard Meteorological Data
+[TXT] QPTR1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] RARM6.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] RCKM4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] RCMC1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] RCPT2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] RCRN6.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] RDDA2.txt               29-Sep-2013 18:36  940K  Standard Meteorological Data
+[TXT] RDYD1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] RF001.dart              16-Nov-2010 06:41  2.2K  Water Column Height (DART) Data
+[TXT] RKQF1.ocean             29-Sep-2013 18:26  345K  Oceanographic Data
+[TXT] RKXF1.txt               29-Sep-2013 18:26  399K  Standard Meteorological Data
+[TXT] RLOT2.txt               29-Sep-2013 18:31  105K  Standard Meteorological Data
+[TXT] ROAM4.cwind             29-Sep-2013 18:13  258K  Continuous Winds Data
+[TXT] ROAM4.txt               29-Sep-2013 18:11  101K  Standard Meteorological Data
+[TXT] ROBN4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] RPLV2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] RPRN6.txt               29-Sep-2013 18:11  593K  Standard Meteorological Data
+[TXT] RSJT2.txt               21-Aug-2013 12:21  100K  Standard Meteorological Data
+[TXT] RTAT2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] RTYC1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] RYEC1.ocean             29-Sep-2013 17:57  343K  Oceanographic Data
+[TXT] SACV4.cwind             29-Sep-2013 18:18  258K  Continuous Winds Data
+[TXT] SACV4.txt               29-Sep-2013 18:16  101K  Standard Meteorological Data
+[TXT] SANF1.cwind             29-Sep-2013 17:18   50K  Continuous Winds Data
+[TXT] SANF1.txt               29-Sep-2013 17:16   22K  Standard Meteorological Data
+[TXT] SAPF1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] SAQG1.ocean             29-Sep-2013 18:26  341K  Oceanographic Data
+[TXT] SAUF1.cwind             29-Sep-2013 18:13  259K  Continuous Winds Data
+[TXT] SAUF1.txt               29-Sep-2013 18:11  102K  Standard Meteorological Data
+[TXT] SAXG1.txt               29-Sep-2013 18:26  309K  Standard Meteorological Data
+[TXT] SBEO3.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] SBIO1.cwind             29-Sep-2013 18:13  259K  Continuous Winds Data
+[TXT] SBIO1.txt               29-Sep-2013 18:11  102K  Standard Meteorological Data
+[TXT] SBLF1.txt               29-Sep-2013 18:31  603K  Standard Meteorological Data
+[TXT] SBLM4.txt               27-Sep-2013 13:11  382K  Standard Meteorological Data
+[TXT] SBPT2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] SCQC1.ocean             29-Sep-2013 18:26  338K  Oceanographic Data
+[TXT] SDBC1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] SDHN4.txt               29-Sep-2013 18:31  973K  Standard Meteorological Data
+[TXT] SDIA2.txt               29-Sep-2013 18:36  293K  Standard Meteorological Data
+[TXT] SDRT2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] SEFO3.ocean             29-Sep-2013 18:12  390K  Oceanographic Data
+[TXT] SEQA2.ocean             29-Sep-2013 18:26  343K  Oceanographic Data
+[TXT] SETO3.ocean             28-Sep-2013 16:11  260K  Oceanographic Data
+[TXT] SFXC1.txt               29-Sep-2013 18:26  394K  Standard Meteorological Data
+[TXT] SGNW3.cwind             29-Sep-2013 18:13  258K  Continuous Winds Data
+[TXT] SGNW3.txt               29-Sep-2013 18:11  101K  Standard Meteorological Data
+[TXT] SGOF1.cwind             17-Aug-2013 12:15  257K  Continuous Winds Data
+[TXT] SGOF1.txt               17-Aug-2013 12:13  101K  Standard Meteorological Data
+[TXT] SHBL1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] SHPF1.txt               29-Sep-2013 18:01  1.0M  Standard Meteorological Data
+[TXT] SIPF1.txt               29-Sep-2013 18:36  402K  Standard Meteorological Data
+[TXT] SISA2.txt               29-Sep-2013 18:36   92K  Standard Meteorological Data
+[TXT] SISW1.cwind             29-Sep-2013 18:13  258K  Continuous Winds Data
+[TXT] SISW1.txt               29-Sep-2013 18:11  101K  Standard Meteorological Data
+[TXT] SJNP4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] SJOM4.txt               29-Sep-2013 18:31  607K  Standard Meteorological Data
+[TXT] SJSN4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] SKTA2.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] SLIM2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] SLOO3.ocean             29-Sep-2013 17:57  342K  Oceanographic Data
+[TXT] SLVM5.txt               29-Sep-2013 17:56  599K  Standard Meteorological Data
+[TXT] SMKF1.cwind             29-Sep-2013 18:13  258K  Continuous Winds Data
+[TXT] SMKF1.txt               29-Sep-2013 18:11  101K  Standard Meteorological Data
+[TXT] SNDA2.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] SNDP5.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] SOQO3.ocean             29-Sep-2013 18:26  344K  Oceanographic Data
+[TXT] SPGF1.cwind             29-Sep-2013 18:13  258K  Continuous Winds Data
+[TXT] SPGF1.txt               29-Sep-2013 18:11  101K  Standard Meteorological Data
+[TXT] SPLL1.txt               29-Sep-2013 18:06   83K  Standard Meteorological Data
+[TXT] SPTM4.txt               29-Sep-2013 05:11   37K  Standard Meteorological Data
+[TXT] SRBV3.supl              29-Sep-2013 18:36   45K  Supplemental Measurements Data
+[TXT] SRBV3.txt               29-Sep-2013 18:36  871K  Standard Meteorological Data
+[TXT] SRST2.cwind             25-Aug-2013 05:12  241K  Continuous Winds Data
+[TXT] SRST2.txt               25-Aug-2013 05:11   95K  Standard Meteorological Data
+[TXT] SSBN7.adcp              24-Sep-2013 05:21   46K  Acoustic Doppler Current Profiler Data
+[TXT] SSBN7.ocean             24-Sep-2013 05:18   69K  Oceanographic Data
+[TXT] SSBN7.txt               24-Sep-2013 05:21   29K  Standard Meteorological Data
+[TXT] STDM4.cwind             29-Sep-2013 18:13  258K  Continuous Winds Data
+[TXT] STDM4.txt               29-Sep-2013 18:11  101K  Standard Meteorological Data
+[TXT] SVNM4.txt               16-Sep-2013 11:10  176K  Standard Meteorological Data
+[TXT] SWLA2.txt               17-Sep-2013 15:40  1.0M  Standard Meteorological Data
+[TXT] SWPM4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] SWPV2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] SXHW3.txt               29-Sep-2013 17:56  599K  Standard Meteorological Data
+[TXT] TANO3.ocean             29-Sep-2013 16:07  474K  Oceanographic Data
+[TXT] TARF1.txt               29-Sep-2013 18:41  902K  Standard Meteorological Data
+[TXT] TAWM4.txt               29-Sep-2013 05:11   37K  Standard Meteorological Data
+[TXT] TBIM4.txt               29-Sep-2013 18:41  385K  Standard Meteorological Data
+[TXT] TCBM2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] TCMW1.txt               29-Sep-2013 18:36  959K  Standard Meteorological Data
+[TXT] TCNW1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] TCVF1.ocean             29-Sep-2013 17:37   80K  Oceanographic Data
+[TXT] TCVF1.rain              29-Sep-2013 17:37   24K  Hourly Rain Data
+[TXT] TCVF1.txt               29-Sep-2013 17:36   94K  Standard Meteorological Data
+[TXT] TDPC1.ocean             29-Sep-2013 18:12  243   Oceanographic Data
+[TXT] TESL1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] THLO1.txt               29-Sep-2013 18:06  370K  Standard Meteorological Data
+[TXT] THRO1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] TIBC1.ocean             19-Sep-2013 12:58  5.5K  Oceanographic Data
+[TXT] TIBC1.txt               19-Sep-2013 13:02   65K  Standard Meteorological Data
+[TXT] TIQC1.ocean             21-Sep-2013 16:28  185K  Oceanographic Data
+[TXT] TIXC1.txt               29-Sep-2013 18:31  397K  Standard Meteorological Data
+[TXT] TKEA2.txt               29-Sep-2013 18:36  584K  Standard Meteorological Data
+[TXT] TLBO3.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] TOKW1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] TPAF1.txt               29-Sep-2013 18:31  917K  Standard Meteorological Data
+[TXT] TPEF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] TPEF1.rain              29-Sep-2013 17:37   25K  Hourly Rain Data
+[TXT] TPEF1.txt               29-Sep-2013 17:36   96K  Standard Meteorological Data
+[TXT] TPLM2.cwind             29-Sep-2013 18:13  258K  Continuous Winds Data
+[TXT] TPLM2.txt               29-Sep-2013 18:11  102K  Standard Meteorological Data
+[TXT] TRDF1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] TRRF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] TRRF1.rain              29-Sep-2013 17:37   25K  Hourly Rain Data
+[TXT] TRRF1.txt               29-Sep-2013 17:36   96K  Standard Meteorological Data
+[TXT] TSHF1.txt               29-Sep-2013 18:31  842K  Standard Meteorological Data
+[TXT] TTIW1.txt               29-Sep-2013 18:11  101K  Standard Meteorological Data
+[TXT] TXPT2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] ULAM6.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] UNLA2.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] UPBC1.txt               29-Sep-2013 18:36  937K  Standard Meteorological Data
+[TXT] VAKF1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] VCAF1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] VCAT2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] VCVA2.txt               29-Sep-2013 18:36  491K  Standard Meteorological Data
+[TXT] VDZA2.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] VENF1.cwind             29-Sep-2013 18:13   80K  Continuous Winds Data
+[TXT] VENF1.txt               29-Sep-2013 18:11   32K  Standard Meteorological Data
+[TXT] VERV4.cwind             29-Sep-2013 18:18  258K  Continuous Winds Data
+[TXT] VERV4.txt               29-Sep-2013 18:16  101K  Standard Meteorological Data
+[TXT] VQSP4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] WAHV2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] WAKP8.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] WAQM3.ocean             29-Sep-2013 18:26  334K  Oceanographic Data
+[TXT] WASD2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] WATS1.txt               29-Sep-2013 18:41  607K  Standard Meteorological Data
+[TXT] WAXM3.txt               29-Sep-2013 18:26  399K  Standard Meteorological Data
+[TXT] WBYA1.txt               29-Sep-2013 18:31  7.5K  Standard Meteorological Data
+[TXT] WDSV2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] WDYO3.ocean             23-Aug-2013 22:06  972   Oceanographic Data
+[TXT] WELM1.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] WEQM1.ocean             29-Sep-2013 18:26  306K  Oceanographic Data
+[TXT] WEXM1.txt               29-Sep-2013 18:26  400K  Standard Meteorological Data
+[TXT] WFPM4.txt               29-Sep-2013 05:11   37K  Standard Meteorological Data
+[TXT] WHRI2.txt               29-Sep-2013 17:56  610K  Standard Meteorological Data
+[TXT] WIWF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] WIWF1.rain              29-Sep-2013 17:37  239   Hourly Rain Data
+[TXT] WIWF1.txt               29-Sep-2013 17:36   96K  Standard Meteorological Data
+[TXT] WKQA1.ocean             29-Sep-2013 18:26  345K  Oceanographic Data
+[TXT] WKXA1.txt               29-Sep-2013 18:31  398K  Standard Meteorological Data
+[TXT] WLON7.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] WNEM4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] WPLF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] WPLF1.rain              29-Sep-2013 17:37   25K  Hourly Rain Data
+[TXT] WPLF1.txt               29-Sep-2013 17:36   96K  Standard Meteorological Data
+[TXT] WPOW1.cwind             29-Sep-2013 18:18  258K  Continuous Winds Data
+[TXT] WPOW1.txt               29-Sep-2013 18:16  101K  Standard Meteorological Data
+[TXT] WPTW1.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] WRBF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] WRBF1.rain              29-Sep-2013 17:37   25K  Hourly Rain Data
+[TXT] WRBF1.txt               29-Sep-2013 17:36   95K  Standard Meteorological Data
+[TXT] WWEF1.ocean             29-Sep-2013 17:37   83K  Oceanographic Data
+[TXT] WWEF1.txt               29-Sep-2013 17:36   95K  Standard Meteorological Data
+[TXT] WYCM6.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] YABP4.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] YATA2.txt               29-Sep-2013 18:36  1.0M  Standard Meteorological Data
+[TXT] YGNN6.txt               29-Sep-2013 18:11  602K  Standard Meteorological Data
+[TXT] YKRV2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] YKTV2.txt               29-Sep-2013 18:31  1.0M  Standard Meteorological Data
+[TXT] YRSV2.txt               29-Sep-2013 17:56  399K  Standard Meteorological Data
+[TXT] ZBQN7.ocean             29-Sep-2013 17:57  220K  Oceanographic Data
