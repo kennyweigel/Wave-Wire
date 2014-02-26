@@ -20,32 +20,10 @@ angular.module("Main")
     $scope.canDelete = true;
     $scope.showDelete = true;
     $scope.onDelete = function(item) {
-        console.log("onDelete");
-        console.log(item)
+	LocalStorageService.remove(item.id);
+	$scope.favs = LocalStorageService.get();
     };
-    $scope.canReorder = true;
-    $scope.showReorder = true;
-    $scope.onReorder = function() {
-        console.log("onReorder");
-    };
-    $scope.canSwipe = true;
-    $scope.optionButtons = [
-        {
-            text: 'Delete',
-            type: 'button',
-            onTap: function(item) {
-                console.log("delete item");
-                console.log(item);
-                console.log(this);
-            }
-        },
-        {
-            text: "test",
-            type: 'button',
-            onTap: function(item) {
-                console.log('test item');
-                console.log(item);
-            }
-        }
-    ];
+    $scope.canReorder = false;
+    $scope.showReorder = false;
+    $scope.canSwipe = false;
 });
