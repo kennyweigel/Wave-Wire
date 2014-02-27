@@ -16,10 +16,9 @@ angular.module("Main")
             i = 0,
             buoy = null,
             buoyLatLng = null,
-            buoyMarker = null,
-            map = {};
+            buoyMarker = null;
 
-            map = new google.maps.Map(document.getElementById("map"), mapOptions),
+            $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions),
             $scope.loading.hide();
 
             for (i = 0; i < allBuoysLength; i += 1) {
@@ -27,7 +26,7 @@ angular.module("Main")
                 buoyLatLng = new google.maps.LatLng(buoy.lat, buoy.lng);
                 buoyMarker = new google.maps.Marker({
                     position: buoyLatLng,
-                    map: map,
+                    map: $scope.map,
                     title: buoy.id
                 });
                 google.maps.event.addListener(buoyMarker, "click", function () {
@@ -46,13 +45,34 @@ angular.module("Main")
         },
         geoError = function(error) {
             $scope.loading.hide();
-            alert("code: " + error.code + "\n" + "message: " + error.message + "\n");
+            if (error.code == 1) {
+                alert("TODO user denied geolocation");
+            } else {
+                alert("code: " + error.code + "\n" + "message: " + error.message + "\n");
+            }
         },
         geoOptions = {
             "enableHighAccuracy": true,
             "timeout": 10000
+        },
+        geoCenterSuccess = function(position) {
+            var myLat = position.coords.latitude,
+                myLng = position.coords.longitude,
+                myLatLng = new google.maps.LatLng(myLat, myLng);
+            
+            $scope.map.setCenter(myLatLng);
+            $scope.map.setZoom(7);
+            $scope.loading.hide();
+        },
+        init = function() {
+        $scope.loading = $ionicLoading.show({
+                content: 'Getting current location...',
+                showBackdrop: false
+            });
+            navigator.geolocation.getCurrentPosition(geoSuccess, geoError, geoOptions);
         };
 
+    $scope.map = {};
     $scope.headerTitle = "Map";
     $scope.leftButtons = [{
         type:"button-clear",
@@ -74,6 +94,9 @@ angular.module("Main")
             showBackdrop: false
         });
         
-        navigator.geolocation.getCurrentPosition(geoSuccess, geoError, geoOptions);
+        navigator.geolocation.getCurrentPosition(geoCenterSuccess, geoError, geoOptions);
     };
+
+    init();
+
 });
