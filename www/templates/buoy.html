@@ -1,19 +1,18 @@
-<view>
-
-    <header-bar
+<ion-view>
+    <ion-header-bar
         title="headerTitle"
         left-buttons="leftButtons"
         right-buttons="rightButtons"
         type="bar-positive"
         align-title="center">
-    </header-bar>
-    <content has-header="true">
-        <button class="button button-block button-positive" ng-click="addToFavorites()">
+    </ion-header-bar>
+    <ion-content has-header="true">
+        <ion-button class="button button-block button-positive" ng-click="addToFavorites()">
             Add To Favorites
-        </button>
-        <button class="button button-block button-positive" ng-click="update()">
+        </ion-button>
+        <ion-button class="button button-block button-positive" ng-click="update()">
             Update
-        </button>
+        </ion-button>
         <h1>{{buoyName}}</h1>
         <ul class="list">
             <li class="item">Year: {{buoyData.year}}</li>
@@ -37,6 +36,6 @@
             <li class="item">Tide: {{buoyData.tide}}</li>
         </ul>
 
-    </content>
+    </ion-content>
 
-</view>
+</ion-view>

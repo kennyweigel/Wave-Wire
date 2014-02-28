@@ -1,27 +1,25 @@
-<view title="Settings">
-    <header-bar
+<ion-view title="Settings">
+    <ion-header-bar
         title="headerTitle"
         left-buttons="leftButtons"
         right-buttons="rightButtons"
         type="bar-positive"
         align-title="center">
-    </header-bar>
-    <content has-header="true">
+    </ion-header-bar>
+    <ion-content has-header="true">
         <div class="padding">
-            <list
+            <ion-list
                 can-delete="true"
                 show-delete="true"
-                
                 can-reorder="true"
                 show-reorder="true"
                 on-reorder="onReorder()">
-                <item 
+                <ion-item 
                     ng-repeat="fav in favs" 
-                        on-delete="onDelete(fav)"
-                    >
+                    on-delete="onDelete(fav)">
                     <h3 style="display: inline-block; width:80px;">{{fav.id}}</h3>
-                </item>
-            </list>
+                </ion-item>
+            </ion-list>
         </div>
-    </content>
-</view>
+    </ion-content>
+</ion-view>
