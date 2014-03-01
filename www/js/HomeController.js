@@ -10,4 +10,8 @@ angular.module("Main")
         }
     }];
     $scope.favs = LocalStorageService.get();
+    $scope.onRefresh = function() {
+    	console.log('refresh');
+    	$scope.$broadcast('scroll.refreshComplete');
+    };
 });
