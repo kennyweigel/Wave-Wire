@@ -1,7 +1,7 @@
 angular.module("Main")
 
-.controller("SettingsController", function($scope, $location, LocalStorageService) {
-    $scope.headerTitle = "Settings";
+.controller("SettingsController", function($scope, $location, UserDataService) {
+
     $scope.leftButtons = [{
         type:"button-clear",
         content: "<i class='icon ion-ios7-arrow-back'></i>",
@@ -16,12 +16,10 @@ angular.module("Main")
             $location.path("/map");
         }
     }];
-    $scope.favs = LocalStorageService.get();
     $scope.canDelete = true;
     $scope.showDelete = true;
     $scope.onDelete = function(item) {
-	LocalStorageService.remove(item.id);
-	$scope.favs = LocalStorageService.get();
+        UserDataService.removeFavorite(item.id);
     };
     $scope.canReorder = false;
     $scope.showReorder = false;

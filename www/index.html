@@ -25,16 +25,21 @@
     <script src="js/SettingsController.js"></script>
     <script src="js/MapController.js"></script>
     <script src="js/BuoyController.js"></script>
-    <script src="js/BuoyService.js"></script>
-    <script src="js/BuoyDataService.js"></script>
+    <script src="js/BuoyListService.js"></script>
+    <script src="js/BuoyUpdateService.js"></script>
     <script src="js/LocalStorageService.js"></script>
     <script src="js/ProcessDataService.js"></script>
+    <script src="js/UserDataService.js"></script>
 
   </head>
 
-    <body ng-app="Main" animation="slide-left-right-ios7">
-
-    <ion-nav-view></ion-nav-view>
+  <body ng-app="Main" animation="slide-left-right-ios7">
+    
+    <ion-nav-bar animation="nav-title-slide-ios7" type="bar-positive" back-button-type="" back-button-icon="" align-title="center">
+    </ion-nav-bar>    
+    <ion-nav-view 
+        animation="slide-left-right">
+    </ion-nav-view>
 
   </body>
 

@@ -1,6 +1,6 @@
 angular.module("Main")
 
-.factory("BuoyService", function() {
+.factory("BuoyListService", function() {
 
     var allBuoys = [
         {"id":"46001","name":"WESTERN GULF OF ALASKA - 175NM SE of Kodiak, AK","lat":56.304,"lng":-147.920},

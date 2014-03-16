@@ -1,7 +1,7 @@
 angular.module("Main")
 
-.controller("HomeController", function($scope, $location, LocalStorageService) {
-    $scope.headerTitle = "Home";
+.controller("HomeController", function($scope, $location) {
+
     $scope.leftButtons = [{
         type: "button-clear",
         content: "<i class='icon ion-navicon'></i>",
@@ -9,7 +9,6 @@ angular.module("Main")
             $location.path("/settings");
         }
     }];
-    $scope.favs = LocalStorageService.get();
     $scope.onRefresh = function() {
     	console.log('refresh');
     	$scope.$broadcast('scroll.refreshComplete');

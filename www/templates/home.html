@@ -1,15 +1,8 @@
-<ion-view title="Home">
-    <ion-header-bar
-        title="headerTitle"
-        left-buttons="leftButtons"
-        type="bar-positive"
-        align-title="center">
-    </ion-header-bar>
+<ion-view title="Home" left-buttons="leftButtons">  
     <ion-content has-header="true" scroll="true" on-refresh="onRefresh()">
         <ion-refresher></ion-refresher>
-
         <ion-slide-box>
-            <ion-slide ng-repeat="fav in favs">
+            <ion-slide ng-repeat="fav in userData.favorites">
                 <div class="box blue">
                     <h1>{{fav.id}}</h1>
                 </div>

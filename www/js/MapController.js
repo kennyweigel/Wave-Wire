@@ -1,13 +1,13 @@
 angular.module("Main")
 
-.controller("MapController", function($scope, $location, $ionicLoading, BuoyService) {
+.controller("MapController", function($scope, $rootScope, $location, $ionicLoading, BuoyListService) {
     var initializeMap = function(position) {
             var myLat = null,
                 myLng = null,
                 myLatLng = null,
                 defaultLatLng = null,
                 mapOptions = {},
-                allBuoys = BuoyService.all(),
+                allBuoys = BuoyListService.all(),
                 allBuoysLength = allBuoys.length,
                 i = 0,
                 buoy = null,
@@ -34,8 +34,7 @@ angular.module("Main")
                 };
             }
 
-            $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions),
-            $scope.loading.hide();
+            $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
             for (i = 0; i < allBuoysLength; i += 1) {
                 buoy = allBuoys[i];
@@ -61,6 +60,7 @@ angular.module("Main")
         },
         geoSuccess = function(position) {
             initializeMap(position);
+            $scope.loading.hide();
         },
         geoError = function(error) {
             $scope.loading.hide();
@@ -83,17 +83,18 @@ angular.module("Main")
             var myLat = position.coords.latitude,
                 myLng = position.coords.longitude,
                 myLatLng = new google.maps.LatLng(myLat, myLng);
-            
+
+            $rootScope.userData.position = position;            
             $scope.map.setCenter(myLatLng);
             $scope.map.setZoom(7);
             $scope.loading.hide();
         },
         init = function() {
-        $scope.loading = $ionicLoading.show({
-                content: 'Getting current location...',
-                showBackdrop: false
-            });
-            navigator.geolocation.getCurrentPosition(geoSuccess, geoError, geoOptions);
+            if ($rootScope.userData.position) {
+                initializeMap($rootScope.userData.position);
+            } else {
+                initializeMap(null);
+            }
         };
 
     $scope.map = null;

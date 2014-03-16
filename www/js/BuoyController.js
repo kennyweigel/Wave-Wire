@@ -1,7 +1,7 @@
 angular.module("Main")
 
-.controller("BuoyController", function($scope, $location, $stateParams,
-    $http, BuoyService, LocalStorageService, BuoyDataService, ProcessDataService) {
+.controller("BuoyController", function($scope, $location, $stateParams, 
+    BuoyListService, UserDataService, BuoyUpdateService, ProcessDataService) {
 
     var buoyId = $stateParams.buoyId;
 
@@ -16,13 +16,13 @@ angular.module("Main")
     }];
 
     $scope.addToFavorites = function() {
-        LocalStorageService.add(buoyId);
+        UserDataService.addFavorite(buoyId);
     };
 
-    $scope.buoyName = BuoyService.get(buoyId).name;
+    $scope.buoyName = BuoyListService.get(buoyId).name;
     
     $scope.update = function() {
-        BuoyDataService.get(buoyId)
+        BuoyUpdateService.get(buoyId)
         .success(function(data, status, headers, config) {
 
             $scope.buoyData = ProcessDataService.individual(data);;
@@ -32,6 +32,6 @@ angular.module("Main")
         });
     };
 
-    //initialization
+    // initialization
     $scope.update();
 });
