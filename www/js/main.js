@@ -46,7 +46,7 @@ angular.module("Main", ["ionic"])
         $rootScope.userData = {
             "position": null,
             "favorites": null,
-            "units": null
+            "units": "us"
         };
         LocalStorageService.set("userData", $rootScope.userData);
     } 

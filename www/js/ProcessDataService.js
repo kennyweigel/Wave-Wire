@@ -1,6 +1,6 @@
 angular.module("Main")
 
-.factory("ProcessDataService", function() {
+.factory("ProcessDataService", function($rootScope) {
 
     var getDate = function(data) {
             var date = null,
@@ -8,17 +8,32 @@ angular.module("Main")
 
             date = parseInt(data.month, 10) + "/" + data.day + "/" + data.year;
             time = parseInt(data.hour, 10) + ":" + data.minute;
-            
+
             return {
                 "date": date,
                 "time": time
             };
         },
-        getSpeed = function() {
-
+        getSpeed = function(input) {
+            if ($rootScope.userData.units == "us") {
+                return input * 2.23694;
+            } else if ($rootScope.userData.units == "metric") {
+                return input * 3.6;
+            }
         },
-        getHeight = function() {
-
+        getHeight = function(input) {
+            if ($rootScope.userData.units == "us") {
+                return input * 3.28084;
+            } else if ($rootScope.userData.units == "metric") {
+                return input;
+            }
+        },
+        getTemp = function(input) {
+            if ($rootScope.userData.units == "us") {
+                return input * 1.8 + 32;
+            } else if ($rootScope.userData.units == "metric") {
+                return input;
+            }
         },
         getDataRowArray = function(data) {
             var removeNull = function(data) {
@@ -57,10 +72,13 @@ angular.module("Main")
             return data;
         },
         processIndividual = function(data) {
-            var dateTime = null;
-            var date = null;
-            var time = null;
+            var dateTime = null,
+                date = null,
+                time = null;
+                processedData = null,
+                key = null;
 
+            //gets the 3rd row only, the latest data
             data = data.split('\n');
             data = data[2];
             data = getDataRowArray(data);
@@ -69,6 +87,9 @@ angular.module("Main")
             time = dateTime.time;
             date = dateTime.date;
 
+            for (key in data) {
+                if (data[key] == "MM")
+            }
             return [
                 "date " +  date,
                 "time " + time,
