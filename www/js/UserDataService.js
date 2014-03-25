@@ -1,6 +1,6 @@
 angular.module("Main")
 
-.factory("UserDataService", function($rootScope) {
+.factory("UserDataService", function($rootScope, BuoyListService) {
 
     return {
         addFavorite: function(buoyId) {
@@ -11,7 +11,7 @@ angular.module("Main")
             // if current favs already exist
             if ($rootScope.userData.favorites) {
                 favoritesLength = $rootScope.userData.favorites.length;
-                
+
                 // iterates through current favs
                 for (i = 0; i < favoritesLength; i++) {
                     //if buoy is already favorite
@@ -21,17 +21,23 @@ angular.module("Main")
                     }
                 }
                 if (!buoyIsAlreadyFav) {
-                    $rootScope.userData.favorites.push({id: buoyId});
+                    $rootScope.userData.favorites.push({
+                        "id": buoyId,
+                        "name": BuoyListService.get(buoyId).name
+                    });
                 }
-            // no currentFavs exist    
+            // no currentFavs exist
             } else {
-                $rootScope.userData.favorites = [{"id": buoyId}];
+                $rootScope.userData.favorites = [{
+                  "id": buoyId,
+                  "name": BuoyListService.get(buoyId).name
+                }];
             }
         },
         removeFavorite: function(buoyId) {
             var currentFavsLength = $rootScope.userData.favorites.length,
                 i = 0;
-            
+
             if ($rootScope.userData.favorites) {
                 for (i = 0; i < currentFavsLength; i++) {
                     if ($rootScope.userData.favorites[i].id == buoyId) {

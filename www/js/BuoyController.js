@@ -1,6 +1,6 @@
 angular.module("Main")
 
-.controller("BuoyController", function($scope, $location, $stateParams, 
+.controller("BuoyController", function($scope, $location, $stateParams,
     BuoyListService, UserDataService, BuoyUpdateService, ProcessDataService) {
 
     var buoyId = $stateParams.buoyId;
@@ -20,7 +20,7 @@ angular.module("Main")
     };
 
     $scope.buoyName = BuoyListService.get(buoyId).name;
-    
+
     $scope.update = function() {
         BuoyUpdateService.get(buoyId)
         .success(function(data, status, headers, config) {
