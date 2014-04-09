@@ -1,6 +1,6 @@
-angular.module("Main")
+angular.module('Main')
 
-.controller("HomeController", function($scope, $rootScope, $location,
+.controller('HomeController', function($scope, $rootScope, $location,
                                        BuoyUpdateService) {
     var init = function() {
             var i = 0,
@@ -21,13 +21,11 @@ angular.module("Main")
             });
         };
 
-    $scope.leftButtons = [{
-        type: "button-clear",
-        content: "<i class='icon ion-navicon'></i>",
-        tap: function(e) {
-            $location.path("/settings");
-        }
-    }];
+
+    $scope.goSettings = function() {
+        $location.path('/settings');
+    };
+
     $scope.onRefresh = function() {
     	console.log('refresh');
     	$scope.$broadcast('scroll.refreshComplete');

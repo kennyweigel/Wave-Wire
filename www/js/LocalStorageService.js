@@ -1,6 +1,6 @@
-angular.module("Main")
+angular.module('Main')
 
-.factory("LocalStorageService", function() {
+.factory('LocalStorageService', function() {
 
     return {
         get: function(key) {

@@ -1,6 +1,6 @@
-angular.module("Main")
+angular.module('Main')
 
-.controller("MapController", function($scope, $rootScope, $location, $ionicLoading, BuoyListService) {
+.controller('MapController', function($scope, $rootScope, $location, $ionicLoading, BuoyListService) {
     var initializeMap = function(position) {
             var myLat = null,
                 myLng = null,
@@ -34,7 +34,7 @@ angular.module("Main")
                 };
             }
 
-            $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            $scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
             for (i = 0; i < allBuoysLength; i += 1) {
                 buoy = allBuoys[i];
@@ -44,8 +44,8 @@ angular.module("Main")
                     map: $scope.map,
                     title: buoy.id
                 });
-                google.maps.event.addListener(buoyMarker, "click", function () {
-                    var buoyUrl = "/buoy/" + this.title;
+                google.maps.event.addListener(buoyMarker, 'click', function () {
+                    var buoyUrl = '/buoy/' + this.title;
                     $scope.$apply(function() {
                         $location.path(buoyUrl);
                     });
@@ -53,7 +53,7 @@ angular.module("Main")
             }
 
             // Stop the side bar from dragging when mousedown/tapdown on the map
-            google.maps.event.addDomListener(document.getElementById("map"), "mousedown", function(e) {
+            google.maps.event.addDomListener(document.getElementById('map'), 'mousedown', function(e) {
                 e.preventDefault();
                 return false;
             });
@@ -65,9 +65,9 @@ angular.module("Main")
         geoError = function(error) {
             $scope.loading.hide();
             if (error.code == 1) {
-                alert("TODO user denied geolocation");
+                alert('TODO user denied geolocation');
             } else {
-                alert("code: " + error.code + "\n" + "message: " + error.message + "\n");
+                alert('code: ' + error.code + "\n" + 'message: ' + error.message + '\n');
             }
 
             if (!$scope.map) {
@@ -76,8 +76,8 @@ angular.module("Main")
             }
         },
         geoOptions = {
-            "enableHighAccuracy": true,
-            "timeout": 10000
+            'enableHighAccuracy': true,
+            'timeout': 10000
         },
         geoCenterSuccess = function(position) {
             var myLat = position.coords.latitude,
@@ -98,21 +98,11 @@ angular.module("Main")
         };
 
     $scope.map = null;
-    $scope.headerTitle = "Map";
-    $scope.leftButtons = [{
-        type:"button-clear",
-        content: "<i class='icon ion-ios7-arrow-back'></i>",
-        tap: function(e) {
-            $location.path("/settings");
-        }
-    }];
-    $scope.rightButtons = [{
-        type:"button-clear",
-        content: "<i class='icon ion-navigate'></i>",
-        tap: function(e) {
-            $scope.start();
-        }
-    }];
+
+    $scope.goSettings = function() {
+        $location.path('/settings');
+    };
+
     $scope.start = function() {
         $scope.loading = $ionicLoading.show({
             content: 'Getting current location...',

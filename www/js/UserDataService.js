@@ -1,6 +1,6 @@
-angular.module("Main")
+angular.module('Main')
 
-.factory("UserDataService", function($rootScope, BuoyListService) {
+.factory('UserDataService', function($rootScope, BuoyListService) {
 
     return {
         addFavorite: function(buoyId) {
@@ -22,15 +22,15 @@ angular.module("Main")
                 }
                 if (!buoyIsAlreadyFav) {
                     $rootScope.userData.favorites.push({
-                        "id": buoyId,
-                        "name": BuoyListService.get(buoyId).name
+                        'id': buoyId,
+                        'name': BuoyListService.get(buoyId).name
                     });
                 }
             // no currentFavs exist
             } else {
                 $rootScope.userData.favorites = [{
-                  "id": buoyId,
-                  "name": BuoyListService.get(buoyId).name
+                  'id': buoyId,
+                  'name': BuoyListService.get(buoyId).name
                 }];
             }
         },

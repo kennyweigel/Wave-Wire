@@ -1,25 +1,19 @@
-angular.module("Main")
+angular.module('Main')
 
-.controller("BuoyController", function($scope, $location, $stateParams,
+.controller('BuoyController', function($scope, $location, $stateParams,
     BuoyListService, UserDataService, BuoyUpdateService, ProcessDataService) {
 
     var buoyId = $stateParams.buoyId;
-
-    $scope.headerTitle = buoyId;
-
-    $scope.leftButtons = [{
-        type:"button-clear",
-        content: "<i class='icon ion-ios7-arrow-back'></i>",
-        tap: function(e) {
-            $location.path("/map");
-        }
-    }];
 
     $scope.addToFavorites = function() {
         UserDataService.addFavorite(buoyId);
     };
 
     $scope.buoyName = BuoyListService.get(buoyId).name;
+
+    $scope.goMap = function() {
+        $location.path('/map');
+    };
 
     $scope.update = function() {
         BuoyUpdateService.get(buoyId)
