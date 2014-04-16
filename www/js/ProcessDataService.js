@@ -212,8 +212,12 @@ angular.module('Main')
             console.log(processedRow);
 
             //need to arrange data in correct order
-            dataArray.push(processedRow.time.value + ' ' + processedRow.date.value);
-            
+            dataArray.push({
+                'value': processedRow.time.value + ' ' + processedRow.date.value,
+                'units': null,
+                'field': 'Time'
+            });
+
             keys = [
                 'windDirection',
                 'windSpeed',
