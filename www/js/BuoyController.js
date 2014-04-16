@@ -22,7 +22,7 @@ angular.module('Main')
             $scope.buoyData = ProcessDataService.individual(data);;
         })
         .error(function(data, status, headers, config) {
-            alert("error");
+            alert('error');
         });
     };
 
