@@ -18,7 +18,6 @@ angular.module('Main')
     $scope.update = function() {
         BuoyUpdateService.get(buoyId)
         .success(function(data, status, headers, config) {
-
             $scope.buoyData = ProcessDataService.individual(data);;
         })
         .error(function(data, status, headers, config) {

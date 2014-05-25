@@ -3,13 +3,7 @@ angular.module('Main')
 .controller('HomeController', function($scope, $rootScope, $location,
                                        BuoyUpdateService) {
     var init = function() {
-            var i = 0,
-                favsLength = $rootScope.userData.favorites.length;
-
-                for (i = 0; i < favsLength; i++) {
-                    ////TODO////
-                    //updateFavorite
-                }
+            var i = 0;
         },
         updateFavorites  = function(buoyId) {
             BuoyUpdateService.get(buoyId)
@@ -29,6 +23,17 @@ angular.module('Main')
     $scope.onRefresh = function() {
     	console.log('refresh');
     	$scope.$broadcast('scroll.refreshComplete');
+    };
+
+    $scope.refreshFavorites = function() {
+        var i = 0;
+        console.log('refresh');
+        console.log($rootScope.userData.favorites);
+
+        //for (i = 0; i < $rootScope.userData.favorites.length; i++) {
+        //    console.log('run');
+        //}
+
     };
 
     init();

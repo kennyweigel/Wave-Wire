@@ -4,11 +4,20 @@
       </button>
     </ion-nav-buttons>
     <ion-content has-header="true" scroll="true" on-refresh="onRefresh()">
-        <ion-refresher></ion-refresher>
+        <ion-refresher
+            pulling-text="Pull to refresh..."
+            on-refresh="refreshFavorites()">
+        </ion-refresher>
         <ion-slide-box>
             <ion-slide ng-repeat="fav in userData.favorites">
                 <div class="box blue">
-                  <h1>{{fav.id}} - {{fav.name}}</h1>
+                    <h1>{{fav.id}} - {{fav.name}}</h1>
+                    <!--<ul class="list">
+                        <li class="item" ng-repeat="dataItem in fav.buoyData">
+                            <span class="float-left">{{dataItem.field}}</span>
+                            <span class="float-right">{{dataItem.value}}{{dataItem.units}} </span>
+                        </li>
+                    </ul>-->
                 </div>
             </ion-slide>
         </ion-slide-box>

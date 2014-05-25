@@ -23,14 +23,16 @@ angular.module('Main')
                 if (!buoyIsAlreadyFav) {
                     $rootScope.userData.favorites.push({
                         'id': buoyId,
-                        'name': BuoyListService.get(buoyId).name
+                        'name': BuoyListService.get(buoyId).name,
+                        'buoyData': []
                     });
                 }
             // no currentFavs exist
             } else {
                 $rootScope.userData.favorites = [{
                   'id': buoyId,
-                  'name': BuoyListService.get(buoyId).name
+                  'name': BuoyListService.get(buoyId).name,
+                  'buoyData': []
                 }];
             }
         },
