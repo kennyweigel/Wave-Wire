@@ -60,10 +60,10 @@ angular.module('Main')
         },
         geoSuccess = function(position) {
             initializeMap(position);
-            $scope.loading.hide();
+            $ionicLoading.hide();
         },
         geoError = function(error) {
-            $scope.loading.hide();
+            $ionicLoading.hide();
             if (error.code == 1) {
                 alert('TODO user denied geolocation');
             } else {
@@ -87,7 +87,7 @@ angular.module('Main')
             $rootScope.userData.position = position;            
             $scope.map.setCenter(myLatLng);
             $scope.map.setZoom(7);
-            $scope.loading.hide();
+            $ionicLoading.hide();
         },
         init = function() {
             if ($rootScope.userData.position) {
@@ -104,7 +104,7 @@ angular.module('Main')
     };
 
     $scope.start = function() {
-        $scope.loading = $ionicLoading.show({
+        $ionicLoading.show({
             content: 'Getting current location...',
             showBackdrop: false
         });
